@@ -1,4 +1,4 @@
-{tlhIngan Hol mu'ghom mach} - A Klingon/English pocket dictionary.
+{tlhIngan Hol mu'ghom mach} - A Klingon/English pocket dictionary.
 Copyright (C) 1997-2001 Zrajm C Akfohg.
 
 GNU License?
@@ -7,7 +7,7 @@ GNU License?
 Description
 -----------
 
-{tlhIngan Hol mu'ghom mach} is a compact Klingon­English/English­Klingon
+{tlhIngan Hol mu'ghom mach} is a compact Klingon-English/English-Klingon
 dictionary. It's pocket sized so that you (or me) may always take with you.
 
 
@@ -41,7 +41,7 @@ dictionary, as well as explanations to all abbreviations and sources
 used.
 
 On the final page of the dictionary (the back cover) there is a verb
-prefix chart. - This chart probably looks a bit different from what
+prefix chart. - This chart probably looks a bit different from what
 you're used to, but it is my belief that you (like me) soon wouldn't
 like to have it any other way.
 
@@ -77,7 +77,7 @@ Other languages?
 I'm preparing a Swedish translation of this dictionary. The Dictionary part
 is completely translated, as well as the preface. Right now there is some
 editing to make it all fit on the pages, is all that is needed to make the
-Klingon­Swedish/Swedish­Klingon pocket dictionary a reality. However I have
+Klingon-Swedish/Swedish-Klingon pocket dictionary a reality. However I have
 been procrastinating this for a long time (nothing but laziness) if you feel
 that you'd like one, please feel free to nag me about it (see ''Contacting
 Me'' at the end of this document).
@@ -111,7 +111,7 @@ You also need:
 Optional (recommended):
 
    2-3 dm duct tape
-   approx. 2×3 dm self­adhesive transparent plastic
+   approx. 2×3 dm self-adhesive transparent plastic
    1 permanent marker pen
 
 Print the dictionary cover (the file ``cover-A4.ps'') on the thick sheet of
@@ -145,7 +145,7 @@ Now you have two piles of paper (in A5 format). Remove the two covers and
 put the remaining two piles on top of each other, carefully checking the
 page numbering to see that it is continous. If all is correct than one side
 of the pile should be the center spread of the book, and the other side
-should be the half­title page, and the last page of the book.
+should be the half-title page, and the last page of the book.
 
 Now, to make your book more resistant to wear and tear you could (and
 should, if you're serious about this) strengthen the cover.
@@ -159,7 +159,7 @@ the tape, and makes the finished cover fold more nicely). Cut the tape along
 the edge of the sheet and avoid tape on the inside of the cover, as there is
 a couple of reference tables there you'll probably end up using a lot.
 
-After a while the the cover usually gets dog­eared and some of the cover
+After a while the the cover usually gets dog-eared and some of the cover
 print tends to get worn off (not to mention that it gets dirty). To prevent
 this, wrap it in transparent plastic. This is tedious (at least if you do
 more than one) but greatly increases the life of the book.
@@ -176,7 +176,7 @@ making several folds, in parallel and very close to each other (making the
 fold rounder). However the sprawling will decrease with the time spend in
 your pocket, you this should not be a major problem.
 
-To make it easier to find the Klingon­English and English­Klingon parts, you
+To make it easier to find the Klingon-English and English-Klingon parts, you
 might want to mark them on the edge of the book using a permanent marker.
 
 
@@ -186,7 +186,7 @@ History
 16 January 1997 (called ``A Small Klingon--English Dictionary'')
 
 The first, and very primitive version of this pocket dictionary was printed.
-It contained only a Klingon­English side, and there were no reference
+It contained only a Klingon-English side, and there were no reference
 tables at all.
 
 
@@ -200,7 +200,7 @@ even though the title implies that.
 
 The production of this dictionary was somewhat automated, and I used a
 friends Atari ST (since my own Amiga 1200 had broken down) to sort the
-wordlist, using a homewritten Klingon (bubble) sort algorithm - the sorting
+wordlist, using a homewritten Klingon (bubble) sort algorithm - the sorting
 took more than twelve hours. Layout was done using Word, and all the pages
 where reduced from A4 to A6 using a photocopier. When making my first copy
 of this, I realised that all the pages had been placed in the wrong order,
@@ -208,7 +208,7 @@ so that each pile of pages had to be manually resorted before it could be
 stapled into a book.
 
 ``West Coast Trekkers'' (nowadays called ``Swedish Trekkers'') had a Star Trek
-Con called ``Star Treff ­97'', at which I sold some 20-30 copies of this
+Con called ``Star Treff -97'', at which I sold some 20-30 copies of this
 edition.
 
 
@@ -230,7 +230,7 @@ University. The dictionary contents is automatically extracted using home
 written programs (in ARexx) from a database that I use and maintain at home
 on my Amiga 1200 computer.
 
-This edition features the new Klingonska Akademien­style verb prefix table.
+This edition features the new Klingonska Akademien-style verb prefix table.
 And a preface with a description of the pronunciation.
 
 Markus and I brought five or six copies of this edition with us to the
@@ -260,7 +260,15 @@ Seventh edition, 134 pages. Appendix with a more complete suffix guide
 added. Suffix tables now contains info on number of suffixes as well. Added
 the words from HolQeD 10:4 (mostly about birds). Now completely maintained
 using computers running Linux. Old programs to extract the dictionary
-contents from database re­written in Perl.
+contents from database re-written in Perl.
+
+
+8 May 2010
+
+Got the old sources to again, this time under Ubuntu Karmic Koala, with LaTeX
+installed using the "texlive-full" packages. Collected all relevant files (that
+isn't part of the LaTeX packages) into one directory for easier maintenance.
+Wrote a simple Makefile to assist in compilation.
 
 
 Future

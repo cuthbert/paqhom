@@ -1,5 +1,5 @@
-[2001­02­28]
-[2001­03­01, 08.01-08.40]
+[2001-02-28]
+[2001-03-01, 08.01-08.40]
 
 How do I assemble the book?
 
@@ -52,7 +52,7 @@ directory, so all .dvi, .aux, .log files etc will be written here,
 and hence kept in one place (where they can be easily sweept away if
 need arises).
 
-The "pocketdict/includes/" directory contains all sub­document used
+The "pocketdict/includes/" directory contains all sub-document used
 by the main documents. Those includes that are used by both the
 Swedish and English version resides here. Those files that are
 specific for the English version can be found in the directory
@@ -73,19 +73,19 @@ only be available in English.
   eng-cover.tex            English cover of dictionary.
   eng-main.tex             English contents of dictionary.
     doc/                     Documentation (plain text files).
-**    betoning.txt             ** To­be­added­to­the­preface. **
+**    betoning.txt             ** To-be-added-to-the-preface. **
       files.txt                This file.
       read.me                  Assembly instructions etc.
     includes/                Files used by main documents.
       commands.tex             Own LaTeX commands used.
       front_piqad.tex          Klingon front page in pIqaD.
       front_roman.tex          Klingon front page in roman letters.
-        eng/                     English­specific files
+        eng/                     English-specific files
           copyrightpage.tex        Copyright information.
-          from_kli.tex             Klingon­English dictionary.
+          from_kli.tex             Klingon-English dictionary.
           preface.tex              Preface to the dictionary.
           suffixtables.tex         Tables of Klingon suffixes.
-          to_kli.tex               English­Klingon dictionary.
+          to_kli.tex               English-Klingon dictionary.
           values.tex               No of words, compile date etc.
  ==================================================================
 

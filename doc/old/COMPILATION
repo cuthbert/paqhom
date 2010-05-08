@@ -4,7 +4,7 @@
   v1.2, 6 August 2001
 
   This document explains how to produce a printable booklet in A6
-  format using the {tlhIngan Hol mu'ghom mach} LaTeX­sources (though, of
+  format using the {tlhIngan Hol mu'ghom mach} LaTeX-sources (though, of
   course the same principles could be used on any LaTeX document).
   ______________________________________________________________________
 
@@ -19,7 +19,7 @@
 
       1.2.1.  Compile the .tex source
       1.2.2.  Convert .dvi to .ps
-      1.2.3.  Re­sort Pages of PostScript File into Booklet
+      1.2.3.  Re-sort Pages of PostScript File into Booklet
       1.2.4.  Scale Page Contents to A6 format
       1.2.5.  Print Booklet
 
@@ -41,7 +41,7 @@ The following programs are required for the below described procedure
 task, but these are the ones I've used):
 
   o latex
-    * (describe required LaTeX­packages here)
+    * (describe required LaTeX-packages here)
     *
   o dvi2ps
   o a2ps *or* psnup (which is part of package called ``psutils'')
@@ -60,7 +60,7 @@ Use LaTeX to produce a .dvi file.
 Use dvi2ps to create a .ps file from the .dvi.
 
 
-1.2.3.  Re­sort Pages of PostScript File into Booklet
+1.2.3.  Re-sort Pages of PostScript File into Booklet
 
 
 
@@ -74,7 +74,7 @@ This approach has for some reason stopped working for me, since a2ps
 nowadays truncate some of the text closest to the (physical) margins
 of my pages (my theory is that the a2ps command has been secretly
 updated here at Uppsala University by our evil superuser). But fear
-not -- there is another solution -- the ``psnup'' command (included in
+not -- there is another solution -- the ``psnup'' command (included in
 a package called ``PSUtils''). Type the following to solve the same
 problem in another way:
 
@@ -86,4 +86,4 @@ problem in another way:
 Using ``lpr'' or whatever.
 
 
-/Zrajm C Akfohg, 2001­06­13 & 2001­08­06, Uppsala, Sweden
+/Zrajm C Akfohg, 2001-06-13 & 2001-08-06, Uppsala, Sweden

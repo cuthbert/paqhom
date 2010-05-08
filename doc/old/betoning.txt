@@ -3,11 +3,11 @@ Betonade stavelser i klingonska.
 Nedanstående resonemang baseras sig på endast en källa, nämligen
 <The Klingon Dictionary> (Okrand, 1992), de fåtalet stycken som där
 går igenom betoning (kapitel 1.3) plus en utförlig analys av vad som
-i klingonisters mun kommit att kallas "fusk­listan"¹ (eng. "cheat
-sheet", sidorna 170-172) - en lista med bra­att­ha fraser, som
+i klingonisters mun kommit att kallas "fusk-listan"¹ (eng. "cheat
+sheet", sidorna 170-172) - en lista med bra-att-ha fraser, som
 utöver den vanliga translittereringen försetts med en förenklad
 translitterering för den oinvigde. Denna förenklade translitterering
-(som bara förekommer på fusk­listan) markerar, till skillnad från
+(som bara förekommer på fusk-listan) markerar, till skillnad från
 den ordinära okrandiska dito, även vilka stavelser som skall betonas.
 
 Som hjälp och inspiration har jag även använt mig av Klingonska
@@ -76,13 +76,13 @@ are considered nouns: {vúm} <to work>, {vumwÍ'} <worker>,
 {vumtaHghách} <working>, {vumpú'ghach} <a bout of work>.
 
 Verbs are likewise stressed on the final syllable of the stem: {Dál}
-<to be boring>, {ghIpDÍj} <to court­martial>. Unlike nouns, if the
+<to be boring>, {ghIpDÍj} <to court-martial>. Unlike nouns, if the
 first suffix after the verb ends in a glottal stop, the suffix is
 <not> stressed. Thus the verb <she has been an alien> is {nóvpu'},
 while the noun <aliens> in {novpú'}. If the suffix ending in a
 glottal stop is <other> than the first, then both it and the final
 syllable of the verb re stressed: {mughIpDÍjchoHDÍ'} <when she
-started court­martialling me>, {HóH'eghrupmó'} <because he was ready
+started court-martialling me>, {HóH'eghrupmó'} <because he was ready
 to suicide>.
 
 Semantically important suffixes can end up stressed instead of the
@@ -104,7 +104,7 @@ officer is loyal>.
 
 ------------------
 ¹ Jag bortser helt ifrån fraserna på första sidan i boken, då
-samtliga av dessa också förekommer i fusk­listan.
+samtliga av dessa också förekommer i fusk-listan.
 
 ² Vilken nu är den tredje översättningen (till klingonska) av verket
 ifråga som hittat vägen till min bokhylla.
@@ -162,7 +162,7 @@ Nouns:
   o If there are more than one syllable ending in a glottal stop,
     then they are equally stressed.
 
-  o Nouns derived from verbs (using {­wI'} or {­ghach}) are
+  o Nouns derived from verbs (using {-wI'} or {-ghach}) are
     considered nouns.
 
   o Compound nouns are stressed as simple nouns (i.e. only the last
@@ -187,8 +187,8 @@ Verbs:
     the word that is stressed.
 
     The most commonly emphasized suffixes are the ones indicating
-    negatation ({­be'}/{­Ha'}/{­Qo'}), emphasis ({­qu'}) and the
-    interrogative suffix ({­'a'}).
+    negatation ({-be'}/{-Ha'}/{-Qo'}), emphasis ({-qu'}) and the
+    interrogative suffix ({-'a'}).
 
   o Adjectival verbs are considered verbs.
 

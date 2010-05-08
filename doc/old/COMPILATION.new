@@ -4,7 +4,7 @@
   v1.3, 28 August 2001
 
   This document explains how to produce a printable booklet in A6
-  format using the {tlhIngan Hol mu'ghom mach} LaTeX­sources (though, of
+  format using the {tlhIngan Hol mu'ghom mach} LaTeX-sources (though, of
   course the same principles could be used on any LaTeX document).
   ______________________________________________________________________
 
@@ -23,7 +23,7 @@
 
       1.2.1.  Compile the .tex source
       1.2.2.  Convert .dvi to .ps
-      1.2.3.  Re­sort Pages of PostScript File into Booklet
+      1.2.3.  Re-sort Pages of PostScript File into Booklet
       1.2.4.  Scale Page Contents to A6 format
       1.2.5.  Print Booklet
 
@@ -41,13 +41,13 @@ face that problem.
 1.1.  Requirements
 
 The following is a list of the programs that I used to compile the final
-PostScript version of the dictionary from my LaTeX­sources. This is not
+PostScript version of the dictionary from my LaTeX-sources. This is not
 intended to be a complete discription of every possible way to do it, and
 you may well be able to accomplish the same task with a completely different
 set of programs.
 
 Since I am using a Debian Linux system, I have included the names of the
-Debian­packages that I found it necessary to install for the compilation. It
+Debian-packages that I found it necessary to install for the compilation. It
 is my guess (but I am no Linux guru, so this really is just a guess) that
 any other Unix/Linux flavours would make use of similarly named packages
 with similar contents, so that my experiences at least will not be worthless
@@ -56,7 +56,7 @@ to you.
 
 1.1.1.  LaTeX
 
-The dictionary make use of several LaTeX­packages, some of the included in
+The dictionary make use of several LaTeX-packages, some of the included in
 the standard distribution, some of them not.
 
   o tetex-base - basic teTeX library files
@@ -83,8 +83,8 @@ available as a Debian package.
   o gv - A PostScript and PDF viewer for X using 3d Athena Widgets
   o gsfonts - Fonts for the ghostscript interpreter
 
-Required to produce PostScript output from LaTeX's .dvi­files. It is also
-possible to view the .dvi­files directly using a program like `xdvi', but I
+Required to produce PostScript output from LaTeX's .dvi-files. It is also
+possible to view the .dvi-files directly using a program like `xdvi', but I
 would not recommend that because some things (e.g. rotated text) can not be
 viewed this way. This is not a problem if you produce a PostScript output
 file and then view that with e.g. `gv'.
@@ -115,7 +115,7 @@ Use LaTeX to produce a .dvi file.
 Use dvi2ps to create a .ps file from the .dvi.
 
 
-1.2.3.  Re­sort Pages of PostScript File into Booklet
+1.2.3.  Re-sort Pages of PostScript File into Booklet
 
 
 
@@ -142,8 +142,8 @@ Using ``lpr'' or whatever.
 
 /Zrajm C Akfohg, Uppsala, Sweden
 
-[2001­06­13]
-[2001­08­06] v1.2 Formatted this file to look more like one of the HOWTO
+[2001-06-13]
+[2001-08-06] v1.2 Formatted this file to look more like one of the HOWTO
   documents. Added info on `psnup'.
-[2001­08­28] v1.3 Added info on Debian packages used.
+[2001-08-28] v1.3 Added info on Debian packages used.
 

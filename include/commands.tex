@@ -33,12 +33,12 @@
 
 
 % ================================
-% English­Klingon Dictionary Entry
+% English-Klingon Dictionary Entry
 % ================================
 %
 %   #1 = English lookup word
 %   #2 = Klingon word
-%   #3 = Part­of­speech
+%   #3 = Part-of-speech
 %   #4 = 'slang' or 'regional' etc.
 %   #5 = English explanation of the word
 %        (if Ø then the explanation equals the lookup word)
@@ -60,11 +60,11 @@
 }
 
 % ================================
-% Klingon­English Dictionary Entry
+% Klingon-English Dictionary Entry
 % ================================
 %
 %   #1 = Klingon (lookup) word
-%   #2 = part­of­speech
+%   #2 = part-of-speech
 %   #3 = 'slang' or 'regional' etc.
 %   #4 = English explanation of the word
 %   #5 = source
@@ -86,7 +86,7 @@
 
 % used when going from one letter to
 % another in the dictionary
-% [2001­03­03] Zrajm C Akfohg
+% [2001-03-03] Zrajm C Akfohg
 \newcommand{\newletter}{%
   \par%
 %  \vspace{\baselineskip}%
@@ -116,10 +116,10 @@
 % =================================================================
 % Set Values for \NumElementList, \NounSuffixList & \VerbSuffixList
 % =================================================================
-% [2000­10­25] Written by Zrajm C Akfohg.
+% [2000-10-25] Written by Zrajm C Akfohg.
 %
 % This routine sets the values associated with tables to nice
-% defaults - also my own \sufcolwidth length is set, which is
+% defaults - also my own \sufcolwidth length is set, which is
 % needed by all the above mentioned affix listing routines.
 %
 \newlength{\sufcolwidth}%
@@ -139,7 +139,7 @@
 % ===========================================================
 % Title strings for the numeric element list and affix lists.
 % ===========================================================
-% [2001­12­12] Written by Zrajm C Akfohg.
+% [2001-12-12] Written by Zrajm C Akfohg.
 %
 % This tests if my \dictlanguage "variable" equals "swedish",
 % if it does, the titles of the affix tables are set to their
@@ -205,10 +205,10 @@
 % ======================
 % Numerical Element List
 % ======================
-% [2000­10­25] Written by Zrajm C Akfohg.
+% [2000-10-25] Written by Zrajm C Akfohg.
 %
 % This routine produces a reference list of the Klingon
-% number­forming elements (without English translations).
+% number-forming elements (without English translations).
 %
 \newcommand{\NumElementList}{%
 \normalsize\begin{tabular}[b]{cccccl}
@@ -244,7 +244,7 @@
 % ================
 % Noun Suffix List
 % ================
-% [2000­10­25] Written by Zrajm C Akfohg.
+% [2000-10-25] Written by Zrajm C Akfohg.
 %
 % This routine produces a reference list of the Klingon
 % noun suffixes and their type (without English translations).
@@ -320,7 +320,7 @@
 % ================
 % Verb Suffix List
 % ================
-% [2000­10­25] Written by Zrajm C Akfohg.
+% [2000-10-25] Written by Zrajm C Akfohg.
 %
 % This routine produces a reference list of the Klingon
 % verb suffixes and their type (without English translations).
@@ -407,7 +407,7 @@
 % ================
 % Verb Prefix List
 % ================
-% [2001­10­25] Written by Zrajm C Akfohg.
+% [2001-10-25] Written by Zrajm C Akfohg.
 %
 % This routine produces a reference table of the Klingon verb
 % prefixes (without English translations).
@@ -546,7 +546,7 @@
 % ================================
 % Insert A Number of (Empty) Pages
 % ================================
-% [2000­10­26] Written by Zrajm C Akfohg.
+% [2000-10-26] Written by Zrajm C Akfohg.
 %
 % This routine inserts a number of empty pages into a
 % document to fill it out. If for example you are intending
@@ -555,7 +555,7 @@
 % thingy does just that.
 %
 % #1 = number of first page in the document (probably `1', but
-%      other numbers occur - `3' is quite common)
+%      other numbers occur - `3' is quite common)
 % #2 = number of pages with print last in the book
 %      (i.e. the number of pages *after* the ones being inserted)
 % #3 = the number you want to be able to divde the book evenly in
@@ -576,7 +576,7 @@
 % =============================================
 % Set a margins and some other useful distances
 % =============================================
-% [2001­02­28] Written by Zrajm C Akfohg.
+% [2001-02-28] Written by Zrajm C Akfohg.
 %
 % #1 is the left margin (on odd/right hand page)
 % #2 is the upper margin
@@ -605,7 +605,7 @@
   \setpapersize{A4}                       % set papersize for vmargin
   \setlength{\footskip}{#5 + #6}          % correct footskip
   \setmarginsrb{#1}{#2}{#3}{#4}%          % left/upper/right/lower margin
-    {#5}{#6}{#5}{\footskip}               % head­y/headsep/foot­y/footskip
+    {#5}{#6}{#5}{\footskip}               % head-y/headsep/foot-y/footskip
   \setlength{\headwidth}{\textwidth}      % header/footer text width
 
   % rulers and special margins
