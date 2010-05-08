@@ -1,6 +1,9 @@
+\#*#
+.#*
 *~
 *.aux
 *.bak
+*.dvi
 *.log
 *.ps
 *.pdf

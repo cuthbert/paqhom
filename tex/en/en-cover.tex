@@ -19,7 +19,7 @@
 \usepackage[utf8]{inputenc}                    % enable unicode
 \usepackage[english]{babel}                    % enable english typography
 \newcommand{\dictlanguage}{english}            % variable used by includes
-\input{include/commands}                       % include dictionary commands
+\input{commands}                               % include dictionary commands
 
 
 \newenvironment{changemargin}[2]{%
@@ -93,7 +93,7 @@
 \setcounter{loop}{1}
 \whiledo{\value{loop}<3}{%
 
-\input{include/front_piqad}  % insert front cover
+\input{front_piqad}                 % insert front cover
 
 
 
@@ -187,7 +187,7 @@
 % broad back margin
 \begin{changemargin}{-3cm}{1cm}                %
 \setlength{\arrayrulewidth}{.6mm}              % line thickness in table
-\input{include/suffixtables}                   % suffix tables
+\input{suffixtables}                           % suffix tables
 \end{changemargin}                             %
 \newpage
 

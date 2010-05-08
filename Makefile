@@ -1,32 +1,36 @@
-ENGLISH := eng-cover eng-main
-SWEDISH := swe-cover swe-main
+ENGLISH := en-cover en-main
+SWEDISH := sv-cover sv-main
 
-.PHONY: english
+.SECONDARY: $(addsuffix .dvi, $(ENGLISH) $(SWEDISH))
+
+.PHONY: clean distclean english swedish
 english: $(addsuffix .pdf,$(ENGLISH))
-
-.PHONY: swedish
 swedish: $(addsuffix .pdf,$(SWEDISH))
 
-# turn .tex into .dvi files
-%.dvi: %.tex; @latex $<
+%.dvi: tex/*/%.tex        # TeX -> DVI
+	@export TFMFONTS="tex/fonts:";                  \
+	export TEXINPUTS="$(dir $<)include:tex/include:"; \
+	echo -n | latex $<
 
-# turn .dvi into .pdf files
-%.pdf: %.dvi; @dvipdf $<
+%.pdf: %.dvi              # DVI -> PDF
+	@export DVIPSFONTS="tex/fonts:"; \
+	dvipdf $<
 
-# turn .dvi into .ps files
-%.ps: %.dvi; @dvips $<
+%.ps:  %.dvi              # DVI -> PS
+	@export DVIPSFONTS="tex/fonts:"; \
+	dvips  $<
 
-.PHONY: clean
 clean:
-	@rm -vf \
+	@rm -vf $(sort \
 	    $(addsuffix .aux,$(ENGLISH) $(SWEDISH)) \
 	    $(addsuffix .dvi,$(ENGLISH) $(SWEDISH)) \
-	    $(addsuffix .log,$(ENGLISH) $(SWEDISH))
+	    $(addsuffix .log,$(ENGLISH) $(SWEDISH)) \
+	)
 
-.PHONY: distclean
 distclean: clean
-	@rm -vf \
+	@rm -vf $(sort \
 	    $(addsuffix .pdf,$(ENGLISH) $(SWEDISH)) \
-	    $(addsuffix  .ps,$(ENGLISH) $(SWEDISH))
+	    $(addsuffix  .ps,$(ENGLISH) $(SWEDISH)) \
+	)
 
 #[eof]
