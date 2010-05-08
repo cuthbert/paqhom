@@ -1,0 +1,36 @@
+% Summary:
+%
+% This is the front cover art of both the English and Swedish
+% versions of the dictionary. It is included by the
+% "swedish/cover.tex" and "english/cover.tex" files and cannot be
+% compiled by itself (lacking the "\begin{document}...
+% \end{document}" for it).
+%
+%
+% *** Front Cover
+
+\begin{center}
+
+\vspace*{\stretch{1}}                          % define vertical strech
+
+\fboxrule=1mm\fboxsep=1mm\fbox{\fboxrule=2mm\fboxsep=5mm\fbox{%
+  \parbox{8.75cm}{\begin{center}%
+    \parbox[b][1.2cm]{8.75cm}{\vfill\centering\Huge\B{tlhIngan Hol}\vfill}\\
+    \vspace{2mm}
+    \parbox[b][1.2cm]{8.75cm}{\vfill\centering\Huge\B{mu'ghom mach}\vfill}\\
+  \end{center}}%
+}}
+
+
+\vspace*{\stretch{2}}                          % define vertical strech
+
+%  [KA-logo]                                     % KAs logo
+
+\vspace*{\stretch{2}}                          % define vertical strech
+
+\parbox[b][1cm]{\linewidth}{\vfill\centering\large\B{DIS cha'SaD cha', gherta' maHvatlh.}\vfill}\\
+\parbox[b][1cm]{\linewidth}{\vfill\centering\large\B{'upSala tlhIngan Hol yej'an.}\vfill}\\
+
+\end{center}
+
+\newpage                                        % Pagebreak

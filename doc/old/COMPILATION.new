@@ -1,0 +1,149 @@
+
+  The {tlhIngan Hol mu'ghom mach} Booklet Howto
+  Zrajm C Akfohg <zrajm@klingonska.org>
+  v1.3, 28 August 2001
+
+  This document explains how to produce a printable booklet in A6
+  format using the {tlhIngan Hol mu'ghom mach} LaTeX­sources (though, of
+  course the same principles could be used on any LaTeX document).
+  ______________________________________________________________________
+
+  Table of Contents
+
+
+
+  1.  How to Create a Printable PostScript from the .tex Source
+
+    1.1.  Requirements
+    
+      1.1.1.  LaTeX
+      1.1.2.  PostScript tools
+
+    1.2.  Procedure
+
+      1.2.1.  Compile the .tex source
+      1.2.2.  Convert .dvi to .ps
+      1.2.3.  Re­sort Pages of PostScript File into Booklet
+      1.2.4.  Scale Page Contents to A6 format
+      1.2.5.  Print Booklet
+
+
+
+  ______________________________________________________________________
+
+1.  How to Create a Printable PostScript from the .tex Source
+
+This document describes how to created a PostScript document, from the
+{tlhIngan Hol mu'ghom mach} LaTeX (*.tex) source(s), should you ever
+face that problem.
+
+
+1.1.  Requirements
+
+The following is a list of the programs that I used to compile the final
+PostScript version of the dictionary from my LaTeX­sources. This is not
+intended to be a complete discription of every possible way to do it, and
+you may well be able to accomplish the same task with a completely different
+set of programs.
+
+Since I am using a Debian Linux system, I have included the names of the
+Debian­packages that I found it necessary to install for the compilation. It
+is my guess (but I am no Linux guru, so this really is just a guess) that
+any other Unix/Linux flavours would make use of similarly named packages
+with similar contents, so that my experiences at least will not be worthless
+to you.
+
+
+1.1.1.  LaTeX
+
+The dictionary make use of several LaTeX­packages, some of the included in
+the standard distribution, some of them not.
+
+  o tetex-base - basic teTeX library files
+  o tetex-extra - extra teTeX library files
+  o tipa - System for processing phonetic symbols in LaTeX
+
+The `tetex' packages above is the main distribution of LaTeX.
+
+`tipa' is an additional package that I have included to be able to use the
+International Phonetic Alphabet in the description of the sounds of Klingon,
+and a pIqad/pronunciation reference table. I had some problems installing
+this package, since LaTeX required a file called `T3enc.def' which it for some
+reason could not find. I solved this problem by simply copying the entire
+tipa directory from another machine where I knew it worked. So I really have
+no idea on how to solve this problem should it occur.
+
+I have also used a 'pIqaD' metafont package, that is (to my knowledge) not
+available as a Debian package.
+
+
+1.1.2.  PostScript tools
+
+  o dvi2ps - TeX DVI-driver for NTT jTeX, MulTeX and ASCII ptex.
+  o gv - A PostScript and PDF viewer for X using 3d Athena Widgets
+  o gsfonts - Fonts for the ghostscript interpreter
+
+Required to produce PostScript output from LaTeX's .dvi­files. It is also
+possible to view the .dvi­files directly using a program like `xdvi', but I
+would not recommend that because some things (e.g. rotated text) can not be
+viewed this way. This is not a problem if you produce a PostScript output
+file and then view that with e.g. `gv'.
+
+  o psutils - A collection of PostScript document handling utilities 
+
+This package contains a program called `psnup' with which one can fit
+several pages of printer output into a singe page. This is required to
+produce a dictionary in the neat A6 size. (By placing four pages of output
+on each physical, printed page.)
+
+I used to scale down the output size of the document using the GNU 'a2ps'
+program, but I stopped using that since it started to crop the edges of the
+document (this was at the university, and most likely this is a bug that
+crept in with some update of the `a2ps' program).
+
+
+1.2.  Procedure
+
+
+1.2.1.  Compile the .tex source
+
+Use LaTeX to produce a .dvi file.
+
+
+1.2.2.  Convert .dvi to .ps
+
+Use dvi2ps to create a .ps file from the .dvi.
+
+
+1.2.3.  Re­sort Pages of PostScript File into Booklet
+
+
+
+1.2.4.  Scale Page Contents to A6 format
+
+Either using ``a2ps'' command, like this:
+
+  a2ps -4 -B --border=no INFILE.ps -o OUTFILE.ps
+
+This approach has for some reason stopped working for me, since a2ps
+nowadays truncate some of the text closest to the (physical) margins
+of my pages (my theory is that the a2ps command has been secretly
+updated here at Uppsala University by our evil superuser).
+
+Or using ``psnup'', like this:
+
+  psnup -4 INFILE.ps OUTFILE.ps
+
+
+1.2.5.  Print Booklet
+
+Using ``lpr'' or whatever.
+
+
+/Zrajm C Akfohg, Uppsala, Sweden
+
+[2001­06­13]
+[2001­08­06] v1.2 Formatted this file to look more like one of the HOWTO
+  documents. Added info on `psnup'.
+[2001­08­28] v1.3 Added info on Debian packages used.
+

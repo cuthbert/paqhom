@@ -1,0 +1,200 @@
+Betonade stavelser i klingonska.
+
+Nedanstående resonemang baseras sig på endast en källa, nämligen
+<The Klingon Dictionary> (Okrand, 1992), de fåtalet stycken som där
+går igenom betoning (kapitel 1.3) plus en utförlig analys av vad som
+i klingonisters mun kommit att kallas "fusk­listan"¹ (eng. "cheat
+sheet", sidorna 170-172) - en lista med bra­att­ha fraser, som
+utöver den vanliga translittereringen försetts med en förenklad
+translitterering för den oinvigde. Denna förenklade translitterering
+(som bara förekommer på fusk­listan) markerar, till skillnad från
+den ordinära okrandiska dito, även vilka stavelser som skall betonas.
+
+Som hjälp och inspiration har jag även använt mig av Klingonska
+språkinstitutes nya utgåva av Hamlet², som bl.a. innehåller ett
+appendix med instruktioner (icke kanoniska sådana får jag förmoda)
+för hur vers bör läsas på klingonska (med avséende på rytm).
+
+
+
+Ur <The Klingon Dictionary>:
+===============================================================
+
+1.3. Stress
+
+Each Klingon word of more than one syllable normally contains one
+stressed (or accented) syllable. The stressed syllable is pronounced
+at a slightly higher pitch and with a little more force than the
+nonstressed syllable(s).
+
+In a verb, the stressed syllable is usually the verb itself, as
+opposed to any prefix or suffix. If, however, a suffix ending with
+{'} is separated from the verb by at least one other suffix, both
+the verb and the suffix ending in {'} are stressed. In addition, if
+the meaning of any particular suffix is to be emphasized, the stress
+may shift to that syllable. Suffixes indicating negation or emphasis
+(section 4.3) are frequently stressed, as is the interrogative
+suffix (section 4.2.9).
+
+In a noun, the stressed syllable is usually the syllable right
+before the first noun suffix, or the final syllable if there is no
+suffix. If, however, a syllable ending in {'} is present, it is
+usually stressed instead. If there are two syllables in a row {'}
+both ending in {'}, both are equally stressed.
+
+Finally, it should be noted that there are some words which seem to
+have variable stress patterns, with the stress sometimes heard on
+one syllable and sometimes on another. This phenomenon is not yet
+understood. The rules given above do not account for this
+variability, but if they are followed, stress will wind up on
+acceptable syllables.
+
+In the system used to transcribe Klingon in this dictionary, stress
+is not indicated.
+
+===============================================================
+
+Ur <The Klingon Dictionary>:
+===============================================================
+
+Readers who wish do declaim <Khamlet> properly should be aware that
+the notes on stress in Okrand (2292), while accurate, are not always
+explicit. Therefore, the following brief guide may be of some help:
+
+Nouns are stressed on the final syllable of the stem: {ghóp} <hand>,
+{puyjáq} <nova>, {bortás} <revenge>. Any suffixes added on to the
+stem are not stressed: {puyjáqvam} <this nova>, {bortáSmey}
+<revenges>.
+
+However, if any syllable in a noun, whether in the stem or in a
+suffix, ends in a glottal stop, it is stressed instead of the the
+stem's final syllable. Thus: {bó'DIj} <court>, {ghopDú'} <hands>,
+{puyjaqvó'} <from the nova>. Adjacent syllables ending in glottal
+stops receive equal stress: {chú'wÍ'} <trigger>, although Klingon
+verse tends to stress the latter. Note that nouns derived from verbs
+are considered nouns: {vúm} <to work>, {vumwÍ'} <worker>,
+{vumtaHghách} <working>, {vumpú'ghach} <a bout of work>.
+
+Verbs are likewise stressed on the final syllable of the stem: {Dál}
+<to be boring>, {ghIpDÍj} <to court­martial>. Unlike nouns, if the
+first suffix after the verb ends in a glottal stop, the suffix is
+<not> stressed. Thus the verb <she has been an alien> is {nóvpu'},
+while the noun <aliens> in {novpú'}. If the suffix ending in a
+glottal stop is <other> than the first, then both it and the final
+syllable of the verb re stressed: {mughIpDÍjchoHDÍ'} <when she
+started court­martialling me>, {HóH'eghrupmó'} <because he was ready
+to suicide>.
+
+Semantically important suffixes can end up stressed instead of the
+verb stem. In practice in Klingon metre (which systematises this
+tendency) negative and interrogative suffixes are <always> stressed:
+{jIDalbé'} <I am not boring>, {bImatlhHá'} <you are disloyal>,
+{luDelQó'} <they refuse to describe it>, {chol'á'} <is he coming?>
+Note that adjectival verbs are considered verbs: {'útlh mátlhqu'} <a
+truly loyal officer>. There are often cases where monosyllabic verbs
+and nouns are juxtaposed. In this text, adjectival verbs and subject
+nouns tend to be stressed more strongly, following an iambic
+pattern. Thus {'utlh mátlh} <a loyal officer>, {matlh 'útlh} <the
+officer is loyal>.
+
+===============================================================
+
+
+
+
+------------------
+¹ Jag bortser helt ifrån fraserna på första sidan i boken, då
+samtliga av dessa också förekommer i fusk­listan.
+
+² Vilken nu är den tredje översättningen (till klingonska) av verket
+ifråga som hittat vägen till min bokhylla.
+
+³
+
+
+Annat:
+{ghobé'} {HIjá'} {HISláH} {majQá'} {nuqnéH}
+
+Subst:
+{bIghHá'Daq} {Dóchvam} {Dóchvetlh} {DújlIj'e'} {ghÍchraj} {Há'DIbaH}
+{mÍvvam} {naDevvó'} {naDév} {puchpá''e'} {Qaplá'} {QumwÍ'wIj}
+{qúSDaq} {tlhÍngan} {tlhInganpú'} {tlháqwIj} {táchDaq} {wáqwIj}
+{veQDúj} {núqDaq}
+
+Verb:
+{bIHégh} {bIjeghbé'chugh} {bIjátlh} {bIlughbé'} {bIléSnIS} {bIlúgh}
+{bImoHqú'} {bInép} {bIpIvHá'law'} {bá'lu''a'} {chop'á'}
+{chu'Há'lu'pu'} {Dajatlh'á'} {DalaD'á'} {DanéH} {Dapól}
+{Daqáwlu'taH} {Do'Há'} {Du'ÍHchoHmoH} {DÍlmeH} {HIghóS} {HIjól}
+{jIQóng} {jISáHbe'} {jIwúQ} {jIyájbe'} {jIyáj} {jÍHpu'bé'}
+{jÍHtaHbogh} {jáblu'DÍ'} {maghóm} {QaQqú'} {qaSuj'á'} {qay'bé'}
+{qáStaHvIS} {qétbogh} {SÍjlaH} {tIvóqtaH} {tujqú'choH} {tú'lu'}
+{tújchoHpu'} {vIghajbé'} {vIghÍtlhta'bogh} {vIjátlhlaHbé'}
+{vIlamHá'choHmoH} {vIlán} {vIléghpu'} {vIló'} {vISovbé'}
+{vISóplaHbé'} {vItlhútlhlaHbé'} {vItá'pu'bé'} {vItú'laHbé'} {wIgháj}
+{yaj'á'} {yIchú'} {yIDÍl} {yIghóS} {yIHótlh} {yIja'Qó'} {yIjatlhQó'}
+{yIjé'} {yImév} {yItámchoH} {'oy''á'}
+
+subst+adj:
+{Qe' QáQ'e'} {wanÍ' ramqú'} {bortáS bIr} {wa' ram} {loS SaD Hugh}
+
+monosyllabic words (not useful):
+
+{batlh} {chay'} {DaH} {ghorgh} {lu'} {luq} {not} {pItlh} {Qo'} {reH}
+{toH} {tugh} {vaj} {'ar} {'e'} {'oH} {loS SaD} {wa'}
+
+{bIQ} {Duj} {ghItlh} {Hol} {Huch} {jol} {loD} {nay'} {nIn} {pa'}
+{pIch} {QuQ} {yuch} {Hugh} {ram} {Qe'}
+
+{boch} {qaS} {bIr}
+
+
+====================================================================
+
+Nouns:
+
+  o The final syllable of the noun stem is stressed (except if
+    another syllable ends in a glottal stop, see below).
+
+  o If any syllable (suffix or syllable in the noun stem) ends in a
+    glottal stop it is stressed instead.
+
+  o If there are more than one syllable ending in a glottal stop,
+    then they are equally stressed.
+
+  o Nouns derived from verbs (using {­wI'} or {­ghach}) are
+    considered nouns.
+
+  o Compound nouns are stressed as simple nouns (i.e. only the last
+    noun's final syllable is actually considered a final syllable).
+
+
+Verbs:
+
+  o The first prefix is never stressed.
+
+  o The final syllable of the verb stem is stressed (except if a
+    suffix is emphasized, see below).
+
+  o The first verb suffix is not stressed (except if it is
+    emphasized, see below).
+
+  o All suffixes, apart from the first, are stressed if they end
+    in a glottal stop. (unless some suffix is emphasized, see
+    below).
+
+  o If a suffix is emphasized, then it is the *only* syllable in
+    the word that is stressed.
+
+    The most commonly emphasized suffixes are the ones indicating
+    negatation ({­be'}/{­Ha'}/{­Qo'}), emphasis ({­qu'}) and the
+    interrogative suffix ({­'a'}).
+
+  o Adjectival verbs are considered verbs.
+
+
+Exclamations (adverbials etc?):
+
+  o The final syllable is stressed.
+
+====================================================================

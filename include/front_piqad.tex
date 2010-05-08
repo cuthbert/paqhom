@@ -1,0 +1,49 @@
+% Summary:
+%
+% This is the front cover art of both the English and Swedish
+% versions of the dictionary. It is included by the
+% "swedish/cover.tex" and "english/cover.tex" files and cannot be
+% compiled by itself (lacking the "\begin{document}...
+% \end{document}" for it).
+%
+%
+%
+%
+%\newfont{\kling}{pIq scaled 1000}
+%
+% *** Front Cover
+\thispagestyle{empty}                          % no header or footer here
+
+\begin{center}
+
+\vspace*{\stretch{1}}                          % define vertical strech
+
+\fboxrule=1mm\fboxsep=1mm\fbox{\fboxrule=2mm\fboxsep=5mm\fbox{%
+  \parbox{8.75cm} {\begin{center}%
+    \parbox[b][1.2cm]{8.75cm}{\vfill\centering\KII{tlhIng\hspace{-.2em}an Hol}\vfill}\\
+    \vspace{2mm}
+    \parbox[b][1.2cm]{8.75cm}{\vfill\centering\KII{mu'ghom mach}\vfill}\\
+  \end{center}}%
+}}
+
+
+\vspace*{\stretch{2}}                          % define vertical strech
+
+%  [KA-logo]                                     % KAs logo
+
+\vspace*{\stretch{2}}                          % define vertical strech
+
+\parbox[b][1cm]{\linewidth}{\vfill\centering\K{%
+  DIS cha'SaD cha'\,\,\,%
+  \raisebox{1.5mm}{\scalebox{1}[.8]{$\blacktriangledown$}}\,%
+  gherta' maHvatlh\,%
+  \raisebox{1.5mm}{\scalebox{1}[.8]{$\blacktriangle$}}%
+}\vfill}\\
+\parbox[b][1cm]{\linewidth}{\vfill\centering\K{%
+  'upSala tlhIng\hspace{-.2em}an Hol yej'an\,%
+  \raisebox{1.5mm}{\scalebox{1}[.8]{$\blacktriangle$}}%
+}\vfill}\\
+
+\end{center}
+
+\newpage                                        % Pagebreak

@@ -1,0 +1,15 @@
+
+
+The correct names of the values are:
+
+  \tokliwords   *not* \engwords
+  \toklidate    *not* \engcompiledate  # this is not used
+  \fromkliwords *not* \kliwords
+  \fromklidate  *not* \klicompiledate  # this is not used
+
+
+Also, how should the \edition value be updated (should be done
+automatically)?
+
+The script should generate a "values.tex" files, which could easily be
+included in the book.

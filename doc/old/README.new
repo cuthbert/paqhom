@@ -1,0 +1,303 @@
+{tlhIngan Hol mu'ghom mach} - A Klingon/English pocket dictionary.
+Copyright (C) 1997-2001 Zrajm C Akfohg.
+
+GNU License?
+
+
+Description
+-----------
+
+{tlhIngan Hol mu'ghom mach} is a compact Klingon­English/English­Klingon
+dictionary. It's pocket sized so that you (or me) may always take with you.
+
+
+An Apology
+----------
+
+I have made no attempt at translating the different specifications into
+American standards. I wish to point out that this is due to laziness, not
+arrogance. So if you for some reason do the job of figuring out the sizes in
+inches, names of staples and paper thickness etc., feel free to contact me
+with that information, and I'll include it here.
+
+The above explanation also holds good about the phonetic transcription table
+on the inside of the front cover. The sounds of Klingon are there given in
+I.P.A. (International Phonetic Alphabet) which, as far as I know, is a
+standard mostly used European linguists, and not in common use in the US.
+
+
+Parts Needed (Requirements)
+---------------------------
+
+
+
+
+
+Structure of the LaTeX Document
+-------------------------------
+
+There is a small pronunciation guide in the preface of the
+dictionary, as well as explanations to all abbreviations and sources
+used.
+
+On the final page of the dictionary (the back cover) there is a verb
+prefix chart. - This chart probably looks a bit different from what
+you're used to, but it is my belief that you (like me) soon wouldn't
+like to have it any other way.
+
+The ``subject'' and ``object'' headlines have been rearranged to
+better reflect the Klingon word order, and instead of the usual
+``first, second, third person singular; first, second, third person
+plural'' arrangement we have mixed the plurals and singulars together
+so that all first persons (both singular and plural) are next to each
+other.  This makes all identical prefixes come in adjacent cells (the
+only exception is {yI-}) and makes possible to look up a Klingon
+prefix *much* quicker, since you don't have to search the whole table
+again and again for alternate meanings.
+
+This archive consists of two postscript files; the cover, and the
+main text. You will probably want to print the cover on a thicker
+paper, since this will make your copy of the dictionary more
+resistant to everyday wear.
+
+
+
+Intentions
+----------
+
+It is my intention that the dictionary should be printed and stapled
+to form a book (more detailed instructions below), but of course you
+may use it in whatever way you wish, as long as you give me credit
+for the work I've done.
+
+
+Other languages?
+----------------
+
+I'm preparing a Swedish translation of this dictionary. The Dictionary part
+is completely translated, as well as the preface. Right now there is some
+editing to make it all fit on the pages, is all that is needed to make the
+Klingon­Swedish/Swedish­Klingon pocket dictionary a reality. However I have
+been procrastinating this for a long time (nothing but laziness) if you feel
+that you'd like one, please feel free to nag me about it (see ''Contacting
+Me'' at the end of this document).
+
+
+Assembly Instructions
+---------------------
+
+The book is in A6 format but prints on standard A4, with eight book pages on
+each A4 paper (four pages on each side). Assembling the dictionary involves
+cutting the printout it in half, folding it, then staple it the fold. You
+might also want take special steps to make the cover more restistant to wear
+and tear (highly recommended!).
+
+Recipe for {tlhIngan Hol mu'ghom mach} (one copy).
+
+Ingredients:
+
+   20 sheets of normal A4 paper (usually 80 or 90 g)
+   1 sheet of thick A4 paper (160 g, or as thick as you printer can handle)
+   2-3 staples (of size 24/8+)
+
+You also need:
+
+   1 computer
+   1 printer (preferably double sided)
+   1 sharp knife (preferably of the kind used for wallpaper)
+   1 ruler (preferably metal)
+   1 stapler suitable for 24/8+ staples
+
+Optional (recommended):
+
+   2-3 dm duct tape
+   approx. 2×3 dm self­adhesive transparent plastic
+   1 permanent marker pen
+
+Print the dictionary cover (the file ``cover-A4.ps'') on the thick sheet of
+paper. The thicker the sheet the better, as a thick cover *greatly*
+increases the book's resistance to wear and tear. (Which you'll need, if you
+plan to keep it in you pocket at all times.) The upper limit on thickness is
+will be dependent on your printer, and I have found that 160 g is the
+thickest my printer agrees with. (If you'd like can also use a coloured
+sheet of paper for the cover, but if you do that, you might want to be
+careful not to choose to dark a colour as there are important reference
+tables on both the inside and back side of the cover.) Note also that the
+cover document actually prints two covers (on one sheet) so if you're
+printing more that one dictionary, you only have to print one cover for
+every other copy of the book.
+
+Print the dictionary contents (the file ``main-A6.ps'') using the normal
+printer paper.
+
+Notes single sided printing: If your printer is single sided you could
+probably us a tool such as ``pstops'' (Linux) to extract and print the odd
+numbered pages first, and then the even numbered pages on the back of those.
+But I've never done this, so you're on your own.
+
+After printing, put all the pages in one pile and cut that in half, from
+long side to long side. I usually accomplish this by taking another sheet of
+A4 and folding it into half, then putting that on top of the pile for
+guidance, cutting using a steel ruler and a sharp knife. Be careful to make
+the cut as parallel to the short sides of the paper as possible.
+
+Now you have two piles of paper (in A5 format). Remove the two covers and
+put the remaining two piles on top of each other, carefully checking the
+page numbering to see that it is continous. If all is correct than one side
+of the pile should be the center spread of the book, and the other side
+should be the half­title page, and the last page of the book.
+
+Now, to make your book more resistant to wear and tear you could (and
+should, if you're serious about this) strengthen the cover.
+
+After a couple of months use the staples tend penetrate the cover sheet, to
+prevent this you may reinforce the back of the book with a piece of duct or
+fabric tape. Fold the cover, and apply the tape over and along the fold (if
+you keep the cover folded while putting the tape in place, there will be a
+tiny fold in the tape when it is in place, that fold decreases the stress on
+the tape, and makes the finished cover fold more nicely). Cut the tape along
+the edge of the sheet and avoid tape on the inside of the cover, as there is
+a couple of reference tables there you'll probably end up using a lot.
+
+After a while the the cover usually gets dog­eared and some of the cover
+print tends to get worn off (not to mention that it gets dirty). To prevent
+this, wrap it in transparent plastic. This is tedious (at least if you do
+more than one) but greatly increases the life of the book.
+
+Now put your cover on top of the pile, align the pages, and staple them
+together in the cover fold. Make sure that you're using 24/8+ staples (not
+the weaker 26/6, as they won't be able to staple through that many pages).
+Should you get the staples slight off (my a couple of millimeters or so) the
+book will look a bit askew, but this tends to get better with time.
+
+Fold. The book is quite thick, so the first fold you make will not look that
+nice and the pages will sprawl a bit. You can decrease the sprawling by
+making several folds, in parallel and very close to each other (making the
+fold rounder). However the sprawling will decrease with the time spend in
+your pocket, you this should not be a major problem.
+
+To make it easier to find the Klingon­English and English­Klingon parts, you
+might want to mark them on the edge of the book using a permanent marker.
+
+
+History
+-------
+
+16 January 1997 (called ``A Small Klingon--English Dictionary'')
+
+The first, and very primitive version of this pocket dictionary was printed.
+It contained only a Klingon­English side, and there were no reference
+tables at all.
+
+
+27 March 1997
+
+
+24 April 1997 (called ``{Hol pab je mu'ghomHom}'')
+
+A third, reworked edition. It contained neither affix tables nor grammar,
+even though the title implies that.
+
+The production of this dictionary was somewhat automated, and I used a
+friends Atari ST (since my own Amiga 1200 had broken down) to sort the
+wordlist, using a homewritten Klingon (bubble) sort algorithm - the sorting
+took more than twelve hours. Layout was done using Word, and all the pages
+where reduced from A4 to A6 using a photocopier. When making my first copy
+of this, I realised that all the pages had been placed in the wrong order,
+so that each pile of pages had to be manually resorted before it could be
+stapled into a book.
+
+``West Coast Trekkers'' (nowadays called ``Swedish Trekkers'') had a Star Trek
+Con called ``Star Treff ­97'', at which I sold some 20-30 copies of this
+edition.
+
+
+18 April 1998
+
+Second print of the third version. This print featured a new preface
+(written in Swedish and slightly adapted for Swedish conditions) with a
+guide to Klingon pronunciation.
+
+Since it was such work to produce an original, I did not do this again.
+Instead the preface was simply inserted into the middle of the book.
+
+
+16 July 2000
+
+Fourth, completely reworked edition. The book itself is now written in LaTeX
+and maintained on the Linux machines I have access to at the Uppsala
+University. The dictionary contents is automatically extracted using home
+written programs (in ARexx) from a database that I use and maintain at home
+on my Amiga 1200 computer.
+
+This edition features the new Klingonska Akademien­style verb prefix table.
+And a preface with a description of the pronunciation.
+
+Markus and I brought five or six copies of this edition with us to the
+{qep'a' SochDIch} in Philadelphia where one of these were actually given to
+Marc Okrand.
+
+
+3 March 2001
+
+Fifth edition. Klingon front cover. Suffix Type tables. A {pIqaD} and
+pronunciation table. Notes on stress in Klingon.
+
+
+7 August 2001
+
+Sixth edition. Added punctuation to the {pIqaD} front cover, added
+some new words.
+
+Gave one of these to Marc Okrand at {qep'a' chorghDIch} in
+Brussels. He said had used the previous one quite a lot. I offered to
+send him future editions. He agreed.
+
+
+22 January 2002
+
+Seventh edition, 134 pages. Appendix with a more complete suffix guide
+added. Suffix tables now contains info on number of suffixes as well. Added
+the words from HolQeD 10:4 (mostly about birds). Now completely maintained
+using computers running Linux. Old programs to extract the dictionary
+contents from database re­written in Perl.
+
+
+Future
+------
+
+  o I hope to change the sans serif typeface into one with a distinct
+    capital i, and lower case l. The typeface used in ``Svenska
+    Akademiens ordlista'', or something similar would be great.
+
+  o I hope to add the emblem of ``Klingonska Akademien'' to the front
+    cover.
+
+  o A Swedish version.
+
+  o Improvement of the new suffix addendum.
+
+
+Contacting Me
+-------------
+
+Send an email to me at <zrajm@klingonska.org>. Periodically my reply rate
+isn't all that good, but you'll probably get a reply withing (at most) a
+month, usually a lot faster. You could also call me, using +4618 500 911
+(internationally) or 018-500 911 (within Sweden). I speak Swedish, English,
+and some Klingon. If you prefer snailmail, use this address:
+
+    Zrajm C Akfohg
+    Villavägen 33, 2tr
+    S-752 36 Uppsala
+    SWEDEN
+
+For additional information abouth the Klingon language you might also want
+to take a look at the ``Klingonska Akademien'' website. The address is:
+
+    http://www.klingonska.org/
+
+
+Zrajm C Akfohg, founder of Klingonska Akademien
+27 August 2000 and 5 December 2001
+Uppsala, Sweden

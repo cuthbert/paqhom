@@ -1,0 +1,746 @@
+\usepackage[T1]{fontenc}                     % allow åäö
+\usepackage{vmargin}                         % to set margins
+\usepackage{fancyheadings}                   % load fancy headers
+\usepackage{fixmarks}                        % header patch for 2 columns
+\usepackage{multicol}                        % two column package
+\usepackage{rotate}                          % to rotate reference tables 
+\usepackage{graphics}                        % used by the \× command
+\usepackage{amssymb}                         % black triangles (cover)
+\usepackage{colortbl}                        % color tables (cover)
+\usepackage{hhline}                          % horiz lines for colortable (cover)
+\usepackage{multirow}                        % for tables (cover)
+\usepackage{zrajm}                           % my own stuff
+
+\usepackage{ifthen}                          % enable \ifthenelse & \whiledo
+\usepackage{calc}                            % simple arithmetics 
+\usepackage{tipa}                            % i.p.a. typeface
+\usepackage{avantgar}                        % typeface "Avantgarde" (sans)
+%\newcommand{\sans}{\usefont{OT1}{pag}{m}{n}}% åäö doesn't show using this
+\newcommand{\sans}{\usefont{T1}{pag}{m}{n}}  % åäö works ok
+\usepackage{charter}                         % typeface "Charter" (serif)
+% Last selected typeface becomes the document default.
+
+
+\renewcommand{\small}{\fontsize{12pt}{14.4pt}\selectfont}     % small text
+\renewcommand{\normalsize}{\fontsize{16pt}{19.2pt}\selectfont}% normal text
+\renewcommand{\large}{\fontsize{20pt}{24pt}\selectfont}   % headers/footers
+\renewcommand{\Large}{\fontsize{20pt}{24pt}\selectfont}   % sectional headings
+\renewcommand{\LARGE}{\fontsize{24pt}{28.8pt}\selectfont} % not used
+\renewcommand{\huge}{\fontsize{32pt}{38.4pt}\selectfont}  % prefix table header
+\renewcommand{\Huge}{\fontsize{32pt}{38.4pt}\selectfont}  % front cover name
+
+
+
+
+% ================================
+% English­Klingon Dictionary Entry
+% ================================
+%
+%   #1 = English lookup word
+%   #2 = Klingon word
+%   #3 = Part­of­speech
+%   #4 = 'slang' or 'regional' etc.
+%   #5 = English explanation of the word
+%        (if Ø then the explanation equals the lookup word)
+%        (the lookup word is replaced by \×, which generates a tilde)
+%
+\newlength{\argwidth}
+\newcommand{\lueng}[5]{%
+  \par%
+  \setlength{\hangindent}{1em / 2}%        % set hanging indent
+  {\sans\B{#1}}%                           % english lookup word (sansserif)
+  \markboth{#1}{#1}%                       % page header info
+  \ \textit{#3}%                           % part-of-speech
+  \ifthenelse{\equal{#4}{}}{}%             % regional/slang info (if any)
+    {{\small\ #4}}%                        % --||--
+  \ \B{#2}%                                % klingon word
+  \settowidth{\argwidth}{#5}%              % english definition
+  \ifthenelse{\lengthtest{\argwidth>0cm}}% % --||--
+    {\ #5}{}%                              % --||--
+}
+
+% ================================
+% Klingon­English Dictionary Entry
+% ================================
+%
+%   #1 = Klingon (lookup) word
+%   #2 = part­of­speech
+%   #3 = 'slang' or 'regional' etc.
+%   #4 = English explanation of the word
+%   #5 = source
+%        (if Ø then source=TKD)
+%
+\newcommand{\lukli}[5]{%
+  \par%
+  \setlength{\hangindent}{1em / 2}%        % set hanging indent
+  {\sans\B{#1}}%                           % klingon lookup word (sansserif)
+  \markboth{#1}{#1}%                       % page header info
+  \ \textit{#2}%                           % part of speech
+  \ifthenelse{\equal{#3}{}}%               % regional/slang info (if any)
+    {}{{\small\ #3}}%                      % --||--
+  \ #4%                                    % english definition
+  \ifthenelse{\equal{#5}{}}%               % source (if not TKD)
+    {}{{\small\ [#5]}}%                    % --||--
+}
+
+
+% used when going from one letter to
+% another in the dictionary
+% [2001­03­03] Zrajm C Akfohg
+\newcommand{\newletter}{%
+  \par%
+%  \vspace{\baselineskip}%
+  \vspace{\baselineskip}%
+}
+
+
+
+
+% section headings (how could the `\section'
+% command could be made to do this instead?)
+\newcommand{\header}[1]{%
+  \vspace{7mm}%
+  {\noindent\Large\B{#1}}%
+  \vspace{3mm}%
+}
+
+% used for outputting the description of
+% the klingon sounds in the preface
+\newcommand{\phonexpl}[3]{%
+  \hang{%
+    \sans\B{#1}%
+  } #2% {\small [#3]}%    % phonetic descriptions turned off
+}
+
+
+% =================================================================
+% Set Values for \NumElementList, \NounSuffixList & \VerbSuffixList
+% =================================================================
+% [2000­10­25] Written by Zrajm C Akfohg.
+%
+% This routine sets the values associated with tables to nice
+% defaults - also my own \sufcolwidth length is set, which is
+% needed by all the above mentioned affix listing routines.
+%
+\newlength{\sufcolwidth}%
+\newcommand{\PrepAffixLists}{%
+  \fboxsep=0pt%
+  \tabcolsep=0mm%
+  \doublerulesep=0mm%
+  \arrayrulewidth=.6mm%
+  \parindent=0mm%
+    \setlength{\sufcolwidth}{\textheight}%
+    \addtolength{\sufcolwidth}{-11\arrayrulewidth}%
+    \setlength{\sufcolwidth}{.1\sufcolwidth}%
+}
+
+
+
+% ===========================================================
+% Title strings for the numeric element list and affix lists.
+% ===========================================================
+% [2001­12­12] Written by Zrajm C Akfohg.
+%
+% This tests if my \dictlanguage "variable" equals "swedish",
+% if it does, the titles of the affix tables are set to their
+% Swedish translations, otherwise the English titles are used.
+%
+\ifthenelse{\equal{\dictlanguage}{swedish}}{%
+    %%%%%%%%%%%%%%%%%%
+    % for the suffix tables
+    \newcommand{\VerbSuffixListTitle}{Verbsuffix (36 st)}%
+    \newcommand{\NounSuffixListTitle}{Substantivsuffix (26 st)}%
+    \newcommand{\NumElementListTitle}{Numeriska element}%
+    %%%%%%%%%%%%%%%%%%
+    % for the prefix table
+    \newcommand{\VerbPrefixTableTitleSubject}{%
+      \centering\Huge%
+      \parbox[c]{1em}{%
+        \centering\B{S\\U\\B\\J\\E\\K\\T}%
+      }%
+    }%
+    \newcommand{\VerbPrefixTableTitleObject}{
+      \Huge\B{\hspace{\stretch{3}}%
+        O\hspace{\stretch{1}}%
+        B\hspace{\stretch{1}}%
+        J\hspace{\stretch{1}}%
+        E\hspace{\stretch{1}}%
+        K\hspace{\stretch{1}}%
+        T\hspace{\stretch{3}}%
+        \raisebox{\depthof{g} * \real{-2}}{%
+          \rule{0mm}{(\depthof{g} * 4) + \heightof{O}}%
+        }%
+      }%
+    }%
+}{%
+    %%%%%%%%%%%%%%%%%%
+    % for the suffix tables
+    \newcommand{\VerbSuffixListTitle}{Verb Suffixes (36 total)}%
+    \newcommand{\NounSuffixListTitle}{Noun Suffixes (26 total)}%
+    \newcommand{\NumElementListTitle}{Numeric Elements}%
+    %%%%%%%%%%%%%%%%%%
+    % for the prefix table
+    \newcommand{\VerbPrefixTableTitleSubject}{%
+      \centering\Huge%
+      \parbox[c]{1em}{%
+        \centering\B{S\\U\\B\\J\\E\\C\\T}%
+      }%
+    }%
+    \newcommand{\VerbPrefixTableTitleObject}{
+      \Huge\B{\hspace{\stretch{3}}%
+        O\hspace{\stretch{1}}%
+        B\hspace{\stretch{1}}%
+        J\hspace{\stretch{1}}%
+        E\hspace{\stretch{1}}%
+        C\hspace{\stretch{1}}%
+        T\hspace{\stretch{3}}%
+        \raisebox{\depthof{g} * \real{-2}}{%
+          \rule{0mm}{(\depthof{g} * 4) + \heightof{O}}%
+        }%
+      }%
+    }%
+}
+
+
+% ======================
+% Numerical Element List
+% ======================
+% [2000­10­25] Written by Zrajm C Akfohg.
+%
+% This routine produces a reference list of the Klingon
+% number­forming elements (without English translations).
+%
+\newcommand{\NumElementList}{%
+\normalsize\begin{tabular}[b]{cccccl}
+  &\multicolumn{5}{l}{{\B{\Large\NumElementListTitle}}\vspace{1.5mm}}%
+\\\cline{1-5}%
+%  \vline&\parbox[c][2em]{\sufcolwidth}{~}&%
+%  \vline&\parbox[c][2em]{\sufcolwidth}{~}&\vline
+%  &\hfill
+%\\\cline{1-5}%
+%  \vline&\B{-maH}&
+%  \vline&\B{-DIch}&\vline
+  \vline&\parbox[c]{\sufcolwidth}{\centering\B{-maH}}&
+  \vline&\parbox[c]{\sufcolwidth}{\centering\B{-DIch}}&\vline
+\\%
+  \vline&\B{-vatlh}&
+  \vline&\B{-logh}&\vline
+\\\cline{3-5}%
+  \vline&\B{-SaD}&\vline
+\\%
+  \vline&\B{-SanID}&\vline
+\\%
+  \vline&\B{-netlh}&\vline
+\\%
+  \vline&\B{-bIp}&\vline
+\\%
+  \vline&\B{-'uy'}&\vline
+\\\cline{1-3}%
+\end{tabular}}
+
+
+
+
+% ================
+% Noun Suffix List
+% ================
+% [2000­10­25] Written by Zrajm C Akfohg.
+%
+% This routine produces a reference list of the Klingon
+% noun suffixes and their type (without English translations).
+%
+\newcommand{\NounSuffixList}{%
+\normalsize\begin{tabular}[b]{ccccccccccc}
+  &\multicolumn{10}{l}{{\B{\Large\NounSuffixListTitle}}\vspace{1.5mm}}%
+\\\hline%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{1}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{2}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{3}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{4}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{5}}&\vline%
+\\\hline%
+  \vline&\B{-'a'}&%
+  \vline&\B{-pu'}&%
+  \vline&\B{-qoq}&%
+  \vline&\B{-wIj}&%
+  \vline&\B{-Daq}&\vline%
+\\%
+  \vline&\B{-Hom}&%
+  \vline&\B{-Du'}&%
+  \vline&\B{-Hey}&%
+  \vline&\B{-wI'}&%
+  \vline&\B{-vo'}&\vline%
+\\%
+  \vline&\B{-oy}&%
+  \vline&\B{-mey}&%
+  \vline&\B{-na'}&%
+  \vline&\B{-maj}&%
+  \vline&\B{-mo'}&\vline%
+\\\cline{1-7}%
+  &&&&&&%
+  \vline&\B{-ma'}&%
+  \vline&\B{-vaD}&\vline%
+\\%
+  &&&&&&%
+  \vline&\B{-lIj}&%
+  \vline&\B{-'e'}&\vline%
+\\\cline{9-11}%
+  &&&&&&%
+  \vline&\B{-lI'}&%
+  \vline&&%
+\\%
+  &&&&&&%
+  \vline&\B{-raj}&%
+  \vline&&%
+\\%
+  &&&&&&%
+  \vline&\B{-ra'}&%
+  \vline&&%
+\\%
+  &&&&&&%
+  \vline&\B{-Daj}&%
+  \vline&&%
+\\%
+  &&&&&&%
+  \vline&\B{-chaj}&%
+  \vline&&%
+\\%
+  &&&&&&%
+  \vline&\B{-vam}&%
+  \vline&&%
+\\%
+  &&&&&&%
+  \vline&\B{-vetlh}&%
+  \vline&&%
+\\\cline{7-9}%
+\end{tabular}}
+
+
+
+% ================
+% Verb Suffix List
+% ================
+% [2000­10­25] Written by Zrajm C Akfohg.
+%
+% This routine produces a reference list of the Klingon
+% verb suffixes and their type (without English translations).
+%
+\newcommand{\VerbSuffixList}{%
+\normalsize\begin{tabular}[b]{ccccccccccccccccccccc}
+  &\multicolumn{20}{l}{{\B{\Large\VerbSuffixListTitle}}\vspace{1.5mm}}%
+\\\cline{1-21}%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{1}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{2}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{3}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{4}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{5}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{6}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{7}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{8}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{9}}&%
+  \vline&\parbox[c][1.5em]{\sufcolwidth}{\centering\Large\B{R}}&\vline%
+\\\hline%
+  \vline&\B{-'egh}&%
+  \vline&\B{-nIS}&%
+  \vline&\B{-choH}&%
+  \vline&\B{-moH}&%
+  \vline&\B{-lu'}&%
+  \vline&\B{-chu'}&%
+  \vline&\B{-pu'}&%
+  \vline&\B{-neS}&%
+  \vline&\B{-DI'}&%
+  \vline&\B{-be'}&\vline%
+\\\cline{7-9}\cline{15-17}%
+  \vline&\B{-chuq}&%
+  \vline&\B{-qang}&%
+  \vline&\B{-qa'}&%
+  \vline&&%
+  \vline&\B{-laH}&%
+  \vline&\B{-bej}&%
+  \vline&\B{-ta'}&%
+  \vline&&%
+  \vline&\B{-chugh}&%
+  \vline&\B{-Qo'}&\vline%
+\\\cline{1-3}\cline{5-7}\cline{9-11}&&%
+  \vline&\B{-rup}&%
+  \vline&&&&&&%
+  \vline&\B{-law'}&%
+  \vline&\B{-taH}&%
+  \vline&&%
+  \vline&\B{-pa'}&%
+  \vline&\B{-Ha'}&\vline%
+\\&&%
+  \vline&\B{-beH}&%
+  \vline&&&&&&%
+  \vline&\B{-ba'}&%
+  \vline&\B{-lI'}&%
+  \vline&&%
+  \vline&\B{-vIS}&%
+  \vline&\B{-qu'}&\vline%
+\\\cline{11-15}\cline{19-21}&&%
+  \vline&\B{-vIp}&%
+  \vline&&&&&&&&&&&&%
+  \vline&\B{-bogh}&%
+  \vline&&%
+\\\cline{3-5}&&&&&&&&&&&&&&&&%
+  \vline&\B{-meH}&%
+  \vline&&%
+\\&&&&&&&&&&&&&&&&%
+  \vline&\B{-mo'}&%
+  \vline&&%
+\\&&&&&&&&&&&&&&&&%
+  \vline&\B{-'a'}&%
+  \vline&&%
+\\&&&&&&&&&&&&&&&&%
+  \vline&\B{-jaj}&%
+  \vline&&%
+\\&&&&&&&&&&&&&&&&%
+  \vline&\B{-wI'}&%
+  \vline&&%
+\\&&&&&&&&&&&&&&&&%
+  \vline&\B{-ghach}&%
+  \vline&&%
+\\\cline{17-19}%
+\end{tabular}}
+
+
+% ================
+% Verb Prefix List
+% ================
+% [2001­10­25] Written by Zrajm C Akfohg.
+%
+% This routine produces a reference table of the Klingon verb
+% prefixes (without English translations).
+%
+%%%%%%%%%%%%%%%%%%
+%% needed by the prefix table
+\newcommand{\VerbPrefixTablePrefixCell}[1]{\B{#1}&}
+\newcommand{\VerbPrefixTableEmptyCell}[1]{%
+  \multicolumn{1}{#1>{\columncolor[gray]{.8}}c|}{}&%
+}
+\newcommand{\VerbPrefixTablePronounCell}[1]{\B{#1}&}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\VerbPrefixTable}{%
+%
+\Large%
+\parindent=0mm%
+%
+\setlength{\fboxsep}{0cm}%           %% padding inside fbox
+\setlength{\fboxrule}{.6mm}%         %% line thickness of boxes
+\setlength{\tabcolsep}{2mm}%         %% horizontal padding in cells
+\setlength{\arrayrulewidth}{.6mm}%   %% line thickness in table
+%\renewcommand{\arraystretch}{1.3}%   %% height of table rows (broad back)
+\renewcommand{\arraystretch}{1.1}%   %% height of table rows (narrow back)
+\setlength{\extrarowheight}{1mm}%    %% add extra space above text in table
+%
+\fbox{\begin{tabular}{|c|c|c|c|c|c|c|c|r|}%
+\hline%
+  \multicolumn{7}{|c|}{\VerbPrefixTableTitleObject}&
+  \multicolumn{2}{c|}{}%
+\\\hhline{*{7}{|-}|~~|}%
+  \VerbPrefixTablePrefixCell{jIH}%
+  \VerbPrefixTablePrefixCell{maH}%
+  \VerbPrefixTablePrefixCell{SoH}%
+  \VerbPrefixTablePrefixCell{tlhIH}%
+  \VerbPrefixTablePrefixCell{%
+    \parbox[c][\height][c]{\widthof{ghaH}}{\centering
+      \vspace{2mm}%
+      ghaH\\'oH%
+      \vspace{2mm}%
+    }%
+  }
+  \VerbPrefixTablePrefixCell{%
+    \parbox{\widthof{chaH}}{%
+      \centering chaH\\bIH%
+    }%
+  }
+  \VerbPrefixTablePrefixCell{pagh}%
+  \multicolumn{2}{c|}{}%
+\\\hhline{*{9}{|-}|}
+  \VerbPrefixTablePrefixCell{HI-}%
+  \VerbPrefixTablePrefixCell{gho-}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTablePrefixCell{yI-}%
+  \VerbPrefixTablePrefixCell{tI-}%
+  \VerbPrefixTablePrefixCell{yI-}%
+  \VerbPrefixTablePronounCell{SoH (ra')}%
+  \multirow{9}{2em}{%
+    \VerbPrefixTableTitleSubject%
+  }%
+\\\hhline{*{8}{|-}|~|}
+  \VerbPrefixTablePrefixCell{HI-}%
+  \VerbPrefixTablePrefixCell{gho-}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTablePrefixCell{yI-}%
+  \VerbPrefixTablePrefixCell{tI-}%
+  \VerbPrefixTablePrefixCell{pe-}%
+  \VerbPrefixTablePronounCell{tlhIH (ra')}%
+\\\hhline{*{8}{|-}|~|}%
+  \VerbPrefixTableEmptyCell{|}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTablePrefixCell{qa-}%
+  \VerbPrefixTablePrefixCell{Sa-}%
+  \VerbPrefixTablePrefixCell{vI-}%
+  \VerbPrefixTablePrefixCell{vI-}%
+  \VerbPrefixTablePrefixCell{jI-}%
+  \VerbPrefixTablePronounCell{jIH}%
+\\\hhline{*{8}{|-}|~|}
+  \VerbPrefixTableEmptyCell{|}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTablePrefixCell{pI-}%
+  \VerbPrefixTablePrefixCell{re-}%
+  \VerbPrefixTablePrefixCell{wI-}%
+  \VerbPrefixTablePrefixCell{DI-}%
+  \VerbPrefixTablePrefixCell{ma-}%
+  \VerbPrefixTablePronounCell{maH}%
+\\\hhline{*{8}{|-}|~|}
+  \VerbPrefixTablePrefixCell{cho-}%
+  \VerbPrefixTablePrefixCell{ju-}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTablePrefixCell{Da-}%
+  \VerbPrefixTablePrefixCell{Da-}%
+  \VerbPrefixTablePrefixCell{bI-}%
+  \VerbPrefixTablePronounCell{SoH}%
+\\\hhline{*{8}{|-}|~|}
+  \VerbPrefixTablePrefixCell{tu-}%
+  \VerbPrefixTablePrefixCell{che-}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTableEmptyCell{}%
+  \VerbPrefixTablePrefixCell{bo-}%
+  \VerbPrefixTablePrefixCell{bo-}%
+  \VerbPrefixTablePrefixCell{Su-}%
+  \VerbPrefixTablePronounCell{tlhIH}%
+\\\hhline{*{8}{|-}|~|}
+  \VerbPrefixTablePrefixCell{mu-}%
+  \VerbPrefixTablePrefixCell{nu-}%
+  \VerbPrefixTablePrefixCell{Du-}%
+  \VerbPrefixTablePrefixCell{lI-}%
+  \VerbPrefixTablePrefixCell{-}%
+  \VerbPrefixTablePrefixCell{-}%
+  \VerbPrefixTablePrefixCell{-}%
+  \VerbPrefixTablePronounCell{ghaH/'oH}%
+\\\hhline{*{8}{|-}|~|}
+  \VerbPrefixTablePrefixCell{mu-}%
+  \VerbPrefixTablePrefixCell{nu-}%
+  \VerbPrefixTablePrefixCell{nI-}%
+  \VerbPrefixTablePrefixCell{lI-}%
+  \VerbPrefixTablePrefixCell{lu-}%
+  \VerbPrefixTablePrefixCell{-}%
+  \VerbPrefixTablePrefixCell{-}%
+  \VerbPrefixTablePronounCell{chaH/bIH}%
+\\\hhline{*{8}{|-}|~|}
+  \VerbPrefixTablePrefixCell{vI-lu'}%
+  \VerbPrefixTablePrefixCell{wI-lu'}%
+  \VerbPrefixTablePrefixCell{Da-lu'}%
+  \VerbPrefixTablePrefixCell{bo-lu'}%
+  \VerbPrefixTablePrefixCell{-lu'}%
+  \VerbPrefixTablePrefixCell{lu-lu'}%
+  \VerbPrefixTablePrefixCell{-lu'}%
+  \VerbPrefixTablePronounCell{vay'}%
+\\\hline
+\end{tabular}}}
+
+% ================================
+% Insert A Number of (Empty) Pages
+% ================================
+% [2000­10­26] Written by Zrajm C Akfohg.
+%
+% This routine inserts a number of empty pages into a
+% document to fill it out. If for example you are intending
+% to staple a folder or print a book, you need a specific
+% number of pages, e.g. divideble by four. Well, this little
+% thingy does just that.
+%
+% #1 = number of first page in the document (probably `1', but
+%      other numbers occur - `3' is quite common)
+% #2 = number of pages with print last in the book
+%      (i.e. the number of pages *after* the ones being inserted)
+% #3 = the number you want to be able to divde the book evenly in
+%      (probably something like `4' or `8' for a book)
+%
+\newcounter{noofpages}
+\newcounter{evennoofpages}
+\newcommand{\filloutpages}[3]{%
+  \setcounter{noofpages}{ \value{page} + #2 - #1 }%
+  \setcounter{evennoofpages}{ ( \value{noofpages} / #3 * #3 ) + #3 }%
+  \whiledo{\value{noofpages} < \value{evennoofpages}}{%
+    ~\clearpage\addtocounter{noofpages}{1}%
+  }%
+}
+
+
+
+% =============================================
+% Set a margins and some other useful distances
+% =============================================
+% [2001­02­28] Written by Zrajm C Akfohg.
+%
+% #1 is the left margin (on odd/right hand page)
+% #2 is the upper margin
+% #3 is the right margin (on odd/right hand page)
+% #4 is the lower margin
+% #5 is the height of header/footer
+% #6 is the distance between header/footer and main text
+% #7 is the thickness of the ruler header/footer and main text
+% #8 is the distance between columns
+% #9 is the thickness of the ruler between columns
+%
+% The margin space for notes is set to zero,
+% and header and footer are always set to the same size.
+% The «vmargin» package is used to set the margins.
+%
+% all nine arguments are required (ha!)
+\newcommand{\setmargz}[9]{%
+  %
+  %  The first four arguments of \setmarginsrb are used to set:
+  %    \oddsidemargin \evensidemargin \textwidth \topmargin \textheight
+  %  The next four sets:
+  %    \headheight \headsep \footheight \footskip
+  %
+
+  % page margins
+  \setpapersize{A4}                       % set papersize for vmargin
+  \setlength{\footskip}{#5 + #6}          % correct footskip
+  \setmarginsrb{#1}{#2}{#3}{#4}%          % left/upper/right/lower margin
+    {#5}{#6}{#5}{\footskip}               % head­y/headsep/foot­y/footskip
+  \setlength{\headwidth}{\textwidth}      % header/footer text width
+
+  % rulers and special margins
+  \setlength{\headrulewidth}{#7}          % head ruler thickness
+  \setlength{\footrulewidth}{#7}          % foot ruler thickness
+  \setlength{\columnsep}{#8}             % dist. between columns
+  \setlength{\columnseprule}{#9}             % dist. between columns
+  \setlength{\marginparsep}{0pt}          % del dist. between text & marg note
+  \setlength{\marginparwidth}{0pt}        % del width of margin note
+  %\setlength{\marginparpush}{0pt}        % min. dist. between margin notes
+}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                                        %%%
+%%%     C O D E   T H A T   I S   T O   B E   E R A S E D   B E L O W      %%%
+%%%                                                                        %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% ==========
+% Font sizes
+% ==========
+%\newlength{\headfontsize}                   % Add size for head/foot font 
+%\newlength{\headfontheight}                 % Add height for head/foot font
+%\newlength{\normalfontsize}                 % Add size for normal text
+%\newlength{\normalfontheight}               % Add height for normal text
+%\newlength{\smallfontsize}                  % Add size for small text
+%\newlength{\smallfontheight}                % Add height for small text
+% Make any changes here!!!
+%\setlength{\headfontsize}{20pt}             % Set size of head/foot font
+%\setlength{\headfontheight}{24pt}           % Set height of head/foot field
+%\setlength{\normalfontsize}{16pt}           % Set size of normal text
+%\setlength{\normalfontheight}{19.2pt}       % Set row height for nomal text
+%\setlength{\smallfontsize}{12pt}            % Set size of small text
+%\setlength{\smallfontheight}{14.4pt}        % Set row height for small text
+
+% ===================================================
+% Page formatting (margins, header/footer sizes etc.)
+% ===================================================
+
+
+%\newlength{\innermargin}                    % Add inner margin value
+%\newlength{\outermargin}                    % Add outer margin value
+%\newlength{\uppermargin}                    % Add upper margin value
+%\newlength{\lowermargin}                    % Add lower margin value
+%\newlength{\headfootsep}                    % Add head/foot separator value
+%\newlength{\headfootheight}                 % Add head/foot height value
+%\newlength{\headfootline}                   % Add head/foot line thickness
+% Make any changes here!!!
+%\setlength{\innermargin}{3cm}               % Set inner margin
+%\setlength{\outermargin}{2cm}               % Set outer margin
+%\setlength{\uppermargin}{1.5cm}             % Set upper margin value
+%\setlength{\lowermargin}{1.5cm}             % Set lower margin value
+%\setlength{\headfootsep}{5mm}               % Set head/foot separator value
+%\setlength{\headfootheight}{\headfontheight}% Set head/foot height value
+%\setlength{\headfootline}{1pt}              % Set head/foot line thickness
+
+
+%\newcommand{\setmargZ}{%
+% Calc necessary values for LaTeX (don't change!)
+%\setlength{\evensidemargin}{0cm}            % Even (or left) page margins
+%\setlength{\oddsidemargin}{\innermargin}    % Odd (or right) page margins
+%  \addtolength{\oddsidemargin}{-\outermargin}
+%\setlength{\hoffset}{-1in}                  % Horizontal offset
+%  \addtolength{\hoffset}{\outermargin}
+%\setlength{\textwidth}{\paperwidth}         % Text width
+%  \addtolength{\textwidth}{-\innermargin}
+%  \addtolength{\textwidth}{-\outermargin}
+%\setlength{\headwidth}{\textwidth}          %%% header/footer text width
+%\setlength{\voffset}{-1in}                  % Vertical offset
+%\setlength{\topmargin}{\uppermargin}
+%\setlength{\headheight}{\headfootheight}    % Head height
+%\setlength{\headsep}{\headfootsep}          % Head separator
+%\setlength{\footskip}{\headfootsep + \headfootheight} %%%
+%\setlength{\textheight}{\paperheight}       % Text height
+%  \addtolength{\textheight}{-\topmargin}
+%  \addtolength{\textheight}{-\headheight}
+%  \addtolength{\textheight}{-\headsep}
+%  \addtolength{\textheight}{-\footskip}
+%  \addtolength{\textheight}{-\lowermargin}
+%\setlength{\headrulewidth}{\headfootline}   % Thickness of header line
+%\setlength{\footrulewidth}{\headfootline}   % Thickness of footer line
+%}
+
+
+%% A large font for headers & footers
+%\newcommand{\headfont}{%
+%  \fontsize{\headfontsize}{\headfontheight}%
+%  \usefont{OT1}{bch}{m}{n}%         % see LaTeX2e p.54 '{enc}{fam}{ser}{shape}'
+%}
+
+%% A small serif font for comments etc.
+%\newcommand{\smllfont}{%
+%  \fontsize{\smallfontsize}{\smallfontheight}%
+%  \usefont{OT1}{bch}{m}{n}%
+%}
+
+%% A medium serif font for main text
+%\newcommand{\nrmlfont}{%
+%  \fontsize{\normalfontsize}{\normalfontheight}%
+%  \usefont{OT1}{bch}{m}{n}%
+%}
+
+%% A sans serif font for lookup words
+%\newcommand{\sansfont}{%
+%  \fontsize{\normalfontsize}{\normalfontheight}%
+%  \usefont{T1}{pag}{b}{n}%
+%}
+
+
+
+%%
+%% Klingon-English entries
+%%
+%%   #1 = Klingon (lookup) word
+%%   #2 = English definiton
+%%   #3 = word type (n, v, adv etc.)
+%%   #4 = extra info (regional, slang etc.)
+%%   #5 = source (only displayed if not TKD)
+%%
+%\newcommand{\lukli}[5]{%
+%  \hangindent=2.5mm%                       % set hanging indent
+%  {\sans\B{#1}}%                           % klingon lookup word (sansserif)
+%  \markboth{#1}{#1}%                       % page header info
+%  \ \textit{#3}%                           % part of speech
+%  \ifthenelse{\equal{#4}{}}%               % regional/slang info (if any)
+%    {}{{\small\ #4}}%                      % --||--
+%  \ #2%                                    % english definition
+%  \ifthenelse{\equal{#5}{TKD}}%            % source (if not TKD)
+%    {}{{\small\ [#5]}}%                    % --||--
+%}

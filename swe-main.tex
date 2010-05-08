@@ -1,0 +1,87 @@
+% This file does not include the cover.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% To Do (Future Improvements/Work in Progress):
+%
+%   o Include a more complete suffix reference.
+%   o A Swedish Translation.
+%   o Use the `vmargin' package to set margins
+%     instead of my own ad hoc code.
+%   o General clean­up of code & removal of
+%     old, unused code.
+%   o Make the back cover prefix table listen
+%     to margin etc and adapt.
+%   o Add `Klingonska Akademien' logotype to
+%     the front cover.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,twoside,draft]{article} % double sided, A4, draft
+\usepackage[swedish]{babel}                    % enable swedish typography
+\newcommand{\dictlanguage}{swedish}            % variable used by includes
+\input{include/commands}                       % include dictionary commands
+\input{include/swe/values}                     % date & no of words values
+\setmargz{3cm}{1.5cm}{2cm}{1.5cm}%             % left/upper/right/lower margin
+  {24pt}{5mm}{1pt}%                            % head & foot: height/sep/ruler
+  {5mm}{0pt}                                   % column separator
+
+
+\begin{document}
+\setcounter{page}{3}                           % first page = page 3
+\pagestyle{empty}                              % no header/footer
+
+\input{include/front_roman}                    % bastard title
+\input{include/swe/copyrightpage}              % copyright page
+
+
+% set footer for preface
+% (it will set its own headers since they are section dependant)
+%
+% E.g. \lhead[even/right pages]{odd/left pages} will set the leftmost
+% header of all pages. 
+
+\pagestyle{fancy}                              % fancy header/footer
+\cfoot{\large\textbf{Klingonska Akademien}}    %   all pages center foot
+\lfoot[\large\textbf{\thepage}]{}              %   even numbered pages
+\rfoot[]{\large\textbf{\thepage}}              %   odd numbered pages
+
+\input{include/swe/preface}                    % preface
+
+
+% header/footer for dictionary
+\lhead[\large\mbox{\textbf{\rightmark\,--\,\leftmark}}]{}% header's left column
+\rhead[]{\large\mbox{\textbf{\rightmark\,--\,\leftmark}}}% header's right column
+
+% text alignment for dictionary
+\raggedright                                   % non­justified text
+\raggedbottom                                  % don't fill pages vertically
+\begin{multicols}{2}                           % two columns 
+
+% Klingon­English dictionary
+\cfoot%                                        % page footer
+  [\large\textbf{Klingonska Akademien}]%       %   ..even/right pages
+  {\large\textbf{Klingonsk-svensk ordlista}}%  %   ..odd/left pages
+\input{include/swe/from_kli}                   % Klingon-English dictionary
+\clearpage
+
+% English­Klingon dictionary
+\cfoot%                                        % page footer
+  [\large\textbf{Klingonska Akademien}]%       %   ..even/right pages
+  {\large\textbf{Svensk-klingonsk ordlista}}%  %   ..odd/left pages
+\input{include/swe/to_kli}                     % English-Klingon dictionary
+\clearpage
+
+\end{multicols}
+
+
+
+% Insert blank fill out­pages
+% (These make sure that the total number of pages are evenly divideble
+% with four, so that the pages can be stapled into a book).
+\lhead[\large\textbf{Tom sida}]{}              % left header col
+\rhead[]{\large\textbf{Tom sida}}              % right header col
+\cfoot{\large\textbf{Klingonska Akademien}}    % footer
+\filloutpages{3}{0}{4}                         % blank pages
+
+
+\end{document}

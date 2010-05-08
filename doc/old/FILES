@@ -1,0 +1,111 @@
+[2001­02­28]
+[2001­03­01, 08.01-08.40]
+
+How do I assemble the book?
+
+You print both the cover and the main document on a printer which can
+print on both sides of the paper. Then you cut the stack of paper in
+half (this is easiest to do with a knife, since the papers have a
+tendency to glide away from each other when you use scissors) and put
+the two resulting stacks on top of each other. (Check the page
+numbering, so that you get it right.) Cut the cover into two in the
+same way, and put one of them on top of the main contents (again
+carefully checking the page numbering to see if you got it right).
+
+Now you should just have to staple in the middle of your pile of paper
+with some a-bit-stronger-than-standard staples and fold it. And you're
+done!
+
+(If you wish to make you pocket dictionary more resistant to wear and
+tear you might want to enhance the strength of the cover by applying
+duct tape to the back of it, or by wrapping it up in transparent
+plastic [or both] before you staple the book together.)
+
+
+Why separate the cover and main files?
+
+The reason for splitting the files into cover and main is twofold. (1)
+This makes it possible to print the cover and the contents of the
+dictionary on two different types of paper, so that one may use a
+thicker and/or colored paper for the covers. (2) This makes it
+possible to distribute the covers in two separate versions, one with a
+broader margin towards the back, so that there is room to strengthen
+it with duct tape. And one with a narrower margin closest to the back,
+when there is no need for that.
+
+
+Why the bizzare page numbering of the cover?
+
+The cover documents prints on one sheet of paper, but consists of two
+covers (since you cut it in half). Because of this the page numbering
+is a bit weird. (Pages 1-2 are repeated twice, then pages 3-4 are
+repeated twice.)
+
+
+What's the idea behind the file hierarchy?
+
+The idea here is to keep the main directory "pocketdict/" as clean
+as possible, it will only contain four files in the final version,
+and that is a Swedish and an English version of both the cover and
+the main text of the book. When LaTeX is run, it's always from this
+directory, so all .dvi, .aux, .log files etc will be written here,
+and hence kept in one place (where they can be easily sweept away if
+need arises).
+
+The "pocketdict/includes/" directory contains all sub­document used
+by the main documents. Those includes that are used by both the
+Swedish and English version resides here. Those files that are
+specific for the English version can be found in the directory
+"pocketdict/includes/eng/" and those specific for the swedish
+version resides in "pocketdict/includes/Swedish/" (these two
+directories should, in the finished version, contain files with the
+same file names, but with different translations of the text.
+
+The final directory "pocketdict/doc/" should contain some plain text
+files that are not necessary to build or compile the text, but that
+contains information about it. This documentation will (probably)
+only be available in English.
+
+
+
+
+ ==================================================================
+  eng-cover.tex            English cover of dictionary.
+  eng-main.tex             English contents of dictionary.
+    doc/                     Documentation (plain text files).
+**    betoning.txt             ** To­be­added­to­the­preface. **
+      files.txt                This file.
+      read.me                  Assembly instructions etc.
+    includes/                Files used by main documents.
+      commands.tex             Own LaTeX commands used.
+      front_piqad.tex          Klingon front page in pIqaD.
+      front_roman.tex          Klingon front page in roman letters.
+        eng/                     English­specific files
+          copyrightpage.tex        Copyright information.
+          from_kli.tex             Klingon­English dictionary.
+          preface.tex              Preface to the dictionary.
+          suffixtables.tex         Tables of Klingon suffixes.
+          to_kli.tex               English­Klingon dictionary.
+          values.tex               No of words, compile date etc.
+ ==================================================================
+
+
+
+Finally, here's a list of files that will be added in the future, as
+part of the Swedish translation of this dictionary.
+
+
+ ==================================================================
+  swe-cover.tex
+  swe-main.tex
+    includes/ [*]
+        swe/
+          copyrightpage.tex
+          from_kli.tex
+          preface.tex
+          suffixtables.tex
+          to_kli.tex
+          values.tex
+ ==================================================================
+  [*] this directory already exists in the present directory
+structure.

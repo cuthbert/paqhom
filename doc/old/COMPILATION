@@ -1,0 +1,89 @@
+
+  The {tlhIngan Hol mu'ghom mach} Booklet Howto
+  Zrajm C Akfohg <zrajm@klingonska.org>
+  v1.2, 6 August 2001
+
+  This document explains how to produce a printable booklet in A6
+  format using the {tlhIngan Hol mu'ghom mach} LaTeX­sources (though, of
+  course the same principles could be used on any LaTeX document).
+  ______________________________________________________________________
+
+  Table of Contents
+
+
+
+  1.  How to Create a Printable PostScript from the .tex Source
+
+    1.1.  Requirements
+    1.2.  Procedure
+
+      1.2.1.  Compile the .tex source
+      1.2.2.  Convert .dvi to .ps
+      1.2.3.  Re­sort Pages of PostScript File into Booklet
+      1.2.4.  Scale Page Contents to A6 format
+      1.2.5.  Print Booklet
+
+
+
+  ______________________________________________________________________
+
+1.  How to Create a Printable PostScript from the .tex Source
+
+This document describes how to created a PostScript document, from the
+{tlhIngan Hol mu'ghom mach} LaTeX (*.tex) source(s), should you ever
+face that problem.
+
+
+1.1.  Requirements
+
+The following programs are required for the below described procedure
+(it may be possible to use other similar tools for some parts of the
+task, but these are the ones I've used):
+
+  o latex
+    * (describe required LaTeX­packages here)
+    *
+  o dvi2ps
+  o a2ps *or* psnup (which is part of package called ``psutils'')
+
+
+1.2.  Procedure
+
+
+1.2.1.  Compile the .tex source
+
+Use LaTeX to produce a .dvi file.
+
+
+1.2.2.  Convert .dvi to .ps
+
+Use dvi2ps to create a .ps file from the .dvi.
+
+
+1.2.3.  Re­sort Pages of PostScript File into Booklet
+
+
+
+1.2.4.  Scale Page Contents to A6 format
+
+Either using the ``a2ps'' command, like this:
+
+  a2ps -4 -B --border=no INFILE.ps -o OUTFILE.ps
+
+This approach has for some reason stopped working for me, since a2ps
+nowadays truncate some of the text closest to the (physical) margins
+of my pages (my theory is that the a2ps command has been secretly
+updated here at Uppsala University by our evil superuser). But fear
+not -- there is another solution -- the ``psnup'' command (included in
+a package called ``PSUtils''). Type the following to solve the same
+problem in another way:
+
+  psnup -4 INFILE.ps OUTFILE.ps
+
+
+1.2.5.  Print Booklet
+
+Using ``lpr'' or whatever.
+
+
+/Zrajm C Akfohg, 2001­06­13 & 2001­08­06, Uppsala, Sweden

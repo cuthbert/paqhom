@@ -1,0 +1,212 @@
+% Summary:
+%
+% This is the cover of the (English version of) the dictionary. It
+% includes a file called "front.tex" from the parent dir, which
+% contains the dictionary's front cover (which is used by both the
+% Swedish and English version.
+
+%
+% FIXME: Utsidan på omslaget bör ha en egen uppsättning
+% marginaler. Bör insidan ha andra marginaler? (Isåfall, egna, eller 
+% samma som i resten av boken?)
+%
+
+% ====================================
+% Document requirements, includes etc.
+% ====================================
+%\documentclass[twocolumn,a4paper,twoside]     % Two columns, double sided,
+\documentclass[a4paper,twoside,draft]{article} % double sided, A4 format
+\usepackage[english]{babel}                    % enable english typography
+\newcommand{\dictlanguage}{swedish}            % variable used by includes
+\input{include/commands}                       % include dictionary commands
+
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{0pt}%
+    \setlength{\rightmargin}{0pt}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{0pt plus 1pt}%
+    \addtolength{\leftmargin}{#1}%
+    \addtolength{\rightmargin}{#2}%
+  }\item%
+}{\end{list}}
+
+
+%\setmargz{2cm}{1.5cm}{2cm}{1.5cm}%      % left/upper/right/lower margin
+%  {0pt}{0pt}{0pt}%                      % head & foot: height/sep/ruler
+%  {5mm}{0pt}                            % column separator
+
+
+% narrow back margin
+%\setmargz{1cm}{1.5cm}{1cm}{1.5cm}%      % left/upper/right/lower margin
+%  {24pt}{5mm}{1pt}%                     % head & foot: height/sep/ruler
+%  {5mm}{0pt}                            % column separator
+
+% broad back margin
+\setmargz{6cm}{1.5cm}{1cm}{1.5cm}%      % left/upper/right/lower margin
+  {24pt}{5mm}{1pt}%                     % head & foot: height/sep/ruler
+  {5mm}{0pt}                            % column separator
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% needed by the front_piqad.tex
+
+
+\newfont{\kling}{pIq scaled 1500}%
+\newcommand{\K}[1]{%
+  %\raisebox{.5ex}{
+    {\kling #1}%
+  %}
+} % pIqaD
+\newfont{\klingII}{pIq scaled 2700}%
+\newcommand{\KII}[1]{{\klingII #1}}%  pIqaD
+%
+\newlength{\txtheight}%
+\newlength{\txtdepth}%
+\settodepth{\txtdepth}{\Huge fg}%
+\settoheight{\txtheight}{\Huge fg}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% needed by the pIqaD table
+\newcommand{\pIq}[1]{\KII{#1}\hfill}%
+\newcommand{\rom}[1]{\Huge\B{#1}\hfill}%
+\newcommand{\ipa}[1]{\Huge\textipa{#1}}%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+
+\newcounter{loop}
+\setcounter{loop}{1}
+\whiledo{\value{loop}<3}{%
+
+\input{include/front_piqad}  % insert front cover
+
+
+
+
+
+{%
+\setlength{\fboxsep}{0cm}           % padding inside fbox
+\setlength{\fboxrule}{.6mm}         % line thickness of boxes
+\setlength{\tabcolsep}{2mm}         % horizontal padding in cells
+\setlength{\arrayrulewidth}{.6mm}   % line thickness in table
+\setlength{\doublerulesep}{0pt}     % distance between ||
+\renewcommand{\arraystretch}{2.2}   % height of table rows
+\setlength{\extrarowheight}{1mm}    % add extra space above text in table
+
+
+\begin{center}
+\vspace*{\stretch{1}}
+
+% narrow back margin
+%\begin{changemargin}{1cm}{2cm}
+% broad back margin
+\begin{changemargin}{1cm}{-3cm}
+
+%\fbox{
+\raisebox{0em}[0pt][0pt]{%
+\begin{tabular*}{\linewidth}{!{\extracolsep{4cm minus 4cm}}||c@{}c@{}c|c@{}c@{}c|c@{}c||}\hline\hline
+\pIq{a} & \rom{a} & \ipa{[A]} &
+\pIq{o} & \rom{o} & \ipa{[o]} &
+\multicolumn{2}{@{}c||}{\Huge\B{pIqaD}}\\\hline
+\pIq{b} & \rom{b}  & \ipa{[b]} &
+\pIq{p} & \rom{p} & \ipa{[p\super h]} &
+\pIq{0} & \rom{0}\\\hline
+\pIq{ch}& \rom{ch} & \ipa{[\t{tS}]} &
+\pIq{q} & \rom{q} & \ipa{[q\super h]} &
+\pIq{1} & \rom{1}\\\hline
+\pIq{D} & \rom{D}  & \ipa{[\:d]} &
+\pIq{Q} & \rom{Q} & \ipa{[\t{qX}]} &
+\pIq{2} & \rom{2}\\\hline
+\pIq{e} & \rom{e}  & \ipa{[E]} &
+\pIq{r} & \rom{r} & \ipa{[r]} &
+\pIq{3} & \rom{3}\\\hline
+\pIq{gh}& \rom{gh} & \ipa{[G]} &
+\pIq{S} & \rom{S} & \ipa{[\:s]} &
+\pIq{4} & \rom{4}\\\hline
+\pIq{H} & \rom{H}  & \ipa{[x]} &
+\pIq{t} & \rom{t} & \ipa{[t\super h]} &
+\pIq{5} & \rom{5}\\\hline
+\pIq{I} & \rom{I}  & \ipa{[I]} &
+\pIq{tlh}&\rom{tlh} & \ipa{[\t{t\textbeltl}]} &
+\pIq{6} & \rom{6}\\\hline
+\pIq{j} & \rom{j} & \ipa{[\t{dZ}]} &
+\pIq{u} & \rom{u} & \ipa{[u]} &
+\pIq{7} & \rom{7}\\\hline
+\pIq{l} & \rom{l} & \ipa{[l]} &
+\pIq{v} & \rom{v} & \ipa{[v]} &
+\pIq{8} & \rom{8}\\\hline
+\pIq{m} & \rom{m} & \ipa{[m]} &
+\pIq{w} & \rom{w} & \ipa{[w]} &
+\pIq{9} & \rom{9}\\\hline
+\pIq{n} & \rom{n} & \ipa{[n]} &
+\pIq{y} & \rom{y} & \ipa{[j]} &
+\rom{\scalebox{1.2}[1]{\Huge$\blacktriangledown$}} & \rom{,;:}\\\hline
+\pIq{ng}& \rom{ng} & \ipa{[N]}&
+\pIq{'} & \rom{'} & \ipa{[P]} &
+\rom{\scalebox{1.2}[1]{\Huge$\blacktriangle$}} & \rom{.!?}\\\hline\hline
+\end{tabular*}
+}
+%}
+\end{changemargin}
+
+\vspace{\stretch{1}}
+\end{center}
+
+\clearpage
+}
+\stepcounter{loop}}
+
+
+
+\setcounter{loop}{1}\whiledo{\value{loop}<3}{%
+
+
+%%
+%% Inside Back Cover (Suffix Tables)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% narrow back margin
+%\begin{changemargin}{2cm}{1cm}
+% broad back margin
+\begin{changemargin}{-3cm}{1cm}                %
+\setlength{\arrayrulewidth}{.6mm}              % line thickness in table
+\input{include/suffixtables}                   % suffix tables
+\end{changemargin}                             %
+\newpage
+
+
+
+
+
+%%
+%% Back Cover (New Prefix Table)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\vspace*{\stretch{1}}
+\rotatebox{270}{\VerbPrefixTable}
+\vspace{\stretch{1}}
+\end{center}
+
+\clearpage
+\stepcounter{loop}}
+
+
+\end{document}
