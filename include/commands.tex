@@ -1,10 +1,10 @@
-\usepackage[T1]{fontenc}                     % allow åäö
+\usepackage[T1]{fontenc}                     % allow Ã¥Ã¤Ã¶
 \usepackage{vmargin}                         % to set margins
 \usepackage{fancyhdr}                        % load fancy headers
 \usepackage{fixmarks}                        % header patch for 2 columns
 \usepackage{multicol}                        % two column package
 \usepackage{rotate}                          % to rotate reference tables 
-\usepackage{graphics}                        % used by the \× command
+\usepackage{graphics}                        % used by the \lemma{} command
 \usepackage{amssymb}                         % black triangles (cover)
 \usepackage{colortbl}                        % color tables (cover)
 \usepackage{hhline}                          % horiz lines for colortable (cover)
@@ -15,8 +15,8 @@
 \usepackage{calc}                            % simple arithmetics 
 \usepackage{tipa}                            % i.p.a. typeface
 \usepackage{avant}                           % typeface "Avantgarde" (sans)
-%\newcommand{\sans}{\usefont{OT1}{pag}{m}{n}}% åäö doesn't show using this
-\newcommand{\sans}{\usefont{T1}{pag}{m}{n}}  % åäö works ok
+%\newcommand{\sans}{\usefont{OT1}{pag}{m}{n}}% Ã¥Ã¤Ã¶ doesn't show using this
+\newcommand{\sans}{\usefont{T1}{pag}{m}{n}}  % Ã¥Ã¤Ã¶ works ok
 \usepackage{charter}                         % typeface "Charter" (serif)
 % Last selected typeface becomes the document default.
 
@@ -41,8 +41,8 @@
 %   #3 = Part-of-speech
 %   #4 = 'slang' or 'regional' etc.
 %   #5 = English explanation of the word
-%        (if Ø then the explanation equals the lookup word)
-%        (the lookup word is replaced by \×, which generates a tilde)
+%        (if Ã˜ then the explanation equals the lookup word)
+%        (the lookup word is replaced by \lemma{}, which generates a tilde)
 %
 \newlength{\argwidth}
 \newcommand{\lueng}[5]{%
@@ -68,7 +68,7 @@
 %   #3 = 'slang' or 'regional' etc.
 %   #4 = English explanation of the word
 %   #5 = source
-%        (if Ø then source=TKD)
+%        (if Ã˜ then source=TKD)
 %
 \newcommand{\lukli}[5]{%
   \par%
@@ -141,7 +141,7 @@
 % ===========================================================
 % [2001-12-12] Written by Zrajm C Akfohg.
 %
-% This tests if my \dictlanguage "variable" equals "swedish",
+% This tests if my \dictlanguage{} "variable" equals "swedish",
 % if it does, the titles of the affix tables are set to their
 % Swedish translations, otherwise the English titles are used.
 %
@@ -590,7 +590,7 @@
 %
 % The margin space for notes is set to zero,
 % and header and footer are always set to the same size.
-% The «vmargin» package is used to set the margins.
+% The Â«vmarginÂ» package is used to set the margins.
 %
 % all nine arguments are required (ha!)
 \newcommand{\setmargz}[9]{%
