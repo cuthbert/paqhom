@@ -1,0 +1,84 @@
+Klingon Pocket Dictionary
+=========================
+
+This directory contains the source code used to produce Klingonska Akademien's
+pocket dictionary. It is officially titled {tlhIngan Hol mu'ghom mach} ("A
+Small Klingon Dictionary"), but affectionately known as {paqHom} ("The Little
+Book") among many of its users. This dictionary is also available on-line[1].
+
+
+Edition
+-------
+
+This is the 7th edition of the {paqHom}, as produced in January 2002 by
+Klingonska Akademien, in Uppsala, Sweden. Today, in May 2010, this is still the
+latest edition of the printed dictionary (while the on-line version has been
+kept a bit more up-to-date).
+
+Klingonska Akademien is hoping to be able to release a new updated edition of
+the {paqHom} before November 2010 (at which time a course in Klingon will be
+held in Stockholm).
+
+What you find here represent the very first step towards a new, 8th edition, of
+the {paqHom} -- collecting the old source code, and getting it to compile
+again.
+
+
+Notes on Compiling
+------------------
+
+I built this on a Karmic Koala, after installing the following:
+
+    % sudo apt-get install texlive-full
+
+(Actually I found a guide on the web[3] to help me with this, since I last
+played with LaTeX about six or seven years ago and was a little rusty.)
+
+The Makefile is new, and should be pretty straightforward. To compile a PDF of
+the English-Klingon/Klingon-English version of the dictionary, run:
+
+    % make english
+
+If you want it in Swedish, use:
+
+    % make swedish
+
+A lot of files are created during compilation, to clean up the unnecessary
+files, use:
+
+    % make clean
+
+And if you want to remove and intermediary files, as well as any resulting PDF
+and PostScript files, use:
+
+    % make distclean
+
+
+License
+-------
+
+This work is released under a Creative Commons: Attribution-Noncommercial-Share
+Alike license 2.5 (or later), in under the Swedish jurisdiction[2].
+
+
+Contact Information
+-------------------
+
+If you are interested in obtaining a printed copy of this work, or if you would
+like to give us feedback (suggestions for future editions, pointing out errors
+or omissions) please contact the editor at <paqhom@klingonska.org>.
+
+
+References
+----------
+
+ [1]: http://klingonska.org/dict/
+      "On-line Version of {tlhIngan Hol mu'ghom mach}"
+
+ [2]: http://creativecommons.org/licenses/by-nc-sa/2.5/se/
+      "Creative Commons: Attribution-Noncommercial-Share Alike license"
+
+ [3]: http://linuxandfriends.com/2009/10/06/install-latex-in-ubuntu-linux/
+      "Install LaTeX in Ubuntu Linux"
+
+#[eof]

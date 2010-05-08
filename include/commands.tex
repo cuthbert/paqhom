@@ -1,6 +1,6 @@
 \usepackage[T1]{fontenc}                     % allow едц
 \usepackage{vmargin}                         % to set margins
-\usepackage{fancyheadings}                   % load fancy headers
+\usepackage{fancyhdr}                        % load fancy headers
 \usepackage{fixmarks}                        % header patch for 2 columns
 \usepackage{multicol}                        % two column package
 \usepackage{rotate}                          % to rotate reference tables 
@@ -14,7 +14,7 @@
 \usepackage{ifthen}                          % enable \ifthenelse & \whiledo
 \usepackage{calc}                            % simple arithmetics 
 \usepackage{tipa}                            % i.p.a. typeface
-\usepackage{avantgar}                        % typeface "Avantgarde" (sans)
+\usepackage{avant}                           % typeface "Avantgarde" (sans)
 %\newcommand{\sans}{\usefont{OT1}{pag}{m}{n}}% едц doesn't show using this
 \newcommand{\sans}{\usefont{T1}{pag}{m}{n}}  % едц works ok
 \usepackage{charter}                         % typeface "Charter" (serif)
@@ -609,8 +609,8 @@
   \setlength{\headwidth}{\textwidth}      % header/footer text width
 
   % rulers and special margins
-  \setlength{\headrulewidth}{#7}          % head ruler thickness
-  \setlength{\footrulewidth}{#7}          % foot ruler thickness
+  %\setlength{\headrulewidth}{#7}          % head ruler thickness
+  %\setlength{\footrulewidth}{#7}          % foot ruler thickness
   \setlength{\columnsep}{#8}             % dist. between columns
   \setlength{\columnseprule}{#9}             % dist. between columns
   \setlength{\marginparsep}{0pt}          % del dist. between text & marg note

@@ -1,0 +1,168 @@
+%
+%
+%  To do: [2001­01­04]
+%
+%    Make this thing argument sensetive, taking the arguments
+%    'swedish' or 'english'.
+%
+%    Always set the Latin­1 as default character encoding.
+%
+%
+
+\usepackage{calc}
+
+
+%
+% My own special macros:
+%
+% Units in LaTeX:
+%   sp = scaled point = (65536sp = 1pt) TeX's smallest unit
+%   pt = point        = 1/72.27in = 0.351mm
+%   bp = big point    = (72bp = 1in), also PostScript point
+%   dd = Didot point  = 7/72 of French inch =0.376mm
+%   mm = millimeter   = 2.845pt
+%   pc = Pica         = 12pt = 4.218mm
+%   cc = Cicero       = 12dd = 4.531mm
+%   cm = centimeter   = 10mm = 2.371pc
+%   in = inch         = 25.4mm = 72.27pt =6.022pc
+%   ex = height of small `x' for the current font
+%   em = width of capital `M' in the current font
+%   mu = math unit (18mu = 1em) for positioning in math mode
+%
+%
+% Apparently `\hangindent=\parindent' is equal to 
+% `\setlength{\hangindent}{\parindent}'
+%
+%
+% Wierd characters are:  &  $  #  %  _  {  }  ^  ~  \
+%                       \& \$ \# \% \_ \{ \}
+%
+%
+% ==================
+% Swedish characters
+% ==================
+\newcommand{\å}{\aa}      \newcommand{\Å}{\AA}
+\newcommand{\ä}{\"{a}}    \newcommand{\Ä}{\"{A}}
+\newcommand{\ö}{\"{o}}    \newcommand{\Ö}{\"{O}}
+\newcommand{\à}{\`{a}}
+\newcommand{\é}{\'{e}}
+\newcommand{\ß}{\ss}
+
+\newcommand{\lineheight}[1]{%
+  \renewcommand{\baselinestretch}{#1}%      % change baselinestretch
+  \selectfont%                              % commit changes
+}
+
+
+
+%
+% [2001­01­04] by Zrajm C Akfohg 
+%
+% Negative space: \¡ is like an 'inverted' \, it produces a
+% small negative space (like \! in math mode).
+%
+\newlength{\negspace}
+\setlength{\negspace}{\widthof{\,} * \real{-1}}
+\newcommand{\¡}{\hspace{\negspace}}
+
+
+
+% Tilde (`~'):
+%
+% (placed at approximately the same height as a hyphen)
+% if a tilde comes directly after a slash `/' use `\hspace{-0.3ex}'
+% to move them slightly toward each other.
+% (this seems to work only with typefaces with encoding `T1', not
+% as `OT1')
+%\usepackage{graphics}  % needed for the \scalebox command below
+%\newcommand{\×}{%
+%  \makebox[1.3ex]{%
+%    \scalebox{1.6}[1.2]{%
+%      \raisebox{-.9ex}{%
+%        \~{}%
+%      }%
+%    }%
+%  }%
+%}
+
+%
+% [2001­01­04] by Zrajm C Akfohg 
+%
+% Tilde: produces a tilde, usable in e.g. urls or in dictionaries
+% (to represent the look­up word). When used in italics this need
+% to be preceeded by a negative space (\¡ above) and followed by
+% a small space (LaTeX's \,).
+%
+\newcommand{\×}{%
+  \raisebox{-.62\height}[\heightof{x}][0pt]{%
+    \scalebox{1.6}[1.2]{%
+      \makebox[\widthof{\~{}} * \real{.6}]{\~{}}%
+    }%
+  }%
+}
+
+
+
+
+%
+% This little thingy should go at the beginning of a paragraph, and it
+% `inverts' the indentation of the text in that paragraph, i.e. the
+% first line is not indented, but all the subsequent lines will be indented
+% as much as the `\parindent' value specifies (i.e. as much as all the
+% other paragraphs first lines are indended)
+\newcommand{\hang}{%
+  \setlength{\hangindent}{\parindent}%
+  \noindent%
+}
+
+% How should this be defined as an environment? The `\hangindent'
+% value seems to reset itself for each paragraph. Can the handling of
+% paragraphs be controlled in an environment? That is can I in an
+% environment of my own specify whether or not the first line after a
+% section header should be automatically un­indented or not (and other
+% suchlike things)
+
+
+% ========================
+% Text formatting commands
+% ========================
+\newcommand{\B}[1]{\textbf{#1}\/}      % bold      use: \B{bold text}
+\newcommand{\I}[1]{\textit{#1}\/}      % italics   use: \I{italic text}
+\newcommand{\U}[1]{%                   % underline use: \U{underlined text}
+  \underline{%                         %   underline
+    \raisebox{0pt}[\height][0pt]{#1}%  %   disregard descenders
+  }%
+}
+
+
+
+%
+% For some reason specifying hyphenation like this doesn't seem to
+% work. Haven't got a clue as to why though..
+%
+\hyphenation{kling-on kling-ons}
+
+
+%
+% Page related LaTeX lengths:
+%
+%   Distance between top of page and text is:
+%     \topmargin + \headheight + \headsep
+%   If footer and header are of the same height then:
+%      \footskip = \headheight + \headsep)
+%
+%   \paperwidth      \ size of
+%   \paperheight     / paper
+%   \textwidth       \ size of textarea
+%   \textheight      / (not including header and footer)
+%
+%   \oddsidemargin   > left margin of odd (right hand) pages
+%   \evensidemargin  > left margin of even (left hand) pages 
+%   \topmargin       > distance between top of page and top of header
+%   \headheight      > height of page header
+%   \headsep         > distance between header and text
+%   \footskip        > distance between footer baseline and text
+%
+%   \marginparwidth  > width of marginal note paragraph
+%   \marginparsep    > distance between text and marginal notes
+%
