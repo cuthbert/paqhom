@@ -609,10 +609,10 @@
   \setlength{\headwidth}{\textwidth}      % header/footer text width
 
   % rulers and special margins
-  %\setlength{\headrulewidth}{#7}          % head ruler thickness
-  %\setlength{\footrulewidth}{#7}          % foot ruler thickness
-  \setlength{\columnsep}{#8}             % dist. between columns
-  \setlength{\columnseprule}{#9}             % dist. between columns
+  \renewcommand{\headrulewidth}{#7}       % head ruler thickness
+  \renewcommand{\footrulewidth}{#7}       % foot ruler thickness
+  \setlength{\columnsep}{#8}              % dist. between columns
+  \setlength{\columnseprule}{#9}          % dist. between columns
   \setlength{\marginparsep}{0pt}          % del dist. between text & marg note
   \setlength{\marginparwidth}{0pt}        % del width of margin note
   %\setlength{\marginparpush}{0pt}        % min. dist. between margin notes
