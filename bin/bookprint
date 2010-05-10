@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# [2001­03­03,~08.25]
+#
+#  This proggie takes a PostScript file as input and directly
+#  sorts the pages in "book order" and prints it, four pages
+#  on each side of a sheet of paper..
+#
+#  For some reason this couldn't be made an alias (all I got
+#  was a broken pipe) so I made this command instead..
+#
+booksort $1 | a2ps -4 --border=no

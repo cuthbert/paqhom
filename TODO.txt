@@ -1,11 +1,13 @@
+* Perl: Convert all perl scripts to UTF8.
+
+* ZDB: Add zdb dictionary file.
+
 * Perl: Scripts for resorting output file into printable booklet.
 
 * Makefile: LaTeX -> DVI target should scan .tex files for dependencies, so
   that output file is rebuilt if *any* of the input components have changed.
 
 * LaTeX: Proper typesetting/linebreaking of URLs.
-
-* ZDB: Add zdb dictionary file.
 
 * Perl: Add scripts for creating the dictionary lists.
 

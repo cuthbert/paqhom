@@ -1,0 +1,238 @@
+#!/usr/bin/perl -w
+#
+# to be called with:
+#
+#   booksort <infile>
+#
+# Output should be sent to STDOUT..
+#
+
+# $PSHeader    Scalar with the PostScript header
+# $Pages       Number of pages (as given in the PostScript header)
+# $PSFooter    Scalar with the PostScript footer
+# @PSBody      Array of all pages
+# $PSBody[x]   Scalar with Page number x
+# $#PSBody+1   The number of (read) pages
+
+
+###################################################
+###################################################
+####
+####  Init: read the PostScript file
+####
+###################################################
+###################################################
+#
+# (This can most certainly be done in a better way
+# as I here first read the entire file into an array
+# and then parse that array and put all the bits and
+# pieces of it in other variables, effectively making
+# the program use up twice as much memory as really
+# neccessary. =|:-( - Kinda bad if you think about
+# it...)
+#
+# /Zrajm C Akfohg, 2000­11­11 to 2000­11­12
+#
+
+# init variables
+@PSBody = ();      # an array of pages
+$OutPages = 0;     # the number of output pages
+$InPages = 0;      # the number of pages given in PostScript header
+
+
+
+#################################
+# read header
+#
+# check that we're dealing with a PostScript file
+$PSHeader = <>;
+unless ($PSHeader =~ /^[%][!]PS-Adobe-/)
+{ print "+++ERROR: Input not in PostScript format.\n"; die; }
+
+# read header up to the "%%Pages: XX" comment
+do { $_ = <>; $PSHeader .= $_; } until (/^[%][%]Pages:/);
+
+# extract number of pages (last word on given row)
+$InPages = substr($_,index($_,' ')+1);
+$InPages = substr($InPages,0,index($InPages,' '));
+
+# get the rest of the PostScript header
+do { $_ = <>; $PSHeader .= $_; } until ($_ eq "%%EndSetup\n");
+
+
+#################################
+# calculate final number of pages
+#
+
+if ($InPages % 8 == 0) {
+    $ToAdd = 0;
+} else {
+    $ToAdd = 8-($InPages % 8);
+    if ($ToAdd >= 4) {
+	@PSBody = ("%%Page: 0 0\n1 0 bop eop\n",     # add two blank pages
+		   "%%Page: 0 0\n1 0 bop eop\n");
+	$ToAdd -= 2;
+    }
+}
+
+
+
+
+#################################
+# extract PSBody
+#
+$OutPages = $#PSBody + 1;
+while (<>) {
+    last unless /^[%][%]Page: /;
+    $PSBody[$OutPages] .= $_;
+    while (<>) {
+	$PSBody[$OutPages] .= $_;
+	last if /eop$/;
+    }
+    $OutPages++;
+}
+
+
+#################################
+# add trailing blank pages
+#
+for (; $ToAdd > 0; $ToAdd--)
+{ push @PSBody, "%%Page: 0 0\n1 0 bop eop\n"; }
+$OutPages = $#PSBody + 1;
+
+
+###########################################
+# Extract PSFooter
+#
+do { $PSFooter .= $_; } while (<>);
+
+
+
+
+print $PSHeader;
+
+
+$Sheets = $OutPages / 8;
+$Upper = $OutPages / 4;
+$Lower = $OutPages / 2;
+
+for($i = 1; $i <= $Sheets; $i++) {
+    print "%%%Sheet $i of $Sheets (side 1):\n";
+    print "%%%Upper: $Upper\n";
+    print $PSBody[$Upper-1];
+    $Upper -= 1;
+
+    print "%%%Upper: ", $OutPages-$Upper, "\n";
+    print $PSBody[$OutPages-$Upper-1];
+    $Upper -= 1;
+
+    print "%%%Lower: ", $Lower, "\n";
+    print $PSBody[$Lower-1];
+    $Lower -= 1;
+
+    print "%%%Lower: ", $OutPages-$Lower, "\n";
+    print $PSBody[$OutPages-$Lower-1];
+    $Lower -= 1;
+
+    print "%%%Sheet $i of $Sheets (side 2):\n";
+    print "%%%Upper: ", $OutPages-$Upper, "\n";
+    print $PSBody[$OutPages-$Upper-1];
+    $Upper += 1;
+
+    print "%%%Upper: ", $Upper, "\n";
+    print $PSBody[$Upper-1];
+    $Upper -= 1;
+
+    print "%%%Lower: ", $OutPages-$Lower, "\n";
+    print $PSBody[$OutPages-$Lower-1];
+    $Lower += 1;
+
+    print "%%%Lower: ", $Lower, "\n";
+    print $PSBody[$Lower-1];
+    $Lower -= 1;
+}
+print $PSFooter;
+
+
+
+
+
+###########################################
+# test output pages
+#for ($i = 0; $i <= $#PSBody; $i++) {
+#    print $PSBody[$i];
+#}
+
+
+
+
+
+###################################################
+###################################################
+####
+####  Sort: change the order of the pages
+####
+###################################################
+###################################################
+
+
+###################################################
+###################################################
+####
+####  Output:
+####
+###################################################
+###################################################
+
+
+
+
+exit;
+
+
+#  /* start values for the upper and lower page spreads */
+#  upper=pages/4;  /* upper page spread  */
+#  lower=pages/2;  /* lower page spread  */
+#
+#  address command;
+#  do i=1 to sheets;
+#    say 'Sheet 'i' of 'sheets' (side 1):';
+#
+#    say '  Upper: 'upper;
+#    'type t:A6SortPSTemp/page'right(upper,3,'0')'.ps >>'psoutfile
+#    upper=upper-1;
+#
+#    say '  Upper: 'pages-upper;
+#    'type t:A6SortPSTemp/page'right(pages-upper,3,'0')'.ps >>'psoutfile
+#    upper=upper-1;
+#
+#    say '  Lower: 'lower;
+#    'type t:A6SortPSTemp/page'right(lower,3,'0')'.ps >>'psoutfile
+#    lower=lower-1;
+#
+#    say '  Lower: 'pages-lower;
+#    'type t:A6SortPSTemp/page'right(pages-lower,3,'0')'.ps >>'psoutfile
+#    lower=lower-1;
+#
+#    say 'Sheet 'i' of 'sheets' (side 2):';
+#    say '  Upper: 'pages-upper;
+#    'type t:A6SortPSTemp/page'right(pages-upper,3,'0')'.ps >>'psoutfile
+#    upper=upper+1;
+#
+#    say '  Upper: 'upper;
+#    'type t:A6SortPSTemp/page'right(upper,3,'0')'.ps >>'psoutfile
+#    upper=upper-1;
+#
+#    say '  Lower: 'pages-lower;
+#    'type t:A6SortPSTemp/page'right(pages-lower,3,'0')'.ps >>'psoutfile
+#    lower=lower+1;
+#
+#    say '  Lower: 'lower;
+#    'type t:A6SortPSTemp/page'right(lower,3,'0')'.ps >>'psoutfile
+#    lower=lower-1;
+#
+#  end;
+#  'type t:A6SortPSTemp/trailer.ps >>'psoutfile
+#exit;
+#
+#
