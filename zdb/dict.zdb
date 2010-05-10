@@ -1644,6 +1644,7 @@ def:	[TKD]
 tlh:	{Daq}
 sv:	«plats», «ställe» (s)
 en:	<site>, <location> (n)
+en-x:	<place>
 def:	[TKDa]
 
 tlh:	{Daqtagh}
@@ -2667,6 +2668,7 @@ tlh:	{ghoch}
 sv:	«destination» (s)
 en:	<destination> (n)
 def:	[TKD]
+see:	{mung}
 
 tlh:	{ghochwI'}
 sv:	«Spanaren» (en stjärnbild) (namn)
@@ -5999,6 +6001,7 @@ tlh:	{mung}
 sv:	«ursprung» (s)
 en:	<origin> (n)
 def:	[TKD]
+see:	{ghoch}
 
 tlh:	{mup}
 sv:	«träffa», «stöta», «slå» (v)
