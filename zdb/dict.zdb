@@ -5,6 +5,26 @@ Klingon word count: 2504 [2001­02­12] (excluding affixes)
 Sorted in Klingon alphabetical order.
 ----------------------
 
+Förslag på förbättringar av ordboken:
+
+  o Korsreferenser mellan plural och singular.
+    (Så att {mang} refererar till {negh} och tvärtom.)
+
+  o Layouten i den engelsk­klingonska delen borde se ut såhär:
+  
+    |sans| /kursiv/ {fet}
+    |worthless| /v/ {lo'laHbe'} be ~
+    |worthless| /v/ be ~ {lo'laHbe'}
+
+    |friend| /n/ close male ~ of a male {maqoch} buddy, pal [KGT]
+    |buddy| /n/ {maqoch} pal, close male friend of a male
+    |close male friend of a male| /n/ {maqoch} buddy, pal
+
+    |fresh| /v/ be ~ {baQ} be just picked (fruit, vegetable)
+    |ceiling| /n/ {pa' beb} (of a room on the top story of a structure)
+    |pa' beb| /n/ ceiling (of a room on the top story of a structure)
+      [News 1998­12­07; HQ8:3 p.2]
+
 {tlhIngan Hol}
 "english"
 *not qa'non*
@@ -53,6 +73,7 @@ eng:	mandatory; English definition (from canon sources) and part­of­speech
 def:	mandatory; source where definition can be found (within [])
 ref:	optional; canon sources where it also occurs
 com:	optional; special comment concerning the entry
+joke:	optional; comments about MO's word play
 see:	optional; pointer to related word(s) (separated by semicolon)
 cat:	optional; categoral tagging of words, useful for noting
 	prepositional concepts, body parts etc. (categories separated
@@ -608,6 +629,22 @@ sve:	«fusion» (s)
 eng:	«fusion» (n)
 def:	[BoP]
 
+klin:	{boq}
+sve:	«alliera» med, «förena» med, skapa en allians med (v)
+eng:	«ally» with, «form» an alliance with (v)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+	HQ: Used in math: {boq} for addition, {boqHa'} for
+	subtraction, {X­logh boq'egh Y} for multiplication, {X­logh
+	boqHa''egh Y} for division. See also {chen}.
+cat:	math
+
+klin:	{boqHa'}
+sve:	«skilja» ifrån (v)
+eng:	«dissociate» from (v)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+
 klin:	{boqrat}
 sve:	ett slags «djur», «~bokrat~» (s)
 eng:	type of <animal>, <~bokrat~> (n)
@@ -771,7 +808,7 @@ klin:	{cha}
 sve:	«torpeder» (s)
 eng:	<torpedoes> (n)
 def:	[TKD]
-see:	{peng} (singular or {cha})
+see:	{peng} (singular for {cha})
 
 klin:	{chab} (1)
 sve:	«paj», «bakverk», «kroppkaka» (s)
@@ -1224,13 +1261,16 @@ eng:	be <vertical> (v)
 def:	[TKD]
 
 klin:	{chong} (2)
-sve:	vara «bra», vara «utmärkt», vara «storslagen», vara «underbar» (v) (slang)
-eng:	be <good>, be <excellent>, be <great>, be <wonderful>, be <splendid> (v) (slang)
+sve:	vara «bra», vara «utmärkt», vara «storslagen», vara «underbar» (v)
+	(slang) 
+eng:	be <good>, be <excellent>, be <great>, be <wonderful>, be <splendid>
+	(v) (slang) 
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
 klin:	{chong} (3)
-sve:	vara «grundlig», vara «ordentlig», vara «omsorgsfull», vara «noggrann» (v) (slang)
+sve:	vara «grundlig», vara «ordentlig», vara «omsorgsfull», vara
+	«noggrann» (v) (slang) 
 eng:	be <profound>, be <thorough>, be «careful» (v) (slang)
 def:	[KGT]
 
@@ -1461,8 +1501,10 @@ eng:	be <absent> (v)
 def:	[TKD]
 
 klin:	{Dach} (2)
-sve:	vara icke­«uppmärksam», vara «distraherad», sakna «koncentration» (v) (slang)
-eng:	be <not attentive>, be <distracted>, <lack focus>, to not pay attention (v) (slang)
+sve:	vara icke­«uppmärksam», vara «distraherad», sakna «koncentration»
+	(v) (slang)
+eng:	be <not attentive>, be <distracted>, <lack focus>, to not pay
+	attention (v) (slang)
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -1822,7 +1864,8 @@ eng:	be <guilty> (v)
 def:	[TKD]
 
 klin:	{DIvI'}
-sve:	«federation», «organisation», «förening», «sammanslutning», «förbund», «union» (s)
+sve:	«federation», «organisation», «förening», «sammanslutning»,
+	«förbund», «union» (s)
 eng:	<federation>, <organization>, «association», «league», «union» (n)
 def:	[TKD; HQ4:4 p.11]
 com:	Article in HQ is called "More from Maltz".
@@ -1849,7 +1892,7 @@ eng:	<thing> (n)
 def:	[TKD]
 
 klin:	{DoD}
-sve:	¿?«punkt», «komma» (i koordinater) (s)
+sve:	¿?«punkt», «komma», «avskiljare» (i koordinater) (s)
 eng:	<mark> (in coordinates) (n)
 def:	[TKDa]
 
@@ -2224,8 +2267,10 @@ def:	[S25; S26; KGT pp.25, 26, 197, 198]
 com:	S25 and S26 were reprinted in HQ5:3 p.15
 
 klin:	{ghaw'} (1)
-sve:	«osäker person», någon uppfylld av självtvivel, «självtvivlare» (s) (regionalt, slang)
-eng:	<insecure one>, one full of self­doubt, <self­doubter> (n) (regional, slang)
+sve:	«osäker person», någon uppfylld av självtvivel, «självtvivlare» (s)
+	(regionalt, slang) 
+eng:	<insecure one>, one full of self­doubt, <self­doubter> (n)
+	(regional, slang) 
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -2255,6 +2300,12 @@ sve:	«vördnadskväde», «aktningsode» (s)
 eng:	<ode of respect> (n)
 def:	[KGT]
 ref:	[KCD]
+
+klin:	{gheb}
+sve:	«horn», «lur» (musikinstrument) (s)
+eng:	«horn» (musical instrument) (n)
+def:	[HQ10:2 p.9]
+cat:	music
 
 klin:	{gheD}
 sve:	«byte» (i jakt o. dyl.) (s)
@@ -2385,7 +2436,7 @@ eng:	<court­martial> (v)
 def:	[TKD]
 
 klin:	{ghIq}
-sve:	och «sedan», «efter det», «därefter», «efteråt» (adv)
+sve:	«därefter», och «sedan», «efter det», «efteråt» (adv)
 eng:	and then, «after that», by «then», «subsequently» (adv)
 def:	[HQ8:3 p.4]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
@@ -2671,6 +2722,13 @@ sve:	«baby», «spädbarn» (s)
 eng:	<baby> (n)
 def:	[TKD]
 
+klin:	{ghubDaQ}
+sve:	«förstfödd» (s)
+eng:	«firstborn» (n)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
 klin:	{ghuH}
 sve:	«förbereda» för, vara «beredd» på, vara «förvarnad» om (v)
 eng:	<prepare> for, be <alerted> to (v)
@@ -2893,7 +2951,7 @@ eng:	«duel» to the death (v)
 def:	[KGT p.49]
 
 klin:	{Ha'}
-sve:	«kom nu»!, «vi går»! (interj)
+sve:	«kom»!, «vi går»! (interj)
 eng:	<let's go>!, <come> on! (excl)
 def:	[TKD 5.5 (p.57) et al.]
 
@@ -3236,6 +3294,18 @@ sve:	«vekling», «liten en», «mager en», «utmärglad person» (s) (slang)
 eng:	<weakling>, <runt>, <scrawny one>, <skinny one> (n) (slang)
 def:	[KGT]
 
+klin:	{Hom}
+sve:	«använda» «andra«tå»n» (v) (arkaiskt)
+eng:	«use» the «second «toe»» (v) (archaic)
+def:	[HQ10:2 p.10]
+cat:	body part
+
+klin:	{HomwI'}
+sve:	«andra«tå»» (s)
+eng:	«second «toe»» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
+
 klin:	{Hon}
 sve:	«tvivla» (v)
 eng:	<doubt> (v)
@@ -3456,6 +3526,7 @@ klin:	{Human}
 sve:	«människa» (s)
 eng:	<human> (n)
 def:	[TKD]
+joke:	Ever heard the disgust in the voice of a Ferengi saying "Human"?
 
 klin:	{Hung}
 sve:	«säkerhet» (s)
@@ -3688,7 +3759,7 @@ def:	[TKD]
 cat:	body part
 
 klin:	{jatyIn}
-sve:	¿?«själsegendom», «andlig hemsökelse» (s)
+sve:	¿?«andlig hemsökelse», «besatthet» (s)
 eng:	<spiritual possession> (n)
 def:	[KGT]
 
@@ -3910,6 +3981,7 @@ klin:	{jIl}
 sve:	«granne» (s)
 eng:	<neighbor> (n)
 def:	[TKD]
+joke:	Marc Okrand have had a neighbor by the name Jill.
 
 klin:	{jInaq}
 sve:	«amulett» som symboliserar en flickas mognad (s)
@@ -3963,7 +4035,8 @@ eng:	<quadrant> (n)
 def:	[TKDa]
 
 klin:	{joH}
-sve:	«Dam», «Fru» (kvinnligt familjeöverhuvud), «Herre» (manligt familjeöverhuvud) (s)
+sve:	«Dam», «Fru» (kvinnligt familjeöverhuvud), «Herre» (manligt
+	familjeöverhuvud) (s) 
 eng:	<Lady> (female head of house), <Lord> (male head of house) (n)
 def:	[TKD; KGT]
 com:	Entries differ and have been combined here.
@@ -4039,6 +4112,7 @@ klin:	{joq}
 sve:	«fladdra», «flaxa» (v)
 eng:	<flap>, <flutter>, <wave> (v)
 def:	[TKD]
+com:	used about banner or sail [HQ10:4 p.5]
 
 klin:	{joq}
 sve:	«eller», och/eller (förenar substantiv) (konj)
@@ -4378,7 +4452,7 @@ eng:	<shore leave> (n)
 def:	[TKD]
 
 klin:	{leSSov}
-sve:	¿?«framsynthet», «förtänksamhet», «omtänksamhet»/«korn» (på vapen) (s)
+sve:	¿?«framsynthet», «förutseende» / «korn» (på vapen) (s)
 eng:	<foresight> (n)
 def:	[TKDa]
 
@@ -4491,7 +4565,7 @@ eng:	<get> on (to) (v)
 def:	[KGT]
 
 klin:	{lItHa'}
-sve:	¿?«gå» av (ifrån), «gå» ner (ifrån), «kliva» ner (ifrån) (v)
+sve:	¿?«gå» av (ifrån), «gå» ner (ifrån), «kliva» av (ifrån) (v)
 eng:	<get> off (of) (v)
 def:	[KGT]
 
@@ -4591,7 +4665,7 @@ def:	[TKD]
 ref:	[TKW p.186]
 
 klin:	{lolSeHcha}
-sve:	«positionskontrollraketer», «lägeskontrollraketer» (s)
+sve:	«positionskontrollraketer», «lägeskontrollraketer», «styrraketer» (s)
 eng:	<attitude­control «thrusters»> (n)
 def:	[TKD]
 
@@ -4633,6 +4707,39 @@ sve:	«lite grann», till viss del (adv)
 eng:	<slightly>, a little bit (adv)
 def:	[TKD]
 ref:	[TKW p.46]
+
+klin:	{lor}
+sve:	«kusin» (mors brors barn eller fars systers barn),
+	«systerbarn» (en mans systers barn), «brorsbarn» (en kvinnas
+	brors barn) (s)
+eng:	«cousin» (mother's brother's child or father's sister's
+	child), «niece», «nephew» (a man's sister's child or a
+	woman's brother's child) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{lorbe'}
+sve:	kvinnlig «kusin» (mors brors dotter eller fars systers
+	dotter), «systerdotter» (en mans systers dotter),
+	«brorsdotter» (en kvinnas brors dotter) (s)
+eng:	female «cousin» (mother's brother's daughter or father's
+	sister's daughter), «niece» (a man's sister's daughter or
+	a woman's brother's daughter) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{lorloD}
+sve:	manlig «kusin» (mors brors son eller fars systers son),
+	«systerson» (en mans systers son), «brorson» (en kvinnas
+	brors son) (s)
+eng:	male «cousin» (mother's brother's son or father's sister's
+	son), «nephew» (a man's sister's son or a woman's brother's
+	son) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
 
 klin:	{loS}
 sve:	«vänta» (på) (v)
@@ -4737,8 +4844,10 @@ eng:	«yank» (v)
 def:	[TKD K­E]
 
 klin:	{luH} (2)
-sve:	«få» (någon) att erkänna eller avslöja en hemlighet, «utkräva» ett erkännande, få att «erkänna» (v) (slang)
-eng:	<cause (someone) to confess> or reveal a secret, <exact> a confession (v) (slang)
+sve:	«få» (någon) att erkänna eller avslöja en hemlighet, «utkräva» ett
+	erkännande, få att «erkänna» (v) (slang) 
+eng:	<cause (someone) to confess> or reveal a secret, <exact> a
+	confession (v) (slang) 
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -4930,6 +5039,18 @@ def:	[HQ1:3 p.9]
 com:	Article in HQ is called "Additional Vocabulary" and contains
 	the {veS QonoS} list of words.
 
+klin:	{mar}
+sve:	«använda» «stor«tå»n» («förstatå»n) (v) (arkaiskt)
+eng:	«use» the «big «toe»» («first toe») (v) (archaic)
+def:	[HQ10:2 p.10]
+cat:	body part
+
+klin:	{marwI'}
+sve:	«stor«tå»», «förstatå» (s)
+eng:	«big «toe»», «first toe» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
+
 klin:	{mara}
 sve:	«Mara» (namn)
 eng:	«Mara» (name)
@@ -5030,7 +5151,7 @@ eng:	<battle gear>, <panoply>, complete set of <armor> and weapons
 def:	[KGT]
 
 klin:	{may'morgh}
-sve:	¿?«slagordning» (s)
+sve:	¿?«slagordning», «slaguppställning» (s)
 eng:	<battle array> (n)
 def:	[TKD]
 
@@ -5045,8 +5166,10 @@ eng:	<accommodate> (v)
 def:	[TKD]
 
 klin:	{ma'veq}
-sve:	ett slags «ceremoniell «kniv»», «~mevak~» (används i ~Mauk­To'Vor~­ritualen) (s)
-eng:	type of «ceremonial «knife»», «~mevak~» (used in the ~Mauk­To'Vor~ ritual) (n)
+sve:	ett slags «ceremoniell «kniv»», «~mevak~» (används i
+	~Mauk­To'Vor~­ritualen) (s) 
+eng:	type of «ceremonial «knife»», «~mevak~» (used in the ~Mauk­To'Vor~
+	ritual) (n) 
 def:	[MO at ~1998 Praxis~ (recording); STE]
 com:	Seen in the DS9 "Sons of Mogh".
 	English spelling (according to STE) is ~mevak~.
@@ -5167,6 +5290,20 @@ klin:	{mevyap}
 sve:	«stopp», det är «bra», det är «nog» (interj)
 eng:	«stop», (it is) «enough» (excl)
 def:	[KGT p.113]
+
+klin:	{me'}
+sve:	«moster» (mors syster) (s)
+eng:	«aunt» (mother's sister) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{me'nal}
+sve:	«moster» (mors brors hustru) (s)
+eng:	«aunt» (mother's brother's wife) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
 
 klin:	{mIch}
 sve:	«sektor», «zon» (s)
@@ -5416,7 +5553,7 @@ eng:	<sphere> (n)
 def:	[TKD]
 
 klin:	{moQ} (2)
-sve:	¿?spikförsedd «knapp» på «~d'k tahg~» kniv (s)
+sve:	¿?spikförsedd «knapp» på «~d'k tahg~»­kniv (s)
 eng:	spiked «pommel» of a «~d'k tahg~» knife (n)
 def:	[KGT p.61]
 
@@ -5822,10 +5959,22 @@ sve:	«holka ur», «gröpa ur», «gräva ur» (v)
 eng:	<gouge> (v)
 def:	[KGT]
 
-klin:	{nanwI'}
+klin:	{nan}
+sve:	«använda» «fjärde«tå»n» (v) (arkaiskt)
+eng:	«use» the «fourth «toe»» (v) (archaic)
+def:	[HQ10:2 p.10]
+cat:	body part
+
+klin:	{nanwI'} (1)
 sve:	«mejsel», «huggjärn» (s)
 eng:	<chisel> (n)
 def:	[KGT]
+
+klin:	{nanwI'} (2)
+sve:	«fjärde«tå»» (s)
+eng:	«fourth «toe»» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
 
 klin:	{nap}
 sve:	vara «enkel» (v)
@@ -5885,7 +6034,8 @@ ref:	[S33]
 com:	S33 was reprinted in HQ6:2 p.9
 
 klin:	{natlh} (2)
-sve:	vara «förkastlig», vara «äcklig», vara «vidrig», vara «usel», vara «motbjudande» (v) (slang)
+sve:	vara «förkastlig», vara «äcklig», vara «vidrig», vara «usel», vara
+	«motbjudande» (v) (slang) 
 eng:	be <reprehensible>, be <disgusting>, be <contemptible> (v) (slang)
 def:	[KGT]
 
@@ -6682,7 +6832,7 @@ def:	[TKD]
 cat:	landscape
 
 klin:	{ngep}
-sve:	¿?«sätta sig över», «överskrida», «dominera» (v)
+sve:	¿?«sätta sig över», «överskrida», «dominera», «åsidosätta» (v)
 eng:	<override> (v)
 def:	[TKD]
 
@@ -6859,7 +7009,8 @@ def:	[TKD]
 cat:	clothing
 
 klin:	{ngup} (2)
-sve:	«auktoritet», «befogenhet», «makt», någon med auktoritet eller i ledarposition (s) (slang)
+sve:	«auktoritet», «befogenhet», «makt», någon med auktoritet eller i
+	ledarposition (s) (slang) 
 eng:	<authority>, <power>, one in authority or in charge (n) (slang)
 def:	[KGT]
 
@@ -7020,6 +7171,7 @@ klin:	{paw'} (1)
 sve:	«kollidera», «krocka» (v)
 eng:	<collide> (v)
 def:	[TKD]
+joke:	Like "arrive" {paw}, only a bit more abrupt.
 
 klin:	{paw'} (2)
 sve:	«skallas», «stångas» (panna mot panna) (v) (slang)
@@ -7614,6 +7766,27 @@ def:	[TKD]
 ref:	[TKW pp.155, 177]
 cat:	family
 
+klin:	{puqnI'}
+sve:	«barnbarn» (s)
+eng:	«grandchild» (n)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{puqnI'be'}
+sve:	«sondotter», «dotterdotter» (s)
+eng:	«granddaughter» (n)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{puqnI'loD}
+sve:	«sonson», «dotterson» (s)
+eng:	«grandson» (n)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
 klin:	{puq poH}
 sve:	«generation» (s)
 eng:	<generation> (n)
@@ -7776,15 +7949,33 @@ sve:	«Kahmor» (namn)
 eng:	«Kahmor» (name)
 def:	[KGT p.198]
 
-klin:	{qan}
+klin:	{qan} (1)
 sve:	vara «gammal» (inte ung) (v)
 eng:	be <old> (not young) (v)
 def:	[TKD]
 ref:	[TKW pp.29, 117]
 
+klin:	{qan} (2)
+sve:	¿?«använda» «lill«fingret»» (v)
+eng:	«use» the «pinky» («little «finger»») (v)
+def:	[HQ10:2 p.7]
+com:	An idiomatic gesture: to point your pinky at someone is to
+	comment that you believe they are old.
+	** «lill«fingret»» som uppslagsord borde vara i obest form, hur fixa
+	detta? ** 
+cat:	body part
+
+klin:	{qanwI'}
+sve:	«lill«finger»» (s)
+eng:	«pinky», «little «finger»» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
+
 klin:	{qang} (1)
-sve:	rutinmässigt «hålla med», alltid hålla med, alltid samarbeta med, rutinmässigt «samarbeta» med (v) (slang)
-eng:	<agree> with routinely, always agree with, always cooperate with, <cooperate> with routinely (v) (slang)
+sve:	rutinmässigt «hålla med», alltid hålla med, alltid samarbeta med,
+	rutinmässigt «samarbeta» med (v) (slang) 
+eng:	<agree> with routinely, always agree with, always cooperate with,
+	<cooperate> with routinely (v) (slang) 
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -7863,6 +8054,18 @@ sve:	«påminna» (v)
 eng:	<remind> (v)
 def:	[TKD]
 
+klin:	{qay}
+sve:	¿?«använda» «lång«fingret»» (v)
+eng:	«use» the «middle «finger»» («second finger») (v)
+def:	[HQ10:2 p.7]
+cat:	body part
+
+klin:	{qaywI'}
+sve:	«lång«finger»» (s)
+eng:	«middle «finger»», «second finger» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
+
 klin:	{qay'}
 sve:	vara ett «problem», vara en «svårighet» (v)
 eng:	be a <problem>, be a <hassle> (v)
@@ -7905,6 +8108,7 @@ sve:	«kaffe», ett slags «dryck» (s)
 eng:	<coffee>, type of <beverage> (n)
 def:	[KGT]
 com:	Entries differ and have been combined here.
+joke:	Probably intended as a word borrowed from English.
 
 klin:	{qeb}
 sve:	«klämma» (på ett säckpipeinstrument) (v)
@@ -8036,6 +8240,18 @@ sve:	«käke», «kind» (s)
 eng:	<jowl>, <cheek> (n)
 def:	[TKD; KGT]
 
+klin:	{qew}
+sve:	¿?«använda» «ring«fingret»» (v)
+eng:	«use» the «ring «finger»» («third finger») (v)
+def:	[HQ10:2 p.7]
+cat:	body part
+
+klin:	{qewwI'}
+sve:	«ring«finger» (v)
+eng:	«ring «finger»», «third finger» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
+
 klin:	{qeylIS}
 sve:	«Kahless» (namn)
 eng:	«Kahless» (name)
@@ -8073,11 +8289,13 @@ klin:	{qID}
 sve:	«skämta», berätta ett skämt (v)
 eng:	<joke>, make a joke, tell a joke (v)
 def:	[KGT]
+joke:	{qID} pronunced as English "kid".
 
 klin:	{qID}
 sve:	«skämt» (s)
 eng:	<joke> (n)
 def:	[KGT]
+joke:	{qID} pronunced as English "kid".
 
 klin:	{qIgh}
 sve:	«genväg» (s)
@@ -8166,6 +8384,11 @@ sve:	«skriva» på, «underteckna» (ett avtal) (v)
 eng:	<sign> (a treaty) (v)
 def:	[TKD]
 
+klin:	{qI'empeq}
+sve:	«K'mpec» (namn)
+eng:	«K'mpec» (name)
+def:	[HQ10:2 p.8]
+
 klin:	{qoch}
 sve:	«partner», «kompanjon» (s)
 eng:	<partner> (n)
@@ -8219,6 +8442,8 @@ klin:	{qompogh}
 sve:	ett slags «mat» (s)
 eng:	type of <food> (n)
 def:	[KGT]
+joke:	"Compost" it probably looks like one too (with all mashed up pieces
+	of food).
 
 klin:	{qon}
 sve:	«nedteckna», «spela in» (all slags inspelning och skrift) (v)
@@ -8378,6 +8603,14 @@ eng:	<history> (n)
 def:	[TKD]
 ref:	[TKW p.179]
 
+klin:	{qung}
+sve:	«hål» i musikinstument (t.ex. flöjt) (s)
+eng:	«hole» in musical instrument (e.g. flute) (n)
+def:	[HQ10:2 p.8]
+com:	This is to change pitch in a wind instrument; apparently not a
+	soundhole for stringed instrument.
+cat:	music
+
 klin:	{qup}
 sve:	«äldre», «åldring» (s)
 eng:	<elder> (n)
@@ -8478,8 +8711,10 @@ eng:	be <fierce> (v)
 def:	[TKD]
 
 klin:	{qu'} (2)
-sve:	vara «storslagen», vara «underbar», vara «utmärkt», vara «bra» (v) (slang)
-eng:	be <great>, be <wonderful>, be <excellent>, be <splendid>, be <good> (v) (slang)
+sve:	vara «storslagen», vara «underbar», vara «utmärkt», vara «bra» (v)
+	(slang) 
+eng:	be <great>, be <wonderful>, be <excellent>, be <splendid>, be <good>
+	(v) (slang) 
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -8490,7 +8725,7 @@ def:	[TKD]
 com:	Klingon nerve gas.
 
 klin:	{Qach}
-sve:	«svinga» (ett vapen) (v)
+sve:	«svinga», «använda» (ett vapen) (v)
 eng:	<wield>, <swing> (a weapon) (v)
 def:	[KGT]
 
@@ -8630,20 +8865,43 @@ eng:	<transfer> (v)
 def:	[TKD]
 
 klin:	{Qay'}
-sve:	¿?förlora «besinningen», tappa «behärskningen», bli «ursinning» (v)
-eng:	<blow one's top> (v)
-def:	[TKD]
-com:	Att förlora behärskningen och plötsligt bli våldsam/ursinning.
+sve:	förlora «besinningen», tappa «behärskningen», tappa «humöret», bli
+	«ursinning», bli «rasande» (v) 
+eng:	<blow> one's top, «lose» one's «temper» (v)
+def:	[TKD; HQ10:2 p.11]
+
+klin:	{Qay'}
+sve:	«använda» «lill«tå»n» («femtetå»n) (v) (arkaiskt)
+eng:	«use» the «little «toe»» («fifth toe») (v) (archaic)
+def:	[HQ10:2 p.10]
+cat:	body part
+
+klin:	{Qay'wI'}
+sve:	«lill«tå»», «femtetå» (s)
+eng:	«little «toe»», «fifth toe» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
 
 klin:	{Qa'}
 sve:	ett slags «djur» (s)
 eng:	type of <animal> (n)
 def:	[TKD]
+com:	There are a few animals that make a particular ruckus at dawn. [...]
+	Another, though not a bird, is the {Qa'}, specifically the {jajlo'
+	Qa'}. [HQ10:4 p.5]]
+
+
 
 klin:	{Qa'Hom}
 sve:	ett slags «djur» (snarlik en ~Qa'~, men mindre) (s)
 eng:	type of <animal> (similar to a ~Qa'~, but smaller) (n)
 def:	[KGT]
+ref:	[HQ10:4 p.5]
+com:	The {Qa'Hom}, an animal similar to a {Qa'} but smaller, has been
+	confused with a bird by some; Maltz does not know why, especially
+	since it is the {jajlo' Qa'}, not the {Qa'Hom}, that makes a fuss
+	in the morning like the {'uSgheb} does. [HQ10:4 p.5]
+
 
 klin:	{Qa'raj}
 sve:	ett slags «djur», «~ka'raj~» (s)
@@ -8665,6 +8923,7 @@ klin:	{QeD}
 sve:	«vetenskap» (s)
 eng:	<science> (n)
 def:	[TKD]
+joke:	{QeD} = Q.E.D. = "Quod Errat Demonstandum".
 
 klin:	{QeDpIn}
 sve:	«vetenskapsofficer» (s)
@@ -8811,6 +9070,7 @@ klin:	{QIS}
 sve:	vågbladig «kniv» (s)
 eng:	wavy­bladed <knife> (n)
 def:	[KGT]
+joke:	There is a type of wavy­bladed knife called "kris", or "creese".
 
 klin:	{QIt}
 sve:	«långsamt» (adv)
@@ -9369,6 +9629,30 @@ sve:	¿?«energiförsörjare», «aktivator» (s)
 eng:	<energizer> (n)
 def:	[TKD]
 
+klin:	{rIl} (1)
+sve:	«spela» (ett horn­ eller lurinstrument) (v)
+eng:	«play» (a horn instrument) (v)
+def:	[HQ10:2 p.9]
+com:	This is a brass technique, not a flute technique. Most typically
+	it is used with {gheb} as the object.
+cat:	music
+
+klin:	{rIl} (2)
+sve:	«använda» «tumme»n (vanligtvis använt om/till barn) (v)
+eng:	«use» the «thumb» (usually used to/about children) (v)
+def:	[HQ10:2 p.7]
+com:	Most commonly used in reference to a child using a thumb.
+	See also {Sen}.
+cat:	body part
+
+klin:	{rIlwI'}
+sve:	«tumme» (vanligtvis använt om/till barn) (s)
+eng:	«thumb» (usually used to/about children) (n)
+def:	[HQ10:2 p.7]
+com:	Most commonly used in reference to a child's thumb.
+	See also {Sen}.
+cat:	body part
+
 klin:	{rIn}
 sve:	vara «åstadkommen», vara «färdig» (v)
 eng:	be <accomplished>, be <finished> (v)
@@ -9526,10 +9810,22 @@ sve:	«slicka» (v)
 eng:	<lick> (v)
 def:	[KGT]
 
+klin:	{roS}
+sve:	«använda» «tredje«tå»n» (v) (arkaiskt)
+eng:	«use» the «third «toe»» (v) (archaic)
+def:	[HQ10:2 p.10]
+cat:	body part
+
 klin:	{roSHa'moH}
 sve:	«paralysera» (v)
 eng:	<paralyze> (v)
 def:	[KGT]
+
+klin:	{roSwI'}
+sve:	«tredje«tå»» (s)
+eng:	«third «toe»» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
 
 klin:	{rotlh}
 sve:	vara «tuff» (v)
@@ -9601,7 +9897,7 @@ com:	A frozen asteroid used by Klingons as a penal colony.
 data:	phrase; {rura'} (n); {pente'} (n)
 
 klin:	{ruStay}
-sve:	¿?«föreningsritual» (s)
+sve:	¿?«föreningsritual», «bindningsritual» (s)
 eng:	<bonding ritual> (n)
 def:	[TKDa]
 
@@ -9703,11 +9999,14 @@ klin:	{Sap}
 sve:	anmäla sig «frivillig» (till), ställa upp som frivillig (till) (v)
 eng:	<volunteer> (v)
 def:	[TKD]
+joke:	You're a sap if you volunteer.
 
 klin:	{Saq}
 sve:	«landa», «landsätta», gå i land (v)
 eng:	<land> (v)
 def:	[TKD]
+com:	also used about a bird landing on ground [HQ10:4 p.5]
+see:	{tlhot} (for landing on water)
 
 klin:	{Saqghom}
 sve:	«landsättningspatrull», «landningspatrull» (s)
@@ -9821,6 +10120,22 @@ klin:	{SeHlaw}
 sve:	«kontrollpanel» (s)
 eng:	<control> panel (n)
 def:	[TKD]
+
+klin:	{Sen}
+sve:	«använda» «tumme»n (vanligtvis använt om/till vuxna) (v)
+eng:	«use» the «thumb» (usually used to/about adults) (v)
+def:	[HQ10:2 p.7]
+com:	Most commonly used in reference to an adult using a thumb.
+	See also {rIl}.
+cat:	body part
+
+klin:	{SenwI'}
+sve:	«tumme» (vanligtvis använt om/till vuxna) (s)
+eng:	«thumb» (usually used to/about adults) (n)
+def:	[HQ10:2 p.7]
+com:	Most commonly used in reference to an adult thumb.
+	See also {rIl}.
+cat:	body part
 
 klin:	{Seng}
 sve:	orsaka «problem», vålla «trubbel» (v)
@@ -9937,7 +10252,8 @@ def:	[TKD]
 ref:	[TKW p.127]
 
 klin:	{SIj} (2)
-sve:	vara «insiktsfull», vara «smart», vara «klipsk», vara «skarpsinnig» (v) (slang)
+sve:	vara «insiktsfull», vara «smart», vara «klipsk», vara «skarpsinnig»
+	(v) (slang) 
 eng:	be <insightful>, be <clever> (v) (slang)
 def:	[KGT]
 
@@ -9955,6 +10271,18 @@ klin:	{SIp}
 sve:	«gas» (s)
 eng:	<gas> (n)
 def:	[TKD]
+
+klin:	{SIq}
+sve:	¿?«använda» «pek«fingret»» (v)
+eng:	«use» the «index «finger»» («first finger») (v)
+def:	[HQ10:2 p.7]
+cat:	body part
+
+klin:	{SIqwI'}
+sve:	«pek«finger»» (s)
+eng:	«index «finger»», «first finger» (n)
+def:	[HQ10:2 p.7]
+cat:	body part
 
 klin:	{SIQ}
 sve:	«uthärda», «stå ut» (v)
@@ -10169,7 +10497,8 @@ def:	[TKD]
 ref:	[TKW p.182]
 
 klin:	{So'wI'}
-sve:	«maskering», «maskeringsanordning», «cloaking device», «kamouflagemekanism» (s)
+sve:	«maskering», «maskeringsanordning», «cloaking device»,
+	«kamouflagemekanism» (s) 
 eng:	<cloaking device> (n)
 def:	[TKD]
 
@@ -10179,8 +10508,10 @@ eng:	be <solid> (v)
 def:	[TKD]
 
 klin:	{Sub} (2)
-sve:	vara «modig», vara «heroisk», vara «djärv», vara «dristig», vara «tapper», vara «oförskräckt» (v) (slang)
-eng:	be <brave>, be <heroic>, be <bold>, be <valiant>, be <intrepid> (v) (slang)
+sve:	vara «modig», vara «heroisk», vara «djärv», vara «dristig», vara
+	«tapper», vara «oförskräckt» (v) (slang) 
+eng:	be <brave>, be <heroic>, be <bold>, be <valiant>, be <intrepid> (v)
+	(slang) 
 def:	[KGT]
 com:	Entries differ in source. The K­E entry is used here.
 
@@ -10288,7 +10619,7 @@ eng:	<skin> (v)
 def:	[TKD]
 
 klin:	{SuS}
-sve:	«blåsa» (i säckpipa) för att producera ljud (v)
+sve:	«blåsa» (i blåsinstrument) för att producera ljud (v)
 eng:	<blow> (into wind instrument) to produce sound (v)
 def:	[KGT]
 cat:	music
@@ -10300,7 +10631,7 @@ def:	[TKD]
 ref:	[TKW p.107]
 
 klin:	{SuSDeq}
-sve:	«säckpipa», «bälg» (s)
+sve:	«vindsäck», «bälg», «blåsbälg» (s)
 eng:	<windbag>, <bellows> (n)
 def:	[KGT]
 
@@ -10631,6 +10962,20 @@ sve:	«gå ombord», «ge sig in på» (v)
 eng:	<embark> (v)
 def:	[TKD]
 
+klin:	{tennuS}
+sve:	«farbror» (fars bror) (s)
+eng:	«uncle» (father's brother) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{tennuSnal}
+sve:	«morbror» (fars systers make) (s)
+eng:	«uncle» (father's sister's husband) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
 klin:	{tengchaH}
 sve:	«rymdstation» (s)
 eng:	<space station> (n)
@@ -10697,6 +11042,39 @@ klin:	{tey'}
 sve:	«anförtro» (v)
 eng:	<confide> (v)
 def:	[TKD]
+
+klin:	{tey'}
+sve:	«kusin» (fars brors barn eller mors systers barn),
+	«brorsbarn» (en mans brors barn), «systerbarn» (en kvinnas
+	systers barn) (s)
+eng:	«cousin» (father's brother's child or mother's sister's
+	child), «niece», «nephew» (a man's brother's child, or a
+	woman's sister's child) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{tey'be'}
+sve:	kvinnlig «kusin» (fars brors dotter eller mors systers
+	dotter), «brorsdotter» (en mans brors dotter), «systerdotter»
+	(en kvinnas systers dotter) (s)
+eng:	female «cousin» (father's brother's daughter or mother's
+	sister's daughter), «niece» (a man's brother's daughter or a
+	woman's sister's daughter) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{tey'loD}
+sve:	manlig «kusin» (fars brors son eller mors systers son),
+	«brorson» (en mans brors son), «systerson» (en kvinnas
+	systers son) (s)
+eng:	male «cousin» (father's brother's son or mother's sister's
+	son), «nephew» (a man's brother's son or a woman's sister's
+	son) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
 
 klin:	{tI}
 sve:	«vegetation» (s)
@@ -10930,9 +11308,10 @@ def:	[KGT]
 data:	phrase; {toqvIr} (n)
 
 klin:	{toQ}
-sve:	djur liknande en jordisk «rovfågel» (s)
-eng:	animal similar to Earth «bird of prey» (n)
+sve:	ett slags «fågel» («rovfågel») (s)
+eng:	type of «bird» (bird of prey) (n)
 def:	[KLI's mailing list 1997­04­04]
+ref:	[HQ10:4 p.5]
 
 klin:	{toQDuj}
 sve:	«Rovfågel», «Bird of Prey» (farkost) (s)
@@ -11088,6 +11467,13 @@ def:	[KGT]
 cat:	family
 data:	phrase
 
+klin:	{tuqnIgh}
+sve:	«familjemedlem», «släktmedlem», «släkting» (s)
+eng:	«member» of a «house» (n)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
 klin:	{tuqvol}
 sve:	«panna» (s) (regionalt)
 eng:	<forehead> (n) (regional)
@@ -11101,7 +11487,7 @@ def:	[TKD]
 cat:	clothing
 
 klin:	{tuQDoq}
-sve:	¿?«tankesikt», «tankesil» (klingonsk sinnessond) (s)
+sve:	¿?«tankesikt», «tankesil», «psykisk sond» (klingonsk sinnessond) (s)
 eng:	<mind sifter> (Klingon psychic probe) (n)
 def:	[TKD]
 
@@ -11457,7 +11843,8 @@ see:	{'Iq}
 
 klin:	{tlhoy'}
 sve:	«vägg», innervägg, insida av yttervägg, territorial«mur» (s)
-eng:	«wall», interior wall, interior face of exterior wall, territorial wall (n)
+eng:	«wall», interior wall, interior face of exterior wall, territorial
+	wall (n) 
 def:	[News 1998­12­07]
 
 klin:	{tlhoy' SaS}
@@ -11538,6 +11925,11 @@ klin:	{va}
 sve:	(generellt «invektiv») (interj)
 eng:	(general «invective») (excl)
 def:	[TKDa 5.5 (p.178)]
+
+klin:	{vaD}
+sve:	vara «böjlig», vara «smidig» (v)
+eng:	be «flexible» (v)
+def:	[HQ10:2 p.11]
 
 klin:	{vagh}
 sve:	femte «tonen» på den nonatoniska skalan (s)
@@ -11821,7 +12213,7 @@ eng:	be <belligerent> (v)
 def:	[TKDa]
 
 klin:	{vID'Ir}
-sve:	¿?«platta», «baffelplåt» (s)
+sve:	¿?«platta», «baffelplåt», «skiljevägg», «mellanvägg» (s)
 eng:	«baffle» (n)
 def:	[BoP]
 
@@ -11840,6 +12232,19 @@ sve:	raketmotor, «raket» (s)
 eng:	<thruster> (n)
 def:	[TKD]
 see:	{chuyDaH} (plural form)
+
+klin:	{vIn}
+sve:	«kusin», «brorsdotter», «systerdotter», «brorson»,
+	«systerson» (s)
+eng:	«cousin», «niece», «nephew» (n)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+	In the singular, typically {tey'} or {lor} is preferred
+	unless the individual is being referred to as a member of a
+	group that likely includes both {tey'} and {lor}. The plural
+	form ({vInpu'}) is used for a group that includes both {tey'}
+	and {lor}.
+cat:	family
 
 klin:	{vIno'va' qurgh}
 sve:	«finova bönor» (s)
@@ -12197,7 +12602,7 @@ eng:	be <disgraced> (v)
 def:	[TKD]
 
 klin:	{wech}
-sve:	¿?«servera» jäst mat vid dess höjdpunkt (v)
+sve:	¿?«servera» jäst mat när den är som bäst (v)
 eng:	<serve> fermented food at its peak (v)
 def:	[KGT]
 
@@ -12507,8 +12912,8 @@ eng:	<misinterpret> (v)
 def:	[TKD]
 
 klin:	{yan}
-sve:	«svinga» eller «använda» eller «hantera» ett svärd (v)
-eng:	<wield> or <use> or <manipulate> a <sword> (v)
+sve:	«svinga», «använda», «hantera» (ett svärd) (v)
+eng:	<wield>, <use>, <manipulate> (a <sword>) (v)
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -12535,8 +12940,8 @@ eng:	<officer> (n)
 def:	[TKD]
 
 klin:	{yaS cha'DIch}
-sve:	«andreofficer» (s)
-eng:	«second officer» (on a ship) (n)
+sve:	«andre«officer»» (s)
+eng:	«second «officer»» (on a ship) (n)
 def:	[KGT p.53]
 data:	phrase
 
@@ -12879,6 +13284,19 @@ eng:	«United Federation of Planets» (n)
 def:	[TKD K­E]
 see:	{yuQjIjDIvI'}
 
+klin:	{yur}
+sve:	«kusinbarn», «tremänning», avlägset «syskonbarn» (syskons
+	barnbarn, syssling etc.) (s)
+eng:	distant «cousin», distant «niece», distant «nephew» (second
+	cousin, grandnephew, etc.) (n)
+def:	[HQ9:3 pp.8-9]
+com:	The singular form is never used in place of {tey'} or {lor},
+	but the plural may be used for a group including {tey'}
+	and/or {lor}, as long as there is at least one more distant
+	cousin, niece or nephew in the group.
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
 klin:	{yuv}
 sve:	«putta», «knuffa» (v)
 eng:	<push> (v)
@@ -12969,6 +13387,10 @@ klin:	{'aqnaw}
 sve:	ett slags «kniv» (allmän användning) (s)
 eng:	type of <knife> (general purpose) (n)
 def:	[KGT]
+joke:	Marc Okrand really gets going in the KGT section about (kitchen)
+	knives, so this is probably a travesty of all those soap­opera
+	commercials: ...And finally, *act now*, and get this small all purpose
+	knife for free...!"
 
 klin:	{'aqroS} (1)
 sve:	«överdel» (under­ eller insidan av överdelen) (s)
@@ -13195,6 +13617,29 @@ eng:	<that> (previous topic) (pro)
 def:	[TKD]
 ref:	[TKW pp.13, 19, 37, 73, 74, 87, 125, 163, 195]
 
+klin:	{'e'mam}
+sve:	«faster» (fars syster) (s)
+eng:	«aunt» (father's sister) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{'e'mamnal}
+sve:	«faster» (fars brors hustru) (s)
+eng:	«aunt» (father's brother's wife) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{'e'nal}
+sve:	«ingift» person, någon som «gift» in sig i «familjen»
+	(specificerar inte det exakta släktskapet) (s)
+eng:	someone who «married» into the «family» (does not specify the
+	exact relationship) (n)
+def:	[HQ9:3 p.9]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
 klin:	{'Ib}
 sve:	«kar» (s)
 eng:	<tub> (n)
@@ -13259,6 +13704,20 @@ sve:	vara «sorgsen», vara «nerstämd» (v)
 eng:	be <sad> (v)
 def:	[TKD]
 ref:	[TKW p.8]
+
+klin:	{'IrneH}
+sve:	«morbror» (mors bror) (s)
+eng:	«uncle» (mother's brother) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
+
+klin:	{'IrneHnal}
+sve:	«morbror» (mors systers make) (s)
+eng:	«uncle» (mother's sister's husband) (n)
+def:	[HQ9:3 p.8]
+com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	family
 
 klin:	{'ISjaH}
 sve:	«kalender», «tideräkning» (s)
@@ -13371,7 +13830,8 @@ def:	[TKD]
 com:	Entries differ and have been combined here.
 
 klin:	{'op}
-sve:	«någon», «något», «några», en «del», en okänd eller ospecificerad mängd (s)
+sve:	«någon», «något», «några», en «del», en okänd eller ospecificerad
+	mängd (s) 
 eng:	<some>, an unknown or unspecified quantity (n)
 def:	[KGT]
 
@@ -13535,8 +13995,10 @@ def:	[KGT]
 data:	phrase
 
 klin:	{'up}
-sve:	vara «smaklös», vara «äcklig», vara «frånstötande», vara «avskyvärd», vara «motbjudande», vara «osmaklig» (v)
-eng:	be <unsavory>, be <disgusting>, be <repugnant>, be <loathsome>, be icky (v)
+sve:	vara «smaklös», vara «äcklig», vara «frånstötande», vara
+	«avskyvärd», vara «motbjudande», vara «osmaklig» (v) 
+eng:	be <unsavory>, be <disgusting>, be <repugnant>, be <loathsome>, be
+	icky (v) 
 def:	[KGT]
 
 klin:	{'uQ}
@@ -13619,213 +14081,207 @@ def:	[ST5; HQ8:4 p.11]
 com:	¿?Is this correctly formed?
 data:	phrase; {yo'SeH} (n); {yaHnIv} (n)
 
-klin:	{me'}
-sve:	«moster» (mors syster) (s)
-eng:	«aunt» (mother's sister) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
 
-klin:	{'e'mam}
-sve:	«faster» (fars syster) (s)
-eng:	«aunt» (father's sister) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{bo}
+sve:	«fjäder» (på fågel) (s)
+eng:	«feather» (n)
+def:	[HQ10:4 p.5]
 
-klin:	{me'nal}
-sve:	«moster» (mors brors hustru) (s)
-eng:	«aunt» (mother's brother's wife) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{borghel}
+sve:	ett slags «fågel» (väldigt liten, dess ägg anses mycket goda) (s)
+eng:	type of «bird> (very small, its eggs are considered quite tasty) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{'e'mamnal}
-sve:	«faster» (fars brors hustru) (s)
-eng:	«aunt» (father's brother's wife) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{bo'Degh}
+sve:	«fågel» (s)
+eng:	«bird» (n)
+def:	[HQ10:4 p.4]
+com:	general word for bird­like creature
 
-klin:	{'IrneH}
-sve:	«morbror» (mors bror) (s)
-eng:	«uncle» (mother's brother) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{cha'bIp}
+sve:	«» (s)
+eng:	type of «bird» (noted for its speed) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{tennuS}
-sve:	«farbror» (fars bror) (s)
-eng:	«uncle» (father's brother) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{cha'Do'}
+sve:	«» (s)
+eng:	type of «bird» (about which little is known) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{'IrneHnal}
-sve:	«morbror» (mors systers make) (s)
-eng:	«uncle» (mother's sister's husband) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{cha'naS}
+sve:	«» (s)
+eng:	type of «bird» (small, digs up bugs to eat) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{tennuSnal}
-sve:	«morbror» (fars systers make) (s)
-eng:	«uncle» (father's sister's husband) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{cha'par}
+sve:	«» (s)
+eng:	type of «bird» (noted for its song) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{tey'}
-sve:	«kusin» (fars brors barn eller mors systers barn),
-	«brorsbarn» (en mans brors barn), «systerbarn» (en kvinnas
-	systers barn) (s)
-eng:	«cousin» (father's brother's child or mother's sister's
-	child), «niece», «nephew» (a man's brother's child, or a
-	woman's sister's child) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{cha'qu'}
+sve:	«» (s)
+eng:	type of «bird» (with a noisy, repetitive cry) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{lor}
-sve:	«kusin» (mors brors barn eller fars systers barn),
-	«systerbarn» (en mans systers barn), «brorsbarn» (en kvinnas
-	brors barn) (s)
-eng:	«cousin» (mother's brother's child or father's sister's
-	child), «niece», «nephew» (a man's sister's child or a
-	woman's brother's child) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{Da'nal}
+sve:	«» (s)
+eng:	type of «bird» (characterized by erratic, unpredictable behavior) (n)
+def:	[HQ10:4 p.4]
+com:	similar to {Da'vI'}
 
-klin:	{tey'loD}
-sve:	manlig «kusin» (fars brors son eller mors systers son),
-	«brorson» (en mans brors son), «systerson» (en kvinnas
-	systers son) (s)
-eng:	male «cousin» (father's brother's son or mother's sister's
-	son), «nephew» (a man's brother's son or a woman's sister's
-	son) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{Da'vI'}
+sve:	«» (s)
+eng:	type of «bird» (characterized by erratic, unpredictable behavior) (n)
+def:	[HQ10:4 p.4]
+com:	similar to {Da'nal}
 
-klin:	{lorloD}
-sve:	manlig «kusin» (mors brors son eller fars systers son),
-	«systerson» (en mans systers son), «brorson» (en kvinnas
-	brors son) (s)
-eng:	male «cousin» (mother's brother's son or father's sister's
-	son), «nephew» (a man's sister's son or a woman's brother's
-	son) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{ghotI'}
+sve:	«» (s)
+eng:	«fish» (n)
+def:	[HQ10:4 p.5]
+joke:	Bernard Shaw's famous spelling of "fish".
 
-klin:	{tey'be'}
-sve:	kvinnlig «kusin» (fars brors dotter eller mors systers
-	dotter), «brorsdotter» (en mans brors dotter), «systerdotter»
-	(en kvinnas systers dotter) (s)
-eng:	female «cousin» (father's brother's daughter or mother's
-	sister's daughter), «niece» (a man's brother's daughter or a
-	woman's sister's daughter) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{jajlo' Qa'}
+sve:	«» (s)
+eng:	type of «animal» (makes a ruckus at dawn) (n)
+def:	[HQ10:4 p.5]
 
-klin:	{lorbe'}
-sve:	kvinnlig «kusin» (mors brors dotter eller fars systers
-	dotter), «systerdotter» (en mans systers dotter),
-	«brorsdotter» (en kvinnas brors dotter) (s)
-eng:	female «cousin» (mother's brother's daughter or father's
-	sister's daughter), «niece» (a man's sister's daughter or
-	a woman's brother's daughter) (n)
-def:	[HQ9:3 p.8]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{laq}
+sve:	«flaxa», «slå» (om fågelvingar) (v)
+eng:	«flap» (bird's wings does this) (v)
+def:	[HQ10:4 p.5]
+com:	Used about a birds wings. "[...] in flight, a bird's wings {laq}
+	(the bird is said to {laqmoH} its wings)" [HQ10:4 p. 5]
 
-klin:	{yur}
-sve:	«kusinbarn», «tremänning», avlägset «syskonbarn» (syskons
-	barnbarn, syssling etc.) (s)
-eng:	distant «cousin», distant «niece», distant «nephew» (second
-	cousin, grandnephew, etc.) (n)
-def:	[HQ9:3 pp.8-9]
-com:	The singular form is never used in place of {tey'} or {lor},
-	but the plural may be used for a group including {tey'}
-	and/or {lor}, as long as there is at least one more distant
-	cousin, niece or nephew in the group.
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{lIr}
+sve:	«» (s)
+eng:	type of «bird» (nocturnal) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{vIn}
-sve:	«kusin», «brorsdotter», «systerdotter», «brorson»,
-	«systerson» (s)
-eng:	«cousin», «niece», «nephew» (n)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-	In the singular, typically {tey'} or {lor} is preferred
-	unless the individual is being referred to as a member of a
-	group that likely includes both {tey'} and {lor}. The plural
-	form ({vInpu'}) is used for a group that includes both {tey'}
-	and {lor}.
-cat:	family
+klin:	{lotlhmoq}
+sve:	«» (s)
+eng:	type of «bird» (swoops into the water to catch food, buc cannot
+	swim) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{'e'nal}
-sve:	«ingift» person, någon som «gift» in sig i «familjen»
-	(specificerar inte det exakta släktskapet) (s)
-eng:	someone who «married» into the «family» (does not specify the
-	exact relationship) (n)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{neb}
+sve:	«» (s)
+eng:	«beak», «bill» (n)
+def:	[HQ10:4 p.5]
 
-klin:	{tuqnIgh}
-sve:	«familjemedlem», «släktmedlem», «släkting» (s)
-eng:	«member» of a «house» (n)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{neSlo'}
+sve:	«» (s)
+eng:	«mirror» (smaller) (n)
+def:	[HQ10:4 p.5]
+com:	smaller than {SIla'}
 
-klin:	{puqnI'}
-sve:	«barnbarn» (s)
-eng:	«grandchild» (n)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{notqa'}
+sve:	«» (s)
+eng:	type of «bird» (large, black) (n)
+def:	[HQ10:4 p.4]
+com:	nowhere near as large as a qa'rol, which is really big
+joke:	"`Nevermore' quoth the raven." ({notqa'} "never again").
 
-klin:	{puqnI'loD}
-sve:	«sonson», «dotterson» (s)
-eng:	«grandson» (n)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{ngun}
+sve:	«» (v)
+eng:	«perch» (v)
+def:	[HQ10:4 p.5]
+com:	if bird lands on land, use Saq, on water, use tlhot
 
-klin:	{puqnI'be'}
-sve:	«sondotter», «dotterdotter» (s)
-eng:	«granddaughter» (n)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{pach}
+sve:	«» (s)
+eng:	«claw», «talon» (n)
+def:	[HQ10:4 p.5]
 
-klin:	{ghubDaQ}
-sve:	«förstfödd» (s)
-eng:	«firstborn» (n)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-cat:	family
+klin:	{parbIng}
+sve:	«» (s)
+eng:	type of «bird» (mid-sized, with particularly garish coloring) (n)
+def:	[HQ10:4 p.4]
 
-klin:	{boq}
-sve:	«alliera» med, «förena» med, skapa en allians med (v)
-eng:	«ally» with, «form» an alliance with (v)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-	HQ: Used in math: {boq} for addition, {boqHa'} for
-	subtraction, {X­logh boq'egh Y} for multiplication, {X­logh
-	boqHa''egh Y} for division. See also {chen}.
-cat:	math
+klin:	{qaj}
+sve:	«» (v)
+eng:	«soar» (v)
+def:	[HQ10:4 p.5]
 
-klin:	{boqHa'}
-sve:	«skilja» ifrån (v)
-eng:	«dissociate» from (v)
-def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
+klin:	{qanraD}
+sve:	«» (s)
+eng:	type of «bird» (noted for its song) (n)
+def:	[HQ10:4 p.4]
+
+klin:	{qaryoq}
+sve:	«» (s)
+eng:	type of «bird» (capable of mimicking speech) (n)
+def:	[HQ10:4 p.5]
+com:	Some people pluralize these with {-pu'}, but most use {-mey}.
+joke:	Wordplay on "kareoke". (?)
+
+klin:	{qaryoq'a'}
+sve:	«» (s)
+eng:	type of «bird» (large, capable of mimicking speech) (n)
+def:	[HQ10:4 p.5]
+com:	Some people pluralize these with {-pu'}, but most use {-mey}.
+joke:	Wordplay on "kareoke". (?)
+
+klin:	{qa'rol}
+sve:	«» (s)
+eng:	type of «bird» (really big, black) (n)
+def:	[HQ10:4 p.4]
+com:	much larger than a {notqa'}
+
+klin:	{raw'}
+sve:	«» (s)
+eng:	type of «bird» (aquatic, colorful plumage) (n)
+def:	[HQ10:4 p.5]
+
+klin:	{SIla'}
+sve:	«» (s)
+eng:	«mirror» (larger) (n)
+def:	[HQ10:4 p.5]
+com:	larger than {neSlo'}
+
+klin:	{tlhot}
+sve:	«landa» (på vatten) (v)
+eng:	«land» (on water, like a bird) (v)
+def:	[HQ10:4 p.5]
+com:	if bird lands on land, use {Saq}, in a tree, use {ngun}
+
+klin:	{vem'eq}
+sve:	«» (v)
+eng:	type of «bird> (feeds almost exclusively on the serpent worm from
+	which ~gagh~ is made) (n)
+def:	[HQ10:4 p.5]
+com:	Klingons are not particularly fond of this bird.
+
+klin:	{vIlInHoD}
+sve:	«» (s)
+eng:	type of «bird» (capable of mimicking speech) (n)
+def:	[HQ10:4 p.5]
+com:	Some people pluralize these with {-pu'}, but most use {-mey}.
+
+klin:	{waqboch}
+sve:	«» (s)
+eng:	type of «bird» (with a very long beak) (n)
+def:	[HQ10:4 p.5]
+
+klin:	{wom}
+sve:	«» (v)
+eng:	«peck» (v)
+def:	[HQ10:4 p.5]
+com:	used for both eating and attacking by pecking
+
+klin:	{yatqap}
+sve:	«» (v)
+eng:	type of «bird» (gray, sometimes white, travel long distances without
+	pausing) (n)
+def:	[HQ10:4 p.5]
+
+klin:	{'uSgheb}
+sve:	«» (s)
+eng:	type of «bird» (makes a ruckus at dawn, fiercer than a rooster) (n)
+def:	[HQ10:4 p.5]
+com:	much fiercer than a rooster
+
+
 
 === end­of­word­list ===
 === start­of­verb­prefix­list ===
@@ -14359,8 +14815,17 @@ To do: (no specific order)
   o Extract Swedish and English indices, sort these and look for
     any conclusions that can be drawn from them.
 
-History: (latest first)
+History: (newest first)
 
+  [2002­01­21] Added the 35 new words ({po Ha'DIbaH} excepted since it
+    really isn't a "new word") from MO's article in HQ10:4. Mostly these
+    words are about birds.
+  [2001­08­23] Added some 27 new words related to fingers and toes, and
+    everything else from the HQ10:2 article "A Friend of Maltz: {nItlhDu'
+    yaDDu' je}". The following three words had to be given lemma numbers,
+    since they were homonymous to other words already present in the
+    dictionary: {nanwI'}, {qan}, {rIl}. Re­sorted these history events into
+    proper order (they were in disarray).
   [2001­03­20] Added the field "data:".
   [2001­03­19] Added the word "be" before occuring adjectivals
     where it was previously missing in the translations of the
@@ -14372,27 +14837,24 @@ History: (latest first)
   [2001­02­12] Added the new word {tangqa'} from HQ 9:4.
   [2001­01­06] Added the word {mevyap} (Why on earth haven't I found
     this before! - Check KGT more thoroughly!)
-  [2000­02­24] Part of speech for Swedish translation
-    machine­checked.
-  [2000­04­03] All references to MSN etc. corrected to ~News~ and
-    provided with correct dates. Machine­checked all parentheses.
-  [2000­04­30 to 2000­05­02] Sort tagged the remaining Swedish
-    translations (about 1600) using a lot of ad hoc ARexx­code.
-  [2000­05­03] Machine­checked Klingon graphotax. Machine­checked
-    all parenthetic structures (including ~xx~ used for italics).
-    Machine­checked for lines ending in white space(s) (none found).
-    Machine­checked for identical fields within same post (2
-    corrected) Checked that if "»»"/">>"/"««"/"<<" occur that the
-    matching "««" or "»»" exist in the Swedish translation.
-  [2000­05­09] Corrected some Swedish spelling errors.
-  [2000­07­03] Changed italics marker from '*' to '+' to avoid
-    confusions with useage of '*' as a literal letter (as three
-    curses uses this).
-  [2000­07­31] Translated "skink" and "blow one's top" into Swedish.
-  [2000­08­14] Removed the word {Soq} from S33 (now confirmed
-    incorrect).
-  [2000­09­08] Introduced lemma numbering for homonyms of same word
-    class.
+  [2000­11­01] Added Swedish translation "åker" to {yotlh}, tagged
+    some more words with "cat: landcape" and "cat: body part".
+  [2000­10­24] Made sure all references to TKD & TKDa had section
+    numbers, and not just page numbers.
+  [2000­10­20] Updated all verb suffix source references to include
+    section numbers. Also added some comments of useage for the
+    rovers and type 9 verb suffixes.
+  [2000­10­13] Added the "see:" field, and changed most "see also"
+    refereces into these instead.
+  [2000­10­11] to [2000­10­12] Added 24 new words from the latest
+    issue of HolQeD (most of these are names of different family
+    relations) and added some additional comments to {chen} from the
+    same source. Translated the new words into Swedish.
+  [2000­10­09] Changed italics marker to "~" instead of "+" (this
+    makes this dictionary follow the ~Project Gutenberg~
+    specifications in this regard). Added category "locative" (for
+    words like "inside", "area below" etc.) and "math" (for words
+    like "add", "divide", the numbers etc.).
   [2000­09­09] Checked that all sequences of lemma numbers are
     complete (i.e. begins with 1, and counts up without any skipped
     numbers) and that all homonymns with the same part­of­speech are
@@ -14402,24 +14864,27 @@ History: (latest first)
     finally after lemma numbering (lemma numbers are given
     chronologically, with the lowest number to the first defined
     word).
-  [2000­10­09] Changed italics marker to "~" instead of "+" (this
-    makes this dictionary follow the ~Project Gutenberg~
-    specifications in this regard). Added category "locative" (for
-    words like "inside", "area below" etc.) and "math" (for words
-    like "add", "divide", the numbers etc.).
-  [2000­10­11] to [2000­10­12] Added 24 new words from the latest
-    issue of HolQeD (most of these are names of different family
-    relations) and added some additional comments to {chen} from the
-    same source. Translated the new words into Swedish.
-  [2000­10­13] Added the "see:" field, and changed most "see also"
-    refereces into these instead.
-  [2000­10­20] Updated all verb suffix source references to include
-    section numbers. Also added some comments of useage for the
-    rovers and type 9 verb suffixes.
-  [2000­10­24] Made sure all references to TKD & TKDa had section
-    numbers, and not just page numbers.
-  [2000­11­01] Added Swedish translation "åker" to {yotlh}, tagged
-    some more words with "cat: landcape" and "cat: body part".
+  [2000­09­08] Introduced lemma numbering for homonyms of same word
+    class.
+  [2000­08­14] Removed the word {Soq} from S33 (now confirmed
+    incorrect).
+  [2000­07­31] Translated "skink" and "blow one's top" into Swedish.
+  [2000­07­03] Changed italics marker from '*' to '+' to avoid
+    confusions with useage of '*' as a literal letter (as three
+    curses uses this).
+  [2000­05­09] Corrected some Swedish spelling errors.
+  [2000­05­03] Machine­checked Klingon graphotax. Machine­checked
+    all parenthetic structures (including ~xx~ used for italics).
+    Machine­checked for lines ending in white space(s) (none found).
+    Machine­checked for identical fields within same post (2
+    corrected) Checked that if "»»"/">>"/"««"/"<<" occur that the
+    matching "««" or "»»" exist in the Swedish translation.
+  [2000­04­30 to 2000­05­02] Sort tagged the remaining Swedish
+    translations (about 1600) using a lot of ad hoc ARexx­code.
+  [2000­04­03] All references to MSN etc. corrected to ~News~ and
+    provided with correct dates. Machine­checked all parentheses.
+  [2000­02­24] Part of speech for Swedish translation
+    machine­checked.
 
 The following words exist in the dictionary that are not accounted
 for separately, but instead only occurs in different noun­noun
