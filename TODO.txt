@@ -14,6 +14,8 @@ Important Stuff
 
 * LaTeX: Clean up and remove unused code.
 
+* Perl: "use strict" and "use warnings" in all scripts.
+
 
 
 Textual Correcions/Clarifications
@@ -32,6 +34,16 @@ Textual Correcions/Clarifications
 * Hyphenation of Klingon phrases?
 
 
+Minor Stuff
+===========
+
+* tex/*/include/values.tex: Have "TODO ditch these values" comment.
+
+* Rewrite instructions on stress. Section should be briefer and easier to read
+  at a glance. Maybe use examples with underlined syllables and simple rules?
+
+* Comments should always be in English, even in Swedish/Klingon version of
+  dictionary.
 
 Someday/Maybe -- Wishlist
 =========================
@@ -40,5 +52,24 @@ Someday/Maybe -- Wishlist
 
 * LaTeX: Proper typesetting/linebreaking of URLs. \usepackage{url} and
   \usepackage{hyperref} neither allow URLs to be set in italics.
+
+
+Old TODOs from the LaTeX Source
+===============================
+
+* From "tex/sv/sv-main.tex" and "tex/en/en-main.tex"
+
+    o Include a more complete suffix reference.
+    o A Swedish Translation.
+    o Use the `vmargin' package to set margins instead of my own ad hoc code.
+    o General clean-up of code & removal of old, unused code.
+    o Make the back cover prefix table listen to margin etc and adapt.
+    o Add `Klingonska Akademien' logotype to the front cover.
+
+* From "include/commands.tex"
+
+    o Section headings should use the \section{} command, instead of
+      home-brewed the \header{} command defined in "commands.tex". (How could
+      the `\section' command be overridden to do what \seaction{} does now?)
 
 [eof]
