@@ -7,7 +7,7 @@ SWEDISH := sv-cover sv-main
 english: $(addsuffix .pdf,$(ENGLISH))
 swedish: $(addsuffix .pdf,$(SWEDISH))
 
-%.dvi: tex/*/%.tex        # TeX -> DVI
+%.dvi: tex/*/%.tex        # LaTeX -> DVI
 	@export TFMFONTS="tex/fonts:";                  \
 	export TEXINPUTS="$(dir $<)include:tex/include:"; \
 	echo -n | latex $<

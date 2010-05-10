@@ -47,8 +47,8 @@
 %
 % [2001-01-04] by Zrajm C Akfohg 
 %
-% Negative space: \unspace is like an 'inverted' \, it produces a
-% small negative space (like \! in math mode).
+% Negative space: \unspace{} is like an 'inverted' "\," it produces a
+% small negative space (like "\!" in math mode).
 %
 \newlength{\negspace}
 \setlength{\negspace}{\widthof{\,} * \real{-1}}
@@ -79,8 +79,8 @@
 %
 % Tilde: produces a tilde, usable in e.g. urls or in dictionaries
 % (to represent the look-up word). When used in italics this need
-% to be preceeded by a negative space (\unspace above) and followed by
-% a small space (LaTeX's \,).
+% to be preceeded by a negative space (\unspace{} above) and followed by
+% a small space (LaTeX's "\,").
 %
 \newcommand{\lemma}{%
   \raisebox{-.62\height}[\heightof{x}][0pt]{%
@@ -91,6 +91,14 @@
 }
 
 
+% [2010-05-09] by Zrajm C Akfohg
+%
+% \xslash{} produces a normal slash, but allows a line break to occur after it,
+% if necessary. I use this to pretty-print URLs.
+%
+\newcommand{\xslash}{%
+  \discretionary{/}{}{/}%
+}
 
 
 %
@@ -106,10 +114,10 @@
 
 % How should this be defined as an environment? The `\hangindent'
 % value seems to reset itself for each paragraph. Can the handling of
-% paragraphs be controlled in an environment? That is can I in an
-% environment of my own specify whether or not the first line after a
+% paragraphs be controlled in an environment? That is, can I, in an
+% environment of my own, specify whether or not the first line after a
 % section header should be automatically un-indented or not (and other
-% suchlike things)
+% suchlike things)?
 
 
 % ========================

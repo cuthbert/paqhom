@@ -1,0 +1,31 @@
+* Perl: Scripts for resorting output file into printable booklet.
+
+* Makefile: LaTeX -> DVI target should scan .tex files for dependencies, so
+  that output file is rebuilt if *any* of the input components have changed.
+
+* LaTeX: Proper typesetting/linebreaking of URLs.
+
+* ZDB: Add zdb dictionary file.
+
+* Perl: Add scripts for creating the dictionary lists.
+
+* LaTeX: Remove unused code.
+
+
+
+Textual Correcions/Clarifications
+=================================
+
+* Copyright page: Add Creative Commons license to copyright page.
+
+* Update edition number.
+
+* Suffix Guide: VS9 {-bogh} -- May the head noun be marked by any NS5 suffix,
+  apart from {-'e'}?
+
+* All but dictionary text: Sync pocket dictionary text with online version in
+  this copy.
+
+* Hyphenation of Klingon phrases?
+
+[eof]
