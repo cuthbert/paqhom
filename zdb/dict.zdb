@@ -1,92 +1,40 @@
-$TAB: (48, -4, 96, 104)
-$TAB: ( 7, 15, -5)
 ----------------------
-Klingon word count: 2504 [2001­02­12] (excluding affixes)
-Sorted in Klingon alphabetical order.
+[2002­06­28] There are 2565 Klingon words (not counting affixes).
+Sorted in Klingon alphabetical order (except for some new words at the end).
 ----------------------
 
-Förslag på förbättringar av ordboken:
+KLINGON IDEALS OF BEHAVIOR
 
-  o Korsreferenser mellan plural och singular.
-    (Så att {mang} refererar till {negh} och tvärtom.)
+    accuracy             {yIqarchu'!} - Be accurate!
+    straightforwardness  {yI'utchu'!} - Be essential!
+    aggressiveness       {yIvaQchu'!} - Be aggressive!
+    strength             {yIHoSchu'!} - Be strong!
 
-  o Layouten i den engelsk­klingonska delen borde se ut såhär:
-  
-    |sans| /kursiv/ {fet}
-    |worthless| /v/ {lo'laHbe'} be ~
-    |worthless| /v/ be ~ {lo'laHbe'}
 
-    |friend| /n/ close male ~ of a male {maqoch} buddy, pal [KGT]
-    |buddy| /n/ {maqoch} pal, close male friend of a male
-    |close male friend of a male| /n/ {maqoch} buddy, pal
+FIELD NAMES USED IN DICTIONARY BELOW
 
-    |fresh| /v/ be ~ {baQ} be just picked (fruit, vegetable)
-    |ceiling| /n/ {pa' beb} (of a room on the top story of a structure)
-    |pa' beb| /n/ ceiling (of a room on the top story of a structure)
-      [News 1998­12­07; HQ8:3 p.2]
-
-{tlhIngan Hol}
-"english"
-*not qa'non*
-*pong (a klingon name that's not canon, but everyone knows)
-<<citation>>
------------
-Sources:
-TKD	The Klingon Dictionary (Book)
-TKW	The Klingon Way (Book)
-KGT	Klingon for the Galactic Traveler (Book)
-CK	Conversational Klingon (Audio Cassette)
-PK	Power Klingon (Audio Cassette)
-KCD	Star Trek: Klingon! (CD­ROM Game)
-MO	Marc Okrand (personally)
-HQ	HolQeD (Quarterly journal of KLI)
-KLI	KLI's {tlhIngan-Hol} mailing list.
-News	Posting to any Klingon newsgroup (most commonly by MO himself)
-	(Over the time the names of these have changed quite a bit.)
-S#	SkyBox trading card number #.
-	(S7, S8, S14, S15, S20, S25, S26, S32 and S33 occurs here.)
-Sarek	A novel by A.C. Crispin, containing some words authorized by MO.
-BoP	Bird­of­Prey poster, 1998
-STE	Star Trek Encyclopedia (used for some English translations)
-ST#	Star Trek movie, No. #
------------
-
-accuracy		{yIqarchu'!} (Be accurate!)
-straightforwardness	{yI'utchu'!} (Be essential!)
-aggressiveness		{yIvaQchu'!} (Be aggressive!)
-strength		{yIHoSchu'!} (Be strong!)
-
-Konsekvent inkonsekvens genom inkompetens.
-
------------
-Ordklasser är:
-  eng: v,  n,   name,  adv,  conj, excl,   num,  pro, ques
-  eng: vp, vsr, vs1-9, ns1-5
-  sve: v,  s,   namn,  adv,  konj, interj, räkn, pro, fråg
-  sve: vp, vss, vs1-9, ss1-5
-
-=== field­defs ===
-klin:	mandatory; Klingon word (all klingon text within {})
-sve:	mandatory; Swedish translation and part­of­speech
-	missing translation marked with «»
-eng:	mandatory; English definition (from canon sources) and part­of­speech
-def:	mandatory; source where definition can be found (within [])
-ref:	optional; canon sources where it also occurs
-com:	optional; special comment concerning the entry
-joke:	optional; comments about MO's word play
-see:	optional; pointer to related word(s) (separated by semicolon)
-cat:	optional; categoral tagging of words, useful for noting
-	prepositional concepts, body parts etc. (categories separated
-	by semicolon) Right now the following categories exist:
-	"body part", "clothing", "locative", "math", "music",
-	"family", "landscape"
-data:	optional; contains some useful info about whether
-	it's a "derived form" (i.e. possible to parse without
-	using that specific word, but rather make use of
-	other lexical entries and suffixes) or not.
-	    The note "phrase" indicates that a lookup entry
-	is more than one word (i.e. the Klingon definiton
-	contains at least one space.)
+    klin:  (required) Klingon word (all klingon text within {})
+    sve:   (required) Swedish translation and part­of­speech
+                      missing translation marked with «»
+    eng:   (required) English definition (from canon sources) and
+                      part­of­speech
+    def:   (required) source where definition can be found (within [])
+    ref:   (optional) canon sources where it also occurs
+    com:   (optional) special comment concerning the entry
+    joke:  (optional) comments about puns or word play
+    see:   (optional) pointer to related word(s) (separated by semicolon)
+    cat:   (optional) tagging of words by category, useful for noting
+		      prepositional concepts, body parts etc. (categories
+		      separated by semicolon) Right now the following
+		      categories exist: "body part", "clothing", "locative",
+		      "math", "music", "family", "landscape"
+    data:  (optional) contains some useful info about whether it's a
+		      "derived form" (i.e. possible to parse without using
+		      that specific word, but rather make use of other
+		      lexical entries and suffixes) or not. The note
+		      "phrase" indicates that a lookup entry is more than
+		      one word (i.e. the Klingon definiton contains at least
+		      one space.)
 
 === start­of­word­list ===
 
@@ -1005,8 +953,17 @@ eng:	<dilithium crystal> (n)
 def:	[TKD]
 
 klin:	{cheb}
-sve:	«vikt«enhet»» (cirka 2,25 «kilogram») (s)
-eng:	«unit» of «weight» (about 5 «pound»s or 2.25 «kilogram»s) (n)
+sve:	«vikt«enhet»», «~cheb~» (cirka 2,25 «kilogram») (s)
+eng:	«unit» of «weight», «~cheb~» (about 5 «pound»s or 2.25 «kilogram»s) (n)
+def:	[News 1997­10­22]
+
+klin:	{cheb'a'}
+sve:	«vikt«enhet»», 9 «~cheb~» (cirka 20,25 «kilogram») (s)
+eng:	«unit» of «weight», 9 «~cheb~» (about 45 «pound»s or 20.25 «kilogram»s) (n)
+com:	(n) unit weight approx. 45-46.4 pounds (20.4-21.05 kg) (9-9.28 cheb)
+	[The numbers don't quite mesh, but this is the best I can figure
+	from different equivalences we've been given.] [BoP poster] (Added:
+	12 March 2002) [from KLI new word's list]
 def:	[News 1997­10­22]
 
 klin:	{chech}
@@ -1552,6 +1509,7 @@ sve:	vara «tråkig» (v)
 eng:	be <boring> (v)
 def:	[TKD]
 ref:	[TKW p.201]
+joke:	Prononced similar to English "dull".
 
 klin:	{Dan}
 sve:	«ockupera» (v)
@@ -2145,7 +2103,7 @@ eng:	<school> (n)
 def:	[TKD]
 
 klin:	{Duv}
-sve:	«avancera» (v)
+sve:	«avancera», «gå framåt» (v)
 eng:	<advance> (v)
 def:	[TKD]
 
@@ -2657,7 +2615,7 @@ eng:	<spy> (on) (v)
 def:	[TKD; KGT]
 
 klin:	{ghoqwI'}
-sve:	«spion» (s)
+sve:	«spion», «spejare» (s)
 eng:	<spy> (n)
 def:	[TKD]
 
@@ -4275,12 +4233,12 @@ eng:	<ability> (n)
 def:	[TKD]
 
 klin:	{laj}
-sve:	«anta», «acceptera» (v)
+sve:	«acceptera», «godtaga» (v)
 eng:	<accept> (v)
 def:	[TKD]
 
 klin:	{laj}
-sve:	«acceptans» (s)
+sve:	«accepterande», «godtagande» (s)
 eng:	<acceptance> (n)
 def:	[TKD]
 
@@ -5702,6 +5660,7 @@ klin:	{mul}
 sve:	vara «envis» (v)
 eng:	be <stubborn> (v)
 def:	[TKD]
+joke:	In American English "mule" can mean "stubborn person".
 
 klin:	{mum}
 sve:	«smaka», «känna smak» (v)
@@ -6408,7 +6367,7 @@ eng:	<sensor> (n)
 def:	[TKD]
 
 klin:	{noD}
-sve:	«ge igen», «vedergälla», «hämnas» (v)
+sve:	«hämnas», «vedergälla», «ge igen» (v)
 eng:	<retaliate>, «revenge», take «vengeance» (v)
 def:	[TKD; TKW pp.131, 129]
 
@@ -7051,9 +7010,9 @@ eng:	«misfollow» (rules), «follow» (rules) wrongly (v)
 def:	[KGT p.176]
 
 klin:	{pach}
-sve:	«klo» (s)
-eng:	<claw> (n)
-def:	[TKDa]
+sve:	«klo», «fågelklo» (s)
+eng:	<claw>, «talon» (n)
+def:	[TKDa, HQ10:4 p.5]
 ref:	[TKW p.185]
 
 klin:	{pagh}
@@ -7487,8 +7446,8 @@ sve:	«warpfaktor» (s)
 eng:	«warp factor» (n)
 def:	[TKD K­E]
 ref:	[BoP]
-com:	Numbers placed after when giving speed: {pIvlob vagh} "warp
-	five".
+com:	Numbers are placed after when giving speed: {pIvlob vagh} "warp
+	factor five".
 
 klin:	{pIw}
 sve:	«lukt», «odör», «doft» (s)
@@ -7499,6 +7458,7 @@ klin:	{pI'}
 sve:	vara «fet» (v)
 eng:	be <fat> (v)
 def:	[TKD]
+com:	Is there a difference in meaning between {pI'} and {ror}?
 
 klin:	{po}
 sve:	«morgon» (s)
@@ -8142,7 +8102,7 @@ eng:	be <grouchy>, be <mean> (v)
 def:	[TKD]
 
 klin:	{qel}
-sve:	«beakta», «tänka på» (v)
+sve:	«tänka på», ta «hänsyn» till, «beakta», «överväga» (v)
 eng:	<consider>, take into «account» (v)
 def:	[TKDa]
 ref:	[TKW p.67]
@@ -8439,7 +8399,7 @@ eng:	<compose> (v)
 def:	[KGT]
 
 klin:	{qompogh}
-sve:	ett slags «mat» (s)
+sve:	en slags «mat» (s)
 eng:	type of <food> (n)
 def:	[KGT]
 joke:	"Compost" it probably looks like one too (with all mashed up pieces
@@ -8665,7 +8625,7 @@ eng:	be <cheap> (v)
 def:	[KGT]
 
 klin:	{quv}
-sve:	vara «ärad», vara «ärofull» (v)
+sve:	vara «ärad», vara «hedrad», vara «ärofull» (v)
 eng:	be <honored>, be honorable (v)
 def:	[TKDa]
 ref:	[TKW pp.24, 57, 59, 179]
@@ -8684,24 +8644,24 @@ def:	[KCD]
 data:	phrase
 
 klin:	{quvHa'}
-sve:	vara «vanärad» (v)
+sve:	vara «vanärad», vara «vanhedrad» (v)
 eng:	be <dishonored> (v)
 def:	[KGT]
 ref:	[TKW p.155]
 
 klin:	{quvHa'ghach}
-sve:	«vanära» (s)
+sve:	«vanära», «skam» (s)
 eng:	<dishonor> (n)
 def:	[KGT]
 ref:	[TKW p.155]
 
 klin:	{quvHa'moH}
-sve:	«vanära» (någon) (v)
+sve:	«vanära», «vanhedra» (v)
 eng:	«dishonor» (v)
 def:	[TKW p.155]
 
 klin:	{quvmoH}
-sve:	«ära» (någon) (v)
+sve:	«ära», «hedra» (v)
 eng:	<honor> (v)
 def:	[TKDa]
 
@@ -8766,7 +8726,7 @@ eng:	type of <animal>, <~kradge~> (n)
 def:	[KGT]
 
 klin:	{Qaj tlhuQ}
-sve:	ett slags «mat», «~kradge~­svans» (s)
+sve:	en slags «mat», «~kradge~­svans» (s)
 eng:	type of <food>, «~kradge~ tail» (n)
 def:	[KGT]
 data:	phrase
@@ -9440,6 +9400,11 @@ eng:	<decay>, <rust>, <corrode> (v)
 def:	[TKD; KGT]
 ref:	[TKW p.101]
 
+klin:	{raHta'}
+sve:	en slags «mat», «~racht~» (s)
+eng:	type of <food>, «~racht~» (n)
+def:	[KGT]
+
 klin:	{ral}
 sve:	vara «våldsam» (v)
 eng:	be <violent> (v)
@@ -9804,6 +9769,7 @@ klin:	{ror}
 sve:	vara «fet» (v)
 eng:	be <fat> (v)
 def:	[TKD]
+com:	Is there a difference in meaning between {pI'} and {ror}?
 
 klin:	{roS}
 sve:	«slicka» (v)
@@ -10687,7 +10653,7 @@ eng:	<ready>!, <standing by>! (excl)
 def:	[TKD 5.5 (p.57) et al.]
 
 klin:	{Su'lop}
-sve:	ett slags «mat» (s)
+sve:	en slags «mat» (s)
 eng:	type of <food> (n)
 def:	[KGT]
 
@@ -10731,9 +10697,12 @@ eng:	«finally», at «last» (adv)
 def:	[News 1999­11­05]
 
 klin:	{taH} (1)
-sve:	¿?vara i «negativ vinkel» (v)
+sve:	vara i «negativ vinkel» (v)
 eng:	be at a <negative angle> (v)
 def:	[TKD]
+com:	According to Cheesbro (and MO) this is one of MO's little private
+	jokes, unfortunately he refuses to explain the actual meaning or
+	origin of this word, and only gives us his cryptic smile.
 
 klin:	{taH} (2)
 sve:	«fortsätta», «uthärda», «överleva» (v)
@@ -10747,11 +10716,6 @@ eng:	(«epithet») (excl)
 def:	[TKDa 5.5 (p.178)]
 ref:	[CK]
 com:	CK: "This is a classic insult."
-
-klin:	{taHta'}
-sve:	ett slags «mat», «~racht~» (s)
-eng:	type of <food>, «~racht~» (n)
-def:	[KGT]
 
 klin:	{taj}
 sve:	«kniv», «dolk» (s)
@@ -10835,7 +10799,7 @@ def:	[TKDa]
 ref:	[TKW p.173]
 
 klin:	{targh tIq}
-sve:	ett slags «mat», «targ«hjärta»» (s)
+sve:	en slags «mat», «targ«hjärta»» (s)
 eng:	type of «food», «heart of «targ»» (n)
 def:	[KCD]
 com:	Food item described and shown on KCD.
@@ -11308,7 +11272,7 @@ def:	[KGT]
 data:	phrase; {toqvIr} (n)
 
 klin:	{toQ}
-sve:	ett slags «fågel» («rovfågel») (s)
+sve:	en slags «fågel» («rovfågel») (s)
 eng:	type of «bird» (bird of prey) (n)
 def:	[KLI's mailing list 1997­04­04]
 ref:	[HQ10:4 p.5]
@@ -11600,7 +11564,7 @@ eng:	<fight>, <battle> (relatively minor fight) (v)
 def:	[KGT]
 
 klin:	{tlhatlh}
-sve:	ett slags «mat», «~gladst~» (s)
+sve:	en slags «mat», «~gladst~» (s)
 eng:	type of <food>, <~gladst~> (n)
 def:	[KGT]
 
@@ -11704,7 +11668,7 @@ eng:	<miner> (n)
 def:	[TKD]
 
 klin:	{tlhImqaH}
-sve:	ett slags «mat», «~zilm'kach~» (s)
+sve:	en slags «mat», «~zilm'kach~» (s)
 eng:	type of <food>, <~zilm'kach~> (n)
 def:	[KGT]
 
@@ -11787,7 +11751,7 @@ eng:	be <raw>, be <unprocessed> (v)
 def:	[TKD]
 
 klin:	{tlhombuS}
-sve:	ett slags «mat» (s)
+sve:	en slags «mat» (s)
 eng:	type of <food> (n)
 def:	[KGT]
 
@@ -12218,8 +12182,8 @@ eng:	«baffle» (n)
 def:	[BoP]
 
 klin:	{vIghro'}
-sve:	ett slags «djur», «~v'gro~» (kattlik) (s)
-eng:	type of <animal>, «~v'gro~» (like a cat) (n)
+sve:	ett slags «djur», «~v'gro~» («katt»lik) (s)
+eng:	type of <animal>, «~v'gro~» (like a «cat») (n)
 def:	[KGT]
 
 klin:	{vIH}
@@ -12420,7 +12384,7 @@ eng:	<work>, «toil» (v)
 def:	[TKD]
 
 klin:	{vup}
-sve:	«tycka synd om», «ömka» (v)
+sve:	«tycka synd om», ha «medlidande» med, «beklaga» (v)
 eng:	<pity> (v)
 def:	[TKD]
 
@@ -12597,7 +12561,7 @@ def:	[TKD]
 cat:	math
 
 klin:	{web}
-sve:	vara «vanärad», vara en «skamfläck» (v)
+sve:	vara i «onåd», vara «oönskad», vara «utstött»  (v)
 eng:	be <disgraced> (v)
 def:	[TKD]
 
@@ -14099,50 +14063,50 @@ def:	[HQ10:4 p.4]
 com:	general word for bird­like creature
 
 klin:	{cha'bIp}
-sve:	«» (s)
+sve:	en slags «fågel» (berömd för sin snabbhet) (s)
 eng:	type of «bird» (noted for its speed) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{cha'Do'}
-sve:	«» (s)
+sve:	en slags «fågel» (om vilken litet är känt) (s)
 eng:	type of «bird» (about which little is known) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{cha'naS}
-sve:	«» (s)
+sve:	en slags «fågel» (liten, gräver upp småkryp att äta) (s)
 eng:	type of «bird» (small, digs up bugs to eat) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{cha'par}
-sve:	«» (s)
+sve:	en slags «fågel» (berömd för sin sång) (s)
 eng:	type of «bird» (noted for its song) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{cha'qu'}
-sve:	«» (s)
+sve:	en slags «fågel» (med ett högljutt, enformigt skrik) (s)
 eng:	type of «bird» (with a noisy, repetitive cry) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{Da'nal}
-sve:	«» (s)
+sve:	en slags «fågel» (kännetecknad av irrande, oförutsägbart beteende) (s)
 eng:	type of «bird» (characterized by erratic, unpredictable behavior) (n)
 def:	[HQ10:4 p.4]
 com:	similar to {Da'vI'}
 
 klin:	{Da'vI'}
-sve:	«» (s)
+sve:	en slags «fågel» (kännetecknad av irrande, oförutsägbart beteende) (s)
 eng:	type of «bird» (characterized by erratic, unpredictable behavior) (n)
 def:	[HQ10:4 p.4]
 com:	similar to {Da'nal}
 
 klin:	{ghotI'}
-sve:	«» (s)
+sve:	«fisk» (s)
 eng:	«fish» (n)
 def:	[HQ10:4 p.5]
 joke:	Bernard Shaw's famous spelling of "fish".
 
 klin:	{jajlo' Qa'}
-sve:	«» (s)
+sve:	ett slags «djur» (för oljud i gryningen) (s)
 eng:	type of «animal» (makes a ruckus at dawn) (n)
 def:	[HQ10:4 p.5]
 
@@ -14154,87 +14118,83 @@ com:	Used about a birds wings. "[...] in flight, a bird's wings {laq}
 	(the bird is said to {laqmoH} its wings)" [HQ10:4 p. 5]
 
 klin:	{lIr}
-sve:	«» (s)
+sve:	en slags «fågel» (nattlevande) (s)
 eng:	type of «bird» (nocturnal) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{lotlhmoq}
-sve:	«» (s)
-eng:	type of «bird» (swoops into the water to catch food, buc cannot
+sve:	en slags «fågel» (slår ner i vattnet för att fånga mat, men kan inte
+	simma) (s)
+eng:	type of «bird» (swoops into the water to catch food, but cannot
 	swim) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{neb}
-sve:	«» (s)
+sve:	«näbb» (s)
 eng:	«beak», «bill» (n)
 def:	[HQ10:4 p.5]
 
 klin:	{neSlo'}
-sve:	«» (s)
+sve:	«spegel» (mindre) (s)
 eng:	«mirror» (smaller) (n)
 def:	[HQ10:4 p.5]
 com:	smaller than {SIla'}
 
 klin:	{notqa'}
-sve:	«» (s)
+sve:	en slags «fågel» (stor, svart) (s)
 eng:	type of «bird» (large, black) (n)
 def:	[HQ10:4 p.4]
 com:	nowhere near as large as a qa'rol, which is really big
 joke:	"`Nevermore' quoth the raven." ({notqa'} "never again").
 
 klin:	{ngun}
-sve:	«» (v)
+sve:	«sätta» sig, «slå» sig ner (v)
 eng:	«perch» (v)
 def:	[HQ10:4 p.5]
-com:	if bird lands on land, use Saq, on water, use tlhot
-
-klin:	{pach}
-sve:	«» (s)
-eng:	«claw», «talon» (n)
-def:	[HQ10:4 p.5]
+com:	If bird lands on land, use Saq, on water, use tlhot.
 
 klin:	{parbIng}
-sve:	«» (s)
+sve:	en slags «fågel» (mellanstorlek, med särskilt grälla färger) (s)
 eng:	type of «bird» (mid-sized, with particularly garish coloring) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{qaj}
-sve:	«» (v)
+sve:	«glidflyga», «sväva» (v)
 eng:	«soar» (v)
 def:	[HQ10:4 p.5]
 
 klin:	{qanraD}
-sve:	«» (s)
+sve:	en slag «fågel» (berömd för sin sång) (s)
 eng:	type of «bird» (noted for its song) (n)
 def:	[HQ10:4 p.4]
 
 klin:	{qaryoq}
-sve:	«» (s)
+sve:	en slags «fågel» (förmögen att härma språk) (s)
 eng:	type of «bird» (capable of mimicking speech) (n)
 def:	[HQ10:4 p.5]
 com:	Some people pluralize these with {-pu'}, but most use {-mey}.
 joke:	Wordplay on "kareoke". (?)
 
 klin:	{qaryoq'a'}
-sve:	«» (s)
+sve:	en slags «fågel» (stor, förmögen att härma språk) (s)
 eng:	type of «bird» (large, capable of mimicking speech) (n)
 def:	[HQ10:4 p.5]
 com:	Some people pluralize these with {-pu'}, but most use {-mey}.
 joke:	Wordplay on "kareoke". (?)
 
 klin:	{qa'rol}
-sve:	«» (s)
+sve:	en slags «fågel» (verkligt stor, svart) (s)
 eng:	type of «bird» (really big, black) (n)
 def:	[HQ10:4 p.4]
 com:	much larger than a {notqa'}
 
 klin:	{raw'}
-sve:	«» (s)
+sve:	en slags «fågel» (vattenlevande, färgrik fjäderdräkt) (s)
 eng:	type of «bird» (aquatic, colorful plumage) (n)
 def:	[HQ10:4 p.5]
 
 klin:	{SIla'}
-sve:	«» (s)
+sve:	«spegel» (större) (s)
 eng:	«mirror» (larger) (n)
 def:	[HQ10:4 p.5]
 com:	larger than {neSlo'}
@@ -14246,37 +14206,39 @@ def:	[HQ10:4 p.5]
 com:	if bird lands on land, use {Saq}, in a tree, use {ngun}
 
 klin:	{vem'eq}
-sve:	«» (v)
-eng:	type of «bird> (feeds almost exclusively on the serpent worm from
+sve:	en slags «fågel» (livnär sig nästan enbart på den sorts orm­maskar
+	som ~gagh~ görs av) (s)
+eng:	type of «bird» (feeds almost exclusively on the serpent worm from
 	which ~gagh~ is made) (n)
 def:	[HQ10:4 p.5]
 com:	Klingons are not particularly fond of this bird.
 
 klin:	{vIlInHoD}
-sve:	«» (s)
+sve:	en slags «fågel» (förmögen att härma språk) (s)
 eng:	type of «bird» (capable of mimicking speech) (n)
 def:	[HQ10:4 p.5]
 com:	Some people pluralize these with {-pu'}, but most use {-mey}.
 
 klin:	{waqboch}
-sve:	«» (s)
+sve:	en slags «fågel» (med en väldigt lång näbb) (s)
 eng:	type of «bird» (with a very long beak) (n)
 def:	[HQ10:4 p.5]
 
 klin:	{wom}
-sve:	«» (v)
+sve:	«picka», «hacka» (på/i) (med näbb) (v)
 eng:	«peck» (v)
 def:	[HQ10:4 p.5]
 com:	used for both eating and attacking by pecking
 
 klin:	{yatqap}
-sve:	«» (v)
+sve:	en slags «fågel» (grå, ibland vit, flyger långa sträckor utan
+	att göra uppehåll) (v)
 eng:	type of «bird» (gray, sometimes white, travel long distances without
 	pausing) (n)
 def:	[HQ10:4 p.5]
 
 klin:	{'uSgheb}
-sve:	«» (s)
+sve:	en slags «fågel» (för oljud i gryningen, vildsintare än en tupp) (s)
 eng:	type of «bird» (makes a ruckus at dawn, fiercer than a rooster) (n)
 def:	[HQ10:4 p.5]
 com:	much fiercer than a rooster
@@ -14788,128 +14750,255 @@ com:	An object topicalized {­'e'} sometimes comes *before* the
 
 === end­of­noun­suffix­list ===
 
-To do: (no specific order)
+TO DO (IN NO PARTICULAR ORDER)
 
-  o Expand translation of suffixes as much as possible from TKD.
-  o Could these be fixed?
-      {qIm} (v) contains Swedish "vara", but no English "be"
-      {qotlh} (v) (2) contains Swedish "vara", but no English "be"
-      {Qagh} (v) contains English "be", but no Swedish "vara"
-      {taH} (v) (1) contains English "be", but no Swedish "vara"
-      {waQ} (v) contains Swedish "vara", but no English "be"
-      {wuv} (v) contains Swedish "vara", but no English "be"
-  o Make a last proofreading, then incorporate the last words (now
-    at the end of the list) into the main body of the dictionary.
-  o Break all rows longer than 75 characters (I have confirmed that
-    "ZDb2Sortable" is compatible with this).
-  o Check gender of all Swedish "vara"­verbs.
-  o Machine­check Swedish part­of­speech for all words.
-  o Check useage of Swedish reflexive pronoun "sig".
-    (Should be within parentheses?)
-  o Machine­check Swedish spelling.
-    (Extract Swedish text & use some spellchecker on it.)
-  o Machine­check English spelling.
-  o Check/correct dubious entries (marked with ¿?).
-  o Make a complete list of all sources.
-  o Machine­check Klingon sort order.
-  o Extract Swedish and English indices, sort these and look for
-    any conclusions that can be drawn from them.
+    o Check Swedish translation, by looking up all the English words
+      in my English­Swedish dictionary and then checking to see whether
+      the Swedish words exists in their lookup entries.
+    o Expand translation of suffixes as much as possible from TKD.
+    o Could these be fixed?
+        {qIm} (v) contains Swedish "vara", but no English "be"
+        {qotlh} (v) (2) contains Swedish "vara", but no English "be"
+        {Qagh} (v) contains English "be", but no Swedish "vara"
+        {taH} (v) (1) contains English "be", but no Swedish "vara"
+        {waQ} (v) contains Swedish "vara", but no English "be"
+        {wuv} (v) contains Swedish "vara", but no English "be"
+    o Make a last proofreading, then incorporate the last words (now
+      at the end of the list) into the main body of the dictionary.
+    o Break all rows longer than 75 characters (I have confirmed that
+      "ZDb2Sortable" is compatible with this).
+    o Check gender of all Swedish "vara"­verbs.
+    o Machine­check Swedish part­of­speech for all words.
+    o Check useage of Swedish reflexive pronoun "sig".
+      (Should be within parentheses?)
+    o Machine­check Swedish spelling.
+      (Extract Swedish text & use some spellchecker on it.)
+    o Machine­check English spelling.
+    o Check/correct dubious entries (marked with ¿?).
+    o Make a complete list of all sources.
+    o Machine­check Klingon sort order.
+    o Extract Swedish and English indices, sort these and look for
+      any conclusions that can be drawn from them.
 
-History: (newest first)
 
-  [2002­01­21] Added the 35 new words ({po Ha'DIbaH} excepted since it
+SUGGESTIONS FOR IMPROVEMENT OF THE POCKET DICTIONARY
+
+  o Cross references between irregular plural and singular forms.
+    (E.g. {mang} refers to {negh} and vice versa.)
+
+  o A change of layout in the English-Klingon part, so that it looks
+    something like this (typographic key: |sans serif| /italic/ {bold})
+
+      |worthless|  /v/  {lo'laHbe'} be ~
+      |worthless|  /v/  be ~ {lo'laHbe'}
+
+      |friend| /n/ close male ~ of a male
+        {maqoch} buddy, pal [KGT]
+      |buddy| /n/ {maqoch} pal, close male
+        friend of a male
+      |close male friend of a male| /n/
+        {maqoch} buddy, pal
+
+      |fresh| /v/ be ~ {baQ} be just picked
+        (fruit, vegetable)
+      |ceiling| /n/ {pa' beb} (of a room on
+        the top story of a structure)
+      |pa' beb| /n/ ceiling (of a room on the
+        top story of a structure) [News
+        1998­12­07; HQ8:3 p.2]
+
+    Currently, if you look up a word like "wrong", you'll find:
+    
+        _wrong_ /v/ {muj} be ~
+
+    Which makes it very easy to miss that fact the word is adjectival in
+    nature. I propose that this should instead be represented as:
+
+       _wrong_ /v/ be ~ {muj}
+
+    Let's take a look at the word defined as "<buddy>, <pal>, <close male
+    <friend>> of a male (n)" in the database below. Currently you can find
+    the entries:
+    
+       _buddy_ /n/ {maqoch} pal, close male friend of a male
+       _close male friend_ /n/ {maqoch} buddy, pal, ~ of a male
+       _friend_ /n/ {maqoch} buddy, pal, close male ~ of a male
+       _pal_ /n/ {maqoch} buddy, close male friend of a male
+       
+    But I think this should instead be represented as:
+    
+       _buddy_ /n/ {maqoch} pal, close male friend of a male
+       _close male friend_ /n/ ~ of a male {maqoch} buddy, pal
+       _friend_ /n/ close male ~ of a male {maqoch} buddy, pal
+       _pal_ /n/ {maqoch} buddy, close male friend of a male
+
+    The idea is that the definition (but not the entire description, since
+    we want to keep it short) from which the lookup entry was taken should
+    be presented to the reader before the Klingon word, so that the read
+    have as much context as possible to relate the word to.
+
+
+KLINGON WORDS NOT OCCURING ALONE
+
+    The following words exist in the dictionary that are not accounted for
+    separately, but instead only occurs in different noun­noun
+    constructions. Most of these are logical derivates which can be
+    understood either as built up of known elements (e.g. {chevwI'} from
+    {chev} and the suffix {­wI'}) or as proper nouns. At least one ({chem}),
+    however, notably deviates from this pattern, and the question remains
+    whether {chem} can be considered a word in its own right. (A question
+    for Okrand, perhaps?) [2000­10­12]
+
+	{chem}	    (magnetic) field
+	{chevwI'}   "one who separates"
+	{choHwI'}   "one who changes"
+	{Duran}	    Durani (lizard skins)
+	{ghevchoq}  Gevchok (region)
+	{Sa'Qej}    Sakrej (region)
+	{ghIlab}    glob (fly)
+	{Hubbeq}    (Klingon) Defense Force
+	{mI'wI'}    (fire) dancer
+	{ngaDHa'}   irresponsible (person), undisciplined (person)
+	{telun}	    telun (star system)
+	{tI'qa'}    tika (cat)
+	{tlhIng}    Kling (discrict)
+	{toqvIr}    Tokvirian (skink)
+	{voSpegh}   Vospeg (region)
+	{yaHnIv}    Operations (command)
+
+
+PARTS­OF­SPEECH
+
+    English  Swedish  Meaning
+    v        v        verb
+    n        s        noun
+    name     namn     name
+    adv      adv      adverb(ial)
+    conj     konj     conjuction
+    excl     interj   exclamation
+    num      räkn     number/number­forming element
+    pro      pro      pronoun
+    ques     fråg     question word
+    vp       vp       verb prefix
+    vsr      vss      verb suffix rover
+    vs#      vs#      verb suffix type # (# is 1-9)
+    ns#      ss#      noun suffix type # (# is 1-5)
+
+
+SOURCES REFERENCES AND ABBREVIATIONS
+
+    TKD    The Klingon Dictionary (Book)
+    TKW    The Klingon Way (Book)
+    KGT    Klingon for the Galactic Traveler (Book)
+    CK     Conversational Klingon (Audio Cassette)
+    PK     Power Klingon (Audio Cassette)
+    KCD    Star Trek: Klingon! (CD­ROM Game)
+    MO     Marc Okrand (personally)
+    HQ     HolQeD (Quarterly journal of KLI)
+    KLI    KLI's {tlhIngan-Hol} mailing list.
+    News   Posting to any Klingon newsgroup (usually by MO himself) (Over
+           time the names of these newsgroups have changed quite a bit.)
+    S#     SkyBox trading card number #.
+           (S7, S8, S14, S15, S20, S25, S26, S32 and S33 occurs here.)
+    Sarek  A novel by A.C. Crispin, containing some words given by MO.
+    BoP    Bird­of­Prey poster, 1998
+    STE    Star Trek Encyclopedia (used for some English translations)
+    ST#    Star Trek movie, No. #
+
+
+HISTORY (LATEST CHANGES FIRST)
+
+    [2002­06­28] - Translated the words from HQ10:4 p.5 into Swedish.
+
+    [2002­03­09] - Corrected the Klingon spelling of "racht" from {taHta'}
+    to {raHta'}. Thanks to Agnieska Solska [Poland] for pointing out the
+    error!
+
+    [2002­01­21] - Added the 35 new words ({po Ha'DIbaH} excepted since it
     really isn't a "new word") from MO's article in HQ10:4. Mostly these
     words are about birds.
-  [2001­08­23] Added some 27 new words related to fingers and toes, and
+
+    [2001­08­23] - Added some 27 new words related to fingers and toes, and
     everything else from the HQ10:2 article "A Friend of Maltz: {nItlhDu'
     yaDDu' je}". The following three words had to be given lemma numbers,
     since they were homonymous to other words already present in the
     dictionary: {nanwI'}, {qan}, {rIl}. Re­sorted these history events into
     proper order (they were in disarray).
-  [2001­03­20] Added the field "data:".
-  [2001­03­19] Added the word "be" before occuring adjectivals
-    where it was previously missing in the translations of the
-    words: {ghuS}, {Huv}, {naQ}, {nI'}, {noy}, {poS}, {tIq} and
-    {'Itlh}. (Machine­parsed out all occurances of stative verbs
-    [=verbs whose translation contains the word "be"] and hand
-    checked those on the list which had both active and static
-    translations. Thus I found and corrected these "errors".)
-  [2001­02­12] Added the new word {tangqa'} from HQ 9:4.
-  [2001­01­06] Added the word {mevyap} (Why on earth haven't I found
+
+    [2001­03­20] - Added the field "data:".
+
+    [2001­03­19] - Added the word "be" before occuring adjectivals where it
+    was previously missing in the translations of the words: {ghuS}, {Huv},
+    {naQ}, {nI'}, {noy}, {poS}, {tIq} and {'Itlh}. (Machine­parsed out all
+    occurances of stative verbs [=verbs whose translation contains the word
+    "be"] and hand checked those on the list which had both active and
+    static translations. Thus I found and corrected these "errors".)
+
+    [2001­02­12] - Added the new word {tangqa'} from HQ 9:4.
+
+    [2001­01­06] - Added the word {mevyap} (Why on earth haven't I found
     this before! - Check KGT more thoroughly!)
-  [2000­11­01] Added Swedish translation "åker" to {yotlh}, tagged
-    some more words with "cat: landcape" and "cat: body part".
-  [2000­10­24] Made sure all references to TKD & TKDa had section
+
+    [2000­11­01] - Added Swedish translation "åker" to {yotlh}, tagged some
+    more words with "cat: landcape" and "cat: body part".
+
+    [2000­10­24] - Made sure all references to TKD & TKDa had section
     numbers, and not just page numbers.
-  [2000­10­20] Updated all verb suffix source references to include
-    section numbers. Also added some comments of useage for the
-    rovers and type 9 verb suffixes.
-  [2000­10­13] Added the "see:" field, and changed most "see also"
+
+    [2000­10­20] - Updated all verb suffix source references to include
+    section numbers. Also added some comments of useage for the rovers and
+    type 9 verb suffixes.
+
+    [2000­10­13] - Added the "see:" field, and changed most "see also"
     refereces into these instead.
-  [2000­10­11] to [2000­10­12] Added 24 new words from the latest
-    issue of HolQeD (most of these are names of different family
-    relations) and added some additional comments to {chen} from the
-    same source. Translated the new words into Swedish.
-  [2000­10­09] Changed italics marker to "~" instead of "+" (this
-    makes this dictionary follow the ~Project Gutenberg~
-    specifications in this regard). Added category "locative" (for
-    words like "inside", "area below" etc.) and "math" (for words
-    like "add", "divide", the numbers etc.).
-  [2000­09­09] Checked that all sequences of lemma numbers are
-    complete (i.e. begins with 1, and counts up without any skipped
-    numbers) and that all homonymns with the same part­of­speech are
-    tagged with lemma numbers. Checked that this database is sorted
-    correctly: first after Klingon word, next after part­of­speech
-    (in order: v, n, name, pro, adv, num, excl, ques, conj) and
-    finally after lemma numbering (lemma numbers are given
-    chronologically, with the lowest number to the first defined
+
+    [2000­10­11 to 2000­10­12] - Added 24 new words from the latest issue of
+    HolQeD (most of these are names of different family relations) and added
+    some additional comments to {chen} from the same source. Translated the
+    new words into Swedish.
+
+    [2000­10­09] - Changed italics marker to "~" instead of "+" (this makes
+    this dictionary follow the ~Project Gutenberg~ specifications in this
+    regard). Added category "locative" (for words like "inside", "area
+    below" etc.) and "math" (for words like "add", "divide", the numbers
+    etc.).
+
+    [2000­09­09] - Checked that all sequences of lemma numbers are complete
+    (i.e. begins with 1, and counts up without any skipped numbers) and that
+    all homonymns with the same part­of­speech are tagged with lemma
+    numbers. Checked that this database is sorted correctly: first after
+    Klingon word, next after part­of­speech (in order: v, n, name, pro, adv,
+    num, excl, ques, conj) and finally after lemma numbering (lemma numbers
+    are given chronologically, with the lowest number to the first defined
     word).
-  [2000­09­08] Introduced lemma numbering for homonyms of same word
+
+    [2000­09­08] - Introduced lemma numbering for homonyms of same word
     class.
-  [2000­08­14] Removed the word {Soq} from S33 (now confirmed
+
+    [2000­08­14] - Removed the word {Soq} from S33 (now confirmed
     incorrect).
-  [2000­07­31] Translated "skink" and "blow one's top" into Swedish.
-  [2000­07­03] Changed italics marker from '*' to '+' to avoid
-    confusions with useage of '*' as a literal letter (as three
-    curses uses this).
-  [2000­05­09] Corrected some Swedish spelling errors.
-  [2000­05­03] Machine­checked Klingon graphotax. Machine­checked
-    all parenthetic structures (including ~xx~ used for italics).
+
+    [2000­07­31] - Translated "skink" and "blow one's top" into Swedish.
+
+    [2000­07­03] - Changed italics marker from '*' to '+' to avoid
+    confusions with useage of '*' as a literal letter (as three curses uses
+    this).
+
+    [2000­05­09] - Corrected some Swedish spelling errors.
+
+    [2000­05­03] - Machine­checked Klingon graphotax. Machine­checked all
+    parenthetic structures (including ~xx~ used for italics).
     Machine­checked for lines ending in white space(s) (none found).
-    Machine­checked for identical fields within same post (2
-    corrected) Checked that if "»»"/">>"/"««"/"<<" occur that the
-    matching "««" or "»»" exist in the Swedish translation.
-  [2000­04­30 to 2000­05­02] Sort tagged the remaining Swedish
+    Machine­checked for identical fields within same post (2 corrected)
+    Checked that there is a matching «« or »» in the Swedish translation for
+    each »», >>, «« or << occuring in the English field.
+
+    [2000­04­30 to 2000­05­02] - Sort tagged the remaining Swedish
     translations (about 1600) using a lot of ad hoc ARexx­code.
-  [2000­04­03] All references to MSN etc. corrected to ~News~ and
+
+    [2000­04­03] - All references to MSN etc. corrected to ~News~ and
     provided with correct dates. Machine­checked all parentheses.
-  [2000­02­24] Part of speech for Swedish translation
-    machine­checked.
 
-The following words exist in the dictionary that are not accounted
-for separately, but instead only occurs in different noun­noun
-constructions. Most of these are logical derivates which can be
-understood either as built up of known elements (e.g. {chevwI'} from
-{chev} and the suffix {­wI'}) or as proper nouns. At least one
-({chem}), however, notably deviates from this pattern, and the
-question remains whether this can be considered a word in its own
-right. (A question for Okrand, perhaps?) [2000­10­12]
-
-  {chem}	(magnetic) field
-  {chevwI'}	"one who separates"
-  {choHwI'}	"one who changes"
-  {Duran}	Durani (lizard skins)
-  {ghevchoq}	Gevchok (region)
-  {Sa'Qej}	Sakrej (region)
-  {ghIlab}	glob (fly)
-  {Hubbeq}	(Klingon) Defense Force
-  {mI'wI'}	(fire) dancer
-  {ngaDHa'}	irresponsible (person), undisciplined (person)
-  {telun}	telun (star system)
-  {tI'qa'}	tika (cat)
-  {tlhIng}	Kling (discrict)
-  {toqvIr}	Tokvirian (skink)
-  {voSpegh}	Vospeg (region)
-  {yaHnIv}	Operations (command)
+    [2000­02­24] - Part of speech for Swedish translation machine­checked.
 
 [eof]
