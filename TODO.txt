@@ -1,17 +1,18 @@
-* Perl: Convert all perl scripts to UTF8.
+Important Stuff
+===============
 
-* ZDB: Add zdb dictionary file.
+* Perl: Convert all Perl scripts to be able to handle UTF8.
 
-* Perl: Scripts for resorting output file into printable booklet.
+* Perl: Scripts for resorting output file into printable booklet. Incorporate
+  in Makefile.
 
 * Makefile: LaTeX -> DVI target should scan .tex files for dependencies, so
   that output file is rebuilt if *any* of the input components have changed.
 
-* LaTeX: Proper typesetting/linebreaking of URLs.
+* Perl: Add scripts for regenerating dictionary text from database. Incorporate
+  in Makefile.
 
-* Perl: Add scripts for creating the dictionary lists.
-
-* LaTeX: Remove unused code.
+* LaTeX: Clean up and remove unused code.
 
 
 
@@ -29,5 +30,15 @@ Textual Correcions/Clarifications
   this copy.
 
 * Hyphenation of Klingon phrases?
+
+
+
+Someday/Maybe -- Wishlist
+=========================
+
+* LaTeX: Module for automatic hyphenation of Klingon?
+
+* LaTeX: Proper typesetting/linebreaking of URLs. \usepackage{url} and
+  \usepackage{hyperref} neither allow URLs to be set in italics.
 
 [eof]
