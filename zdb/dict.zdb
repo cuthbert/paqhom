@@ -53,6 +53,10 @@ klin:	{bachHa'}
 sve:	«fela», göra ett «misstag» (v) (slang)
 eng:	<err>, make a <mistake> (v) (slang)
 def:	[KGT]
+joke:	This is the first word in the K­E side of the dictionary, and is
+	incorrectly given as a noun. MO has confirmed this to be an
+	intentional error (since there is always an error somewhere, in
+	every dictionary).
 
 klin:	{bagh}
 sve:	«knyta», «binda» (v)
@@ -63,6 +67,7 @@ klin:	{baghneQ}
 sve:	«sked» (s)
 eng:	«spoon» (n)
 def:	[News 1998­05­05]
+joke:	Spoonerism on {nagh beQ} "flat stone".
 
 klin:	{baH}
 sve:	«eld», «avfyra» (torped, raket, missil) (v)
@@ -91,7 +96,7 @@ eng:	<jug>, <jar>, <bottle> (n)
 def:	[KGT]
 
 klin:	{bang}
-sve:	«älskad», någon som är älskad, älskad person (s)
+sve:	«älskad», någon som är älskad, älskade (s)
 eng:	<love>, one who is loved, «beloved» (n)
 def:	[TKD]
 ref:	[TKW p.159]
@@ -264,7 +269,7 @@ sve:	«manskap», «besättningsman» (s)
 eng:	<crew>, crewman (n)
 def:	[TKD]
 
-klin:	{beqquj}
+klin:	{beqpuj}
 sve:	en slags «mineral», «~bekpuj~» (orange till färgen) (s)
 eng:	type of <mineral>, <~bekpuj~> (orange in color) (n)
 def:	[KGT]
@@ -890,7 +895,7 @@ def:	[TKD]
 ref:	[TKW p.37]
 
 klin:	{chaw'}
-sve:	«tillstånd», «tillåtelse» (s)
+sve:	«tillåtelse», «tillstånd», «licens» (s)
 eng:	<permit> (n)
 def:	[TKD E­K]
 com:	Used in PK; {cha'puj vIngevmeH chaw' HInobneS}.
@@ -1568,6 +1573,8 @@ klin:	{DaS}
 sve:	«känga», «stövel» (s)
 eng:	<boot> (n)
 def:	[TKD]
+joke:	"Das Boot"! "Last year, I asked Marc Okrand if it was intentional;
+	he said yes." (ghunchu'wI', qep'a' wejDIch)
 cat:	clothing
 
 klin:	{DaSpu'}
@@ -1593,7 +1600,7 @@ sve:	«revolt», «revolution» (s)
 eng:	<revolt>, revolution (n)
 def:	[TKD]
 
-klin:	{DaypuS}
+klin:	{DayquS}
 sve:	en slags «planta», «dikusplanta» (s)
 eng:	type of <plant>, <dikus plant> (n)
 def:	[KGT]
@@ -1836,7 +1843,7 @@ def:	[TKD]
 
 klin:	{Do}
 sve:	«hastighet», «fart» (s)
-eng:	<velocity> (n)
+eng:	<velocity>, «speed» (n)
 def:	[TKD]
 
 klin:	{Doch}
@@ -1870,6 +1877,12 @@ sve:	«backa» iväg från, «rygga» bort ifrån, «ta» sig bort ifrån (v)
 eng:	<back> away from, back off, <get> away from (v)
 def:	[TKD]
 ref:	[TKW p.211]
+
+klin:	{DoHmoH}
+sve:	«driva» tillbaka (v)
+eng:	<drive> back (v)
+def:	[KGT p.48]
+data:	derived form
 
 klin:	{Doj}
 sve:	vara «imponerande» (v)
@@ -2387,6 +2400,8 @@ klin:	{ghIntaq}
 sve:	«strids«spjut»», «~gin'tak~» (s)
 eng:	<battle <spear>>, <~gin'tak~> (n)
 def:	[KGT]
+com:	An advisor to a house so trusted that he becomes a part of the
+	family is called *gin'tak* according to the TNG episode "Firstborn".
 
 klin:	{ghIpDIj}
 sve:	ställa inför «krigsrätt» (v)
@@ -2582,6 +2597,7 @@ klin:	{ghom'a'}
 sve:	«folksamling» (s)
 eng:	<crowd> (n)
 def:	[TKD]
+com:	Synonymous to {qev}.
 
 klin:	{ghonDoq}
 sve:	en slags «kniv» (långsmalt blad) (s)
@@ -2629,6 +2645,8 @@ sve:	«bryta» (v)
 eng:	<break> (v)
 def:	[TKD]
 ref:	[TKW p.185]
+com:	Apparently means "break" in the sense of breaking something (e.g. a
+	shell) open. {pIpyuS yIghor!} "Break a pipius!" [TKW p.185]
 
 klin:	{ghor}
 sve:	«yta» (på planet) (s)
@@ -3555,6 +3573,13 @@ eng:	<ninth> (num)
 def:	[TKD]
 cat:	math
 
+klin:	{Hutvagh}
+sve:	för många människor/saker på samma plats samtidigt (interj)
+eng:	too many people/things in a place all at once (excl)
+def:	[HQ11:3 p.13]
+com:	Word play on {Qu'vatlh} which is more commonly heard in situations
+	described by {Hutvagh}.
+
 klin:	{Hutlh}
 sve:	«sakna», vara «utan», «inte «ha»» (v)
 eng:	<lack>, be <without>, to <not «have»> (v)
@@ -3939,7 +3964,8 @@ klin:	{jIl}
 sve:	«granne» (s)
 eng:	<neighbor> (n)
 def:	[TKD]
-joke:	Marc Okrand have had a neighbor by the name Jill.
+joke:	Okrand confirmed at qep'a' wejDIch that he had a neighbor named
+	"Jill." (Qov)
 
 klin:	{jInaq}
 sve:	«amulett» som symboliserar en flickas mognad (s)
@@ -4837,9 +4863,9 @@ def:	[TKD]
 ref:	[TKW pp.9, 67]
 
 klin:	{lung}
-sve:	ett slags «djur», «~loong~» (ödleliknande) (s)
-eng:	type of <animal>, «~loong~» (lizardlike) (n)
-def:	[KGT]
+sve:	ett slags «djur», «drake», «~loong~» (ödleliknande) (s)
+eng:	type of <animal>, «dragon», «~loong~» (lizardlike) (n)
+def:	[KGT; KGT p.48-49]
 
 klin:	{lup}
 sve:	«transportera» (v)
@@ -5315,6 +5341,8 @@ sve:	«steka», «fritera» (v)
 eng:	<fry>, <deep­fry> (v)
 def:	[KGT]
 com:	Entries differ in source. One of the E­K entries is used here.
+joke:	"Marc nodded, smiling infuriatingly, to confirm {mIQ} (deep fry) as
+	in mIQ-Donald's french fries." (Qov, qep'a' loSDIch)
 
 klin:	{mIQ}
 sve:	«panna» (s) (regionalt)
@@ -5476,6 +5504,8 @@ sve:	«le», «grina», «hånle» (v)
 eng:	<smile>, <grin>, «sneer» (v)
 def:	[KGT]
 ref:	[TKW p.167]
+joke:	"Mona Lisa" ({mon'a'} "Is she smiling?") Confirmed by MO at {qep'a'
+	wejDIch}.
 
 klin:	{mon}
 sve:	«huvudstad» (s)
@@ -6028,6 +6058,8 @@ klin:	{nay}
 sve:	«gifta» sig med (hustru gör detta) (v)
 eng:	<marry> (wife does this) (v)
 def:	[TKD]
+joke:	Okrand confirmed at {qep'a' loSDIch} that {nay} came from "nay"
+	(no). (HetaQ)
 cat:	family
 
 klin:	{nay'}
@@ -6188,6 +6220,9 @@ klin:	{nIbpoH}
 sve:	«déjà vu» (s)
 eng:	<déjà vu> (n)
 def:	[KGT]
+com:	From TNG episode "Cause And Effect". Worf says "I am experiencing
+	nIb'poH, the feeling I've done this before." at the poker table the
+	third time we see that scene.
 
 klin:	{nIch}
 sve:	«ammunition» (s)
@@ -6521,6 +6556,16 @@ klin:	{nughI'}
 sve:	«gnugga» knogarna mot någons «huvud» (v)
 eng:	<twist> knuckle into someone's «head» (v)
 def:	[KGT]
+joke:	SuSvaj happened to be sitting next to Okrand at qep'a' wejDIch when
+	everyone was socializing and horsing around. While someone was
+	giving a noogie to a hapless victim, Krankor jokingly said "We
+	really should have a word for 'noogie'." So SuSvaj asked Okrand,
+	what the Klingon word for noogie was. He replied, "Well that would
+	be {nughI'}." Asked if this was borrowed from English, he said that
+	he was fairly certain that the English word had actually been
+	borrowed from {tlhIngan Hol}! "He suggested that some word-borrowing
+	was going on, and I think he said he wasn't sure which culture had
+	borrowed from which." (SuStel)
 
 klin:	{nuH} (1)
 sve:	«vapen» (s)
@@ -7410,6 +7455,9 @@ klin:	{pIqaD}
 sve:	«klingonskt «skriftsystem»» (s)
 eng:	<Klingon <writing system>> (n)
 def:	[TKD]
+joke:	MO stubbornly refuses to have anything to do with the native Klingon
+	writing system, but apparently he has challenged us. (The word
+	{pIqaD}, if read as a verb, means "We challenge you.")
 
 klin:	{pIrmuS}
 sve:	«undersida» (s)
@@ -8184,6 +8232,12 @@ def:	[TKD]
 com:	Entries differ and have been combined here.
 
 klin:	{qev}
+sve:	folksamling, folkmassa (s)
+eng:	crowd (n)
+def:	[HQ4:4 p.11]
+com:	Synonymous to {ghom'a'}.
+
+klin:	{qev}
 sve:	«trängas», «fylla» (med personer) (v)
 eng:	<crowd> (v)
 def:	[TKD]
@@ -8255,7 +8309,7 @@ klin:	{qID}
 sve:	«skämt» (s)
 eng:	<joke> (n)
 def:	[KGT]
-joke:	{qID} pronunced as English "kid".
+joke:	{qID} pronunced similar to English "kid" as in "Are you kidding?"
 
 klin:	{qIgh}
 sve:	«genväg» (s)
@@ -8850,8 +8904,6 @@ com:	There are a few animals that make a particular ruckus at dawn. [...]
 	Another, though not a bird, is the {Qa'}, specifically the {jajlo'
 	Qa'}. [HQ10:4 p.5]]
 
-
-
 klin:	{Qa'Hom}
 sve:	ett slags «djur» (snarlik en ~Qa'~, men mindre) (s)
 eng:	type of <animal> (similar to a ~Qa'~, but smaller) (n)
@@ -8883,7 +8935,7 @@ klin:	{QeD}
 sve:	«vetenskap» (s)
 eng:	<science> (n)
 def:	[TKD]
-joke:	{QeD} = Q.E.D. = "Quod Errat Demonstandum".
+joke:	{QeD} = Q.E.D. = "quod erat demonstrandum".
 
 klin:	{QeDpIn}
 sve:	«vetenskapsofficer» (s)
@@ -9727,6 +9779,17 @@ klin:	{rom}
 sve:	«överenskommelse», «fördrag», «samstämmighet» (s)
 eng:	<accord> (n)
 def:	[TKD]
+com:	Klingon grammarians refer to the rule that governs
+	the use of pronominal prefixes as the rule of {rom} (liter-
+	ally, "accord"). Grammarians of Federation Standard and
+	many Earth languages call the phenomenon "agree-
+	ment." Thus, in the case of Klingon, the prefix used must
+	"agree" with the noun to which it refers; if the object
+	noun is plural, for example, the prefix must be one that is
+	used with plural objects. Agreeing is not a trait typically
+	associated with Klingon nature, however, and appar-
+	ently, at least under certain circumstances, this may ex-
+	tend to grammar as well. [KGT p.172]
 
 klin:	{romuluS}
 sve:	«Romulus» (s)
@@ -10029,12 +10092,16 @@ klin:	{Saw}
 sve:	«gifta» sig med (make gör detta) (v)
 eng:	<marry> (husband does this) (v)
 def:	[TKD]
+joke:	Okrand confirmed at {qep'a' loSDIch} that {Saw} came from "sure"
+	with a Southern drawl. (HetaQ)
 cat:	family
 
 klin:	{Saw'}
 sve:	«ha» ett «djup» av (v)
 eng:	<have> a <depth of> (v)
 def:	[KGT]
+joke:	Okrand confirmed at {qep'a' loSDIch} that {Saw} came from "sure"
+	with a Southern drawl. (HetaQ)
 
 klin:	{Say'}
 sve:	vara «ren», vara «fläckfri» (v)
@@ -10703,6 +10770,7 @@ def:	[TKD]
 com:	According to Cheesbro (and MO) this is one of MO's little private
 	jokes, unfortunately he refuses to explain the actual meaning or
 	origin of this word, and only gives us his cryptic smile.
+see:	{tajvaj}
 
 klin:	{taH} (2)
 sve:	«fortsätta», «uthärda», «överleva» (v)
@@ -13335,6 +13403,8 @@ klin:	{'ampaS}
 sve:	«akademi», «skola» (s)
 eng:	<academy> (n)
 def:	[KGT]
+joke:	Could this have anything to do with "Academy of Motion Picture Arts
+	and Sciences", perhaps?
 
 klin:	{'ang}
 sve:	«visa», «exponera», «röja», «avslöja» (v)
@@ -13739,6 +13809,7 @@ klin:	{'obe'}
 sve:	«orden», grupp officiellt erkänd av regering (s)
 eng:	<order>, group officially recognized by government (n)
 def:	[KGT]
+joke:	"Order of the British Empire"
 
 klin:	{'obmaQ}
 sve:	«yxa» (s)
@@ -13935,6 +14006,10 @@ klin:	{'ul}
 sve:	«elektricitet» (s)
 eng:	<electricity> (n)
 def:	[KGT]
+joke:	At {qep'a' loSDIch} Okrand confirmed the suspicion of a list member
+	about its origin: electronic goods sold in the United States have a
+	sticker on them saying UL ("Underwriter's Laboratory") showing they
+	meet industry safety standards. (Qov)
 
 klin:	{'um}
 sve:	vara «kvalificerad» (v)
@@ -14243,7 +14318,112 @@ eng:	type of «bird» (makes a ruckus at dawn, fiercer than a rooster) (n)
 def:	[HQ10:4 p.5]
 com:	much fiercer than a rooster
 
+klin:	{'or}
+sve:	«manövrera», «styra» (en flygmaskin) (s)
+eng:	«pilot», «operate» (an aircraft) (v)
+def:	[HQ11:2 p.8]
 
+klin:	{'orwI'}
+sve:	«pilot», någon som «manövrera»r (en flygmaskin) (s)
+eng:	«pilot», one who «operates» (an aircraft) (n)
+def:	[HQ11:2 p.8]
+
+klin:	{ghangwI'}
+sve:	«horisont» (s)
+eng:	«horizon» (n)
+def:	[HQ11:2 p.8]
+
+klin:	{lol}
+sve:	vara i en «position», vara i ett «läge», vara i en «pose», vara i
+	en «ställning», vara i en «hållning» (v)
+eng:	be in an «attitude», be in a «stance», be in a «pose» (v)
+def:	[HQ11:2 p.8]
+
+klin:	{lol}
+sve:	en särskild ~Mok'bara~­«position» (s)
+eng:	a specific ~Mok'bara~ «position» (n)
+def:	[HQ11:2 p.8]
+
+klin:	{lolchu'}
+sve:	vara i en korrekt «position», vara i ett riktigt «läge» (v)
+eng:	be in a correct «attitude» (v)
+def:	[HQ11:2 p.8]
+data:	derived form
+
+klin:	{loltaH}
+sve:	upprätthålla en «position», bibehålla ett «läge» (v)
+eng:	maintain an «attitude» (v)
+def:	[HQ11:2 p.8]
+data:	derived form
+
+klin:	{lolchu'taH}
+sve:	upprätthålla en korrekt «position», bibehålla ett riktigt «läge» (v)
+eng:	maintain a correct «attitude» (v)
+def:	[HQ11:2 p.8]
+data:	derived form
+
+klin:	{lolmoH}
+sve:	«manövrera» (en flygmaskin) (v)
+eng:	«maneuver» (an aircraft) (v)
+def:	[HQ11:2 p.8]
+data:	derived form
+
+klin:	{Der}
+sve:	«gira» (om flygmaskin) (v)
+eng:	«yaw» (about aircraft) (v)
+def:	[HQ11:2 p.9]
+com:	"When the nose of an airplane or similar craft moves to the left or
+	the right [...]" [HQ11:2 p.9]
+
+klin:	{ron}
+sve:	«banka», «rolla» (om flygmaskin) (v)
+eng:	«bank», «roll» (about aircraft) (v)
+def:	[HQ11:2 p.9]
+com:	"When the plane banks or rolls to one side or the other so that,
+	say, the left wing is pointed somewhat (or even a lot) upwards while
+	the right wing is pointed somewhat (or a lot) downwards, or vice
+	versa [...]" [HQ11:2 p.9]
+
+klin:	{tor}
+sve:	«tippa», «kränga» (om flygmaskin) (v)
+eng:	«pitch» (about aircraft) (v)
+def:	[HQ11:2 p.9]
+com:	"And when the nose of the plane moves up or down, the plane is said
+	to {tor} <pitch>. (the word {tor} also means <kneel>, which Maltz
+	thought was apt, since if a four­legged animal is able to kneel
+	with either its hind legs or its front legs, it is able to pitch or
+	tilt up or down.)" [HQ11:2 p.9]
+
+
+klin:	{jIm}
+sve:	«höja», «sänka» (om flygmaskin) (v)
+eng:	«heave» (about aircraft) (v)
+def:	[HQ11:2 p.9]
+com:	"When the plane moves up or down (not when the nose points up or
+	down, but when the plane increases or decreases altitude, as if the
+	whole plane is being pushed up or down)" [HQ11:2 p.9]
+joke:	This is whan "Jim" Kirk does to outsmart Khan in the nebula, at the
+	end of "Star Trek II: The Wrath of Khan".
+
+klin:	{Dav}
+sve:	«svänga», förflytta sig i sidled (om flygmaskin) (v)
+eng:	«sway», move to the side (about aircraft) (v)
+def:	[HQ11:2 p.9]
+com:	"When it moves to the side (not when the nose points to the left or
+	right, but when the plane slides to the left or right without
+	otherwise changing its orientation)" [HQ11:2 p.9]
+
+klin:	{jer}
+sve:	«rycka», plötsligt röra sig framåt eller bakåt (om flygmaskin) (v)
+eng:	«surge», suddenly move forward or backward (about aircraft) (v)
+def:	[HQ11:2 p.9]
+com:	"if it suddenly moves forwards or backwards" [HQ11:2 p.9]
+
+klin:	{tajvaj}
+sve:	«vinkel» (s)
+eng:	«angle» (n)
+see:	{taH}
+%%%
 
 === end­of­word­list ===
 === start­of­verb­prefix­list ===
@@ -14908,6 +15088,19 @@ SOURCES REFERENCES AND ABBREVIATIONS
 
 HISTORY (LATEST CHANGES FIRST)
 
+    [2003-11-17] - Corrected {beqquj} to {beqpuj} (thanks to Philip Newton
+    <tlhIngan-Hol@gmx.net> for spotting the error).
+
+    [2003-11-10] - Added the word {DoHmoH} after anonymous tip from the KA
+    webpage (this word was apparently the word of the day Saturday, July 19,
+    2003). Also added "dragon" as a translation of {lung}, which I found when
+    looking at the source for {DoHmoH}. (Both of these occur on pages 48-19 of
+    KGT.)
+
+    [2002­09­11] - Corrected the Klingon spelling of "Dikus plant" from
+    {Daypus} to {DayquS}. Thanks to d'Armond Speers [USA] for pointing out
+    the error!
+
     [2002­06­28] - Translated the words from HQ10:4 p.5 into Swedish.
 
     [2002­03­09] - Corrected the Klingon spelling of "racht" from {taHta'}
@@ -14915,7 +15108,7 @@ HISTORY (LATEST CHANGES FIRST)
     error!
 
     [2002­01­21] - Added the 35 new words ({po Ha'DIbaH} excepted since it
-    really isn't a "new word") from MO's article in HQ10:4. Mostly these
+    really isn't a "new word") from MO's article in HQ10:4. Most of these
     words are about birds.
 
     [2001­08­23] - Added some 27 new words related to fingers and toes, and
@@ -14975,7 +15168,7 @@ HISTORY (LATEST CHANGES FIRST)
     [2000­09­08] - Introduced lemma numbering for homonyms of same word
     class.
 
-    [2000­08­14] - Removed the word {Soq} from S33 (now confirmed
+    [2000­08­14] - Removed the word {Soq} from S33 (now confirmed to be
     incorrect).
 
     [2000­07­31] - Translated "skink" and "blow one's top" into Swedish.
