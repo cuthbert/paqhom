@@ -27,7 +27,7 @@ FIELD NAMES USED IN DICTIONARY BELOW
 		      prepositional concepts, body parts etc. (categories
 		      separated by semicolon) Right now the following
 		      categories exist: "body part", "clothing", "locative",
-		      "math", "music", "family", "landscape"
+		      "math", "music", "family", "landscape", "time"
     data:  (optional) contains additional data about a word:
 
 		      »basic« = one of the 500 basic words, required for
@@ -57,16 +57,19 @@ sve:	«skjuta» (v)
 eng:	<shoot> (v)
 def:	[TKD]
 ref:	[TKW p.148]
+data:	KLCP-1
 
 klin:	{bach}
 sve:	«skott» (s)
 eng:	<shot> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{bachHa'}
 sve:	«fela», göra ett «misstag» (v) (slang)
 eng:	<err>, make a <mistake> (v) (slang)
 def:	[KGT]
+com:	Should this word even be used? {Qagh} seem to mean the same thing.
 joke:	This is the first word in the K-E side of the dictionary, and is
 	incorrectly given as a noun. MO has confirmed this to be an
 	intentional error (since there is always an error somewhere, in
@@ -87,6 +90,7 @@ klin:	{baH}
 sve:	«eld», «avfyra» (torped, raket, missil) (v)
 eng:	<fire> (torpedo, rocket, missile) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{baHjan}
 sve:	¿?«avfyrningstub», «utskjutningsanordning» (s)
@@ -97,6 +101,7 @@ klin:	{baHwI'}
 sve:	«skytt», «artillerist» (s)
 eng:	<gunner> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{baj}
 sve:	«tjäna», göra sig «förtjänt» av, «arbeta» för (aktivt) (v)
@@ -114,6 +119,7 @@ sve:	«älskad», någon som är älskad, älskade (s)
 eng:	<love>, one who is loved, «beloved» (n)
 def:	[TKD]
 ref:	[TKW p.159]
+data:	KLCP-1
 
 klin:	{bang bom}
 sve:	«kärlekssång» (s)
@@ -202,6 +208,7 @@ klin:	{ba'}
 sve:	«sitta» (v)
 eng:	<sit> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{beb}
 sve:	«tak», yttertak (s)
@@ -228,6 +235,7 @@ sve:	«vaka» över, hålla ett öga på, «titta» på (v)
 eng:	<watch> (v)
 def:	[TKD]
 ref:	[TKW p.19]
+data:	KLCP-1
 
 klin:	{bej} (2)
 sve:	vara helt «säker», vara «viss» (v) (slang)
@@ -238,12 +246,14 @@ klin:	{bel}
 sve:	vara «nöjd», vara «belåten» (v)
 eng:	be <pleased> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{bel}
 sve:	«välbehag», «nöje» (s)
 eng:	<pleasure> (n)
 def:	[TKD]
 ref:	[TKW p.45]
+data:	KLCP-1
 
 klin:	{belHa'}
 sve:	vara «missnöjd», vara «missbelåten» (v)
@@ -260,12 +270,14 @@ klin:	{ben} (1)
 sve:	¿?för ... «år» sedan (s)
 eng:	<years> ago (n)
 def:	[TKD]
+cat:	time
 
 klin:	{ben} (2)
 sve:	«år gammal» (s)
 eng:	<years old> (n)
 def:	[KGT]
 com:	¿?Check this and previous one with ~News~.
+cat:	time
 
 klin:	{bep}
 sve:	«klaga», «invända», «gnälla» (v)
@@ -334,6 +346,7 @@ sve:	«kvinna», «hona» (s)
 eng:	<female>, <woman> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{be'etor}
 sve:	«B'Etor» (namn)
@@ -347,12 +360,12 @@ sve:	«flicka» (s)
 eng:	<girl> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{be'joy'}
-sve:	«kvinnotortyr» (rituell tortyr av fångar, utförd av kvinnor)
-	(s)
-eng:	«torture-by-women» (ritualized torture of prisoners,
-	performed by women) (n)
+sve:	«kvinnotortyr» (rituell tortyr av fångar, utförd av kvinnor) (s)
+eng:	«torture-by-women» (ritualized torture of prisoners, performed by
+	women) (n)
 def:	[Sarek pp.163, 164, 180, 181]
 
 klin:	{be'nal}
@@ -360,12 +373,14 @@ sve:	«maka», «hustru», «fru» (s)
 eng:	<wife> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{be'nI'}
 sve:	«syster» (s)
 eng:	<sister> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{bID}
 sve:	«halva», «hälft» (s)
@@ -382,6 +397,7 @@ klin:	{bIH}
 sve:	«de», «dem» (oförmögna till språk) (pro)
 eng:	<they>, <them> (incapable of language) (pro)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{bIj}
 sve:	«straffa» (v)
@@ -404,6 +420,7 @@ sve:	område «nedanför», område «under» (s)
 eng:	area <below>, area <under> (n)
 def:	[TKD]
 cat:	locative
+data:	KLCP-1
 
 klin:	{bIp}
 sve:	«hundratusen» (nummerbildande element) (räkn)
@@ -418,6 +435,7 @@ eng:	<water> (n)
 def:	[TKD]
 ref:	[TKW pp.34, 35]
 com:	Used metaphorically as the symbol of weakness and distain.
+data:	KLCP-1
 
 klin:	{bIQ bal}
 sve:	«vattenkrus», «vattenkanna» (s)
@@ -459,6 +477,7 @@ sve:	vara «kall» (v)
 eng:	be <cold> (v)
 def:	[TKD]
 ref:	[TKW pp.133, 174]
+data:	KLCP-1
 
 klin:	{bIraqlul}
 sve:	«~brak'lul~» (dubbel uppsättning av kroppsorgan) (s)
@@ -489,6 +508,7 @@ sve:	vara «nervös», vara «rastlös» (v)
 eng:	be <nervous>, be <uneasy> (v)
 def:	[TKD]
 see:	{jotHa'}; {tIb}
+data:	KLCP-1
 
 klin:	{bIv}
 sve:	«bryta» mot (regler) (v)
@@ -600,10 +620,9 @@ klin:	{boq}
 sve:	«alliera» med, «förena» med, skapa en allians med (v)
 eng:	«ally» with, «form» an alliance with (v)
 def:	[HQ9:3 p.9]
-com:	Article in HQ is called "{matlh juppu' mu'mey}".
-	HQ: Used in math: {boq} for addition, {boqHa'} for
-	subtraction, {X-logh boq'egh Y} for multiplication, {X-logh
-	boqHa''egh Y} for division. See also {chen}.
+com:	Article in HQ is called "{matlh juppu' mu'mey}". HQ: Used in math:
+	{boq} for addition, {boqHa'} for subtraction, {X-logh boq'egh Y} for
+	multiplication, {X-logh boqHa''egh Y} for division. See also {chen}.
 cat:	math
 
 klin:	{boqHa'}
@@ -648,6 +667,7 @@ sve:	«hämnd» (s)
 eng:	<revenge> (n)
 def:	[TKD]
 ref:	[TKW pp.121, 133]
+data:	KLCP-1
 
 klin:	{bortaS DIb}
 sve:	«Vedergällningsrätt», «Rätt till hämnd» (s)
@@ -667,11 +687,11 @@ sve:	«förhindra», «blockera», «hindra» (v)
 eng:	<prevent>, <block>, <prohibit> (v)
 def:	[TKD]
 ref:	[TKW p.9]
-com:	Abstract/active meaning? (Such as a parent prohibiting a
-	child from buying candy, or moving an arm to block a blow
-	etc.) See also {waQ} which perhaps is the same thing in a
-	more concrete/passive way?
+com:	Abstract/active meaning? (Such as a parent prohibiting a child from
+	buying candy, or moving an arm to block a blow etc.) See also {waQ}
+	which perhaps is the same thing in a more concrete/passive way?
 see:	{waQ}
+data:	KLCP-1
 
 klin:	{botjan}
 sve:	«sköldar» (kraftfält omkring ett skepp) (s)
@@ -703,6 +723,7 @@ klin:	{buD}
 sve:	vara «lat» (v)
 eng:	be <lazy> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{bup}
 sve:	«sluta», «avsluta» (v)
@@ -731,6 +752,7 @@ sve:	«koncentrera» sig på, «fokusera» på, «tänka» enbart på (v)
 eng:	<concentrate> on, <focus> on, <think> only about (v)
 def:	[TKD]
 ref:	[TKW pp.81, 171, 197]
+data:	KLCP-1
 
 klin:	{buSHa'}
 sve:	«ignorera» (v)
@@ -770,12 +792,13 @@ klin:	{bu'}
 sve:	«sergeant» (rang) (s)
 eng:	<sergeant> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{cha}
 sve:	«torpeder» (s)
 eng:	<torpedoes> (n)
 def:	[TKD]
-see:	{peng} (singular for {cha})
+see:	singular = {peng}
 
 klin:	{chab} (1)
 sve:	«paj», «bakverk», «kroppkaka» (s)
@@ -802,12 +825,14 @@ klin:	{chagh}
 sve:	«släppa», «tappa» (v)
 eng:	<drop> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{chaH}
 sve:	«de», «dem» (förmögna till språk) (pro)
 eng:	<they>, <them> (capable of using language) (pro)
 def:	[TKD]
 ref:	[TKW p.33]
+data:	KLCP-1
 
 klin:	{chaj}
 sve:	«väninna», «nära kvinnlig «vän»» till en kvinna (s)
@@ -815,9 +840,11 @@ eng:	<close female <friend>> of a female (n)
 def:	[KGT]
 
 klin:	{chal}
-sve:	«sky», «himmel» (s)
+sve:	«himmel» (s)
 eng:	<sky> (n)
 def:	[TKD]
+cat:	landscape
+data:	KLCP-1
 
 klin:	{cham}
 sve:	«teknologi» (s)
@@ -874,6 +901,7 @@ sve:	«erövra» (v)
 eng:	<conquer> (v)
 def:	[TKD]
 ref:	[TKW pp.5, 149]
+data:	KLCP-1
 
 klin:	{charghwI'}
 sve:	«segrare», «erövrare» (s)
@@ -896,17 +924,20 @@ sve:	«uppnå» (v)
 eng:	<achieve> (v)
 def:	[TKD]
 ref:	[TKW pp.55, 115, 125, 165, 211]
+data:	KLCP-1
 
 klin:	{chav}
 sve:	«prestation», «bedrift» (s)
 eng:	<achievement> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{chaw'}
 sve:	«tillåta» (v)
 eng:	<allow>, <permit> (v)
 def:	[TKD]
 ref:	[TKW p.37]
+data:	KLCP-1
 
 klin:	{chaw'}
 sve:	«tillåtelse», «tillstånd», «licens» (s)
@@ -945,11 +976,13 @@ klin:	{cha'Hu'}
 sve:	«förrgår» (s)
 eng:	<day> before «yesterday» (n)
 def:	[TKD]
+cat:	time
 
 klin:	{cha'leS}
 sve:	«övermorgon» (s)
 eng:	<day> after «tomorrow» (n)
 def:	[TKD]
+cat:	time
 
 klin:	{cha'logh}
 sve:	«två gånger» (adv)
@@ -989,6 +1022,7 @@ klin:	{chech}
 sve:	vara «full», vara «berusad» (v)
 eng:	be <drunk>, be <intoxicated> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{chechtlhutlh}
 sve:	en slags «sprit», «~chech'tluth~» (s)
@@ -1004,6 +1038,7 @@ eng:	<return> (to) (v)
 def:	[TKD]
 com:	"direct object is place returned to" according to KLI new
 	words list.
+data:	KLCP-1
 
 klin:	{cheH}
 sve:	«hoppa av» (politiskt) (v)
@@ -1021,6 +1056,7 @@ sve:	«addera», «lägga ihop», «lägga till» (v)
 eng:	<add> (v)
 def:	[TKD]
 cat:	math
+data:	KLCP-1
 
 klin:	{chelwI'}
 sve:	«kamrer», «revisor», «finansman» (s) (slang)
@@ -1066,11 +1102,13 @@ klin:	{chep}
 sve:	ha «framgång», vara «framgångsrik» (v)
 eng:	<prosper>, be prosperous (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{cher}
 sve:	«etablera», «sätta» upp, «ordna» (v)
 eng:	<establish>, <set> up (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{chergh}
 sve:	«tolerera» (v)
@@ -1131,12 +1169,14 @@ sve:	«erkänna» (v)
 eng:	<admit> (v)
 def:	[TKD]
 ref:	[TKW p.212]
+data:	KLCP-1
 
 klin:	{chIj}
 sve:	«navigera», «styra» (v)
 eng:	<navigate> (v)
 def:	[TKD]
 ref:	[TKW p.63]
+data:	KLCP-1
 
 klin:	{chIjwI'}
 sve:	«navigatör» (s)
@@ -1168,6 +1208,7 @@ klin:	{chIS}
 sve:	vara «vit» (v)
 eng:	be <white> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{chob}
 sve:	«korridor» (s)
@@ -1188,6 +1229,7 @@ klin:	{choH}
 sve:	«ändras», «förändras» (v)
 eng:	<alter>, <change> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{choH}
 sve:	«förändring» (s)
@@ -1198,6 +1240,7 @@ klin:	{chol}
 sve:	«närma» sig, «komma» närmare, «nalkas» (v)
 eng:	<close> in, «get» closer, «come» nearer (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{choljaH}
 sve:	«hästsvanshållare» (s)
@@ -1238,9 +1281,9 @@ def:	[TKD]
 
 klin:	{chong} (2)
 sve:	vara «bra», vara «utmärkt», vara «storslagen», vara «underbar» (v)
-	(slang) 
+	(slang)
 eng:	be <good>, be <excellent>, be <great>, be <wonderful>, be <splendid>
-	(v) (slang) 
+	(v) (slang)
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -1254,6 +1297,7 @@ klin:	{chop}
 sve:	«bita» (v)
 eng:	<bite> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{choptaH}
 sve:	«gnaga», «tugga» (v)
@@ -1315,6 +1359,7 @@ klin:	{choS}
 sve:	«skymning» (s)
 eng:	<twilight> (n)
 def:	[TKD]
+cat:	time
 
 klin:	{chot}
 sve:	«mörda» (v)
@@ -1386,6 +1431,7 @@ klin:	{chup}
 sve:	«rekommendera», «föreslå» (v)
 eng:	<recommend>, <suggest> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{chuq}
 sve:	«räckvidd», «avstånd» (s)
@@ -1432,12 +1478,13 @@ klin:	{chuyDaH}
 sve:	raketmotorer, «raketer» (s)
 eng:	<thrusters> (n)
 def:	[TKD]
-see:	{vIj} (singular of {chuyDaH})
+see:	singular = {vIj}
 
 klin:	{chu'} (1)
 sve:	vara «ny» (v)
 eng:	be <new> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{chu'} (2)
 sve:	«slå på», «aktivera», «starta» (en apparat) (v)
@@ -1475,6 +1522,7 @@ klin:	{Dach} (1)
 sve:	vara «frånvarande» (v)
 eng:	be <absent> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Dach} (2)
 sve:	vara icke-«uppmärksam», vara «distraherad», sakna «koncentration»
@@ -1505,6 +1553,8 @@ sve:	«idag» (s)
 eng:	<today> (n)
 def:	[TKDa]
 ref:	[TKW p.203]
+cat:	time
+data:	KLCP-1
 
 klin:	{DaHjaj gheD}
 sve:	«rätt» på restaurang, "«dagens fångst»" (s)
@@ -1516,6 +1566,7 @@ klin:	{Daj} (1)
 sve:	vara «intressant» (v)
 eng:	be <interesting> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Daj} (2)
 sve:	«pröva», «testa» (på ett icke-avgörande sätt) (v)
@@ -1529,6 +1580,7 @@ eng:	be <boring> (v)
 def:	[TKD]
 ref:	[TKW p.201]
 joke:	Prononced similar to English "dull".
+data:	KLCP-1
 
 klin:	{Dan}
 sve:	«ockupera» (v)
@@ -1539,6 +1591,7 @@ klin:	{Dap}
 sve:	«nonsens» (s)
 eng:	<nonsense> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Dap bom}
 sve:	«nonsens«sång»» (s)
@@ -1590,6 +1643,7 @@ def:	[TKD]
 joke:	"Das Boot"! "Last year, I asked Marc Okrand if it was intentional;
 	he said yes." (ghunchu'wI', qep'a' wejDIch)
 cat:	clothing
+data:	KLCP-1
 
 klin:	{DaSpu'}
 sve:	«stövelspik», «kängspik», «tåspik» (s)
@@ -1643,6 +1697,7 @@ klin:	{Degh} (1)
 sve:	«roder» (s)
 eng:	<helm> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Degh} (2)
 sve:	«medalj», «emblem», «symbol», «märke» (s)
@@ -1654,6 +1709,7 @@ klin:	{DeghwI'}
 sve:	«rorsman» (s)
 eng:	<helmsman> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{DeH}
 sve:	vara «mogen», vara «övermogen» (frukt, grönsak) (v)
@@ -1669,6 +1725,7 @@ klin:	{Del}
 sve:	«beskriva» (v)
 eng:	<describe> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{DenIb}
 sve:	«Denebia» (s)
@@ -1718,6 +1775,7 @@ sve:	«arm» (s)
 eng:	<arm> (body part) (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{DeS} (2)
 sve:	«skaft», «yxskaft» (s)
@@ -1736,6 +1794,7 @@ sve:	«leda», «guida» (v)
 eng:	<lead>, <guide> (v)
 def:	[TKD]
 ref:	[TKW p.iii]
+data:	KLCP-1
 
 klin:	{DevwI'}
 sve:	«ledare» (s)
@@ -1747,11 +1806,13 @@ klin:	{De'}
 sve:	«data», «fakta», «information» (s)
 eng:	<data>, <information> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{De'wI'}
 sve:	«dator» (s)
 eng:	<computer> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{DI}
 sve:	«skräp», «avfall», «spillror», «grus», «sopor» (s)
@@ -1787,6 +1848,7 @@ klin:	{DIl}
 sve:	«betala» för (v)
 eng:	<pay> for (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{DIlyum}
 sve:	«trillium» (s)
@@ -1804,11 +1866,13 @@ klin:	{DIp}
 sve:	«substantiv» (s)
 eng:	<noun> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{DIr}
 sve:	«skinn» (s)
 eng:	<skin> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{DIron}
 sve:	«säckpipa» (s)
@@ -1836,6 +1900,8 @@ klin:	{DIS} (2)
 sve:	«år» (klingonskt) (s)
 eng:	<year> (Klingon) (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{DIv}
 sve:	vara «skyldig» (v)
@@ -1869,6 +1935,7 @@ klin:	{Doch}
 sve:	«sak» (s)
 eng:	<thing> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{DoD}
 sve:	¿?«punkt», «komma», «avskiljare» (i koordinater) (s)
@@ -1902,6 +1969,7 @@ klin:	{Doj}
 sve:	vara «imponerande» (v)
 eng:	be <impressive> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Dol}
 sve:	«väsen», självständig «helhet» (s)
@@ -1928,6 +1996,7 @@ sve:	vara «orange», vara «röd» (v)
 eng:	be <orange>, be <red> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{DoQ}
 sve:	göra «anspråk» på (territorium) (v)
@@ -1952,7 +2021,7 @@ sve:	«mål»(-tavla) (s)
 eng:	<target> (n)
 def:	[TKD]
 ref:	[TKW pp.81, 191]
-see:	{ray'} (plural form)
+see:	plural = {ray'}
 
 klin:	{Dotlh}
 sve:	«status» (s)
@@ -1968,6 +2037,7 @@ klin:	{Doy'}
 sve:	vara «trött» (v)
 eng:	be <tired> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Doy'yuS}
 sve:	«Troyius» (s)
@@ -1979,6 +2049,7 @@ sve:	vara «tursam», vara «lyckosam», ha «tur», ha «lycka» (v)
 eng:	be <fortunate>, be <lucky> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{Do'}
 sve:	«lyckligtvis», med «tur» (adv)
@@ -2043,6 +2114,7 @@ sve:	«skepp», «farkost» (s)
 eng:	<ship>, <vessel> (n)
 def:	[TKD]
 ref:	[TKW pp.27, 63, 74, 182]
+data:	KLCP-1
 
 klin:	{Duj ngaDHa'}
 sve:	«oansvarig» person, «odisciplinerad» person (s) (slang)
@@ -2067,11 +2139,13 @@ sve:	område «ovanför», område «över» (s)
 eng:	area <above>, area <overhead> (n)
 def:	[TKD]
 cat:	locative
+data:	KLCP-1
 
 klin:	{DungluQ}
-sve:	«middagstid», «middagshöjd», «höjdpunkt» (s)
+sve:	«middagstid», mitt på dagen (s)
 eng:	<noon> (n)
 def:	[TKDa]
+cat:	time
 
 klin:	{Dup}
 sve:	«strategi» (s)
@@ -2100,7 +2174,7 @@ eng:	<spike> (n)
 def:	[KGT]
 
 klin:	{DuQwI'Hommey}
-sve:	små «piggar» på handtaget till en «~d'k tahg~» (s)
+sve:	«piggar» på pommeln till en «~d'k tahg~» (s)
 eng:	small «spikes» on the «~d'k tahg~» pommel (n)
 def:	[KGT p.61]
 
@@ -2186,12 +2260,14 @@ sve:	«han», «hon», «honom», «henne» (pro)
 eng:	<he>, <she>, <him>, <her> (pro)
 def:	[TKD]
 ref:	[TKW pp.61, 139, 190]
+data:	KLCP-1
 
 klin:	{ghaj}
 sve:	«ha», «äga» (v)
 eng:	<have>, <possess> (v)
 def:	[TKD]
 ref:	[TKW p.142]
+data:	KLCP-1
 
 klin:	{ghal}
 sve:	vara «avundsjuk» (på), «avundas» (v)
@@ -2302,6 +2378,7 @@ klin:	{ghegh}
 sve:	vara «ojämn», vara «skrovlig» (v)
 eng:	be <rough> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ghel}
 sve:	«fråga», ställa en «fråga» (v)
@@ -2370,6 +2447,7 @@ sve:	«näsa» (s)
 eng:	<nose> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{ghIgh} (1)
 sve:	«halsband» (s)
@@ -2386,12 +2464,14 @@ sve:	vara «slarvig», vara «sjabbig», vara «rörig», vara «kladdig» (v)
 eng:	be <messy>, be <sloppy> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{ghIj}
 sve:	«skrämma» (v)
 eng:	<scare> (v)
 def:	[TKD]
 ref:	[TKW pp.65, 105, 109]
+data:	KLCP-1
 
 klin:	{ghIlab ghew}
 sve:	«globfluga» (s)
@@ -2476,11 +2556,13 @@ com:	Entries from all sources have been combined here.
 	writing; it's any kind of marking. (Note that {ghItlh}, 'to
 	write,' refers to the physical act of writing. It doesn't
 	mean 'to create a composition.')"
+data:	KLCP-1
 
 klin:	{ghItlh}
 sve:	«manuskript» (s)
 eng:	<manuscript> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ghItlhwI'}
 sve:	«stylus», «skriftverktyg», «person som skriver» (s)
@@ -2519,6 +2601,7 @@ klin:	{ghobe'}
 sve:	«nej» (svar på ja/nej fråga) (interj)
 eng:	<no> (answer to a question) (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{ghoch}
 sve:	«spåra», spåra upp (v)
@@ -2539,12 +2622,14 @@ klin:	{ghoD}
 sve:	«proppa» (in), «packa» (full), «stoppa» (upp),  (v)
 eng:	<stuff> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ghogh}
 sve:	«röst» (s)
 eng:	<voice> (n)
 def:	[TKD]
 ref:	[TKW p.31]
+data:	KLCP-1
 
 klin:	{ghogh HablI'}
 sve:	«telefon» (s)
@@ -2562,6 +2647,7 @@ klin:	{ghoj}
 sve:	«lära» sig (v)
 eng:	<learn> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ghojmeH taj}
 sve:	«pojkkniv» (s)
@@ -2596,11 +2682,13 @@ sve:	«möta», «träffa», «samlas» (v)
 eng:	<meet>, <encounter>, <assemble>, <rendezvous> (v)
 def:	[TKD]
 ref:	[TKW p.184]
+data:	KLCP-1
 
 klin:	{ghom}
 sve:	«grupp», «samling», «skara», «gäng», «liga» (s)
 eng:	<group>, <party>, <band> (n)
 def:	[TKD; KGT]
+data:	KLCP-1
 
 klin:	{ghomHa'}
 sve:	«spridas» (v)
@@ -2633,6 +2721,7 @@ sve:	«hand» (s)
 eng:	<hand> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{ghopDap}
 sve:	«asteroid» (s)
@@ -2661,6 +2750,7 @@ def:	[TKD]
 ref:	[TKW p.185]
 com:	Apparently means "break" in the sense of breaking something (e.g. a
 	shell) open. {pIpyuS yIghor!} "Break a pipius!" [TKW p.185]
+data:	KLCP-1
 
 klin:	{ghor}
 sve:	«yta» (på planet) (s)
@@ -2671,6 +2761,7 @@ klin:	{ghorgh}
 sve:	«när»? (fråg)
 eng:	<when>? (ques)
 def:	[TKD]
+cat:	time
 
 klin:	{ghoS} (1)
 sve:	fortsätta «framåt», «nalkas», komma närmare, «avlägsna» sig
@@ -2679,6 +2770,7 @@ eng:	go <onward>, <approach>, <go> away from, <proceed> on a
 	course, <come>, <follow> (a course) (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{ghoS} (2)
 sve:	«köra», «driva» (v)
@@ -2691,11 +2783,13 @@ eng:	<person> (humanoid) (n)
 def:	[TKD]
 ref:	[TKW p.34]
 see:	{Dep}; {nuv}; {yoq}
+data:	KLCP-1
 
 klin:	{ghov}
 sve:	«känna igen» (v)
 eng:	<recognize> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{gho'}
 sve:	«kliva» på, «trampa» på (v)
@@ -2754,6 +2848,7 @@ klin:	{ghung}
 sve:	vara «hungrig» (v)
 eng:	be <hungry> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ghup}
 sve:	«svälja» (v)
@@ -2806,6 +2901,7 @@ klin:	{Hab}
 sve:	vara «jämn», vara «slät» (v)
 eng:	be <smooth> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{HablI'}
 sve:	«data«sändare»» och «mottagare» (s)
@@ -2822,12 +2918,14 @@ klin:	{HaD}
 sve:	«studera» (v)
 eng:	<study> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Hagh}
 sve:	«skratta» (v)
 eng:	<laugh> (v)
 def:	[TKD]
 ref:	[TKW p.131]
+data:	KLCP-1
 
 klin:	{HaH} (1)
 sve:	«blöta» upp, «dränka» in (v)
@@ -2853,6 +2951,7 @@ klin:	{Hal}
 sve:	«källa» (s)
 eng:	<source> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{HanDogh}
 sve:	«warp«gondol»», «nacell» (s)
@@ -2898,6 +2997,7 @@ klin:	{Har}
 sve:	«tro» (v)
 eng:	<believe> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Hargh}
 sve:	«slåss», «strida» (stor konfrontation) (v)
@@ -2924,6 +3024,7 @@ sve:	«landsort», «landsbygd» (s)
 eng:	<country>, countryside (n)
 def:	[TKD]
 cat:	landscape
+data:	KLCP-1
 
 klin:	{Haw'}
 sve:	«fly» från, «ta» sig ur, «smita» ifrån (v)
@@ -2944,12 +3045,14 @@ klin:	{Ha'}
 sve:	«kom»!, «vi går»! (interj)
 eng:	<let's go>!, <come> on! (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{Ha'DIbaH} (1)
 sve:	«kött», «djur» (s)
 eng:	<meat>, <animal> (n)
 def:	[TKD; TKDa]
 ref:	[TKW p.163]
+data:	KLCP-1
 
 klin:	{Ha'DIbaH} (2)
 sve:	«fähund», «usling», «tölp», «underlägsen person» (s) (slang)
@@ -2971,6 +3074,7 @@ sve:	«avse», «mena» att (v)
 eng:	<intend>, <mean> to (v)
 def:	[TKD]
 ref:	[TKW pp.163, 13]
+data:	KLCP-1
 
 klin:	{HeD}
 sve:	«retirera», gå till «reträtt» (v)
@@ -2988,6 +3092,7 @@ eng:	<die> (v)
 def:	[TKD]
 ref:	[TKW pp.5, 69, 71, 72, 73, 74, 77, 88, 93, 99, 117, 123, 129,
 	145, 153, 213]
+data:	KLCP-1
 
 klin:	{Hegh}
 sve:	«död» (s)
@@ -3037,6 +3142,7 @@ sve:	vara «stolt» (v)
 eng:	be <proud> (v)
 def:	[TKD]
 ref:	[TKW p.13]
+data:	KLCP-1
 
 klin:	{Heng}
 sve:	«fingra på» (hål, strängar på instrument) för att variera ljud (v)
@@ -3084,6 +3190,7 @@ klin:	{Hev}
 sve:	«ta emot» (v)
 eng:	<receive> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Hew}
 sve:	«staty» (s)
@@ -3136,6 +3243,7 @@ klin:	{HIja'}
 sve:	«ja» (svar på ja/nej fråga) (interj)
 eng:	<yes>, «true» (answer to yes/no question) (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{HIjwI'}
 sve:	«leverantör», «bud» (s)
@@ -3157,12 +3265,14 @@ klin:	{HISlaH}
 sve:	«ja» (svar på ja/nej fråga) (interj)
 eng:	<yes>, «true» (answer to yes/no question) (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{HIv}
 sve:	«attackera» (v)
 eng:	<attack> (v)
 def:	[TKD]
 ref:	[TKW pp.24, 113, 182, 183]
+data:	KLCP-1
 
 klin:	{HIvDuj}
 sve:	«attackskepp» (s)
@@ -3173,6 +3283,7 @@ klin:	{HIvje'}
 sve:	«glas» (dryckeskärl) (s)
 eng:	<glass> (tumbler) (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{HIvje' bom}
 sve:	«dryckes«visa»» (s)
@@ -3211,6 +3322,7 @@ com:	All sources combined here.
 	{Hoch}"; "If noun following Hoch is explicitly plural, it
 	means 'all'. If it is singular, it means 'each'."
 	Occurs in TKW p.33, 51, 74, 74, 74, 99, 136, 179, 184.
+data:	KLCP-1
 
 klin:	{HochDIch}
 sve:	«allte», «slutgiltiga», «sista» (räkn)
@@ -3231,17 +3343,22 @@ klin:	{HoD}
 sve:	«kapten» (rang) (s)
 eng:	<captain> (n)
 def:	[TKD]
+joke:	{HoD} = H.o.D. = "Head of Department".
+data:	KLCP-1
 
 klin:	{Hogh}
 sve:	«vecka» (klingonsk) (s)
 eng:	<week> (Klingon) (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{HoH}
 sve:	«döda» (v)
 eng:	<kill> (v)
 def:	[TKD]
 ref:	[TKW pp.59, 163, 165]
+data:	KLCP-1
 
 klin:	{HoH}
 sve:	«dödande», «mord» (s)
@@ -3262,6 +3379,7 @@ klin:	{Hol}
 sve:	«språk» (s)
 eng:	<language> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Hol ghoQ}
 sve:	«slang», "«färskt språk»" (mestadels använt av yngre klingoner) (s)
@@ -3300,6 +3418,7 @@ klin:	{Hon}
 sve:	«tvivla» (v)
 eng:	<doubt> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Hong}
 sve:	«impulsdrift», «impulskraft» (s)
@@ -3321,6 +3440,7 @@ klin:	{Hop}
 sve:	vara «avlägsen», vara «långt bort» (v)
 eng:	be <remote>, be <far> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Hoq}
 sve:	«expedition» (s)
@@ -3336,6 +3456,7 @@ klin:	{HoS}
 sve:	vara «stark» (v)
 eng:	be <strong> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{HoS}
 sve:	«styrka», «energi», «kraft» (s)
@@ -3627,6 +3748,7 @@ klin:	{Hu'}
 sve:	¿?för ... «dagar» sedan (s)
 eng:	<days> ago (n)
 def:	[TKD]
+cat:	time
 
 klin:	{Hu'tegh}
 sve:	(generellt «invektiv») (interj)
@@ -3637,7 +3759,7 @@ com:	In HQ3:3, 14 Rhonda E. Green comments that a probable
 	the useage of the word in A.C. Crispin's "Sarek".
 
 klin:	{jab}
-sve:	«servera» (mat) (v)
+sve:	«servera», «sätta fram» (mat) (v)
 eng:	<serve> (food) (v)
 def:	[TKD]
 ref:	[TKW pp.133, 141]
@@ -3659,6 +3781,7 @@ sve:	«skrika», «ropa», «tjuta», «vråla» (v)
 eng:	<scream>, <cry> out, <shout>, yell (v)
 def:	[TKD]
 ref:	[TKW p.195]
+data:	KLCP-1
 
 klin:	{jaD}
 sve:	«kasta» runt, «slunga» omkring (v)
@@ -3670,6 +3793,7 @@ sve:	«fiende» (s)
 eng:	<enemy> (n)
 def:	[TKD]
 ref:	[TKW pp.ix, 19, 24, 61, 65, 65, 201]
+data:	KLCP-1
 
 klin:	{jaghla'}
 sve:	«fiendekommendörkapten» (s)
@@ -3680,6 +3804,7 @@ klin:	{jaH}
 sve:	«fara», «åka», «gå», «färdas», «resa» (v)
 eng:	<go>, «travel» (v)
 def:	[TKD; TKW pp.38, 203]
+data:	KLCP-1
 
 klin:	{jaj}
 sve:	«dag», «dygn» (från gryning till gryning) (s)
@@ -3688,11 +3813,14 @@ def:	[TKD]
 ref:	[TKW pp.69, 177]
 com:	Used with {-vam} in the sentence: {Heghlu'meH QaQ jajvam.}
 	"It is a good day to die." in TKW p.69.
+cat:	time
+data:	KLCP-1
 
 klin:	{jajlo'}
 sve:	«gryning» (s)
 eng:	<dawn> (n)
 def:	[TKD]
+cat:	time
 
 klin:	{jan} (1)
 sve:	«apparat», «anordning», «manick» (s)
@@ -3717,6 +3845,7 @@ klin:	{jang}
 sve:	«svara», «besvara», «genmäla» (v)
 eng:	<answer>, <reply> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{jaq}
 sve:	vara «djärv», vara «dristig» (v)
@@ -3732,6 +3861,8 @@ klin:	{jar}
 sve:	«månad» (klingonsk) (s)
 eng:	<month> (Klingon) (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{jargh}
 sve:	«panna» (s) (regionalt)
@@ -3765,6 +3896,7 @@ sve:	«säga», «berätta», «tala», «prata» (v)
 eng:	<say>, «tell», <speak> (v)
 def:	[TKD; TKDa]
 ref:	[TKW p.87]
+data:	KLCP-1
 
 klin:	{jav} (1)
 sve:	sjätte «tonen» på den nonatoniska skalan (s)
@@ -3808,6 +3940,7 @@ klin:	{ja'}
 sve:	«berätta», «rapportera» (v)
 eng:	<tell>, <report> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ja'chuq}
 sve:	«diskutera», «konferera» (v)
@@ -3852,6 +3985,7 @@ sve:	«kapitulera», «ge upp» (v)
 eng:	<surrender>, <give> up (v)
 def:	[TKD]
 ref:	[TKW p.89]
+data:	KLCP-1
 
 klin:	{jeH}
 sve:	vara «tankspridd», vara «disträ» (v)
@@ -3863,6 +3997,7 @@ sve:	vara «skarp», vara «vass» (v)
 eng:	be <sharp> (v)
 def:	[TKD]
 ref:	[TKW p.169]
+data:	KLCP-1
 
 klin:	{jejHa'}
 sve:	vara «slö», vara «oskarp», vara «trubbig» (om egg) (v)
@@ -3879,7 +4014,7 @@ klin:	{jengva'}
 sve:	«tallrik» (s)
 eng:	<plate> (for eating) (n)
 def:	[KGT]
-see:	{ngop} (plural form)
+see:	plural = {ngop}
 
 klin:	{jeq}
 sve:	«sticka ut» från, «skjuta ut» ur (v)
@@ -3907,6 +4042,7 @@ eng:	<storm> (v)
 def:	[TKD]
 com:	Correction in HQ4:1 p.7 disregarded, since weather words
 	{peD} and {SIS} also are verbs.
+cat:	landscape
 
 klin:	{jey}
 sve:	«besegra» (v)
@@ -3930,6 +4066,7 @@ sve:	«köpa», «handla» (v)
 eng:	<buy>, <purchase> (v)
 def:	[TKD]
 ref:	[TKW pp.7, 213]
+data:	KLCP-1
 
 klin:	{je'} (2)
 sve:	«mata» (någon annan) (v)
@@ -3939,6 +4076,7 @@ ref:	[TKW p.7]
 com:	Is used "metaphorically" in TKW to mean "enrich" (though of
 	course this may just be a way to make a smooth translation
 	into English).
+data:	KLCP-1
 
 klin:	{jIb}
 sve:	«hår» (på huvudet) (s)
@@ -3961,6 +4099,7 @@ sve:	«jag», «mig» (pro)
 eng:	<I>, <me> (pro)
 def:	[TKD]
 ref:	[TKW pp.203, 206]
+data:	KLCP-1
 
 klin:	{jIj} (1)
 sve:	«samarbeta» (v)
@@ -4015,7 +4154,7 @@ klin:	{jo}
 sve:	«resurser» (s)
 eng:	<resources> (n)
 def:	[TKD]
-see:	{Sup} (singular of {jo})
+see:	singular = {Sup}
 
 klin:	{joch}
 sve:	vara «skadlig» (v)
@@ -4044,6 +4183,7 @@ sve:	område «mellan», område «emellan» (s)
 eng:	area <between> (n)
 def:	[TKD]
 cat:	locative
+data:	KLCP-1
 
 klin:	{jojlu'}
 sve:	«konsul» (s)
@@ -4054,6 +4194,7 @@ klin:	{jol}
 sve:	«stråla» (ombord), «beama» (ombord) (v)
 eng:	<beam> (aboard) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{jol}
 sve:	«transporter«stråle»» (s)
@@ -4169,6 +4310,7 @@ klin:	{jot}
 sve:	vara «lugn» (v)
 eng:	be <calm> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{jotHa'}
 sve:	vara «rastlös» (v)
@@ -4210,6 +4352,7 @@ klin:	{juH}
 sve:	«hem» (s)
 eng:	<home> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{juHqo'}
 sve:	«hemvärld» (s)
@@ -4231,6 +4374,7 @@ sve:	«vän» (s)
 eng:	<friend> (n)
 def:	[TKD]
 ref:	[TKW pp.37, 38]
+data:	KLCP-1
 
 klin:	{juS}
 sve:	«komma ifatt», «passera» (v)
@@ -4256,6 +4400,7 @@ klin:	{laD}
 sve:	«läsa» (v)
 eng:	<read> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{lagh}
 sve:	«ta sönder», «plocka isär» (v)
@@ -4271,13 +4416,13 @@ klin:	{laH}
 sve:	«förmåga» (s)
 eng:	<ability> (n)
 def:	[TKD]
-data:	basic
+data:	KLCP-1
 
 klin:	{laj}
 sve:	«acceptera», «godtaga» (v)
 eng:	<accept> (v)
 def:	[TKD]
-data:	basic
+data:	KLCP-1
 
 klin:	{laj}
 sve:	«accepterande», «godtagande» (s)
@@ -4298,6 +4443,7 @@ klin:	{lam}
 sve:	vara «smutsig» (v)
 eng:	be <dirty> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{lam}
 sve:	«smuts» (s)
@@ -4339,6 +4485,7 @@ klin:	{latlh}
 sve:	«ytterligare en», «en annan», «en till» (s)
 eng:	<additional one>, <other one> (n)
 def:	[TKDa]
+data:	KLCP-1
 
 klin:	{lav}
 sve:	«buske» (s)
@@ -4352,6 +4499,7 @@ def:	[TKD]
 ref:	[TKW pp.35, 53, 95, 179; S33]
 com:	Entries differ and have been combined here.
 	S33: {HoS law'qu'} "very much energy"
+data:	KLCP-1
 
 klin:	{lay'}
 sve:	«lova» (v)
@@ -4384,6 +4532,7 @@ sve:	«se» (v)
 eng:	<see> (v)
 def:	[TKD]
 ref:	[TKW p.169]
+data:	KLCP-1
 
 klin:	{leH}
 sve:	«underhålla», «sköta» (v)
@@ -4414,6 +4563,7 @@ klin:	{leng}
 sve:	«ströva», «resa» (v)
 eng:	<roam>, <travel>, <rove> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{leng}
 sve:	«tur», «resa» (s)
@@ -4434,11 +4584,13 @@ klin:	{leS}
 sve:	«vila», «slappna av» (v)
 eng:	<rest>, <relax> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{leS}
 sve:	¿?om ... «dagar» (s)
 eng:	<days> from now (n)
 def:	[TKD]
+cat:	time
 
 klin:	{leSpal}
 sve:	ett slags sträng«instrument» (s)
@@ -4460,6 +4612,7 @@ klin:	{let}
 sve:	vara «hård» (som en sten) (v)
 eng:	be <hard> (like a rock) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{letlh} (1)
 sve:	«trappa», «trappuppgång» (s)
@@ -4480,12 +4633,14 @@ klin:	{ley'}
 sve:	«näsa» (s) (regionalt)
 eng:	<nose> (n) (regional)
 def:	[KGT]
+cat:	body part
 
 klin:	{le'}
 sve:	vara «speciell», vara «exceptionell», vara «särskild» (v)
 eng:	be <special>, be <exceptional> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{le'be'}
 sve:	vara «icke-exeptionell», vara «icke-utmärkande» (v)
@@ -4523,6 +4678,7 @@ klin:	{lIj}
 sve:	«glömma» (v)
 eng:	<forget> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{lIm}
 sve:	gripas av «panik» (v)
@@ -4584,6 +4740,7 @@ klin:	{lI'} (1)
 sve:	vara «användbar» (v)
 eng:	be <useful> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{lI'} (2)
 sve:	«sända» data (till en plats) (v)
@@ -4612,24 +4769,28 @@ eng:	<male>, <man> (n)
 def:	[TKD]
 ref:	[TKW pp.127, 177, 206]
 cat:	family
+data:	KLCP-1
 
 klin:	{loDHom}
 sve:	«pojke» (s)
 eng:	<boy> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{loDnal}
 sve:	«make», «man» (s)
 eng:	<husband> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{loDnI'}
 sve:	«bror» (s)
 eng:	<brother> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{logh}
 sve:	«rymd» (s)
@@ -4657,12 +4818,14 @@ klin:	{loj}
 sve:	vara «helt «borta»», vara helt «försvunnen», vara «slut» (v)
 eng:	be <all «gone»> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{lojmIt}
 sve:	«dörr», «grind», «port» (s)
 eng:	<door>, <gate> (n)
 def:	[TKD]
 ref:	[TKW p.186]
+data:	KLCP-1
 
 klin:	{lolSeHcha}
 sve:	«positionskontrollraketer», «lägeskontrollraketer», «styrraketer» (s)
@@ -4745,6 +4908,7 @@ klin:	{loS}
 sve:	«vänta» (på) (v)
 eng:	<wait> (for) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{loS}
 sve:	fjärde «tonen» på den nonatoniska skalan (s)
@@ -4794,6 +4958,7 @@ klin:	{lo'}
 sve:	«använda», «nyttja», «bruka» (v)
 eng:	<use> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{lo'}
 sve:	«användning», «bruk», «funktion», «nytta» (s)
@@ -4837,6 +5002,7 @@ eng:	be <right>, be <correct> (v)
 def:	[TKD]
 ref:	[TKW p.179]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{luH} (1)
 sve:	«rycka» (i), «dra» (i) (v)
@@ -4892,6 +5058,7 @@ klin:	{lup}
 sve:	«sekund» (s)
 eng:	<second> (of time) (n)
 def:	[TKD]
+cat:	time
 
 klin:	{lupDujHom}
 sve:	«skyttel» (farkost) (s)
@@ -4940,6 +5107,7 @@ klin:	{lut}
 sve:	«historia», «berättelse», «saga» (s)
 eng:	<story> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{lutlh}
 sve:	vara «primitiv» (v)
@@ -4960,6 +5128,7 @@ klin:	{mach}
 sve:	vara «liten» (v)
 eng:	be <small> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{magh}
 sve:	«förråda», «svika» (v)
@@ -4967,6 +5136,7 @@ eng:	<betray> (v)
 def:	[TKD]
 ref:	[S26]
 com:	S26 was reprinted in HQ5:3 p.15, here used as "act against".
+data:	KLCP-1
 
 klin:	{maghwI'}
 sve:	«förrädare» (s)
@@ -4978,6 +5148,7 @@ sve:	«vi», «oss» (pro)
 eng:	<we>, <us> (pro)
 def:	[TKD]
 ref:	[TKW p.3]
+data:	KLCP-1
 
 klin:	{maH}
 sve:	«tio» (nummerbildande element) (räkn)
@@ -4995,11 +5166,13 @@ klin:	{maj}
 sve:	«bra» (uttrycker belåtenhet) (interj)
 eng:	<good> (expressing satisfaction) (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{majQa'}
 sve:	«bra» gjort, mycket bra (interj)
 eng:	<well> done, very <good> (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{malja'}
 sve:	«affär», «ärende», «syssla», «göromål», «angelägenhet» (s)
@@ -5010,7 +5183,7 @@ klin:	{mang}
 sve:	«soldat» (en krigare i en grupp om flera) (s)
 eng:	<soldier> (a warrior who is part of a unit) (n)
 def:	[TKD]
-see:	{negh} (plural form); {SuvwI'}; {vaj}
+see:	plural = {negh}; {SuvwI'}; {vaj}
 
 klin:	{mangghom}
 sve:	«armé» (s)
@@ -5067,11 +5240,13 @@ klin:	{maS}
 sve:	«föredra» (v)
 eng:	<prefer> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{maS}
 sve:	«måne» (s)
 eng:	<moon> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{maSwov}
 sve:	«månljus» (s)
@@ -5118,6 +5293,7 @@ klin:	{maw'}
 sve:	vara «galen» (v)
 eng:	be <crazy> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{may}
 sve:	vara «rättvis» (v)
@@ -5130,6 +5306,7 @@ eng:	<battle> (an individual battle) (n)
 def:	[TKD; KGT p.47]
 ref:	[TKW pp.38, 91, 147, 211]
 see:	{vIq}
+data:	KLCP-1
 
 klin:	{may' bom}
 sve:	«stridssång» (s)
@@ -5204,6 +5381,7 @@ sve:	«lämna», «avvika», «ge sig av», «avlägsna» sig (v)
 eng:	<leave>, «depart» (v)
 def:	[TKDa]
 ref:	[TKW p.79]
+data:	KLCP-1
 
 klin:	{melchoQ}
 sve:	«märg», «benmärg» (s)
@@ -5236,6 +5414,7 @@ sve:	«förnuft», «vett», logiskt «tänkande» (s)
 eng:	<reason>, logical «thinking» (n)
 def:	[TKD; KGT p.154]
 com:	¿?Are {meq} (1) and {meq} (2) actually the same thing?
+data:	KLCP-1
 
 klin:	{meq} (2)
 sve:	«motiv», «orsak», «anledning» (s)
@@ -5267,12 +5446,14 @@ sve:	«brinna» (v)
 eng:	<burn> (v)
 def:	[TKD]
 ref:	[TKW p.111]
+data:	KLCP-1
 
 klin:	{mer}
 sve:	«överraska» (v)
 eng:	<surprise> (v)
 def:	[TKD]
 ref:	[TKW p.25]
+data:	KLCP-1
 
 klin:	{meSchuS}
 sve:	stort blås«instrument» (s)
@@ -5285,6 +5466,7 @@ sve:	«sluta», «upphöra» (v)
 eng:	<stop>, <cease> (v)
 def:	[TKD]
 ref:	[TKW p.87]
+data:	KLCP-1
 
 klin:	{mevyap}
 sve:	«stopp», det är «bra», det är «nog» (interj)
@@ -5376,6 +5558,7 @@ sve:	vara «förvirrad», vara «ihopblandad» (v)
 eng:	be <confused>, be <mixed up> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{mIS}
 sve:	«förvirring» (s)
@@ -5431,6 +5614,7 @@ klin:	{mIy}
 sve:	«skryta» (v)
 eng:	<brag> (v)
 def:	[TKD]
+joke:	Compare with {yu'}.
 
 klin:	{mI'}
 sve:	¿?«dansa», «springa» på stället, «träna» (v)
@@ -5448,6 +5632,7 @@ sve:	vara «ensam» (v)
 eng:	be <alone> (v)
 def:	[TKD]
 ref:	[TKW p.73]
+data:	KLCP-1
 
 klin:	{moch}
 sve:	«överordnad» (s)
@@ -5458,6 +5643,7 @@ klin:	{moD}
 sve:	«skynda» sig (v)
 eng:	<hurry> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{mogh}
 sve:	vara «frustrerad» (v)
@@ -5491,6 +5677,7 @@ sve:	«bli» (v)
 eng:	<become> (v)
 def:	[TKD]
 ref:	[TKW pp.5, 177]
+data:	KLCP-1
 
 klin:	{mojaq}
 sve:	«suffix» (s)
@@ -5557,7 +5744,7 @@ eng:	<sphere> (n)
 def:	[TKD]
 
 klin:	{moQ} (2)
-sve:	¿?spikförsedd «knapp» på «~d'k tahg~»-kniv (s)
+sve:	¿?spikförsedd «pommel» på en «~d'k tahg~»-kniv (s)
 eng:	spiked «pommel» of a «~d'k tahg~» knife (n)
 def:	[KGT p.61]
 
@@ -5623,6 +5810,7 @@ klin:	{much} (1)
 sve:	«presentera» (v)
 eng:	<present> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{much} (2)
 sve:	«framföra» (musik) (v)
@@ -5659,6 +5847,7 @@ klin:	{mugh}
 sve:	«översätta» (v)
 eng:	<translate> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{mughato'}
 sve:	«mugato» (s)
@@ -5701,6 +5890,7 @@ klin:	{muj}
 sve:	ha «fel», vara «fel» (v)
 eng:	be «wrong» (v)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{mul}
 sve:	vara «envis» (v)
@@ -5749,6 +5939,7 @@ klin:	{muS}
 sve:	«hata», «avsky» (v)
 eng:	<hate>, <detest> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{mut}
 sve:	vara «självisk» (v)
@@ -5779,11 +5970,13 @@ klin:	{mu'}
 sve:	«ord» (s)
 eng:	<word> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{mu'ghom}
 sve:	«ordbok» (s)
 eng:	<dictionary> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{mu'mey Doy'}
 sve:	«trötta ord» (används om äldre klingoners språk) (s)
@@ -5820,21 +6013,23 @@ klin:	{mu'tay'}
 sve:	«ordförråd» (s)
 eng:	<vocabulary> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{mu'tlhegh}
 sve:	«mening» (s)
 eng:	<sentence> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{nab}
 sve:	«planera» (v)
 eng:	<plan> (v)
 def:	[TKD]
-com:	ST5: {nImbuS wej maghoS. He yInab.} "Plot course for Nimbus
-	III."
+com:	ST5: {nImbuS wej maghoS. He yInab.} "Plot course for Nimbus III."
+data:	KLCP-1
 
 klin:	{nab}
-sve:	«plan», «procedur» (s)
+sve:	«plan», «tillvägagångssätt», «procedur» (s)
 eng:	<plan>, «procedure» (n)
 def:	[TKDa]
 
@@ -5843,6 +6038,7 @@ sve:	«huvud» (s)
 eng:	<head> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{naD}
 sve:	«berömma», «lovorda», «rekommendera», «gilla», «samtycka»,
@@ -5941,6 +6137,7 @@ klin:	{naj}
 sve:	«drömma» (v)
 eng:	<dream> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{najmoHwI'}
 sve:	«vagg«visa»» (s)
@@ -5985,6 +6182,7 @@ klin:	{nap}
 sve:	vara «enkel» (v)
 eng:	be <simple> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{naQ}
 sve:	vara «fullständig», vara «hel», vara «total», vara «komplett» (v)
@@ -6048,6 +6246,7 @@ klin:	{nav}
 sve:	«papper» (s)
 eng:	<paper> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{nav HablI'}
 sve:	«fax» (apparat) (s)
@@ -6110,13 +6309,14 @@ klin:	{negh}
 sve:	«soldater» (s)
 eng:	<soldiers> (n)
 def:	[TKD]
-see:	{mang} (singular of {negh})
+see:	singular = {mang}
 
 klin:	{neH}
 sve:	«önska», «vilja», «vilja ha» (v)
 eng:	<want>, «desire» (v)
 def:	[TKD; TKW p.149]
 ref:	[TKW p.185]
+data:	KLCP-1
 
 klin:	{neH}
 sve:	«bara», «enbart», «endast» (adv)
@@ -6143,6 +6343,7 @@ sve:	«titta efter», «söka», «leta» efter (v)
 eng:	<look for>, <seek>, <search> for (v)
 def:	[TKD]
 ref:	[TKW p.200]
+data:	KLCP-1
 
 klin:	{nejwI'}
 sve:	«sond» (s)
@@ -6153,6 +6354,7 @@ klin:	{nem}
 sve:	¿?om ... «år» (s)
 eng:	<years> from now (n)
 def:	[TKD]
+cat:	time
 
 klin:	{nen}
 sve:	vara «mogen», vara «vuxen» (v)
@@ -6198,6 +6400,7 @@ klin:	{nep}
 sve:	«ljuga» (v)
 eng:	<lie>, <fib> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{nepwI'}
 sve:	«lögnare» (s)
@@ -6231,6 +6434,7 @@ klin:	{nIb}
 sve:	vara «identisk» (v)
 eng:	be <identical> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{nIbpoH}
 sve:	«déjà vu» (s)
@@ -6249,6 +6453,7 @@ klin:	{nID}
 sve:	«försöka», «prova» (v)
 eng:	<attempt>, <try> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{nIH}
 sve:	«stjäla» (v)
@@ -6291,6 +6496,7 @@ klin:	{nIQ}
 sve:	«frukost» (s)
 eng:	<breakfast> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{nIS}
 sve:	«hindra», «störa», «avbryta», «lägga sig i» (v)
@@ -6354,6 +6560,7 @@ sve:	«finger» (s)
 eng:	<finger> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{nItlh naQ}
 sve:	«pigment«pinne»» (s) (slang)
@@ -6399,12 +6606,14 @@ klin:	{nob}
 sve:	«ge» (v)
 eng:	<give> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{nob}
 sve:	«gåva» (s)
 eng:	<gift> (n)
 def:	[TKD]
 ref:	[TKW p.189]
+data:	KLCP-1
 
 klin:	{nobHa'}
 sve:	«ge» tillbaka, «lämna» tillbaka (v)
@@ -6431,6 +6640,7 @@ klin:	{noH}
 sve:	«bedömma», «uppskatta» (v)
 eng:	<judge>, <estimate> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{noH}
 sve:	«krig» (ett enskilt krig) (s)
@@ -6456,6 +6666,7 @@ def:	[TKD]
 ref:	[TKW p.8]
 com:	Could also be used as an exclamation (as can all adverbials)
 	meaning "Move fast! Move quickly!". [TKD 5.4 (p.57)]
+cat:	time
 
 klin:	{non}
 sve:	vara «rutten», vara «murken», vara «skämd» (v)
@@ -6497,6 +6708,7 @@ sve:	«aldrig» (adv)
 eng:	<never> (adv)
 def:	[TKD]
 ref:	[TKW pp.46, 80, 105, 205]
+cat:	time
 
 klin:	{notlh}
 sve:	vara «föråldrad», vara «förlegad», vara ur bruk, vara «obsolet» (v)
@@ -6511,18 +6723,21 @@ def:	[TKD]
 klin:	{nov}
 sve:	«främling», «utlänning», «outsider» (s)
 eng:	<alien>, <foreigner>, <outsider> (n)
-def:	[KGT; TKD]
+def:	[TKD; KGT]
+data:	KLCP-1
 
 klin:	{noy}
 sve:	vara «känd», vara «välkänd» (v)
 eng:	be <famous>, be well «known» (v)
 def:	[TKD]
 com:	The word "be" was inserted before the adjectival "well known".
+data:	KLCP-1
 
 klin:	{no'}
 sve:	«förfäder» (s)
 eng:	<ancestors> (n)
 def:	[TKD]
+see:	singular = {qempa'}
 
 klin:	{no' DIr}
 sve:	«förfadersbonad» (s)
@@ -6557,6 +6772,7 @@ sve:	«ynkrygg», «fegis» (s)
 eng:	<coward> (n)
 def:	[TKD]
 ref:	[TKW p.97]
+data:	KLCP-1
 
 klin:	{nuD}
 sve:	«undersöka», «granska» (v)
@@ -6588,6 +6804,7 @@ sve:	«vapen» (s)
 eng:	<weapon> (n)
 def:	[TKD]
 ref:	[TKW p.151]
+data:	KLCP-1
 
 klin:	{nuH} (2)
 sve:	«möjlighet» (s)
@@ -6621,6 +6838,7 @@ sve:	«mun» (s)
 eng:	<mouth> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{num}
 sve:	«främja», «gynna», «befordra» (v)
@@ -6707,16 +6925,19 @@ eng:	<person> (humanoid) (n)
 def:	[TKD]
 ref:	[TKW p.142]
 see:	{Dep}; {ghot}; {yoq}
+data:	KLCP-1
 
 klin:	{ngab}
 sve:	«försvinna» (v)
 eng:	<disappear>, <vanish> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngach}
 sve:	«debattera» (v)
 eng:	<debate> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngaD}
 sve:	vara «stabil», vara «balanserad» (v)
@@ -6752,6 +6973,7 @@ klin:	{ngan}
 sve:	«invånare» (s)
 eng:	<inhabitant> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngaq}
 sve:	«support» (militär term) (s)
@@ -6768,6 +6990,7 @@ klin:	{ngaS}
 sve:	«innehålla» (v)
 eng:	<contain> (have inside) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngat} (1)
 sve:	«krut» (s)
@@ -6805,11 +7028,13 @@ sve:	vara «förfalskad», vara «falsk», vara «oäkta» (v)
 eng:	be <counterfeit>, be <false>, be <fake> (v)
 def:	[TKD]
 ref:	[TKW p.35]
+data:	KLCP-1
 
 klin:	{ngech} (1)
 sve:	«dal» (s)
 eng:	<valley> (n)
 def:	[TKD]
+cat:	landscape
 
 klin:	{ngech} (2)
 sve:	«springa» mellan kvinnas bröst (s)
@@ -6822,11 +7047,13 @@ klin:	{ngeD}
 sve:	vara «lätt» (inte svår) (v)
 eng:	be <easy> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngeH}
 sve:	«sända» (v)
 eng:	<send> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngeHbej}
 sve:	«kosmos» (s)
@@ -6844,12 +7071,14 @@ sve:	«skog» (s)
 eng:	<forest>, <woods> (n)
 def:	[TKD]
 cat:	landscape
+data:	KLCP-1
 
 klin:	{ngeng}
 sve:	«sjö» (s)
 eng:	<lake> (n)
 def:	[TKD]
 cat:	landscape
+data:	KLCP-1
 
 klin:	{ngep}
 sve:	¿?«sätta sig över», «överskrida», «dominera», «åsidosätta» (v)
@@ -6870,17 +7099,20 @@ klin:	{nger}
 sve:	«teori» (s)
 eng:	<theory> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngev}
 sve:	«sälja» (v)
 eng:	<sell> (v)
 def:	[TKD]
 ref:	[TKW p.190]
+data:	KLCP-1
 
 klin:	{nge'}
 sve:	«ta bort» (v)
 eng:	<take away> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngIb}
 sve:	«vrist», «fotled» (även slanguttryck för ogillande) (s)
@@ -6907,6 +7139,7 @@ klin:	{ngIp}
 sve:	«låna» (v)
 eng:	<borrow> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngIv}
 sve:	«patrullera» (v)
@@ -6927,6 +7160,7 @@ klin:	{ngoD}
 sve:	«faktum», «fakta» (s)
 eng:	<fact> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngoH} (1)
 sve:	«kleta», «smeta», «bestryka» (v)
@@ -6962,7 +7196,7 @@ klin:	{ngop}
 sve:	«tallrikar» (s)
 eng:	<plates> (for eating) (n)
 def:	[KGT]
-see:	{jengva'} (singular form)
+see:	singular = {jengva'}
 
 klin:	{ngoq}
 sve:	«kod» (s)
@@ -6984,11 +7218,13 @@ sve:	«mål», «syfte» (s)
 eng:	<goal>, <purpose> (n)
 def:	[TKD; KGT]
 ref:	[TKW p.165]
+data:	KLCP-1
 
 klin:	{ngor}
 sve:	«fuska» (v)
 eng:	<cheat> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngoS}
 sve:	«lösa upp» (v)
@@ -7005,16 +7241,19 @@ sve:	vara «ansvarig» (v)
 eng:	be <responsible> (v)
 def:	[TKD]
 ref:	[TKW p.155]
+data:	KLCP-1
 
 klin:	{ngo'}
 sve:	vara «gammal» (inte ny) (v)
 eng:	be <old> (not new) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ngugh}
 sve:	«då», «vid» den tiden (adv)
 eng:	«then», «at» that time (adv)
 def:	[News 1999-11-05]
+cat:	time
 
 klin:	{ngujlep}
 sve:	«munstycke» (på blåsinstrument) (s)
@@ -7053,17 +7292,20 @@ klin:	{ngu'}
 sve:	«identifiera» (v)
 eng:	<identify> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pab}
 sve:	«följa» (regler) (v)
 eng:	<follow> (rules) (v)
 def:	[TKD]
 ref:	[TKW p.47]
+data:	KLCP-1
 
 klin:	{pab}
 sve:	«grammatik» (s)
 eng:	<grammar> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pabHa'}
 sve:	«felanvända» (regler), «följa» (regler) felaktigt (v)
@@ -7081,6 +7323,7 @@ sve:	«ingenting», «inget», «ingen» (s)
 eng:	<nothing>, <none>, <no one> (n)
 def:	[TKD; KGT]
 ref:	[TKW pp.139, 201]
+data:	KLCP-1
 
 klin:	{pagh}
 sve:	«noll» (räkn)
@@ -7126,6 +7369,7 @@ sve:	«bok» (s)
 eng:	<book> (n)
 def:	[TKD]
 ref:	[TKW p.iii]
+data:	KLCP-1
 
 klin:	{paQDI'norgh}
 sve:	«lära» (s)
@@ -7136,6 +7380,7 @@ klin:	{par}
 sve:	«ogilla», inte «tycka om» (v)
 eng:	<dislike> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{parHa'}
 sve:	«gilla», «tycka om» (v)
@@ -7166,6 +7411,7 @@ klin:	{pat}
 sve:	«system» (s)
 eng:	<system> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{patlh} (1)
 sve:	«rang», «grad» (i regering och militär) (s)
@@ -7186,6 +7432,7 @@ klin:	{paw}
 sve:	«anlända», «komma» (v)
 eng:	<arrive> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{paw'} (1)
 sve:	«kollidera», «krocka» (v)
@@ -7202,6 +7449,7 @@ klin:	{pay}
 sve:	«ångra» (v)
 eng:	<regret> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pay'}
 sve:	«plötsligt» (adv)
@@ -7212,6 +7460,7 @@ klin:	{pa'} (1)
 sve:	«rum», «kammare» (s)
 eng:	<room>, «chamber» (n)
 def:	[TKD; BoP]
+data:	KLCP-1
 
 klin:	{pa'} (2)
 sve:	«där», där borta, däromkring (s)
@@ -7219,6 +7468,7 @@ eng:	<there>, over there, thereabouts (n)
 def:	[TKD 3.3.5 (p.27--28) et al.]
 com:	Locative word, never followed by {-Daq} [TKD 3.3.5 (p.27--28)].
 cat:	locative
+data:	KLCP-1
 
 klin:	{pa'} (3)
 sve:	«inhägnat område» (s) (slang)
@@ -7248,12 +7498,14 @@ klin:	{peD}
 sve:	«snöa» (v)
 eng:	<snow> (v)
 def:	[TKD]
+cat:	landscape
 
 klin:	{pegh} (1)
 sve:	«hålla» något «hemligt» (v)
 eng:	«keep» something <secret> (v)
 def:	[TKD]
 ref:	[CK; PK]
+data:	KLCP-1
 
 klin:	{pegh} (2)
 sve:	vara «hemlig» (v)
@@ -7267,6 +7519,7 @@ klin:	{pegh}
 sve:	«hemlighet» (s)
 eng:	<secret> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{peghmey vIttlhegh}
 sve:	«hemlighetsordspråk» (s)
@@ -7293,17 +7546,19 @@ klin:	{pem}
 sve:	«dag», «dagtid» (s)
 eng:	<daytime> (n)
 def:	[TKD]
+cat:	time
 
 klin:	{pemjep}
 sve:	«middagstid», mitt på dagen (s)
 eng:	<midday> (n)
 def:	[TKD]
+cat:	time
 
 klin:	{peng}
 sve:	«torped», «missil» (s)
 eng:	<torpedo>, «missile» (n)
 def:	[TKD; KGT p.56]
-see:	{cha} (plural form)
+see:	plural = {cha}
 
 klin:	{pep}
 sve:	«höja» (v)
@@ -7326,6 +7581,7 @@ sve:	«beteckna», «fastställa», «specificera», «namnge» (v)
 eng:	<label>, «ascertain», «specify» (v)
 def:	[TKD; News 1999-02-02]
 com:	¿?What does this word really mean? (Check swedish translation.)
+data:	KLCP-1
 
 klin:	{per}
 sve:	«etikett», «namn» (s)
@@ -7376,6 +7632,7 @@ klin:	{pIch}
 sve:	«skylla på» (v)
 eng:	<blame> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pIch}
 sve:	«fel», «skuld» (s)
@@ -7396,6 +7653,7 @@ klin:	{pIH} (1)
 sve:	«förvänta» sig (v)
 eng:	<expect> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pIH} (2)
 sve:	vara «misstänksam» (v)
@@ -7427,11 +7685,13 @@ klin:	{pIm}
 sve:	vara «annorlunda», vara «olika» (v)
 eng:	be <different> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pIn} (1)
 sve:	«chef» (s)
 eng:	<boss> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pIn} (2)
 sve:	«expert», «auktoritet» (s) (slang)
@@ -7466,6 +7726,7 @@ sve:	¿?om ...s «tid» (s)
 eng:	«time» period from now (n)
 def:	[HQ8:3 p.3]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	time
 
 klin:	{pIqaD}
 sve:	«klingonskt «skriftsystem»» (s)
@@ -7489,11 +7750,13 @@ def:	[TKD 5.5 (p.57) et al.]
 ref:	[KCD]
 com:	KCD: "a common exclamation uttered upon the completion of a
 	project."
+data:	KLCP-1
 
 klin:	{pIv}
 sve:	vara «frisk» (v)
 eng:	be <healthy> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pIvchem}
 sve:	«warpfält» (s)
@@ -7523,11 +7786,14 @@ sve:	vara «fet» (v)
 eng:	be <fat> (v)
 def:	[TKD]
 com:	Is there a difference in meaning between {pI'} and {ror}?
+data:	KLCP-1
 
 klin:	{po}
 sve:	«morgon» (s)
 eng:	<morning> (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{pob}
 sve:	«hår» (på kroppen) (s)
@@ -7560,16 +7826,20 @@ klin:	{poH}
 sve:	«klocka», «ta tid på», bestämma tid för (v)
 eng:	<time> (v)
 def:	[TKD]
+cat:	time
 
 klin:	{poH}
 sve:	«tid», «tidsperiod» (s)
 eng:	period of <time> (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{poj}
 sve:	«analysera» (v)
 eng:	<analyze> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{poj}
 sve:	«analys» (s)
@@ -7580,6 +7850,7 @@ klin:	{pol}
 sve:	«förvara», «ha», «spara» (v)
 eng:	<keep>, <save> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{polHa'}
 sve:	«slänga» bort (v)
@@ -7605,6 +7876,7 @@ klin:	{pong}
 sve:	«namn» (s)
 eng:	<name> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pop}
 sve:	«belöning», «pris», «ära» (för en prestation) (s)
@@ -7620,6 +7892,7 @@ klin:	{poQ}
 sve:	«kräva», «begära» (v)
 eng:	<demand>, <require> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{por}
 sve:	«löv», «blad» (s)
@@ -7630,12 +7903,14 @@ klin:	{porgh}
 sve:	«kropp» (s)
 eng:	<body> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{poS}
 sve:	vara «öppen», vara «öppnad» (v)
 eng:	be <open>, be opened (v)
 def:	[TKD]
 com:	The word "be" was inserted before the adjectival "opened".
+data:	KLCP-1
 
 klin:	{poS}
 sve:	«vänster» (sida) (s)
@@ -7668,12 +7943,15 @@ klin:	{pov}
 sve:	«eftermiddag» (s)
 eng:	<afternoon> (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{po'}
 sve:	vara «expert», vara «kunnig», vara «duktig», vara «skicklig» (v)
 eng:	be <expert>, be <skilled> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{pub}
 sve:	«koka» (v)
@@ -7706,6 +7984,7 @@ klin:	{puj}
 sve:	vara «svag» (v)
 eng:	be <weak> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pujmoH}
 sve:	«försvaga» (v)
@@ -7726,6 +8005,7 @@ klin:	{pum} (2)
 sve:	«falla» (v)
 eng:	<fall> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{pum}
 sve:	«anklagelse» (s)
@@ -7764,12 +8044,14 @@ eng:	<child>, <offspring> (n)
 def:	[TKD]
 ref:	[TKW p.205]
 cat:	family
+data:	KLCP-1
 
 klin:	{puqbe'}
 sve:	«dotter» (s)
 eng:	<daughter> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{puq chonnaQ}
 sve:	«gaffel» (s)
@@ -7789,6 +8071,7 @@ eng:	<son> (n)
 def:	[TKD]
 ref:	[TKW pp.155, 177]
 cat:	family
+data:	KLCP-1
 
 klin:	{puqnI'}
 sve:	«barnbarn» (s)
@@ -7829,6 +8112,7 @@ sve:	vara «få», vara «några», vara en «handfull» (v)
 eng:	be <few>, be <several>, be a <handful> (v)
 def:	[TKD]
 ref:	[TKW pp.35, 53, 95, 179, 185]
+data:	KLCP-1
 
 klin:	{puS} (2)
 sve:	«sikta» (med vapensikte) (v)
@@ -7887,6 +8171,7 @@ klin:	{qab}
 sve:	vara «dålig» (v)
 eng:	be <bad> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qab}
 sve:	«ansikte» (s)
@@ -7895,11 +8180,13 @@ def:	[TKD]
 ref:	[TKW p.59]
 com:	Symbol of identity.
 cat:	body part
+data:	KLCP-1
 
 klin:	{qach}
 sve:	«byggnad», «konstruktion», «hus» (s)
 eng:	<building>, <structure>, «house» (n)
 def:	[TKD; TKW p.111]
+data:	KLCP-1
 
 klin:	{qaD} (1)
 sve:	«utmana», «möta» (v)
@@ -7938,6 +8225,7 @@ klin:	{qaH}
 sve:	«herr», «sir» (s)
 eng:	<sir> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qajunpaQ}
 sve:	«mod», «tapperhet», «djärvhet» (s)
@@ -7961,12 +8249,14 @@ sve:	«fot» (s)
 eng:	<foot> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{qama'}
 sve:	«fånge» (s)
 eng:	<prisoner> (n)
 def:	[TKD]
 ref:	[TKW p.200]
+data:	KLCP-1
 
 klin:	{qamor}
 sve:	«Kahmor» (namn)
@@ -7978,6 +8268,7 @@ sve:	vara «gammal» (inte ung) (v)
 eng:	be <old> (not young) (v)
 def:	[TKD]
 ref:	[TKW pp.29, 117]
+data:	KLCP-1
 
 klin:	{qan} (2)
 sve:	¿?«använda» «lill«fingret»» (v)
@@ -8044,6 +8335,7 @@ sve:	«ske», «hända» (v)
 eng:	<occur>, <happen> (v)
 def:	[TKD]
 ref:	[TKW pp.127, 155]
+data:	KLCP-1
 
 klin:	{qat} (1)
 sve:	«svepa in», «omsvepa», «innesluta» (v)
@@ -8067,6 +8359,7 @@ sve:	«komma ihåg», «minnas» (v)
 eng:	<remember> (v)
 def:	[TKD]
 ref:	[TKW pp.17, 157, 187]
+data:	KLCP-1
 
 klin:	{qawHaq}
 sve:	«minnesbank», «databank» (s)
@@ -8094,6 +8387,7 @@ klin:	{qay'}
 sve:	vara ett «problem», vara en «svårighet» (v)
 eng:	be a <problem>, be a <hassle> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qa'}
 sve:	«ande» (s)
@@ -8144,6 +8438,7 @@ klin:	{qech}
 sve:	«idé» (s)
 eng:	<idea> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qeD}
 sve:	«utrymma», «lämmna», «tömma», «evakuera» (v)
@@ -8164,6 +8459,7 @@ klin:	{qej}
 sve:	vara «vresig», vara «grinig», vara «elak», vara «tarvlig» (v)
 eng:	be <grouchy>, be <mean> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qel}
 sve:	«tänka på», ta «hänsyn» till, «beakta», «överväga» (v)
@@ -8182,21 +8478,25 @@ sve:	«hämta», «ta med» (sig) (v)
 eng:	<bring> (v)
 def:	[TKD]
 ref:	[TKW p.189]
+data:	KLCP-1
 
 klin:	{qempa'}
 sve:	«förfader» (s)
 eng:	<ancestor> (n)
 def:	[TKD]
+see:	plural = {no'}
 
 klin:	{qen}
 sve:	«nyligen», för ett litet tag sedan, alldeles «nyss» (adv)
 eng:	«recently», a short time ago (adv)
 def:	[News 1999-02-02]
+cat:	time
 
 klin:	{qeng}
 sve:	«bära», «medföra», «forsla» (v)
 eng:	<carry>, <convey> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qeng}
 sve:	«Kang» (namn)
@@ -8209,11 +8509,13 @@ klin:	{qep}
 sve:	«möte» (s)
 eng:	<meeting> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qeq}
 sve:	«öva», «träna», «förbereda» (v)
 eng:	<practice>, <train>, <prepare> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qeq}
 sve:	«övning» (s)
@@ -8224,17 +8526,20 @@ klin:	{qeS}
 sve:	«råda», ge råd (v)
 eng:	<advise> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qeS}
 sve:	«råd» (s)
 eng:	<advice> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qet}
-sve:	«springa», «jogga» (v)
+sve:	«springa», «löpa» (v)
 eng:	<run>, <jog> (v)
 def:	[TKD]
 ref:	[TKW pp.65, 127, 65]
+data:	KLCP-1
 
 klin:	{qettlhup}
 sve:	ett slags «sås» (s)
@@ -8246,6 +8551,7 @@ sve:	vara «tråkig», vara «ointressant» (v)
 eng:	be <dull>, be <uninteresting> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{qev}
 sve:	folksamling, folkmassa (s)
@@ -8269,6 +8575,8 @@ klin:	{qevpob}
 sve:	«käke», «kind» (s)
 eng:	<jowl>, <cheek> (n)
 def:	[TKD; KGT]
+cat:	body part
+data:	KLCP-1
 
 klin:	{qew}
 sve:	¿?«använda» «ring«fingret»» (v)
@@ -8336,11 +8644,13 @@ klin:	{qIH}
 sve:	«träffa», «möta» (för första gången) (v)
 eng:	<meet> (for the first time) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qIj}
 sve:	vara «svart» (v)
 eng:	be <black> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qIl}
 sve:	«avbryta», «ställa in» (v)
@@ -8351,6 +8661,7 @@ klin:	{qIm}
 sve:	vara «uppmärksam», «koncentrera» sig (v)
 eng:	<pay <attention>>, <concentrate> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qImHa'}
 sve:	«nonchalera», «bortse ifrån» (v)
@@ -8396,6 +8707,7 @@ sve:	«knä» (s)
 eng:	<knee> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{qIvon}
 sve:	«kroppsdel» (inte ytterligare identifierad) (s)
@@ -8439,12 +8751,14 @@ klin:	{qogh} (2)
 sve:	«öra» (utvärtes, broskflik) (s)
 eng:	<ear> (external, cartilaginous flap) (n)
 def:	[KGT]
+cat:	body part
 
 klin:	{qoH}
 sve:	«dåre», «fåne», «tok», «idiot» (s)
 eng:	<fool> (n)
 def:	[TKD]
 ref:	[TKW pp.105, 107, 111, 113, 115, 117]
+data:	KLCP-1
 
 klin:	{qoj}
 sve:	«stup», brant «klippa» (s)
@@ -8512,6 +8826,8 @@ sve:	«familj» (s)
 eng:	<family> (n)
 def:	[TKD]
 ref:	[TKW p.155]
+cat:	family
+data:	KLCP-1
 
 klin:	{qoreQ}
 sve:	«Korax» (namn)
@@ -8522,6 +8838,7 @@ klin:	{qoS}
 sve:	«födelsedag» (s)
 eng:	<birthday> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qotlh} (1)
 sve:	«kittla» (v)
@@ -8594,6 +8911,7 @@ sve:	«eld» (s)
 eng:	<fire> (n)
 def:	[TKD]
 ref:	[TKW p.32]
+data:	KLCP-1
 
 klin:	{qul mI'wI'}
 sve:	«elddansare», «elddansös» (s)
@@ -8632,6 +8950,7 @@ sve:	«historia» (s)
 eng:	<history> (n)
 def:	[TKD]
 ref:	[TKW p.179]
+data:	KLCP-1
 
 klin:	{qung}
 sve:	«hål» i musikinstument (t.ex. flöjt) (s)
@@ -8672,6 +8991,7 @@ klin:	{quS}
 sve:	«stol» (s)
 eng:	<chair> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{qut}
 sve:	«kristall» (geologisk formation) (s)
@@ -8700,12 +9020,14 @@ eng:	be <honored>, be honorable (v)
 def:	[TKDa]
 ref:	[TKW pp.24, 57, 59, 179]
 com:	Used in comparative in TKW p.179.
+data:	KLCP-1
 
 klin:	{quv}
 sve:	«ära» (s)
 eng:	<honor> (n)
 def:	[TKDa]
 ref:	[TKW pp.55, 56, 59, 61, 179]
+data:	KLCP-1
 
 klin:	{quv bey'}
 sve:	¿?«hedersställ» (s)
@@ -8763,6 +9085,7 @@ klin:	{QaD} (1)
 sve:	vara «torr», vara «uttorkad» (v)
 eng:	be <dry>, be <dried> out (v)
 def:	[TKD; KGT]
+data:	KLCP-1
 
 klin:	{QaD} (2)
 sve:	vara «säker», vara «skyddad» (v) (slang)
@@ -8773,6 +9096,7 @@ klin:	{Qagh}
 sve:	ha «fel», ta fel, «misstaga» sig, göra ett misstag (v)
 eng:	<err>, be mistaken, make a <mistake> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Qagh}
 sve:	«fel», «misstag» (s)
@@ -8784,6 +9108,7 @@ klin:	{QaH}
 sve:	«hjälpa», «bistå» (v)
 eng:	<help>, <aid> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{QaH}
 sve:	«hjälp» (s)
@@ -8806,11 +9131,13 @@ sve:	«stå» (upp) (v)
 eng:	<stand> (v)
 def:	[TKD]
 ref:	[TKW p.95]
+data:	KLCP-1
 
 klin:	{Qan}
 sve:	«skydda» (v)
 eng:	<protect> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Qang}
 sve:	«kansler» (s)
@@ -8822,6 +9149,7 @@ sve:	«lyckas», «fungera», vara i «funktion» (v)
 eng:	<work>, <function>, <succeed>, <operate>, be in operation (v)
 def:	[TKD; KGT]
 ref:	[TKW pp.56, 73, 175, 183, 209, 211]
+data:	KLCP-1
 
 klin:	{Qap} (2)
 sve:	«vinna» (en tävlan) (v)
@@ -8838,12 +9166,14 @@ sve:	«framgång» (s)
 eng:	<success> (n)
 def:	[TKD]
 ref:	[TKW pp.x, 49]
+data:	KLCP-1
 
 klin:	{QaQ}
 sve:	vara «bra» (v)
 eng:	be <good> (v)
 def:	[TKD]
 ref:	[TKW pp.69, 73, 133]
+data:	KLCP-1
 
 klin:	{Qargh}
 sve:	«spricka» (s)
@@ -8869,6 +9199,7 @@ klin:	{Qatlh} (1)
 sve:	vara «svår» (v)
 eng:	be <difficult> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Qatlh} (2)
 sve:	vara «komplex», vara «komplicerad» (v)
@@ -8880,6 +9211,7 @@ sve:	vara «sist», vara «slutgiltig» (v)
 eng:	be <final>, be <last> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{Qaw'}
 sve:	«förstöra» (v)
@@ -8888,6 +9220,7 @@ def:	[TKD]
 ref:	[TKW p.211]
 com:	Incorrectly listed as noun in K-E (noted in HQ4:1 p.7 and
 	verified as a verb by useage in TKD p.49 and TKW p.211).
+data:	KLCP-1
 
 klin:	{Qay}
 sve:	«överföra» (v)
@@ -8952,6 +9285,7 @@ sve:	«vetenskap» (s)
 eng:	<science> (n)
 def:	[TKD]
 joke:	{QeD} = Q.E.D. = "quod erat demonstrandum".
+data:	KLCP-1
 
 klin:	{QeDpIn}
 sve:	«vetenskapsofficer» (s)
@@ -8962,6 +9296,7 @@ klin:	{QeH}
 sve:	vara «vred», vara «arg» (v)
 eng:	be <angry>, be <mad> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{QeH}
 sve:	«vrede», «ilska» (s)
@@ -8973,6 +9308,7 @@ klin:	{Qel}
 sve:	«doktor», «läkare» (s)
 eng:	<doctor>, <physician> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Qel}
 sve:	«Krell» (namn)
@@ -9020,6 +9356,7 @@ klin:	{Qe'}
 sve:	«restaurang» (s)
 eng:	<restaurant> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{QIb}
 sve:	«skugga» (s)
@@ -9035,6 +9372,7 @@ klin:	{QID}
 sve:	«såra» (v)
 eng:	«wound» (v)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{QIghpej}
 sve:	¿?klingonsk «pinare», «pinosond» (s)
@@ -9061,6 +9399,7 @@ klin:	{QIj}
 sve:	«förklara» (v)
 eng:	<explain> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{QIm}
 sve:	«ägg» (s)
@@ -9093,6 +9432,7 @@ klin:	{QIp}
 sve:	vara «dum», vara «korkad» (v)
 eng:	be <stupid> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{QIS}
 sve:	vågbladig «kniv» (s)
@@ -9104,11 +9444,13 @@ klin:	{QIt}
 sve:	«långsamt» (adv)
 eng:	<slowly> (adv)
 def:	[TKD]
+cat:	time
 
 klin:	{QIv}
 sve:	vara «underlägsen» (v)
 eng:	be <inferior> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{QI'}
 sve:	«militär» (s)
@@ -9149,20 +9491,23 @@ klin:	{Qob}
 sve:	vara «farlig» (v)
 eng:	be <dangerous> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Qob}
 sve:	«fara» (s)
 eng:	<danger> (n)
 def:	[TKD]
 ref:	[TKW p.37]
+data:	KLCP-1
 
 klin:	{Qoch}
-sve:	inte «hålla med» (v)
+sve:	inte «hålla med», inte «samtycka» (v)
 eng:	<disagree> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Qochbe'}
-sve:	«hålla med» (v)
+sve:	«hålla med», «samtycka» (v)
 eng:	<agree> (v)
 def:	[TKD]
 
@@ -9212,6 +9557,7 @@ sve:	«sova» (v)
 eng:	<sleep> (v)
 def:	[TKD]
 ref:	[TKW p.173]
+data:	KLCP-1
 
 klin:	{QongDaq}
 sve:	«säng» (s)
@@ -9305,11 +9651,13 @@ com:	TKW p.31: "The verb {Qoy} means 'hear,' not just 'listen.'
 	One must actually percieve and understand that which is being
 	said."
 	TKW p.195: used with sentence-as-object construction.
+data:	KLCP-1
 
 klin:	{Qo'}
 sve:	«nej», det tänker jag inte, jag «vägra»r, jag håller inte med (interj)
 eng:	<no>, I <won't>, I <refuse>, I «disagree» (excl)
 def:	[TKD 5.5 (p.57) et al.; TKDa]
+data:	KLCP-1
 
 klin:	{Qo'noS}
 sve:	«Kronos» (Klingonska «hemvärld»en) (s)
@@ -9320,17 +9668,20 @@ klin:	{Qub}
 sve:	«tänka», «fundera» (v)
 eng:	<think> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Quch}
 sve:	vara «lycklig», vara «glad» (v)
 eng:	be <happy>, be «merry» (v)
 def:	[TKD; TKW p.206]
+data:	KLCP-1
 
 klin:	{Quch}
 sve:	«panna» (s)
 eng:	<forehead> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{QuchHa'}
 sve:	vara «olycklig» (v)
@@ -9377,6 +9728,7 @@ klin:	{Qum}
 sve:	«kommunicera» (v)
 eng:	<communicate> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Qum}
 sve:	«kommunikation»er, kommunikationsrelaterad teknologi (s)
@@ -9438,6 +9790,7 @@ sve:	«plikt», «uppdrag», «uppgift», «jobb» (s)
 eng:	<duty>, <quest>, <mission>, <task>, <chore> (n)
 def:	[TKD]
 ref:	[TKW pp.66, 74, 139, 187]
+data:	KLCP-1
 
 klin:	{Qu'vatlh}
 sve:	#*@! (generellt «invektiv») (interj)
@@ -9484,22 +9837,27 @@ eng:	be <trivial>, be <trifling>, be <unimportant>, be <insignificant> (v)
 def:	[TKD; KGT]
 ref:	[TKW p.143]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{ram}
 sve:	«natt» (s)
 eng:	<night> (n)
 def:	[TKD]
 ref:	[TKW p.127]
+cat:	time
+data:	KLCP-1
 
 klin:	{ramjep}
 sve:	«midnatt» (s)
 eng:	<midnight> (n)
 def:	[TKD]
+cat:	time
 
 klin:	{rap}
 sve:	vara «samma», vara «densamma» (v)
 eng:	be the <same> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{raQ}
 sve:	«hantera» för hand, «handha» (v)
@@ -9520,6 +9878,7 @@ klin:	{rar}
 sve:	«koppla» (v)
 eng:	<connect> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{raS}
 sve:	«bord» (s)
@@ -9530,11 +9889,13 @@ klin:	{ratlh}
 sve:	stanna «kvar», finnas kvar, «återstå» (v)
 eng:	<remain> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{rav}
 sve:	«golv» (s)
 eng:	<floor> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{rav'eq}
 sve:	inner«tak» (i ett rum med ett rum till ovanför) (s)
@@ -9547,12 +9908,13 @@ klin:	{ray'}
 sve:	«mål»(-tavlor) (plural) (s)
 eng:	<targets> (n)
 def:	[TKD]
-see:	{DoS} (singular form)
+see:	singular = {DoS}
 
 klin:	{ra'}
 sve:	«beordra», «kommendera» (v)
 eng:	<order>, <command> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ra'ghomquv}
 sve:	«Högsta kommandot» (s)
@@ -9608,6 +9970,7 @@ sve:	«alltid», «ständigt» (adv)
 eng:	<always> (adv)
 def:	[TKD]
 ref:	[TKW pp.34, 49, 77, 79, 103, 123, 133, 141, 159, 170, 179, 200]
+cat:	time
 
 klin:	{rejmorgh}
 sve:	¿?«ängsling» (ängslig person) (s)
@@ -9618,12 +9981,15 @@ klin:	{rep}
 sve:	«timme» (s)
 eng:	<hour> (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{ret}
 sve:	¿?för ...s «tid» sedan (s)
 eng:	«time» period ago (n)
 def:	[HQ8:3 p.3]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	time
 
 klin:	{ret'aq}
 sve:	«skaft», «handtag» (på kniv, ~bat'leth~) (s)
@@ -9635,6 +10001,7 @@ sve:	område «brevid», område «intill» (s)
 eng:	area <beside>, area <next to> (n)
 def:	[TKD]
 cat:	locative
+data:	KLCP-1
 
 klin:	{rewbe'}
 sve:	«medborgare» (s)
@@ -9691,6 +10058,7 @@ sve:	vara «åstadkommen», vara «färdig» (v)
 eng:	be <accomplished>, be <finished> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{rIp}
 sve:	«råd», «rådsförsamling», «representantförsamling» (s)
@@ -9768,11 +10136,13 @@ klin:	{roj}
 sve:	skapa «fred» (v)
 eng:	make <peace> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{roj}
 sve:	«fred» (s)
 eng:	<peace> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{rojHom}
 sve:	«vapenvila» (s)
@@ -9822,6 +10192,7 @@ sve:	vara «sjuk», vara «illamående» (v)
 eng:	be <sick>, be <ill> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{rop}
 sve:	«sjukdom» (s)
@@ -9849,6 +10220,7 @@ sve:	vara «fet» (v)
 eng:	be <fat> (v)
 def:	[TKD]
 com:	Is there a difference in meaning between {pI'} and {ror}?
+data:	KLCP-1
 
 klin:	{roS}
 sve:	«slicka» (v)
@@ -9876,6 +10248,7 @@ klin:	{rotlh}
 sve:	vara «tuff» (v)
 eng:	be <tough> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ro'}
 sve:	«knytnäve» (s)
@@ -9932,6 +10305,7 @@ klin:	{rur}
 sve:	«likna», «påminna» om (v)
 eng:	<resemble> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{rura' pente'}
 sve:	«Rura Penthe» (s)
@@ -9951,6 +10325,7 @@ sve:	«ibland», «då och då», «emellanåt» (adv)
 eng:	<sometimes>, <occasionally> (adv)
 def:	[TKD; KGT]
 ref:	[TKW p.184]
+cat:	time
 
 klin:	{rutlh}
 sve:	«hjul» (s)
@@ -9966,6 +10341,7 @@ klin:	{ru'}
 sve:	vara «temporär», vara «tillfällig» (v)
 eng:	be <temporary> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ru'Ha'}
 sve:	vara «permanent» (v)
@@ -9995,22 +10371,26 @@ klin:	{Sagh}
 sve:	vara «seriös», vara «allvarlig» (v)
 eng:	be <serious> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SaH} (1)
 sve:	vara «närvarande» (v)
 eng:	be <present> (not absent) (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SaH} (2)
 sve:	«bry» sig (om), vara bekymrad (över/om) (v)
 eng:	<care> (about), be <concerned> (about) (v)
 def:	[TKD]
 ref:	[TKW p.199]
+data:	KLCP-1
 
 klin:	{Saj}
 sve:	«husdjur» (s)
 eng:	<pet> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Sal}
 sve:	«stiga uppför», «fara uppåt», «slutta uppåt» (v)
@@ -10067,11 +10447,13 @@ klin:	{SaQ}
 sve:	«gråta» (v)
 eng:	<cry> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Sar}
 sve:	vara «omväxlande», vara «varierande», vara «skiftande» (v)
 eng:	be «varied», be <various> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Sar}
 sve:	«variation» (s)
@@ -10082,7 +10464,8 @@ klin:	{Sargh}
 sve:	ett slags «djur», «~sark~» (s)
 eng:	type of <animal>, <~sark~> (n)
 def:	[KGT]
-com:	Entries differ and have been combined here.
+com:	Entries differ and have been combined here. Mentioned in TNG episode
+	"Pen Pals", as "a Klingon Sark" -- a riding animal (similar to a horse).
 
 klin:	{SaS} (1)
 sve:	vara «horisontell» (v)
@@ -10123,6 +10506,7 @@ klin:	{Say'}
 sve:	vara «ren», vara «fläckfri» (v)
 eng:	be <clean> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Say'qu'moH}
 sve:	«sterilisera» (v)
@@ -10164,6 +10548,7 @@ klin:	{SeH}
 sve:	«kontrollera» (v)
 eng:	<control> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SeHlaw}
 sve:	«kontrollpanel» (s)
@@ -10190,12 +10575,14 @@ klin:	{Seng}
 sve:	orsaka «problem», vålla «trubbel» (v)
 eng:	cause <trouble> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Seng}
 sve:	«bekymmer», «trubbel» (s)
 eng:	<trouble> (n)
 def:	[TKD]
 ref:	[TKW p.56]
+data:	KLCP-1
 
 klin:	{Sep}
 sve:	«föda upp», «odla» (v)
@@ -10251,6 +10638,7 @@ klin:	{Sey}
 sve:	vara «upphetsad», vara «uppspelt» (v)
 eng:	be <excited> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SeymoH}
 sve:	«hetsa upp» (v)
@@ -10277,6 +10665,7 @@ klin:	{SIch}
 sve:	«nå» (v)
 eng:	<reach> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SID}
 sve:	«patient» (s)
@@ -10293,12 +10682,14 @@ klin:	{SIH}
 sve:	«böja» (v)
 eng:	<bend> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SIj} (1)
 sve:	«skära upp», «skära av», «sprätta upp» (v)
 eng:	<slit> (v)
 def:	[TKD]
 ref:	[TKW p.127]
+data:	KLCP-1
 
 klin:	{SIj} (2)
 sve:	vara «insiktsfull», vara «smart», vara «klipsk», vara «skarpsinnig»
@@ -10315,11 +10706,13 @@ klin:	{SIm}
 sve:	«beräkna», «räkna», «kalkylera» (v)
 eng:	<calculate> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SIp}
 sve:	«gas» (s)
 eng:	<gas> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SIq}
 sve:	¿?«använda» «pek«fingret»» (v)
@@ -10353,11 +10746,14 @@ klin:	{SIS}
 sve:	«regna» (v)
 eng:	<rain> (v)
 def:	[TKD]
+cat:	landscape
+data:	KLCP-1
 
 klin:	{SIv}
 sve:	«undra», «fråga sig», «fundera» (v)
 eng:	«wonder» (v)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{Soch}
 sve:	sjunde «tonen» på den nonatoniska skalan (s)
@@ -10396,11 +10792,13 @@ klin:	{SoH}
 sve:	«du», «dig» (pro)
 eng:	<you> (pro)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{Soj}
 sve:	«mat» (s)
 eng:	<food> (n)
 def:	[TKDa]
+data:	KLCP-1
 
 klin:	{Soj qub}
 sve:	¿?fin «kokonst», sällsynt mat (s)
@@ -10438,6 +10836,7 @@ sve:	«äta» (v)
 eng:	<eat> (v)
 def:	[TKD]
 ref:	[TKW pp.73, 163, 137, 185]
+data:	KLCP-1
 
 klin:	{SopwI'pa'}
 sve:	«mäss», «matsal» (s)
@@ -10449,6 +10848,7 @@ sve:	vara «stängd» (v)
 eng:	be <closed>, be <shut> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{SoQ}
 sve:	«tal», «föreläsning» (s)
@@ -10465,6 +10865,7 @@ sve:	«träd» (s)
 eng:	<tree> (n)
 def:	[TKD]
 cat:	landscape
+data:	KLCP-1
 
 klin:	{Sorgh}
 sve:	«sabotage» (v)
@@ -10494,6 +10895,7 @@ sve:	«mor», «moder» (s)
 eng:	<mother> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{SoSbor}
 sve:	¿?«enhet», «kärna» (s)
@@ -10528,6 +10930,7 @@ sve:	«veta», «kunna», «känna till» (v)
 eng:	<know> (v)
 def:	[TKD]
 ref:	[TKW p.25]
+data:	KLCP-1
 
 klin:	{Sov}
 sve:	«vetskap», «kunskap» (s)
@@ -10538,16 +10941,18 @@ klin:	{Soy'}
 sve:	vara «klumpig», vara «tafatt» (v)
 eng:	be <clumsy> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{So'}
 sve:	«gömma», «maskera» (v)
 eng:	<hide>, <cloak> (v)
 def:	[TKD]
 ref:	[TKW p.182]
+data:	KLCP-1
 
 klin:	{So'wI'}
 sve:	«maskering», «maskeringsanordning», «cloaking device»,
-	«kamouflagemekanism» (s) 
+	«kamouflagemekanism» (s)
 eng:	<cloaking device> (n)
 def:	[TKD]
 
@@ -10579,12 +10984,14 @@ klin:	{Such}
 sve:	«besöka» (v)
 eng:	<visit> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{SuD} (1)
 sve:	vara «grön», vara «blå», vara «gul» (v)
 eng:	be <green>, be <blue>, be <yellow> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{SuD} (2)
 sve:	sätta på spel, «chansa», «riskera» (v)
@@ -10600,6 +11007,7 @@ klin:	{SuH}
 sve:	var «redo»!, jag är «beredd»! (interj)
 eng:	<ready>!, <standing by>! (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{Suj}
 sve:	«störa» (v)
@@ -10630,7 +11038,7 @@ klin:	{Sup}
 sve:	«resurs» (s)
 eng:	<resource> (n)
 def:	[TKD]
-see:	{jo} (plural form)
+see:	plural = {jo}
 
 klin:	{Supghew}
 sve:	ett slags sträng«instrument» (s)
@@ -10646,6 +11054,7 @@ ref:	[S33]
 com:	S33 was reprinted in HQ6:2 p.9, but there this word is
 	misspelled {Soq}, while on the actual card it's spelled
 	{Suq}, as expected.
+data:	KLCP-1
 
 klin:	{Suqqa'}
 sve:	«bereda» «~qud~» på ett särskilt sätt (v)
@@ -10663,7 +11072,7 @@ eng:	<force field> (n)
 def:	[TKD]
 
 klin:	{Surgh}
-sve:	«skinn», «hud» (v)
+sve:	«flå», «skala» (v)
 eng:	<skin> (v)
 def:	[TKD]
 
@@ -10678,6 +11087,8 @@ sve:	«vind», «bris» (s)
 eng:	<wind>, <breeze> (n)
 def:	[TKD]
 ref:	[TKW p.107]
+cat:	landscape
+data:	KLCP-1
 
 klin:	{SuSDeq}
 sve:	«vindsäck», «bälg», «blåsbälg» (s)
@@ -10701,6 +11112,7 @@ sve:	«slåss» (v)
 eng:	<fight> (v)
 def:	[TKD]
 ref:	[TKW pp.5, 7, 19, 21, 33, 63, 77, 88, 111, 151, 193]
+data:	KLCP-1
 
 klin:	{Suvchu'}
 sve:	«slåss» på liv och död (v)
@@ -10714,6 +11126,7 @@ def:	[TKDa]
 ref:	[TKW pp.iii, 5, 29, 32, 33, 37, 38, 46, 77, 88, 136, 139, 145,
 	147, 155, 193, 195, 203]
 see:	{mang}; {vaj}
+data:	KLCP-1
 
 klin:	{Suy}
 sve:	«handelsman», «köpman» (s)
@@ -10750,11 +11163,13 @@ sve:	«bar», «pub», «cocktailbar» (s)
 eng:	<bar>, <saloon>, <cocktail lounge> (n)
 def:	[TKD]
 ref:	[TKW p.181]
+data:	KLCP-1
 
 klin:	{taD}
 sve:	vara «frusen» (v)
 eng:	be <frozen> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{taDmoH}
 sve:	«frysa» (v)
@@ -10806,6 +11221,7 @@ sve:	«kniv», «dolk» (s)
 eng:	<knife>, <dagger> (n)
 def:	[TKD]
 ref:	[TKW p.169]
+data:	KLCP-1
 
 klin:	{tajHommey}
 sve:	små infällbara «blad» på en «~d'k tahg~» kniv (s)
@@ -10831,6 +11247,7 @@ klin:	{tam} (1)
 sve:	vara «tyst» (v)
 eng:	be <quiet> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tam} (2)
 sve:	«byta» (ut), «ersätta» (v)
@@ -10864,6 +11281,7 @@ klin:	{taQ}
 sve:	vara «konstig», vara «knäpp» (v)
 eng:	be «weird» (v)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{taQbang}
 sve:	«avgaser», «utsläpp» (s)
@@ -10929,18 +11347,21 @@ sve:	vara «tillsammans» (v)
 eng:	be <together> (v)
 def:	[TKD]
 ref:	[TKW pp.34, 209]
+data:	KLCP-1
 
 klin:	{ta'}
 sve:	«uträtta», «åstadkomma», «genomföra» (v)
 eng:	<accomplish> (v)
 def:	[TKD]
 ref:	[TKW p.74]
+data:	KLCP-1
 
 klin:	{ta'} (1)
 sve:	«resultat», «utförande», «dåd» (s)
 eng:	<accomplishment>, <deed> (n)
 def:	[TKD; KGT]
 ref:	[TKW p.15]
+data:	KLCP-1
 
 klin:	{ta'} (2)
 sve:	«kejsare» (s)
@@ -10963,6 +11384,7 @@ klin:	{teb}
 sve:	«fylla» (v)
 eng:	<fill> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{teblaw'}
 sve:	«jurisdiktion» (s)
@@ -10983,16 +11405,19 @@ klin:	{teH}
 sve:	vara «sann», vara «äkta» (v)
 eng:	be <true> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tej}
 sve:	«vetenskapsman» (s)
 eng:	<scientist> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tel}
 sve:	«vinge» (s)
 eng:	«wing» (n)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{telun Hovtay'}
 sve:	«Tellunska solsystemet» (s)
@@ -11004,6 +11429,7 @@ klin:	{tem}
 sve:	«förneka» (v)
 eng:	<deny> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ten}
 sve:	«gå ombord», «ge sig in på» (v)
@@ -11045,11 +11471,13 @@ klin:	{teq}
 sve:	«avlägsna», «ta bort», «ta av» (v)
 eng:	<remove>, <take> off (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tera'}
 sve:	«jorden», «Tellus» (s)
 eng:	<Earth> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tera'ngan}
 sve:	«jordman», «jordling» (s)
@@ -11060,11 +11488,13 @@ klin:	{teS}
 sve:	«öra» (hörselorgan, invertes) (s)
 eng:	<ear> (internal, organ of hearing) (n)
 def:	[KGT]
+cat:	body part
 
 klin:	{tet}
 sve:	«smälta» (v)
 eng:	<melt> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tetlh}
 sve:	«förteckning», «lista», «rulla», «register», «skrivelse» (s)
@@ -11142,6 +11572,7 @@ sve:	«förolämpa» (v)
 eng:	<insult> (v)
 def:	[TKD]
 ref:	[TKW p.56]
+data:	KLCP-1
 
 klin:	{tIgh}
 sve:	«sed», «bruk», «vana» (s)
@@ -11161,8 +11592,9 @@ def:	[KGT]
 
 klin:	{tIj}
 sve:	«borda», «gå ombord» (v)
-eng:	<board>, <go> aboard (v)
+eng:	<board>, <go aboard> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tIjwI'}
 sve:	«bordare», person som bordar (s)
@@ -11178,6 +11610,7 @@ klin:	{tIn}
 sve:	vara «stor» (v)
 eng:	be <big> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tIng}
 sve:	område sydvästerut, område i «sydväst» (s)
@@ -11240,11 +11673,13 @@ sve:	«njuta» av, «roa» sig, ha «roligt», «tycka om» (v)
 eng:	<enjoy> (v)
 def:	[TKD]
 ref:	[TKW pp.48, 73]
+data:	KLCP-1
 
 klin:	{tI'}
 sve:	«fixa», «reparera» (v)
 eng:	<fix>, <repair> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tI'ang}
 sve:	«T'Ong» (ett skepp) (namn)
@@ -11316,6 +11751,7 @@ klin:	{toH}
 sve:	«jaså»!, «aha»!, «nåväl»! (interj)
 eng:	<so>!, <well>! (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{toj}
 sve:	«bedra», «vilseleda», «lura», «bluffa» (v)
@@ -11381,6 +11817,7 @@ klin:	{toS}
 sve:	«klättra» (v)
 eng:	<climb> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{totlh}
 sve:	«kommendör» (rang) (s)
@@ -11393,10 +11830,11 @@ eng:	<mind sharing> (n)
 def:	[KGT]
 
 klin:	{toy'}
-sve:	«tjäna» (en mästare) (v)
+sve:	«tjäna» (en härskare) (v)
 eng:	<serve> (a master) (v)
 def:	[TKD]
 ref:	[TKW p.74]
+data:	KLCP-1
 
 klin:	{toy'wI'}
 sve:	«tjänare» (s)
@@ -11434,6 +11872,7 @@ eng:	<soon> (adv)
 def:	[TKD]
 com:	Could also be used as an exclamation (as can all adverbials)
 	meaning "Hurry up!". [TKD 5.4 (p.57)]
+cat:	time
 
 klin:	{tuH}
 sve:	vara «skamsen» (v)
@@ -11456,6 +11895,7 @@ sve:	vara «varm» (v)
 eng:	be <hot> (v)
 def:	[TKD]
 ref:	[TKW pp.32, 174]
+data:	KLCP-1
 
 klin:	{tuj}
 sve:	«värme» (s)
@@ -11471,10 +11911,11 @@ com:	Article in HQ is called "Additional Vocabulary" and contains
 data:	phrase
 
 klin:	{tul}
-sve:	«hoppas» (på) (v)
+sve:	«hoppas» (på), ha hopp om (v)
 eng:	<hope> (v)
 def:	[TKD]
 ref:	[TKW p.74]
+data:	KLCP-1
 
 klin:	{tum}
 sve:	«byrå», «kontor» (s)
@@ -11485,11 +11926,13 @@ klin:	{tun}
 sve:	vara «mjuk» (v)
 eng:	be <soft> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tung}
 sve:	«göra modfälld», «avskräcka», «motarbeta» (v)
 eng:	<discourage> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tungHa'}
 sve:	«uppmuntra», «stödja», «främja» (v)
@@ -11500,6 +11943,8 @@ klin:	{tup}
 sve:	«minut» (s)
 eng:	<minute> (of time) (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{tuq}
 sve:	«stam», «släkte», «ätt» (s)
@@ -11533,6 +11978,7 @@ sve:	«bära» (kläder) (v)
 eng:	<wear> (clothes) (v)
 def:	[TKD]
 cat:	clothing
+data:	KLCP-1
 
 klin:	{tuQDoq}
 sve:	¿?«tankesikt», «tankesil», «psykisk sond» (klingonsk sinnessond) (s)
@@ -11566,6 +12012,7 @@ sve:	«upptäcka», «hitta», «finna», «observera», «lägga märke
 	till», «påträffa» (v)
 eng:	<discover>, <find>, <observe>, <notice> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tu'HomI'raH}
 sve:	«något «odugligt»», «oanvändbar sak» (s)
@@ -11589,6 +12036,7 @@ sve:	vara «fri», vara «oberoende» (v)
 eng:	be <free>, be <independent> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{tlhab}
 sve:	«frihet», «oberoende» (s)
@@ -11626,16 +12074,20 @@ sve:	«ta» (v)
 eng:	<take> (v)
 def:	[TKD]
 ref:	[TKW p.79]
+data:	KLCP-1
 
 klin:	{tlhaq}
 sve:	«kronometer» (s)
 eng:	<chronometer> (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{tlhaQ}
 sve:	vara «rolig», vara «skojig» (v)
 eng:	be <funny> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tlharghDuj}
 sve:	«spaningsskepp» (s)
@@ -11667,6 +12119,7 @@ klin:	{tlha'}
 sve:	«jaga», «följa» efter (v)
 eng:	<chase>, <follow> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tlha'a}
 sve:	«Klaa» (namn)
@@ -11677,11 +12130,13 @@ klin:	{tlheD}
 sve:	«avresa», «avlägsna» sig (v)
 eng:	<depart> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tlhegh}
 sve:	«lina», «rep» (s)
 eng:	<line>, <rope> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tlhej}
 sve:	«sällskapa» med, «vara med» (v)
@@ -11689,7 +12144,7 @@ eng:	<accompany>, «be with» (v)
 def:	[TKD; TKW pp.161, 173]
 com:	This is labeled as a noun in TKD E-K, but MO corrected
 	himself in HQ2:4 p.18 (Okrand's notes)
-data:	basic
+data:	KLCP-1
 
 klin:	{tlher}
 sve:	vara «klimpig», vara full av «klumpar», vara «ojämn» (v)
@@ -11711,6 +12166,7 @@ klin:	{tlhe'}
 sve:	«vända», «svänga», «vrida» (v)
 eng:	<turn> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tlhIb}
 sve:	vara «inkompetent» (v)
@@ -11726,6 +12182,7 @@ klin:	{tlhIH}
 sve:	«ni», «er» (pro)
 eng:	<you> (plural) (pro)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tlhIj}
 sve:	«ursäkta» sig, be om ursäkt (v)
@@ -11763,6 +12220,7 @@ eng:	<Klingon> (n)
 def:	[TKD]
 ref:	[TKW pp.iii, 3, 5, 9, 13, 40, 46, 56, 59, 67, 74, 77, 80, 89,
 	91, 97, 155, 165, 177]
+data:	KLCP-1
 
 klin:	{tlhIngan Hubbeq}
 sve:	«Klingonska «Försvarsmakten»» (s)
@@ -11814,6 +12272,7 @@ klin:	{tlhob}
 sve:	«fråga efter», «efterfråga», «be om» (v)
 eng:	<ask>, <request>, «plead» (v)
 def:	[TKD; TKDa]
+data:	KLCP-1
 
 klin:	{tlhoch}
 sve:	«motsäga», stå i strid med, «bestrida» (v)
@@ -11829,6 +12288,7 @@ klin:	{tlhoj}
 sve:	«inse» (v)
 eng:	<realize> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{tlhol}
 sve:	vara «rå», vara «obearbetad» (v)
@@ -11845,6 +12305,7 @@ sve:	«näsborre» (s)
 eng:	<nostril> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{tlhong}
 sve:	idka «byteshandel», «byta», «köpslå» (v)
@@ -11932,6 +12393,7 @@ sve:	«andas» (v)
 eng:	<breathe> (v)
 def:	[TKD]
 ref:	[TKW p.193]
+data:	KLCP-1
 
 klin:	{tlhuH} (2)
 sve:	vara «upprymd», vara «stimulerad», vara «upplivad» (v) (slang)
@@ -11959,6 +12421,7 @@ sve:	«dricka» (v)
 eng:	<drink> (v)
 def:	[TKD]
 ref:	[TKW pp.35, 87]
+data:	KLCP-1
 
 klin:	{tlhu'}
 sve:	vara «frestad» (v)
@@ -12026,6 +12489,7 @@ sve:	vara «klipsk», vara «smart», vara «intelligent» (v)
 eng:	be <clever>, be <smart>, be <intelligent> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{valQIS}
 sve:	«Valkris» (namn)
@@ -12037,6 +12501,7 @@ sve:	«hälsa», «salutera» (v)
 eng:	<salute> (v)
 def:	[TKD]
 ref:	[TKW p.83]
+data:	KLCP-1
 
 klin:	{van}
 sve:	«hyllning», «honnör», «hälsning» (s)
@@ -12060,6 +12525,7 @@ sve:	«agera», «handla», «göra» (något) (v)
 eng:	<act>, <take> action (v)
 def:	[TKD]
 ref:	[TKW pp.8, 55, 139, 155]
+data:	KLCP-1
 
 klin:	{vaq}
 sve:	«driva med», driva gäck med (v)
@@ -12110,12 +12576,14 @@ eng:	<father> (n)
 def:	[TKD]
 ref:	[TKW pp.155, 170]
 cat:	family
+data:	KLCP-1
 
 klin:	{vavnI'}
 sve:	«farfar», «morfar» (s)
 eng:	<grandfather> (n)
 def:	[TKD]
 cat:	family
+data:	KLCP-1
 
 klin:	{vay}
 sve:	«slåss», «strida» (mellanstor vildsinthet) (v)
@@ -12124,11 +12592,12 @@ def:	[KGT]
 
 klin:	{vay'}
 sve:	«något», «någon», «någonting» (s)
-eng:	<anyone>, <somebody>, «something», «anybody», «anything»,
-	«someone» (n)
+eng:	<somebody>, «someone», «something»,
+	«anybody», <anyone>, «anything», (n)
 def:	[TKD]
 ref:	[TKW pp.88, 109, 129, 149, 157, 167]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{veb}
 sve:	vara «nästa», vara «efterföljande» (i ordning, serie) (v)
@@ -12166,6 +12635,7 @@ sve:	«vakna», sluta sova (v)
 eng:	<wake> up, cease sleeping (v)
 def:	[TKD]
 ref:	[TKW p.173]
+data:	KLCP-1
 
 klin:	{vemmoH}
 sve:	«väcka» (någon) (v)
@@ -12176,6 +12646,7 @@ klin:	{veng}
 sve:	«stad» (s)
 eng:	<city> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{vengHom}
 sve:	«by» (s)
@@ -12206,6 +12677,7 @@ klin:	{veQ}
 sve:	«sopor», «avfall» (s)
 eng:	<garbage> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{veQDuj}
 sve:	«avfallspråm» (s)
@@ -12234,17 +12706,20 @@ klin:	{vergh}
 sve:	«docka» (v)
 eng:	<dock> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{vergh}
 sve:	«docka» (för skepp) (s)
 eng:	<dock> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{veS}
 sve:	«krig», krigföring (som koncept) (s)
 eng:	<war>, warfare (as a concept) (n)
 def:	[TKD; KGT pp.46, 47, 50 et al.]
 see:	{noH}
+data:	KLCP-1
 
 klin:	{veSDuj}
 sve:	«krigsskepp» (s)
@@ -12280,7 +12755,7 @@ klin:	{vIj}
 sve:	raketmotor, «raket» (s)
 eng:	<thruster> (n)
 def:	[TKD]
-see:	{chuyDaH} (plural form)
+see:	plural = {chuyDaH}
 
 klin:	{vIn}
 sve:	«kusin», «brorsdotter», «systerdotter», «brorson»,
@@ -12321,6 +12796,7 @@ klin:	{vIt}
 sve:	säga «sanningen» (v)
 eng:	tell the <truth> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{vIt}
 sve:	«sanning» (s)
@@ -12368,6 +12844,7 @@ sve:	«någonstans», någon plats (s)
 eng:	<somewhere> (n)
 def:	[TKD]
 cat:	locative
+data:	KLCP-1
 
 klin:	{voHDajbo'}
 sve:	«lösensumma» (s)
@@ -12400,6 +12877,7 @@ sve:	«lita» på, «tro» på, ha «tillit» till (v)
 eng:	<trust>, have <faith> in (v)
 def:	[TKD]
 ref:	[TKW p.189]
+data:	KLCP-1
 
 klin:	{voqHa'}
 sve:	«misstro», inte «lita» på (v)
@@ -12442,6 +12920,7 @@ klin:	{vuD}
 sve:	«åsikt» (s)
 eng:	<opinion> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{vul}
 sve:	vara «medvetslös» (v)
@@ -12457,6 +12936,7 @@ klin:	{vulqan}
 sve:	«Vulcan» (planet) (s)
 eng:	<Vulcan> (planet) (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{vulqangan}
 sve:	«vulcanit» (s)
@@ -12467,6 +12947,7 @@ klin:	{vum}
 sve:	«arbeta», «streta», «slita» (v)
 eng:	<work>, «toil» (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{vup}
 sve:	«tycka synd om», ha «medlidande» med, «beklaga» (v)
@@ -12487,6 +12968,7 @@ klin:	{vut}
 sve:	«laga mat», «tillaga» (v)
 eng:	<cook> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{vutmeH 'un}
 sve:	flatbottnad «skål» för matberedning (s) (regionalt)
@@ -12509,6 +12991,7 @@ sve:	«respektera» (v)
 eng:	<respect> (v)
 def:	[TKD]
 ref:	[TKW p.107]
+data:	KLCP-1
 
 klin:	{vu'}
 sve:	«sköta», «handha», «ordna», «få bukt med» (v)
@@ -12544,6 +13027,7 @@ klin:	{wam}
 sve:	«jaga» (v)
 eng:	<hunt> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{wamwI'}
 sve:	«jägare» (s)
@@ -12555,12 +13039,14 @@ klin:	{wanI'}
 sve:	«fenomen», «händelse», «tilldragelse», «upplevelse» (s)
 eng:	<phenomenon>, <event>, <occurrence>, «experience» (n)
 def:	[TKD; TKW p.73]
+data:	KLCP-1
 
 klin:	{waq}
 sve:	«sko» (s)
 eng:	<shoe> (n)
 def:	[TKD]
 cat:	clothing
+data:	KLCP-1
 
 klin:	{waQ}
 sve:	«hindra», vara i vägen för (v)
@@ -12577,6 +13063,7 @@ sve:	¿?om ... «månader» (s)
 eng:	«months» from now (n)
 def:	[HQ8:3 p.3]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	time
 
 klin:	{warjun}
 sve:	ett slags «kniv» (används vid matberedning) (s)
@@ -12621,12 +13108,16 @@ klin:	{wa'Hu'}
 sve:	«igår» (s)
 eng:	<yesterday> (n)
 def:	[TKD]
+cat:	time
+data:	KLCP-1
 
 klin:	{wa'leS}
 sve:	«imorgon» (s)
 eng:	<tomorrow> (n)
 def:	[TKD]
 ref:	[TKW p.153]
+cat:	time
+data:	KLCP-1
 
 klin:	{wa'logh}
 sve:	«en gång» (adv)
@@ -12691,28 +13182,33 @@ sve:	«charmerande», «just snyggt» (används endast ironiskt)
 	(interj)
 eng:	<charming> (used only ironically) (excl)
 def:	[TKD 5.5 (p.57) et al.]
+data:	KLCP-1
 
 klin:	{wem}
 sve:	«kränka», «bryta emot», «överträda», «störa», «skända» (v)
 eng:	«violate» (v)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{wem}
 sve:	«kränkning», «brott», «överträdelse», «skändning» (s)
 eng:	«violation» (n)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{wen}
 sve:	¿?för ... «månader» sedan (s)
 eng:	«months» ago (n)
 def:	[HQ8:3 p.3]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
+cat:	time
 
 klin:	{wep} (1)
 sve:	«jacka», «kappa» (s)
 eng:	<jacket>, <coat> (n)
 def:	[TKD]
 cat:	clothing
+data:	KLCP-1
 
 klin:	{wep} (2)
 sve:	«skjorta» med ärmar (s) (regional)
@@ -12734,6 +13230,7 @@ klin:	{wew}
 sve:	«glöda» (v)
 eng:	<glow> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{wey}
 sve:	«kompani» (s)
@@ -12744,6 +13241,7 @@ klin:	{wIb}
 sve:	vara sur, vara «bitter», vara «besk», vara «syrlig» (v)
 eng:	be <sour>, be <bitter>, be <tart> (v)
 def:	[TKD; KGT]
+data:	KLCP-1
 
 klin:	{wIch}
 sve:	«myt» (s)
@@ -12754,6 +13252,7 @@ klin:	{wIgh}
 sve:	«geni» (s)
 eng:	<genius> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{wIH}
 sve:	vara «hänsynslös» (v)
@@ -12775,6 +13274,7 @@ sve:	«välja» (v)
 eng:	<choose>, <select> (v)
 def:	[TKD]
 ref:	[TKW pp.19, 151]
+data:	KLCP-1
 
 klin:	{wIv}
 sve:	«val», «alternativ» (s)
@@ -12795,6 +13295,7 @@ klin:	{woD}
 sve:	«kasta» bort (v)
 eng:	<throw> away (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{woH}
 sve:	«ta» upp, «plocka» upp, «lyfta» upp (v)
@@ -12847,11 +13348,13 @@ klin:	{wot}
 sve:	«verb» (s)
 eng:	<verb> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{wov}
 sve:	vara «ljus» (v)
 eng:	be <light>, be <bright> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{wovmoHwI'}
 sve:	«strålkastare», «belysning» (s)
@@ -12880,11 +13383,13 @@ klin:	{wuq}
 sve:	«besluta» (sig för), «bestämma» (sig för) (v)
 eng:	<decide> (upon) (v)
 def:	[TKD; TKDa]
+data:	KLCP-1
 
 klin:	{wuQ}
-sve:	ha «huvudvärk» (v)
+sve:	ha «huvudvärk», ha «ont» i huvudet (v)
 eng:	have a <headache> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{wuS}
 sve:	«läpp» (s)
@@ -12901,6 +13406,7 @@ klin:	{wuv}
 sve:	«förlita» sig på, vara «beroende» av, vara «hänvisad» till (v)
 eng:	<depend> on, <rely> on (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{ya}
 sve:	«taktikofficer» (s)
@@ -12911,6 +13417,7 @@ klin:	{yab}
 sve:	«sinne», «medvetande», «hjärna» (s)
 eng:	<mind>, <brain> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yach} (1)
 sve:	«klappa» (v)
@@ -12941,19 +13448,21 @@ def:	[TKDa]
 
 klin:	{yaH}
 sve:	vara «borttagen» (v)
-eng:	be <taken> away (v)
+eng:	be <taken away> (v)
 def:	[TKDa]
 
 klin:	{yaH}
 sve:	«tjänsteplats», «post», «postering» (s)
 eng:	<duty station>, <station> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yaj}
 sve:	«förstå» (v)
 eng:	<understand> (v)
 def:	[TKD]
 ref:	[TKW p.43]
+data:	KLCP-1
 
 klin:	{yajHa'}
 sve:	«missförstå» (v)
@@ -12982,11 +13491,13 @@ eng:	be <enough>, be <sufficient> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
 ref:	[TKW p.21]
+data:	KLCP-1
 
 klin:	{yaS}
 sve:	«officer» (s)
 eng:	<officer> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yaS cha'DIch}
 sve:	«andre«officer»» (s)
@@ -13016,6 +13527,7 @@ sve:	«seger», «triumf» (s)
 eng:	<victory>, <triumph> (n)
 def:	[TKD]
 ref:	[TKW pp.125, 135, 179, 211]
+data:	KLCP-1
 
 klin:	{yay'}
 sve:	vara «chockad», vara «mållös», vara «förstummad» (v)
@@ -13059,6 +13571,7 @@ klin:	{yep}
 sve:	vara «försiktig» (v)
 eng:	be <careful> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yepHa'}
 sve:	vara «oförsiktig» (v)
@@ -13096,18 +13609,21 @@ sve:	«tribbel» (s)
 eng:	<tribble> (n)
 def:	[TKD]
 ref:	[TKW p.184]
+data:	KLCP-1
 
 klin:	{yIn}
 sve:	«leva» (v)
 eng:	<live> (v)
 def:	[TKD]
 ref:	[TKW pp.125, 141]
+data:	KLCP-1
 
 klin:	{yIn}
 sve:	«liv» (s)
 eng:	<life> (n)
 def:	[TKD]
 ref:	[TKW pp.43, 53, 95]
+data:	KLCP-1
 
 klin:	{yInroH}
 sve:	«livstecken» (s)
@@ -13133,6 +13649,7 @@ klin:	{yIQ}
 sve:	vara «våt» (v)
 eng:	be «wet» (v)
 def:	[TKD K-E]
+data:	KLCP-1
 
 klin:	{yIrIDngan}
 sve:	«yridian» (person) (s)
@@ -13144,11 +13661,13 @@ klin:	{yIt}
 sve:	«gå» (v)
 eng:	<walk> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yIv} (1)
 sve:	«tugga» (v)
 eng:	<chew> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yIv} (2)
 sve:	«förarga», «besvära», «reta», «irritera» (v) (slang)
@@ -13181,6 +13700,7 @@ klin:	{yoD}
 sve:	«sköld» (s)
 eng:	<shield> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yoD'egh}
 sve:	«skydda» sig själv (med sköld) (v)
@@ -13192,6 +13712,7 @@ sve:	vara «modig», vara «djärv» (v)
 eng:	be <brave> (v)
 def:	[TKD]
 ref:	[TKW p.212]
+data:	KLCP-1
 
 klin:	{yoHwI'}
 sve:	den «modig»e, den modiga (s)
@@ -13213,6 +13734,7 @@ klin:	{yon}
 sve:	vara «nöjd», vara «tillfredställd» (v)
 eng:	be <satisfied> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yonmoH}
 sve:	«tillfredställa» (v)
@@ -13295,11 +13817,13 @@ klin:	{yuch}
 sve:	«choklad» (s)
 eng:	<chocolate> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yuD}
 sve:	vara «oärlig» (v)
 eng:	be <dishonest> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yuDHa'}
 sve:	vara «ärlig» (v)
@@ -13315,6 +13839,7 @@ klin:	{yuQ}
 sve:	«planet» (s)
 eng:	<planet> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yuQHom}
 sve:	«planetoid» (s)
@@ -13350,6 +13875,7 @@ klin:	{yuv}
 sve:	«putta», «knuffa» (v)
 eng:	<push> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{yuvtlhe'}
 sve:	«lock», «kapsyl», «propp», «kork», «överdrag», «fodral» (s)
@@ -13362,6 +13888,8 @@ klin:	{yu'}
 sve:	«förhöra», «fråga» ut (v)
 eng:	<question>, <interrogate> (v)
 def:	[TKD]
+data:	KLCP-1
+joke:	Compare with {mIy}.
 
 klin:	{yu'egh}
 sve:	«våg» (s)
@@ -13428,6 +13956,7 @@ sve:	«visa», «exponera», «röja», «avslöja» (v)
 eng:	<show>, <reveal> (v)
 def:	[TKD]
 ref:	[TKW pp.59, 61, 203]
+data:	KLCP-1
 
 klin:	{'aqleH}
 sve:	ett slags «vapen» (hälften «yxa», hälften «~bat'leth~») (s)
@@ -13504,6 +14033,7 @@ klin:	{'av}
 sve:	«vakta» (v)
 eng:	<guard> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'avwI'}
 sve:	«vakt» (s)
@@ -13536,6 +14066,7 @@ sve:	«möjlighet», «chans», «öppning» (s)
 eng:	<opportunity>, <chance>, <opening> (n)
 def:	[TKD; KGT]
 ref:	[TKW pp.49, 51]
+data:	KLCP-1
 
 klin:	{'ech}
 sve:	«överste» (rang) (s)
@@ -13584,6 +14115,7 @@ sve:	göra «entré», «gå in» i, «komma» in (v)
 eng:	<enter>, <go in> (v)
 def:	[TKD]
 ref:	[TKW p.181]
+data:	KLCP-1
 
 klin:	{'elaS}
 sve:	«Elas» (s)
@@ -13612,6 +14144,8 @@ klin:	{'eng}
 sve:	«moln» (s)
 eng:	<cloud> (n)
 def:	[TKD]
+cat:	landscape
+data:	KLCP-1
 
 klin:	{'ep}
 sve:	«konsumera» soppa, konsumera gryta (v)
@@ -13643,6 +14177,7 @@ sve:	«svärd», «klinga» (s)
 eng:	<sword>, <blade> (n)
 def:	[TKD; KGT]
 ref:	[TKW pp.101, 177]
+data:	KLCP-1
 
 klin:	{'ev}
 sve:	område nordvästerut, område i «nordväst» (s)
@@ -13711,11 +14246,13 @@ sve:	vara «vacker», vara «stilig» (v)
 eng:	be <beautiful>, be <handsome> (v)
 def:	[TKD]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{'Ij}
 sve:	«lyssna» (v)
 eng:	<listen> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'Il}
 sve:	vara «ärlig», vara «uppriktig» (v)
@@ -13737,11 +14274,13 @@ klin:	{'Ip}
 sve:	«svära», gå «ed» på (v)
 eng:	<vow>, <swear> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'Ip}
 sve:	«ed», «löfte» (s)
 eng:	<oath> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'Iq}
 sve:	vara «för «många»», vara «för «mycket»» (v)
@@ -13755,6 +14294,7 @@ sve:	vara «sorgsen», vara «nerstämd» (v)
 eng:	be <sad> (v)
 def:	[TKD]
 ref:	[TKW p.8]
+data:	KLCP-1
 
 klin:	{'IrneH}
 sve:	«morbror» (mors bror) (s)
@@ -13774,11 +14314,13 @@ klin:	{'ISjaH}
 sve:	«kalender», «tideräkning» (s)
 eng:	<calendar> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'It}
 sve:	vara «deprimerad» (v)
 eng:	be <depressed> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'Itlh}
 sve:	vara «avancerad», vara högt utvecklad (v)
@@ -13786,6 +14328,7 @@ eng:	be <advanced>, be highly developed (v)
 def:	[TKD]
 com:	The word "be" was inserted before the adjectival "highly
 	developed".
+data:	KLCP-1
 
 klin:	{'Iv}
 sve:	«höjd» (avstånd ner) (s)
@@ -13802,6 +14345,7 @@ sve:	«blod» (s)
 eng:	<blood> (n)
 def:	[TKD]
 ref:	[TKW pp.17, 31, 32, 34, 174, 203]
+data:	KLCP-1
 
 klin:	{'Iwghargh}
 sve:	ett slags «djur», «blodmask» (s)
@@ -13858,17 +14402,20 @@ sve:	«den», «det» (pro)
 eng:	<it> (pro)
 def:	[TKD]
 ref:	[TKW pp.47, 121]
+data:	KLCP-1
 
 klin:	{'oj}
 sve:	vara «törstig» (v)
 eng:	be <thirsty> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'ol}
 sve:	«bekräfta», «verifiera» (v)
 eng:	<verify> (v)
 def:	[TKD]
 ref:	[TKW p.186]
+data:	KLCP-1
 
 klin:	{'om}
 sve:	«motsätta» sig, «avvärja» (v)
@@ -13941,9 +14488,10 @@ eng:	<photon> (n)
 def:	[TKDa]
 
 klin:	{'ov}
-sve:	«avsluta», «fullborda», «komplettera» (v)
+sve:	«tävla», «konkurrera» (v)
 eng:	<compete> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'oy'}
 sve:	«smärta», «värka», vara «öm» (v)
@@ -13951,6 +14499,7 @@ eng:	<ache>, <hurt>, be <sore> (v)
 def:	[TKD]
 ref:	[TKW pp.46, 175]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{'oy'}
 sve:	«smärta», «värk», «plåga» (s)
@@ -14006,11 +14555,13 @@ klin:	{'ugh}
 sve:	vara «tung» (v)
 eng:	be <heavy> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'uH}
 sve:	ha «baksmälla», vara «bakfull» (v)
 eng:	have a <hangover>, be hung over (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'uj}
 sve:	«längd«enhet»», «~uj~» (cirka 35 «centimeter») (s)
@@ -14032,6 +14583,7 @@ klin:	{'um}
 sve:	vara «kvalificerad» (v)
 eng:	be <qualified> (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'un}
 sve:	«skål» (för matberedning, generell term) (s)
@@ -14061,6 +14613,7 @@ klin:	{'uQ}
 sve:	«kvällsmat» (s)
 eng:	<dinner> (n)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'uQ'a'}
 sve:	«bankett», «fest» (s)
@@ -14087,6 +14640,7 @@ sve:	«ben» (som man går på) (s)
 eng:	<leg> (n)
 def:	[TKD]
 cat:	body part
+data:	KLCP-1
 
 klin:	{'uSu'}
 sve:	«sås» till «~gladst~» (s)
@@ -14099,6 +14653,7 @@ eng:	be <essential>, be <necessary> (v)
 def:	[TKD]
 ref:	[TKW p.45]
 com:	Entries differ and have been combined here.
+data:	KLCP-1
 
 klin:	{'utlh}
 sve:	«officer» (s)
@@ -14109,6 +14664,7 @@ klin:	{'uy}
 sve:	«trycka» ner, trycka på (v)
 eng:	<press> down (v)
 def:	[TKD]
+data:	KLCP-1
 
 klin:	{'uy'}
 sve:	«miljon» (nummerbildande element) (räkn)
@@ -14290,6 +14846,7 @@ sve:	«spegel» (större) (s)
 eng:	«mirror» (larger) (n)
 def:	[HQ10:4 p.5]
 com:	larger than {neSlo'}
+joke:	"Alice" backwards.
 
 klin:	{tlhot}
 sve:	«landa» (på vatten) (v)
@@ -14449,11 +15006,13 @@ klin:	{-}
 sve:	han/hon/det--ingen/honom/henne/det/dem, de--ingen/dem (vp)
 eng:	he/she/it--none/him/her/it/them, they--none/them (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{bI-}
 sve:	du--ingen (vp)
 eng:	you--none (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{bo-}
 sve:	ni--honom/henne/det/dem (vp)
@@ -14469,11 +15028,13 @@ klin:	{cho-}
 sve:	du--mig (vp)
 eng:	you--me (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{Da-}
 sve:	du--honom/henne/det/dem (vp)
 eng:	you--him/her/it/them (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{DI-}
 sve:	vi--dem (vp)
@@ -14499,6 +15060,7 @@ klin:	{jI-}
 sve:	jag--ingen (vp)
 eng:	I--none (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{ju-}
 sve:	du--oss (vp)
@@ -14519,11 +15081,13 @@ klin:	{ma-}
 sve:	vi--ingen (vp)
 eng:	we--none (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{mu-}
 sve:	han/hon/det/de--mig (vp)
 eng:	he/she/it/they--me (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{nI-}
 sve:	de--dig (vp)
@@ -14549,6 +15113,7 @@ klin:	{qa-}
 sve:	jag--dig (vp)
 eng:	I--you (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{re-}
 sve:	vi--er (vp)
@@ -14579,6 +15144,7 @@ klin:	{vI-}
 sve:	jag--honom/henne/det/dem (vp)
 eng:	I--him/her/it/them (vp)
 def:	[TKD 4.1.1 (p.33)]
+data:	KLCP-1
 
 klin:	{wI-}
 sve:	vi--honom/henne/det (vp)
@@ -14597,22 +15163,26 @@ klin:	{-ba'}
 sve:	uppenbarligen (vs6)
 eng:	obviously (vs6)
 def:	[TKDa 4.2.6 (p.175)]
+data:	KLCP-1
 
 klin:	{-beH}
 sve:	redo, iordningställd (om apparater) (vs2)
 eng:	ready, set up (referring to devices) (vs2)
 def:	[TKD 4.2.2 (p.36)]
+data:	KLCP-1
 
 klin:	{-bej}
 sve:	definitivt, tveklöst (vs6)
 eng:	certainly, undoubtedly (vs6)
 def:	[TKD 4.2.6 (p.40)]
+data:	KLCP-1
 
 klin:	{-be'}
 sve:	inte (vss)
 eng:	not (vsr)
 def:	[TKD 4.3 (p.46)]
 com:	Comes after the verb or verb suffix in negates.
+data:	KLCP-1
 
 klin:	{-bogh}
 sve:	som (relativ bisats-markör) (vs9)
@@ -14626,6 +15196,7 @@ klin:	{-choH}
 sve:	förändring i tillstånd, förändring i riktning (vs3)
 eng:	change in state, change in direction (vs3)
 def:	[TKD 4.2.3 (p.37)]
+data:	KLCP-1
 
 klin:	{-chugh}
 sve:	om, ifall (vs9)
@@ -14638,11 +15209,13 @@ klin:	{-chuq}
 sve:	varandra (vs1)
 eng:	one another (vs1)
 def:	[TKD 4.2.1 (p.36)]
+data:	KLCP-1
 
 klin:	{-chu'}
 sve:	perfekt, tydligt (vs6)
 eng:	clearly, perfectly (vs6)
 def:	[TKD 4.2.6 (p.40)]
+data:	KLCP-1
 
 klin:	{-DI'}
 sve:	när, så snart som (vs9)
@@ -14677,11 +15250,13 @@ klin:	{-laH}
 sve:	kan (vs5)
 eng:	can, able (vs5)
 def:	[TKD 4.2.5 (p.39)]
+data:	KLCP-1
 
 klin:	{-law'}
 sve:	antagligen, nog, verkar vara (vs6)
 eng:	seemingly, apparently (vs6)
 def:	[TKD 4.2.6 (p.40)]
+data:	KLCP-1
 
 klin:	{-lI'}
 sve:	fortskridande, framskridande (vs7)
@@ -14706,6 +15281,7 @@ klin:	{-moH}
 sve:	orsaka (vs4)
 eng:	cause (vs4)
 def:	[TKD 4.2.4 (p.38)]
+data:	KLCP-1
 
 klin:	{-mo'}
 sve:	på grund av (vs9)
@@ -14718,11 +15294,13 @@ klin:	{-neS}
 sve:	hedrande (vs8)
 eng:	honorific (vs8)
 def:	[TKD 4.2.8 (p.43)]
+data:	KLCP-1
 
 klin:	{-nIS}
 sve:	behöver (vs2)
 eng:	need (vs2)
 def:	[TKD 4.2.2 (p.36)]
+data:	KLCP-1
 
 klin:	{-pa'}
 sve:	innan, före (vs9)
@@ -14744,17 +15322,20 @@ klin:	{-qang}
 sve:	villig (vs2)
 eng:	willing (vs2)
 def:	[TKD 4.2.2 (p.36)]
+data:	KLCP-1
 
 klin:	{-qa'}
 sve:	återuppta, göra igen (vs3)
 eng:	resume, do again (vs3)
 def:	[TKD 4.2.3 (p.37)]
+data:	KLCP-1
 
 klin:	{-qu'}
 sve:	emfatiskt, framhävande (vss)
 eng:	emphatic (vsr)
 def:	[TKD 4.3 (p.48)]
 com:	Comes after the verb or verb suffix it emphasizes or affirms.
+data:	KLCP-1
 
 klin:	{-Qo'}
 sve:	gör inte!, tänker inte (vss)
@@ -14766,6 +15347,7 @@ klin:	{-rup}
 sve:	redo, förberedd (om varelser) (vs2)
 eng:	ready, prepared (referring to beings) (vs2)
 def:	[TKD 4.2.2 (p.36)]
+data:	KLCP-1
 
 klin:	{-taH}
 sve:	pågående (vs7)
@@ -14781,6 +15363,7 @@ klin:	{-vIp}
 sve:	rädd (vs2)
 eng:	afraid (vs2)
 def:	[TKD 4.2.2 (p.37)]
+data:	KLCP-1
 
 klin:	{-vIS}
 sve:	medan (vs9)
@@ -14803,11 +15386,13 @@ sve:	interrogativ (vs9)
 eng:	interrogative (vs9)
 def:	[TKD 4.2.9 (p.44)]
 com:	Indicates that a sentence is a yes/no question.
+data:	KLCP-1
 
 klin:	{-'egh}
 sve:	sig själv (vs1)
 eng:	oneself (vs1)
 def:	[TKD 4.2.1 (p.35)]
+data:	KLCP-1
 
 === end-of-verb-suffix-list ===
 === start-of-noun-suffix-list ===
@@ -14821,11 +15406,13 @@ klin:	{-Daj}
 sve:	hans, hennes, dess (ss4)
 eng:	his, her, its (ns4)
 def:	[TKD 3.3.4 (p.25)]
+data:	KLCP-1
 
 klin:	{-Daq}
 sve:	lokativ (ss5)
 eng:	locative (ns5)
 def:	[TKD 3.3.5 (p.27)]
+data:	KLCP-1
 
 klin:	{-Du'}
 sve:	plural (kroppsdel) (ss2)
@@ -14836,31 +15423,37 @@ klin:	{-Hey}
 sve:	synbar, skenbar (ss3)
 eng:	apparent (ns3)
 def:	[TKD 3.3.3 (p.24)]
+data:	KLCP-1
 
 klin:	{-Hom}
 sve:	diminutiv (ss1)
 eng:	diminutive (ns1)
 def:	[TKD 3.3.1 (p.21)]
+data:	KLCP-1
 
 klin:	{-lIj}
 sve:	din, ditt (ss4)
 eng:	your (ns4)
 def:	[TKD 3.3.4 (p.25)]
+data:	KLCP-1
 
 klin:	{-lI'}
 sve:	din, ditt (substantiv förmöget till språk) (ss4)
 eng:	your (noun capable of using language) (ns4)
 def:	[TKD 3.3.4 (p.25)]
+data:	KLCP-1
 
 klin:	{-maj}
 sve:	vår, vårt (ss4)
 eng:	our (ns4)
 def:	[TKD 3.3.4 (p.25)]
+data:	KLCP-1
 
 klin:	{-ma'}
 sve:	vår, vårt (substantiv förmöget till språk) (ss4)
 eng:	our (noun capable of using language) (ns4)
 def:	[TKD 3.3.4 (p.25)]
+data:	KLCP-1
 
 klin:	{-mey}
 sve:	plural (generellt) (ss2)
@@ -14871,11 +15464,13 @@ klin:	{-mo'}
 sve:	på grund av, beroende på (ss5)
 eng:	due to, because of (ns5)
 def:	[TKD 3.3.5 (p.28)]
+data:	KLCP-1
 
 klin:	{-na'}
 sve:	definitiv (ss3)
 eng:	definite (ns3)
 def:	[TKD 3.3.3 (p.25)]
+data:	KLCP-1
 
 klin:	{-oy}
 sve:	affektion (ss1)
@@ -14891,6 +15486,7 @@ klin:	{-qoq}
 sve:	så kallad (ss3)
 eng:	so-called (ns3)
 def:	[TKD 3.3.3 (p.24)]
+data:	KLCP-1
 
 klin:	{-raj}
 sve:	er, ert (ss4)
@@ -14912,31 +15508,37 @@ klin:	{-vam}
 sve:	den här, de här (ss4)
 eng:	this (ns4)
 def:	[TKD 3.3.4 (p.26)]
+data:	KLCP-1
 
 klin:	{-vetlh}
 sve:	den där, de där (ss4)
 eng:	that (ns4)
 def:	[TKD 3.3.4 (p.26)]
+data:	KLCP-1
 
 klin:	{-vo'}
 sve:	från (ss5)
 eng:	from (ns5)
 def:	[TKD 3.3.5 (p.28)]
+data:	KLCP-1
 
 klin:	{-wIj}
 sve:	min, mitt (ss4)
 eng:	my (ns4)
 def:	[TKD 3.3.4 (p.25)]
+data:	KLCP-1
 
 klin:	{-wI'}
 sve:	min, mitt (substantiv förmöget till språk) (ss4)
 eng:	my (noun capable of using language) (ns4)
 def:	[TKD 3.3.4 (p.25)]
+data:	KLCP-1
 
 klin:	{-'a'}
 sve:	augmentativ (ss1)
 eng:	augmentative (ns1)
 def:	[TKD 3.3.1 (p.21)]
+data:	KLCP-1
 
 klin:	{-'e'}
 sve:	tema, ämne (ss5)
@@ -14944,6 +15546,7 @@ eng:	topic (ns5)
 def:	[TKD 3.3.5 (p.29)]
 com:	An object topicalized {-'e'} sometimes comes *before* the
 	adverb in the sentence (if any) [TKDa 6.7 (p.180)]
+data:	KLCP-1
 
 === end-of-noun-suffix-list ===
 
@@ -15005,7 +15608,7 @@ SUGGESTIONS FOR IMPROVEMENT OF THE POCKET DICTIONARY
         1998-12-07; HQ8:3 p.2]
 
     Currently, if you look up a word like "wrong", you'll find:
-    
+
         _wrong_ /v/ {muj} be ~
 
     Which makes it very easy to miss that fact the word is adjectival in
@@ -15105,110 +15708,124 @@ SOURCES REFERENCES AND ABBREVIATIONS
 
 HISTORY (LATEST CHANGES FIRST)
 
-    [2003-11-17] -- Corrected {beqquj} to {beqpuj} (thanks to Philip Newton
+    [??] -- TODO: Add markup for the question words, adverbs etc. given for
+    KLCP level 1. Add markup for KLCP level 2. Put all that markup in the
+    »cat:« field, rather in the current »data:« field.
+
+    [2003-11-30] -- Added markup for the 46 affixes required for the KLCP
+    level 1. This has not been as thoroughly checked as the added words, but I
+    would never the less be surprised if there were any errors of note.
+
+    [2003-11-29] -- Added markup for the 502 words given in the KLCP (Klingon
+    Language Certification Program) level I. This was very carefully done and
+    double checked with scripts. 100% accurate. Some unclarities were found in
+    the list list, and I email {Holtej} for explanations. The idea of marking
+    words belonging to the KLCP level 1 was given to me by Philip Newton
+    (thanx Philip!). -- Also added the »cat:« category »time« for time related
+    words (times of day, time related verbs etc.).
+
+    [2003-11-17] -- Corrected {beqquj} to {beqpuj} (thanks to Philip Newton
     <tlhIngan-Hol@gmx.net> for spotting the error).
 
-    [2003-11-10] -- Added the word {DoHmoH} after anonymous tip from the KA
+    [2003-11-10] -- Added the word {DoHmoH} after anonymous tip from the KA
     webpage (this word was apparently the word of the day Saturday, July 19,
     2003). Also added "dragon" as a translation of {lung}, which I found when
     looking at the source for {DoHmoH}. (Both of these occur on pages 48--19 of
     KGT.)
 
-    [2002-09-11] -- Corrected the Klingon spelling of "Dikus plant" from
-    {Daypus} to {DayquS}. Thanks to d'Armond Speers [USA] for pointing out
-    the error!
+    [2002-09-11] -- Corrected the Klingon spelling of "Dikus plant" from
+    {Daypus} to {DayquS}. Thanks to d'Armond Speers [USA] for pointing out the
+    error!
 
-    [2002-06-28] -- Translated the words from HQ10:4 p.5 into Swedish.
+    [2002-06-28] -- Translated the words from HQ10:4 p.5 into Swedish.
 
-    [2002-03-09] -- Corrected the Klingon spelling of "racht" from {taHta'}
+    [2002-03-09] -- Corrected the Klingon spelling of "racht" from {taHta'}
     to {raHta'}. Thanks to Agnieska Solska [Poland] for pointing out the
     error!
 
-    [2002-01-21] -- Added the 35 new words ({po Ha'DIbaH} excepted since it
+    [2002-01-21] -- Added the 35 new words ({po Ha'DIbaH} excepted since it
     really isn't a "new word") from MO's article in HQ10:4. Most of these
     words are about birds.
 
-    [2001-08-23] -- Added some 27 new words related to fingers and toes, and
+    [2001-08-23] -- Added some 27 new words related to fingers and toes, and
     everything else from the HQ10:2 article "A Friend of Maltz: {nItlhDu'
     yaDDu' je}". The following three words had to be given lemma numbers,
     since they were homonymous to other words already present in the
     dictionary: {nanwI'}, {qan}, {rIl}. Re-sorted these history events into
     proper order (they were in disarray).
 
-    [2001-03-20] -- Added the field "data:".
+    [2001-03-20] -- Added the field "data:".
 
-    [2001-03-19] -- Added the word "be" before occuring adjectivals where it
+    [2001-03-19] -- Added the word "be" before occuring adjectivals where it
     was previously missing in the translations of the words: {ghuS}, {Huv},
     {naQ}, {nI'}, {noy}, {poS}, {tIq} and {'Itlh}. (Machine-parsed out all
     occurances of stative verbs [=verbs whose translation contains the word
-    "be"] and hand checked those on the list which had both active and
-    static translations. Thus I found and corrected these "errors".)
+    "be"] and hand checked those on the list which had both active and static
+    translations. Thus I found and corrected these "errors".)
 
-    [2001-02-12] -- Added the new word {tangqa'} from HQ 9:4.
+    [2001-02-12] -- Added the new word {tangqa'} from HQ 9:4.
 
-    [2001-01-06] -- Added the word {mevyap} (Why on earth haven't I found
-    this before! -- Check KGT more thoroughly!)
+    [2001-01-06] -- Added the word {mevyap} (Why on earth haven't I found
+    this before! -- I must check the KGT more thoroughly!)
 
-    [2000-11-01] -- Added Swedish translation "åker" to {yotlh}, tagged some
+    [2000-11-01] -- Added Swedish translation "åker" to {yotlh}, tagged some
     more words with "cat: landcape" and "cat: body part".
 
-    [2000-10-24] -- Made sure all references to TKD & TKDa had section
+    [2000-10-24] -- Made sure all references to TKD & TKDa had section
     numbers, and not just page numbers.
 
-    [2000-10-20] -- Updated all verb suffix source references to include
+    [2000-10-20] -- Updated all verb suffix source references to include
     section numbers. Also added some comments of useage for the rovers and
     type 9 verb suffixes.
 
-    [2000-10-13] -- Added the "see:" field, and changed most "see also"
+    [2000-10-13] -- Added the "see:" field, and changed most "see also"
     refereces into these instead.
 
-    [2000-10-11 to 2000-10-12] -- Added 24 new words from the latest issue of
+    [2000-10-11 to 2000-10-12] -- Added 24 new words from the latest issue of
     HolQeD (most of these are names of different family relations) and added
     some additional comments to {chen} from the same source. Translated the
     new words into Swedish.
 
-    [2000-10-09] -- Changed italics marker to "~" instead of "+" (this makes
+    [2000-10-09] -- Changed italics marker to "~" instead of "+" (this makes
     this dictionary follow the ~Project Gutenberg~ specifications in this
-    regard). Added category "locative" (for words like "inside", "area
-    below" etc.) and "math" (for words like "add", "divide", the numbers
-    etc.).
+    regard). Added category "locative" (for words like "inside", "area below"
+    etc.) and "math" (for words like "add", "divide", the numbers etc.).
 
-    [2000-09-09] -- Checked that all sequences of lemma numbers are complete
+    [2000-09-09] -- Checked that all sequences of lemma numbers are complete
     (i.e. begins with 1, and counts up without any skipped numbers) and that
-    all homonymns with the same part-of-speech are tagged with lemma
-    numbers. Checked that this database is sorted correctly: first after
-    Klingon word, next after part-of-speech (in order: v, n, name, pro, adv,
-    num, excl, ques, conj) and finally after lemma numbering (lemma numbers
-    are given chronologically, with the lowest number to the first defined
-    word).
+    all homonymns with the same part-of-speech are tagged with lemma numbers.
+    Checked that this database is sorted correctly: first after Klingon word,
+    next after part-of-speech (in order: v, n, name, pro, adv, num, excl,
+    ques, conj) and finally after lemma numbering (lemma numbers are given
+    chronologically, with the lowest number to the first defined word).
 
-    [2000-09-08] -- Introduced lemma numbering for homonyms of same word
+    [2000-09-08] -- Introduced lemma numbering for homonyms of same word
     class.
 
-    [2000-08-14] -- Removed the word {Soq} from S33 (now confirmed to be
+    [2000-08-14] -- Removed the word {Soq} from S33 (now confirmed to be
     incorrect).
 
-    [2000-07-31] -- Translated "skink" and "blow one's top" into Swedish.
+    [2000-07-31] -- Translated "skink" and "blow one's top" into Swedish.
 
-    [2000-07-03] -- Changed italics marker from '*' to '+' to avoid
+    [2000-07-03] -- Changed italics marker from '*' to '+' to avoid
     confusions with useage of '*' as a literal letter (as three curses uses
     this).
 
-    [2000-05-09] -- Corrected some Swedish spelling errors.
+    [2000-05-09] -- Corrected some Swedish spelling errors.
 
-    [2000-05-03] -- Machine-checked Klingon graphotax. Machine-checked all
-    parenthetic structures (including ~xx~ used for italics).
-    Machine-checked for lines ending in white space(s) (none found).
-    Machine-checked for identical fields within same post (2 corrected)
-    Checked that there is a matching «« or »» in the Swedish translation for
-    each »», >>, «« or << occuring in the English field.
+    [2000-05-03] -- Machine-checked Klingon graphotax. Machine-checked all
+    parenthetic structures (including ~xx~ used for italics).  Machine-checked
+    for lines ending in white space(s) (none found).  Machine-checked for
+    identical fields within same post (2 corrected) Checked that there is a
+    matching «« or »» in the Swedish translation for each »», >>, «« or <<
+    occuring in the English field.
 
-    [2000-04-30 to 2000-05-02] -- Sort tagged the remaining Swedish
+    [2000-04-30 to 2000-05-02] -- Sort tagged the remaining Swedish
     translations (about 1600) using a lot of ad hoc ARexx-code.
 
-    [2000-04-03] -- All references to MSN etc. corrected to ~News~ and
+    [2000-04-03] -- All references to MSN etc. corrected to ~News~ and
     provided with correct dates. Machine-checked all parentheses.
 
-    [2000-02-24] -- Part of speech for Swedish translation machine-checked.
+    [2000-02-24] -- Part of speech for Swedish translation machine-checked.
 
 [[eof]]
