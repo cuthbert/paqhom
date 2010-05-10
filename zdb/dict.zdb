@@ -1,23 +1,23 @@
 ----------------------
-[2002­06­28] There are 2565 Klingon words (not counting affixes).
+[2002-06-28] There are 2565 Klingon words (not counting affixes).
 Sorted in Klingon alphabetical order (except for some new words at the end).
 ----------------------
 
 KLINGON IDEALS OF BEHAVIOR
 
-    accuracy             {yIqarchu'!} - Be accurate!
-    straightforwardness  {yI'utchu'!} - Be essential!
-    aggressiveness       {yIvaQchu'!} - Be aggressive!
-    strength             {yIHoSchu'!} - Be strong!
+    accuracy             {yIqarchu'!} -- Be accurate!
+    straightforwardness  {yI'utchu'!} -- Be essential!
+    aggressiveness       {yIvaQchu'!} -- Be aggressive!
+    strength             {yIHoSchu'!} -- Be strong!
 
 
 FIELD NAMES USED IN DICTIONARY BELOW
 
     klin:  (required) Klingon word (all klingon text within {})
-    sve:   (required) Swedish translation and part­of­speech
+    sve:   (required) Swedish translation and part-of-speech
                       missing translation marked with «»
     eng:   (required) English definition (from canon sources) and
-                      part­of­speech
+                      part-of-speech
     def:   (required) source where definition can be found (within [])
     ref:   (optional) canon sources where it also occurs
     com:   (optional) special comment concerning the entry
@@ -28,7 +28,21 @@ FIELD NAMES USED IN DICTIONARY BELOW
 		      separated by semicolon) Right now the following
 		      categories exist: "body part", "clothing", "locative",
 		      "math", "music", "family", "landscape"
-    data:  (optional) contains some useful info about whether it's a
+    data:  (optional) contains additional data about a word:
+
+		      »basic« = one of the 500 basic words, required for
+		      passing the Klingon Language Certification Program, first
+		      level
+
+		      »derived form« = a word built from other Klingon
+		      morphemes (and which need not be present in the
+		      Klingon--English side of a dictionary); e.g. {chenmoHwI'}
+		      constructed from {chen} "take form" + {-moH} "cause" +
+		      {-wI'} "one who does"
+
+		      »phrase«
+
+    some useful info about whether it's a
 		      "derived form" (i.e. possible to parse without using
 		      that specific word, but rather make use of other
 		      lexical entries and suffixes) or not. The note
@@ -36,7 +50,7 @@ FIELD NAMES USED IN DICTIONARY BELOW
 		      one word (i.e. the Klingon definiton contains at least
 		      one space.)
 
-=== start­of­word­list ===
+=== start-of-word-list ===
 
 klin:	{bach}
 sve:	«skjuta» (v)
@@ -53,7 +67,7 @@ klin:	{bachHa'}
 sve:	«fela», göra ett «misstag» (v) (slang)
 eng:	<err>, make a <mistake> (v) (slang)
 def:	[KGT]
-joke:	This is the first word in the K­E side of the dictionary, and is
+joke:	This is the first word in the K-E side of the dictionary, and is
 	incorrectly given as a noun. MO has confirmed this to be an
 	intentional error (since there is always an error somewhere, in
 	every dictionary).
@@ -66,7 +80,7 @@ def:	[TKDa]
 klin:	{baghneQ}
 sve:	«sked» (s)
 eng:	«spoon» (n)
-def:	[News 1998­05­05]
+def:	[News 1998-05-05]
 joke:	Spoonerism on {nagh beQ} "flat stone".
 
 klin:	{baH}
@@ -141,7 +155,7 @@ def:	[TKDa 5.5 (p.178)]
 
 klin:	{bargh}
 sve:	flatbottnad «skål» för matberedning (s)
-eng:	flat­bottomed <pot> for food preparation (n)
+eng:	flat-bottomed <pot> for food preparation (n)
 def:	[KGT]
 
 klin:	{barot}
@@ -192,7 +206,7 @@ def:	[TKD]
 klin:	{beb}
 sve:	«tak», yttertak (s)
 eng:	«roof» (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 
 klin:	{bech}
 sve:	«lida» (v)
@@ -292,13 +306,13 @@ ref:	[TKW p.79]
 com:	Translation "~bat'leth~" inserted.
 
 klin:	{betleH bey'}
-sve:	¿?«~bat'leth~­ställ» (s)
+sve:	¿?«~bat'leth~-ställ» (s)
 eng:	«~bat'leth~ display» (n)
 def:	[KCD]
 data:	phrase
 
 klin:	{betleH 'obe'}
-sve:	«~Bat'leth~­ordern» (ett ordensällskap) (s)
+sve:	«~Bat'leth~-ordern» (ett ordensällskap) (s)
 eng:	«Order of the «~Bat'leth~»» (n)
 def:	[KGT p.182]
 data:	phrase
@@ -313,7 +327,7 @@ sve:	«ceremoniell utställning», «ceremoniell uppvisning» (s)
 eng:	<ceremonial display> (n)
 def:	[KGT]
 com:	¿?Eller ska det översättas med "ställ", liksom de andra
-	"display"­orden?
+	"display"-orden?
 
 klin:	{be'}
 sve:	«kvinna», «hona» (s)
@@ -337,7 +351,7 @@ cat:	family
 klin:	{be'joy'}
 sve:	«kvinnotortyr» (rituell tortyr av fångar, utförd av kvinnor)
 	(s)
-eng:	«torture­by­women» (ritualized torture of prisoners,
+eng:	«torture-by-women» (ritualized torture of prisoners,
 	performed by women) (n)
 def:	[Sarek pp.163, 164, 180, 181]
 
@@ -393,9 +407,9 @@ cat:	locative
 
 klin:	{bIp}
 sve:	«hundratusen» (nummerbildande element) (räkn)
-eng:	<hundred thousand> (number­forming element) (num)
+eng:	<hundred thousand> (number-forming element) (num)
 def:	[TKD]
-com:	Number­forming element, see also TKD 5.2.
+com:	Number-forming element, see also TKD 5.2.
 cat:	math
 
 klin:	{bIQ}
@@ -422,7 +436,7 @@ eng:	«hydrogen» (n)
 def:	[BoP]
 
 klin:	{bIQSIp 'ugh}
-sve:	«deuterium­isotop» (s)
+sve:	«deuterium-isotop» (s)
 eng:	«deuterium isotope» (n)
 def:	[BoP]
 data:	phrase
@@ -487,7 +501,7 @@ eng:	<sweep> (away) (v)
 def:	[KGT]
 
 klin:	{bI'rel}
-sve:	«~B'rel~­klass» (av farkost) (s)
+sve:	«~B'rel~-klass» (av farkost) (s)
 eng:	«~B'rel~ class» (vessel) (n)
 def:	[BoP]
 
@@ -532,7 +546,7 @@ def:	[TKD]
 klin:	{bol}
 sve:	«dregla» (v)
 eng:	<drool> (v)
-def:	[TKD E­K; KGT]
+def:	[TKD E-K; KGT]
 
 klin:	{bolwI'}
 sve:	«förrädare» (s) (slang)
@@ -588,7 +602,7 @@ eng:	«ally» with, «form» an alliance with (v)
 def:	[HQ9:3 p.9]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
 	HQ: Used in math: {boq} for addition, {boqHa'} for
-	subtraction, {X­logh boq'egh Y} for multiplication, {X­logh
+	subtraction, {X-logh boq'egh Y} for multiplication, {X-logh
 	boqHa''egh Y} for division. See also {chen}.
 cat:	math
 
@@ -626,7 +640,7 @@ def:	[TKDa]
 
 klin:	{boQDu'}
 sve:	«adjutant», «ordonnans» (s)
-eng:	<aide­de­camp> (n)
+eng:	<aide-de-camp> (n)
 def:	[TKD]
 
 klin:	{bortaS}
@@ -818,7 +832,7 @@ def:	[TKD]
 klin:	{chan}
 sve:	område österut, område i «öster» (s)
 eng:	area eastward, area towards the «east» (n)
-def:	[News 1999­11­21]
+def:	[News 1999-11-21]
 com:	"90 degrees on Terran compass" according to the KLI new words
 	list.
 cat:	locative
@@ -897,7 +911,7 @@ ref:	[TKW p.37]
 klin:	{chaw'}
 sve:	«tillåtelse», «tillstånd», «licens» (s)
 eng:	<permit> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 com:	Used in PK; {cha'puj vIngevmeH chaw' HInobneS}.
 
 klin:	{chay'}
@@ -960,16 +974,16 @@ def:	[TKD]
 klin:	{cheb}
 sve:	«vikt«enhet»», «~cheb~» (cirka 2,25 «kilogram») (s)
 eng:	«unit» of «weight», «~cheb~» (about 5 «pound»s or 2.25 «kilogram»s) (n)
-def:	[News 1997­10­22]
+def:	[News 1997-10-22]
 
 klin:	{cheb'a'}
 sve:	«vikt«enhet»», 9 «~cheb~» (cirka 20,25 «kilogram») (s)
 eng:	«unit» of «weight», 9 «~cheb~» (about 45 «pound»s or 20.25 «kilogram»s) (n)
-com:	(n) unit weight approx. 45-46.4 pounds (20.4-21.05 kg) (9-9.28 cheb)
+com:	(n) unit weight approx. 45--46.4 pounds (20.4--21.05 kg) (9--9.28 cheb)
 	[The numbers don't quite mesh, but this is the best I can figure
 	from different equivalences we've been given.] [BoP poster] (Added:
 	12 March 2002) [from KLI new word's list]
-def:	[News 1997­10­22]
+def:	[News 1997-10-22]
 
 klin:	{chech}
 sve:	vara «full», vara «berusad» (v)
@@ -981,7 +995,7 @@ sve:	en slags «sprit», «~chech'tluth~» (s)
 eng:	type of <liquor>, <~chech'tluth~> (n)
 def:	[KGT]
 com:	Entries differ in source.
-	The "~baceh'tluth~" found in K­E is presumed an error and
+	The "~baceh'tluth~" found in K-E is presumed an error and
 	excluded here.
 
 klin:	{chegh}
@@ -1081,10 +1095,10 @@ def:	[TKD]
 see:	{DuS}
 
 klin:	{chetvI'} (2)
-sve:	«~chetvi~», «spjut­slunga» (s)
-eng:	«~chetvi~», <spear­throwing device> (n)
+sve:	«~chetvi~», «spjut-slunga» (s)
+eng:	«~chetvi~», <spear-throwing device> (n)
 def:	[KGT]
-com:	The word "~chetvi~" found in definition of {wob} in KGT K­E.
+com:	The word "~chetvi~" found in definition of {wob} in KGT K-E.
 
 klin:	{chev}
 sve:	«separera», «dela», «avskilja» (v)
@@ -1094,7 +1108,7 @@ def:	[TKD]
 klin:	{chevwI' tlhoy'}
 sve:	territorial«mur» (t.ex. Berlinmuren) (s)
 eng:	territorial «wall» (e.g. Berlin Wall) (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 data:	phrase
 
 klin:	{che'}
@@ -1265,12 +1279,12 @@ cat:	body part
 
 klin:	{chor} (2)
 sve:	flatbottnad «skål» av keramik (s) (regionalt)
-eng:	ceramic flat­bottomed <pot> (n) (regional)
+eng:	ceramic flat-bottomed <pot> (n) (regional)
 def:	[KGT]
 
 klin:	{chor bargh}
 sve:	flatbottnad «skål» av keramik (s) (regionalt)
-eng:	ceramic flat­bottomed <pot> (n) (regional)
+eng:	ceramic flat-bottomed <pot> (n) (regional)
 def:	[KGT]
 data:	phrase
 
@@ -1463,7 +1477,7 @@ eng:	be <absent> (v)
 def:	[TKD]
 
 klin:	{Dach} (2)
-sve:	vara icke­«uppmärksam», vara «distraherad», sakna «koncentration»
+sve:	vara icke-«uppmärksam», vara «distraherad», sakna «koncentration»
 	(v) (slang)
 eng:	be <not attentive>, be <distracted>, <lack focus>, to not pay
 	attention (v) (slang)
@@ -1504,7 +1518,7 @@ eng:	be <interesting> (v)
 def:	[TKD]
 
 klin:	{Daj} (2)
-sve:	«pröva», «testa» (på ett icke­avgörande sätt) (v)
+sve:	«pröva», «testa» (på ett icke-avgörande sätt) (v)
 eng:	<test> inconclusively (v)
 def:	[TKDa]
 ref:	[TKW p.104]
@@ -1586,8 +1600,8 @@ cat:	clothing
 klin:	{Dat}
 sve:	«överallt», alla platser (s)
 eng:	<everywhere>, all places (n)
-def:	[TKD 3.3.5 (p.27-28) et al.]
-com:	Locative word, never followed by {­Daq} [TKD 3.3.5 (p.27-28)].
+def:	[TKD 3.3.5 (p.27--28) et al.]
+com:	Locative word, never followed by {-Daq} [TKD 3.3.5 (p.27--28)].
 cat:	locative
 
 klin:	{Daw'}
@@ -1659,37 +1673,37 @@ def:	[TKD]
 klin:	{DenIb}
 sve:	«Denebia» (s)
 eng:	«Denebia» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{DenIbngan}
 sve:	«denebian» (person) (s)
 eng:	«Denebian» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{DenIb Qatlh}
 sve:	«denebiansk slemdjävul» (s)
 eng:	«Denebian slime devil» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 data:	phrase
 
 klin:	{DenIbya'}
 sve:	«Denebia» (s)
 eng:	<Denebia> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 
 klin:	{DenIbya'ngan}
 sve:	«denebian» (person) (s)
 eng:	<Denebian> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 
 klin:	{DenIbya' Qatlh}
 sve:	«denebiansk slemdjävul» (s)
 eng:	<Denebian slime devil> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 data:	phrase
 
 klin:	{Dep}
-sve:	«varelse» (icke­humanoid) (s)
+sve:	«varelse» (icke-humanoid) (s)
 eng:	<being> (nonhumanoid) (n)
 def:	[TKD]
 see:	{ghot}; {nuv}; {yoq}
@@ -1709,7 +1723,7 @@ klin:	{DeS} (2)
 sve:	«skaft», «yxskaft» (s)
 eng:	<handle>, <ax handle> (n)
 def:	[KGT]
-com:	Entries differ in source. One of the E­K entries is used here.
+com:	Entries differ in source. One of the E-K entries is used here.
 
 klin:	{DeSqIv}
 sve:	«armbåge» (s)
@@ -1779,7 +1793,7 @@ sve:	«trillium» (s)
 eng:	<trillium> (n)
 def:	[TKD]
 com:	STE: "Trillium. Gemstone traded on planet Organia."
-	TOS "Errand of Mercy", DS9 "Trials and Tribble­ations"
+	TOS "Errand of Mercy", DS9 "Trials and Tribble-ations"
 
 klin:	{DIng}
 sve:	«rotera» (v)
@@ -1922,7 +1936,7 @@ def:	[TKD]
 
 klin:	{Do Qe'}
 sve:	«hastighets«restaurang»», «snabbmatsservering», «~Dok'e~» (s)
-eng:	«velocity «restaurant»», «fast­food restaurant», «~Dok'e~» (n)
+eng:	«velocity «restaurant»», «fast-food restaurant», «~Dok'e~» (n)
 def:	[KGT pp.102, 103 et al.]
 com:	This definition combines information from the definition of
 	{tebwI'} with information from the main text.
@@ -1934,7 +1948,7 @@ eng:	<escort> (v)
 def:	[TKD]
 
 klin:	{DoS}
-sve:	«mål»(­tavla) (s)
+sve:	«mål»(-tavla) (s)
 eng:	<target> (n)
 def:	[TKD]
 ref:	[TKW pp.81, 191]
@@ -2001,12 +2015,12 @@ klin:	{DuDwI'}
 sve:	«blandningskäpp», «omrörningspinne», «käpp»/«pinne» för omrörning (s)
 eng:	<stirring <stick>>, <mixing stick> (n)
 def:	[KGT]
-com:	Entries differ in source. The E­K entry is used here.
+com:	Entries differ in source. The E-K entry is used here.
 
 klin:	{Dugh}
 sve:	vara «vaksam», vara «försiktig» (v)
 eng:	be «vigilant» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{DuH}
 sve:	vara «möjlig» (v)
@@ -2240,13 +2254,13 @@ com:	S25 and S26 were reprinted in HQ5:3 p.15
 klin:	{ghaw'} (1)
 sve:	«osäker person», någon uppfylld av självtvivel, «självtvivlare» (s)
 	(regionalt, slang) 
-eng:	<insecure one>, one full of self­doubt, <self­doubter> (n)
+eng:	<insecure one>, one full of self-doubt, <self-doubter> (n)
 	(regional, slang) 
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
 klin:	{ghaw'} (2)
-sve:	«~igvah~»­leversoppa (s)
+sve:	«~igvah~»-leversoppa (s)
 eng:	<~igvah~> liver soup (n)
 def:	[KGT]
 
@@ -2302,7 +2316,7 @@ def:	[TKD]
 klin:	{gher}
 sve:	«formulera», «sammanställa», «sätta ihop» (v)
 eng:	«formulate», «compile», «pull together» (v)
-def:	[News 1998­07­09]
+def:	[News 1998-07-09]
 com:	"The idea seems to be that of bringing thoughts together into
 	some kind of reasonably coherent form so that they can be
 	conveyed to someone else. [...] (Maltz laughed at, but
@@ -2315,7 +2329,7 @@ eng:	<assume «duties»> of, <take on «responsibilities»> of (v)
 def:	[KGT]
 
 klin:	{ghevchoq Sep}
-sve:	«Gevchok»­regionen (s)
+sve:	«Gevchok»-regionen (s)
 eng:	«Gevchok» region (n)
 def:	[KGT p.17]
 data:	phrase; {ghevchoq} (n)
@@ -2405,7 +2419,7 @@ com:	An advisor to a house so trusted that he becomes a part of the
 
 klin:	{ghIpDIj}
 sve:	ställa inför «krigsrätt» (v)
-eng:	<court­martial> (v)
+eng:	<court-martial> (v)
 def:	[TKD]
 
 klin:	{ghIq}
@@ -2797,7 +2811,7 @@ klin:	{HablI'}
 sve:	«data«sändare»» och «mottagare» (s)
 eng:	<data <transceiving device>> (n)
 def:	[TKD]
-com:	Entries differ in source. K­E entry is used here.
+com:	Entries differ in source. K-E entry is used here.
 
 klin:	{Hach}
 sve:	vara «utvecklad», vara «högtstående» (om t.ex. civilisation) (v)
@@ -3168,8 +3182,8 @@ cat:	music
 data:	phrase
 
 klin:	{HIvneS}
-sve:	«äro­attack» («självmordsuppdrag») (v)
-eng:	«honor­attack» («suicide mission») (v)
+sve:	«äro-attack» («självmordsuppdrag») (v)
+eng:	«honor-attack» («suicide mission») (v)
 def:	[KGT p.49]
 
 klin:	{HI'}
@@ -3193,7 +3207,7 @@ eng:	<everyone>, <all>, «everything», «each», «every» (n)
 def:	[TKD; TKW]
 ref:	[HQ5:2 p.11]
 com:	All sources combined here.
-	First in noun­noun pair in TKW. According to HQ "More on
+	First in noun-noun pair in TKW. According to HQ "More on
 	{Hoch}"; "If noun following Hoch is explicitly plural, it
 	means 'all'. If it is singular, it means 'each'."
 	Occurs in TKW p.33, 51, 74, 74, 74, 99, 136, 179, 184.
@@ -3293,7 +3307,7 @@ eng:	<impulse power> (n)
 def:	[TKD]
 
 klin:	{Hong boq chuyDaH}
-sve:	«impuls­fusions«raketer»» (s)
+sve:	«impuls-fusions«raketer»» (s)
 eng:	«impulse fusion «thrusters»» (n)
 def:	[BoP]
 data:	phrase
@@ -3425,7 +3439,7 @@ def:	[TKD]
 klin:	{Hu}
 sve:	«zoo» (s)
 eng:	«zoo» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{Hub}
 sve:	«försvara» (v)
@@ -3439,8 +3453,8 @@ eng:	<defense> (n)
 def:	[TKD]
 
 klin:	{HubneS}
-sve:	«äro­försvar» («självmordsuppdrag») (v)
-eng:	«honor­defend» («suicide mission») (v)
+sve:	«äro-försvar» («självmordsuppdrag») (v)
+eng:	«honor-defend» («suicide mission») (v)
 def:	[KGT p.49]
 
 klin:	{Huch}
@@ -3453,7 +3467,7 @@ klin:	{HuchQeD}
 sve:	«ekonomi» (s)
 eng:	«economics» (n)
 def:	[KGT p.148]
-com:	Slang expression with no non­slang counterpart.
+com:	Slang expression with no non-slang counterpart.
 
 klin:	{HuD}
 sve:	«berg», «kulle» (s)
@@ -3462,7 +3476,7 @@ def:	[TKD]
 cat:	landscape
 
 klin:	{HuD beQ yoS}
-sve:	«Flacka bergs­distriktet» (i Sakrej­regionen) (s)
+sve:	«Flacka bergs-distriktet» (i Sakrej-regionen) (s)
 eng:	«Flat Mountain district» (in the Sakrej region) (n)
 def:	[KGT p.17]
 data:	phrase
@@ -3587,7 +3601,7 @@ def:	[KGT]
 ref:	[TKW pp.59, 61, 142]
 
 klin:	{Huv}
-sve:	vara «klar», vara icke­skymd (v)
+sve:	vara «klar», vara icke-skymd (v)
 eng:	be <clear>, be not obstructed (v)
 def:	[TKD]
 com:	The word "be" was inserted before the adjectival "not
@@ -3632,7 +3646,7 @@ klin:	{jabbI'ID}
 sve:	«data«överföring»» (s)
 eng:	<data <transmission>> (n)
 def:	[TKD]
-com:	Entries differ in source. K­E entry is used here.
+com:	Entries differ in source. K-E entry is used here.
 
 klin:	{jabwI'}
 sve:	«kypare», «servitör», «servitris» (s)
@@ -3660,7 +3674,7 @@ ref:	[TKW pp.ix, 19, 24, 61, 65, 65, 201]
 klin:	{jaghla'}
 sve:	«fiendekommendörkapten» (s)
 eng:	«enemy commander» (n)
-def:	[TKD 6.2.4 (pp.64-65)]
+def:	[TKD 6.2.4 (pp.64--65)]
 
 klin:	{jaH}
 sve:	«fara», «åka», «gå», «färdas», «resa» (v)
@@ -3672,7 +3686,7 @@ sve:	«dag», «dygn» (från gryning till gryning) (s)
 eng:	<day> (from dawn to dawn) (n)
 def:	[TKD]
 ref:	[TKW pp.69, 177]
-com:	Used with {­vam} in the sentence: {Heghlu'meH QaQ jajvam.}
+com:	Used with {-vam} in the sentence: {Heghlu'meH QaQ jajvam.}
 	"It is a good day to die." in TKW p.69.
 
 klin:	{jajlo'}
@@ -3692,8 +3706,8 @@ def:	[KGT]
 cat:	music
 
 klin:	{janluq pIqarD}
-sve:	«Jean­Luc Picard» (namn)
-eng:	«Jean­Luc Picard» (name)
+sve:	«Jean-Luc Picard» (namn)
+eng:	«Jean-Luc Picard» (name)
 def:	[S25]
 com:	S25 was reprinted in HQ5:3 p.15
 	Word does not follow standard Klingon phonotax.
@@ -3879,7 +3893,7 @@ def:	[KGT]
 
 klin:	{jeQ}
 sve:	vara «självsäker» (v)
-eng:	be <self­confident> (v)
+eng:	be <self-confident> (v)
 def:	[TKD]
 
 klin:	{jeS}
@@ -3907,7 +3921,7 @@ def:	[TKDa]
 
 klin:	{jey'naS}
 sve:	dubbelhövdad yxa, «yxa» med dubbelt blad (s)
-eng:	double­headed ax, <ax> with double head (n)
+eng:	double-headed ax, <ax> with double head (n)
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -3951,7 +3965,7 @@ ref:	[TKW pp.203, 206]
 klin:	{jIj} (1)
 sve:	«samarbeta» (v)
 eng:	«cooperate» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 see:	{yeq}
 
 klin:	{jIj} (2)
@@ -4047,7 +4061,7 @@ eng:	<transport <beam>> (n)
 def:	[TKD]
 
 klin:	{jolpat}
-sve:	«transporter­system» (s)
+sve:	«transporter-system» (s)
 eng:	«transporter system» (n)
 def:	[BoP]
 
@@ -4128,13 +4142,13 @@ def:	[TKD]
 klin:	{jorneb}
 sve:	«stridsspets» (på en torped) (s)
 eng:	<warhead> (of a torpedo) (n)
-def:	[KGT p.57, E­K]
-com:	Spellings alternate: {jornub} in K­E, {jorneb} in E­K.
+def:	[KGT p.57, E-K]
+com:	Spellings alternate: {jornub} in K-E, {jorneb} in E-K.
 
 klin:	{jornub}
 sve:	«stridsspets» (på en torped) (s)
 eng:	«warhead» (of a torpedo) (n)
-def:	[KGT K­E]
+def:	[KGT K-E]
 
 klin:	{jorwI'}
 sve:	«sprängämne» (s)
@@ -4190,7 +4204,7 @@ def:	[TKD]
 klin:	{juch}
 sve:	«ha» en «bredd» av (v)
 eng:	«have» a «width» of (v)
-def:	[News 1997­10­22]
+def:	[News 1997-10-22]
 
 klin:	{juH}
 sve:	«hem» (s)
@@ -4257,11 +4271,13 @@ klin:	{laH}
 sve:	«förmåga» (s)
 eng:	<ability> (n)
 def:	[TKD]
+data:	basic
 
 klin:	{laj}
 sve:	«acceptera», «godtaga» (v)
 eng:	<accept> (v)
 def:	[TKD]
+data:	basic
 
 klin:	{laj}
 sve:	«accepterande», «godtagande» (s)
@@ -4472,7 +4488,7 @@ def:	[TKD]
 com:	Entries differ and have been combined here.
 
 klin:	{le'be'}
-sve:	vara «icke­exeptionell», vara «icke­utmärkande» (v)
+sve:	vara «icke-exeptionell», vara «icke-utmärkande» (v)
 eng:	be <unexceptional>, be <nonspecific> (v)
 def:	[KGT]
 
@@ -4555,7 +4571,7 @@ def:	[KGT]
 
 klin:	{lIw}
 sve:	«ersättning», «ersättare», tillfälligt «surrogat» (s)
-eng:	<substitute>, <stand­in>, temporary <surrogate> (n)
+eng:	<substitute>, <stand-in>, temporary <surrogate> (n)
 def:	[KGT]
 see:	{qa'meH}
 
@@ -4650,7 +4666,7 @@ ref:	[TKW p.186]
 
 klin:	{lolSeHcha}
 sve:	«positionskontrollraketer», «lägeskontrollraketer», «styrraketer» (s)
-eng:	<attitude­control «thrusters»> (n)
+eng:	<attitude-control «thrusters»> (n)
 def:	[TKD]
 
 klin:	{lom}
@@ -4825,7 +4841,7 @@ com:	Entries differ and have been combined here.
 klin:	{luH} (1)
 sve:	«rycka» (i), «dra» (i) (v)
 eng:	«yank» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{luH} (2)
 sve:	«få» (någon) att erkänna eller avslöja en hemlighet, «utkräva» ett
@@ -4865,7 +4881,7 @@ ref:	[TKW pp.9, 67]
 klin:	{lung}
 sve:	ett slags «djur», «drake», «~loong~» (ödleliknande) (s)
 eng:	type of <animal>, «dragon», «~loong~» (lizardlike) (n)
-def:	[KGT; KGT p.48-49]
+def:	[KGT; KGT p.48--49]
 
 klin:	{lup}
 sve:	«transportera» (v)
@@ -4965,9 +4981,9 @@ ref:	[TKW p.3]
 
 klin:	{maH}
 sve:	«tio» (nummerbildande element) (räkn)
-eng:	<ten> (number­forming element) (num)
+eng:	<ten> (number-forming element) (num)
 def:	[TKD]
-com:	Number­forming element, see also TKD 5.2.
+com:	Number-forming element, see also TKD 5.2.
 cat:	math
 
 klin:	{maHpIn}
@@ -5151,8 +5167,8 @@ def:	[TKD]
 
 klin:	{ma'veq}
 sve:	ett slags «ceremoniell «kniv»», «~mevak~» (används i
-	~Mauk­To'Vor~­ritualen) (s) 
-eng:	type of «ceremonial «knife»», «~mevak~» (used in the ~Mauk­To'Vor~
+	~Mauk-To'Vor~-ritualen) (s) 
+eng:	type of «ceremonial «knife»», «~mevak~» (used in the ~Mauk-To'Vor~
 	ritual) (n) 
 def:	[MO at ~1998 Praxis~ (recording); STE]
 com:	Seen in the DS9 "Sons of Mogh".
@@ -5338,9 +5354,9 @@ def:	[TKD]
 
 klin:	{mIQ}
 sve:	«steka», «fritera» (v)
-eng:	<fry>, <deep­fry> (v)
+eng:	<fry>, <deep-fry> (v)
 def:	[KGT]
-com:	Entries differ in source. One of the E­K entries is used here.
+com:	Entries differ in source. One of the E-K entries is used here.
 joke:	"Marc nodded, smiling infuriatingly, to confirm {mIQ} (deep fry) as
 	in mIQ-Donald's french fries." (Qov, qep'a' loSDIch)
 
@@ -5385,12 +5401,12 @@ cat:	clothing
 
 klin:	{mIv} (2)
 sve:	flatbottnad «skål» av metall (s) (regionalt)
-eng:	metal flat­bottomed <pot> (n) (regional)
+eng:	metal flat-bottomed <pot> (n) (regional)
 def:	[KGT]
 
 klin:	{mIv bargh}
 sve:	flatbottnad «skål» av metall (s) (regionalt)
-eng:	metal flat­bottomed <pot> (n) (regional)
+eng:	metal flat-bottomed <pot> (n) (regional)
 def:	[KGT]
 data:	phrase
 
@@ -5403,7 +5419,7 @@ klin:	{mIw} (1)
 sve:	«procedur», «process» (s)
 eng:	<procedure>, «process» (n)
 def:	[TKDa]
-com:	¿?Is this a valid word - shouldn't {nab} be used instead, and
+com:	¿?Is this a valid word -- shouldn't {nab} be used instead, and
 	{mIw} be used for "step, stage (in a process)"?
 
 klin:	{mIw} (2)
@@ -5462,7 +5478,7 @@ klin:	{moH} (2)
 sve:	«influera», utöva otillbörligt «inflytande» på (v) (slang)
 eng:	<influence>, <exert undue influence> on (v) (slang)
 def:	[KGT]
-com:	Entries differ in source. One of the E­K entries is used
+com:	Entries differ in source. One of the E-K entries is used
 	here.
 
 klin:	{moHaq}
@@ -5479,13 +5495,13 @@ ref:	[TKW pp.5, 177]
 klin:	{mojaq}
 sve:	«suffix» (s)
 eng:	«suffix» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 see:	{mojaQ} (probably incorrect form)
 
 klin:	{mojaQ}
 sve:	«suffix» (s)
 eng:	<suffix> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 com:	DON'T USE THIS WORD.
 see:	{mojaQ} (probably correct form)
 
@@ -5541,7 +5557,7 @@ eng:	<sphere> (n)
 def:	[TKD]
 
 klin:	{moQ} (2)
-sve:	¿?spikförsedd «knapp» på «~d'k tahg~»­kniv (s)
+sve:	¿?spikförsedd «knapp» på «~d'k tahg~»-kniv (s)
 eng:	spiked «pommel» of a «~d'k tahg~» knife (n)
 def:	[KGT p.61]
 
@@ -5649,7 +5665,7 @@ sve:	«mugato» (s)
 eng:	<mugato> (n)
 def:	[TKD]
 com:	"One of the more notable native animal forms on Neural [Zeta
-	Boötis III] is the mugato, a large, white, ape­like creature
+	Boötis III] is the mugato, a large, white, ape-like creature
 	with dorsal spines and a cranial horn. The mugato are
 	monogamous, mating for life. Little or no provocation will
 	spark an attack by this hostile creature, whose bite is
@@ -5661,14 +5677,14 @@ com:	"One of the more notable native animal forms on Neural [Zeta
 	says:] The native inhabitants of the planet are humanoid,
 	possibly the descendants of a Centaurian exploration mission
 	that disappeared in the area some two hundred years ago. The
-	population was once one of tranquil, peace­loving hunters,
+	population was once one of tranquil, peace-loving hunters,
 	but a serious breach of the Prime Directive has resulted in
 	their development of war and comparatively advanced
 	projectile weapons. Direct Klingon interference, countered
 	by Federation involvement, has divided the inhabitants into
 	five major factions, each of which is feuding with the other
 	four." See also illustration. [Star Trek: The Worlds Of The
-	Federation, pp.140-141]
+	Federation, pp.140--141]
 
 klin:	{mughwI'}
 sve:	«översättare» (s)
@@ -5684,7 +5700,7 @@ ref:	[TKW p.136]
 klin:	{muj}
 sve:	ha «fel», vara «fel» (v)
 eng:	be «wrong» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{mul}
 sve:	vara «envis» (v)
@@ -5842,8 +5858,8 @@ def:	[TKDa]
 klin:	{naDev}
 sve:	«här», «häromkring» (s)
 eng:	<here>, hereabouts (n)
-def:	[TKD 3.3.5 (p.27-28) et al.]
-com:	Locative word, never followed by {­Daq} [TKD 3.3.5 (p.27-28)].
+def:	[TKD 3.3.5 (p.27--28) et al.]
+com:	Locative word, never followed by {-Daq} [TKD 3.3.5 (p.27--28)].
 cat:	locative
 
 klin:	{naDHa'}
@@ -5858,7 +5874,7 @@ def:	[TKDa 4.2.9 (p.176)]
 
 klin:	{naDqa'ghach}
 sve:	¿?«återbefordran» (s)
-eng:	«re­commendation» (n)
+eng:	«re-commendation» (n)
 def:	[TKDa 4.2.9 (p.176)]
 
 klin:	{naD tetlh}
@@ -6047,12 +6063,12 @@ def:	[TKD]
 klin:	{naw'}
 sve:	¿?«tillträda», «komma åt», ha tillgång till (v)
 eng:	«access» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{naw'}
 sve:	«tillträde», «åtkomst» (s)
 eng:	<access> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 
 klin:	{nay}
 sve:	«gifta» sig med (hustru gör detta) (v)
@@ -6140,7 +6156,7 @@ def:	[TKD]
 
 klin:	{nen}
 sve:	vara «mogen», vara «vuxen» (v)
-eng:	be <mature>, be <grown­up>, be <adult> (v)
+eng:	be <mature>, be <grown-up>, be <adult> (v)
 def:	[KGT]
 ref:	[TKW p.177]
 
@@ -6153,7 +6169,7 @@ klin:	{nenchoH}
 sve:	«mogna», «växa upp» (v)
 eng:	<mature>, <grow up> (v)
 def:	[KGT]
-com:	Entries differ in source. The K­E entry is used here.
+com:	Entries differ in source. The K-E entry is used here.
 
 klin:	{nenghep}
 sve:	«Uppstigandets ålder» (Age of Ascension) (s)
@@ -6195,21 +6211,21 @@ def:	[TKD]
 
 klin:	{netlh}
 sve:	«tiotusen» (nummerbildande element) (räkn)
-eng:	<ten thousand> (number­forming element) (num)
+eng:	<ten thousand> (number-forming element) (num)
 def:	[TKD]
-com:	Number­forming element, see also TKD 5.2.
+com:	Number-forming element, see also TKD 5.2.
 cat:	math
 
 klin:	{nevDagh}
 sve:	en slags «skål» med handtag (används vid matberedning) (s)
 eng:	type of <pot> with handles (used for food preparation) (n)
 def:	[KGT]
-com:	Entries differ in source. The K­E entry is used here.
+com:	Entries differ in source. The K-E entry is used here.
 
 klin:	{ne'}
 sve:	«assistent», «betjänt» (rang) (s)
 eng:	«yeoman» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{nIb}
 sve:	vara «identisk» (v)
@@ -6307,7 +6323,7 @@ data:	phrase
 
 klin:	{nISwI' HIch}
 sve:	«disruptorpistol», handhållen disruptor (s)
-eng:	<disruptor pistol>, hand­held disruptor (n)
+eng:	<disruptor pistol>, hand-held disruptor (n)
 def:	[KGT]
 data:	phrase
 
@@ -6409,7 +6425,7 @@ def:	[TKD; TKW pp.131, 129]
 klin:	{nogh}
 sve:	«vrida», «slingra», «sno» (v)
 eng:	«writhe» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{noH}
 sve:	«bedömma», «uppskatta» (v)
@@ -6657,15 +6673,15 @@ eng:	<Neural> (n)
 def:	[TKD]
 com:	"Federation Catalog Name is Zeta Boötis III. This Class M
 	world is the third of ten that orbit a brilliant,
-	moderate­size yellow star in a binary system. The planet is
-	quite Earth­like, with vast oceans and desert, moderate, and
+	moderate-size yellow star in a binary system. The planet is
+	quite Earth-like, with vast oceans and desert, moderate, and
 	tropical climate zones. Neural is the only planet in the Zeta
 	Boötis system to have a moon, which has been named Asetia by
 	the native population of Neural's lower desert. The native
 	inhabitants of the planet are humanoid, possibly the
 	descendants of a Centaurian exploration mission that
 	disappeared in the area some two hundred years ago. The
-	population was once one of tranquil, peace­loving hunters,
+	population was once one of tranquil, peace-loving hunters,
 	but a serious breach of the Prime Directive has resulted in
 	their development of war and comparatively advanced
 	projectile weapons. Direct Klingon interference, countered by
@@ -6673,7 +6689,7 @@ com:	"Federation Catalog Name is Zeta Boötis III. This Class M
 	major factions, each of which is feuding with the other four.
 	One of the more notable native animal forms on is the
 	mugato." [Star Trek: The Worlds Of The Federation,
-	pp.140-141]
+	pp.140--141]
 
 klin:	{nuralngan}
 sve:	«neuralnes» (s)
@@ -6766,7 +6782,7 @@ def:	[KGT]
 klin:	{ngav}
 sve:	«skriv«kramp»» (s)
 eng:	«writer's «cramp»» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{ngawDeq}
 sve:	«omrörnings«pinne»» med tillplattad, paddelliknande ände (s)
@@ -6998,7 +7014,7 @@ def:	[TKD]
 klin:	{ngugh}
 sve:	«då», «vid» den tiden (adv)
 eng:	«then», «at» that time (adv)
-def:	[News 1999­11­05]
+def:	[News 1999-11-05]
 
 klin:	{ngujlep}
 sve:	«munstycke» (på blåsinstrument) (s)
@@ -7200,8 +7216,8 @@ def:	[TKD; BoP]
 klin:	{pa'} (2)
 sve:	«där», där borta, däromkring (s)
 eng:	<there>, over there, thereabouts (n)
-def:	[TKD 3.3.5 (p.27-28) et al.]
-com:	Locative word, never followed by {­Daq} [TKD 3.3.5 (p.27-28)].
+def:	[TKD 3.3.5 (p.27--28) et al.]
+com:	Locative word, never followed by {-Daq} [TKD 3.3.5 (p.27--28)].
 cat:	locative
 
 klin:	{pa'} (3)
@@ -7212,7 +7228,7 @@ def:	[KGT]
 klin:	{pa' beb}
 sve:	inner«tak» (i ett rum högst upp en byggnad eller konstruktion) (s)
 eng:	«ceiling» (of a room on the top story of a structure) (n)
-def:	[News 1998­12­07; HQ8:3 p.2]
+def:	[News 1998-12-07; HQ8:3 p.2]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
 see:	{rav'eq}
 data:	phrase
@@ -7220,7 +7236,7 @@ data:	phrase
 klin:	{pa' reD}
 sve:	insida av ytter«vägg» (s)
 eng:	interior face of exterior «wall» (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 data:	phrase
 
 klin:	{peb'ot}
@@ -7308,7 +7324,7 @@ data:	phrase; {chem} (n)
 klin:	{per}
 sve:	«beteckna», «fastställa», «specificera», «namnge» (v)
 eng:	<label>, «ascertain», «specify» (v)
-def:	[TKD; News 1999­02­02]
+def:	[TKD; News 1999-02-02]
 com:	¿?What does this word really mean? (Check swedish translation.)
 
 klin:	{per}
@@ -7425,7 +7441,7 @@ def:	[KGT]
 klin:	{pIn tlhoy'}
 sve:	territorial«mur» (t.ex. Berlinmuren) (s)
 eng:	territorial «wall» (e.g. Berlin Wall) (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 data:	phrase
 
 klin:	{pIn'a'}
@@ -7492,7 +7508,7 @@ def:	[TKD]
 klin:	{pIvlob}
 sve:	«warpfaktor» (s)
 eng:	«warp factor» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 ref:	[BoP]
 com:	Numbers are placed after when giving speed: {pIvlob vagh} "warp
 	factor five".
@@ -7532,7 +7548,7 @@ def:	[TKD]
 klin:	{poDmoH}
 sve:	«klippa» av, «korta» av (v)
 eng:	<clip> (v)
-def:	[TKD E­K]
+def:	[TKD E-K]
 
 klin:	{pogh}
 sve:	«handske» (s)
@@ -7694,12 +7710,12 @@ def:	[TKD]
 klin:	{pujmoH}
 sve:	«försvaga» (v)
 eng:	«weaken» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{pujwI'}
 sve:	«vekling», «klen» stackare, «vek» person (s)
 eng:	«weakling», «weak» one (n)
-def:	[TKD K­E; TKW p.24]
+def:	[TKD K-E; TKW p.24]
 
 klin:	{pum} (1)
 sve:	«anklaga» (v)
@@ -7758,7 +7774,7 @@ cat:	family
 klin:	{puq chonnaQ}
 sve:	«gaffel» (s)
 eng:	«fork» (n)
-def:	[News 1998­05­05]
+def:	[News 1998-05-05]
 data:	phrase
 
 klin:	{puq Hol}
@@ -7829,7 +7845,7 @@ def:	[TKD]
 klin:	{puy}
 sve:	«krasha», «haverera», «ödelägga» (v)
 eng:	«wreck» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{puyjaq}
 sve:	«nova» (s)
@@ -7842,28 +7858,28 @@ eng:	<phaser> (n)
 def:	[TKD]
 
 klin:	{pu'beH}
-sve:	«phaser­gevär» (s)
+sve:	«phaser-gevär» (s)
 eng:	<phaser rifle> (n)
 def:	[TKD]
 
 klin:	{pu'bej}
-sve:	«phaser­gevär» (s)
+sve:	«phaser-gevär» (s)
 eng:	«phaser rifle» (n)
 def:	[KGT p.56]
 com:	Probably {pu'beH} misspelled.
 
 klin:	{pu'beq}
-sve:	«phaser­manskap» (s)
+sve:	«phaser-manskap» (s)
 eng:	<phaser crew> (n)
 def:	[TKD]
 
 klin:	{pu'DaH}
-sve:	«phaser­batteri», «phaser­uppsättning» (s)
+sve:	«phaser-batteri», «phaser-uppsättning» (s)
 eng:	<phaser banks> (n)
 def:	[TKD]
 
 klin:	{pu'HIch}
-sve:	«phaser­pistol» (s)
+sve:	«phaser-pistol» (s)
 eng:	<phaser pistol> (n)
 def:	[TKD]
 
@@ -7912,7 +7928,7 @@ eng:	<interrupt> (v)
 def:	[TKD]
 
 klin:	{qagh}
-sve:	«orm­mask» (som mat), «~gagh~» (s)
+sve:	«orm-mask» (som mat), «~gagh~» (s)
 eng:	<serpent worm> (as food), «~gagh~» (n)
 def:	[TKDa]
 ref:	[TKW pp.137, 141]
@@ -8032,7 +8048,7 @@ ref:	[TKW pp.127, 155]
 klin:	{qat} (1)
 sve:	«svepa in», «omsvepa», «innesluta» (v)
 eng:	«wrap», <encase> (v)
-def:	[TKD K­E; KGT]
+def:	[TKD K-E; KGT]
 
 klin:	{qat} (2)
 sve:	«ackompanjera» (sång) med instrumental musik (v)
@@ -8091,7 +8107,7 @@ eng:	<replacement> (permanent) (n)
 def:	[HQ5:1 p.10; KGT]
 com:	HQ: "...something that takes over for or is used instead of
 	something that is gone or that has been lost. It is not used
-	for a temporary substitute or stand­in; the word for that is
+	for a temporary substitute or stand-in; the word for that is
 	{lIw}."
 
 klin:	{qa'meH vIttlhegh}
@@ -8106,8 +8122,8 @@ eng:	<Genesis> (n)
 def:	[TKD]
 
 klin:	{qa'vaQ}
-sve:	«käpp­och­tunnbands­övning», «~qa'vak~» (traditionell lek) (s)
-eng:	«hoop­and­stick maneuver», «~qa'vak~» (traditional game) (n)
+sve:	«käpp-och-tunnbands-övning», «~qa'vak~» (traditionell lek) (s)
+eng:	«hoop-and-stick maneuver», «~qa'vak~» (traditional game) (n)
 def:	[KGT]
 ref:	[TKW p.199]
 
@@ -8159,7 +8175,7 @@ klin:	{qelI'qam}
 sve:	«längd«enhet»», «~kellicam~» (cirka 2 «kilometer») (s)
 eng:	«unit» of linear «measure», <~kellicam~> (about 2 «kilometer»s) (n)
 def:	[TKD; STE]
-com:	Incorrect spelled {quelI'qam} in TKD E­K.
+com:	Incorrect spelled {quelI'qam} in TKD E-K.
 
 klin:	{qem}
 sve:	«hämta», «ta med» (sig) (v)
@@ -8175,7 +8191,7 @@ def:	[TKD]
 klin:	{qen}
 sve:	«nyligen», för ett litet tag sedan, alldeles «nyss» (adv)
 eng:	«recently», a short time ago (adv)
-def:	[News 1999­02­02]
+def:	[News 1999-02-02]
 
 klin:	{qeng}
 sve:	«bära», «medföra», «forsla» (v)
@@ -8247,7 +8263,7 @@ sve:	«kevas» (s)
 eng:	<kevas> (n)
 def:	[TKD]
 com:	STE: "Kevas. Gemstone traded on planet Organia."
-	TOS "Errand of Mercy", DS9 "Trials and Tribble­ations"
+	TOS "Errand of Mercy", DS9 "Trials and Tribble-ations"
 
 klin:	{qevpob}
 sve:	«käke», «kind» (s)
@@ -8371,7 +8387,7 @@ eng:	be <possible> (v)
 def:	[TKDa]
 
 klin:	{qItI'nga'}
-sve:	«~K'Tinga~­klass» (av farkost) (s)
+sve:	«~K'Tinga~-klass» (av farkost) (s)
 eng:	<~K'Tinga~ class> (vessel) (n)
 def:	[KGT]
 
@@ -8389,7 +8405,7 @@ ref:	[TKW p.174]
 cat:	body part
 
 klin:	{qIvo'rIt}
-sve:	«~K'Vort~­klass» (av farkost) (s)
+sve:	«~K'Vort~-klass» (av farkost) (s)
 eng:	<~K'Vort~ class> (vessel) (n)
 def:	[KGT]
 
@@ -8668,7 +8684,7 @@ eng:	type of hand <weapon>, «~kut'luch~» (traditional assassin's knife) (n)
 def:	[TKDa; TKW p.103; STE]
 
 klin:	{qutluch tay}
-sve:	«~Kut'luch~­ceremoni» (s)
+sve:	«~Kut'luch~-ceremoni» (s)
 eng:	«~Kut'luch~ ceremony» (n)
 def:	[KGT p.62]
 data:	phrase
@@ -8780,7 +8796,7 @@ eng:	type of <animal>, <~kradge~> (n)
 def:	[KGT]
 
 klin:	{Qaj tlhuQ}
-sve:	en slags «mat», «~kradge~­svans» (s)
+sve:	en slags «mat», «~kradge~-svans» (s)
 eng:	type of <food>, «~kradge~ tail» (n)
 def:	[KGT]
 data:	phrase
@@ -8870,7 +8886,7 @@ sve:	«förstöra» (v)
 eng:	<destroy> (v)
 def:	[TKD]
 ref:	[TKW p.211]
-com:	Incorrectly listed as noun in K­E (noted in HQ4:1 p.7 and
+com:	Incorrectly listed as noun in K-E (noted in HQ4:1 p.7 and
 	verified as a verb by useage in TKD p.49 and TKW p.211).
 
 klin:	{Qay}
@@ -8965,7 +8981,7 @@ def:	[TKD 5.6 (p.58)]
 
 klin:	{Qenvob}
 sve:	mald, torkad «blandning» för tétillagning, «téblandning» (s)
-eng:	ground­up, dried­up <mixture> for brewing tea, <tea­brewing mixture> (n)
+eng:	ground-up, dried-up <mixture> for brewing tea, <tea-brewing mixture> (n)
 def:	[KGT]
 com:	Entries differ and have been combined here.
 
@@ -9018,7 +9034,7 @@ def:	[TKD]
 klin:	{QID}
 sve:	«såra» (v)
 eng:	«wound» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{QIghpej}
 sve:	¿?klingonsk «pinare», «pinosond» (s)
@@ -9080,9 +9096,9 @@ def:	[TKD]
 
 klin:	{QIS}
 sve:	vågbladig «kniv» (s)
-eng:	wavy­bladed <knife> (n)
+eng:	wavy-bladed <knife> (n)
 def:	[KGT]
-joke:	There is a type of wavy­bladed knife called "kris", or "creese".
+joke:	There is a type of wavy-bladed knife called "kris", or "creese".
 
 klin:	{QIt}
 sve:	«långsamt» (adv)
@@ -9168,7 +9184,7 @@ def:	[KGT]
 klin:	{Qoj}
 sve:	starta «krig» (v)
 eng:	make <war> (v)
-def:	[TKD K­E; KGT]
+def:	[TKD K-E; KGT]
 
 klin:	{Qol}
 sve:	«stråla» bort, «beama» iväg (v)
@@ -9179,7 +9195,7 @@ klin:	{Qom} (1)
 sve:	uppleva ett «jordskred» eller «skalv» (v)
 eng:	experience an <earthquake> or <tremor> (v)
 def:	[TKD]
-com:	Entries differ in source. K­E entry is used here.
+com:	Entries differ in source. K-E entry is used here.
 
 klin:	{Qom} (2)
 sve:	vara «riskfylld», vara «riskabel», vara «förrädisk», vara «opålitlig» (v)
@@ -9206,7 +9222,7 @@ ref:	[TKW p.40]
 klin:	{Qop} (1)
 sve:	vara «utsliten» (v)
 eng:	be <worn> out (v)
-def:	[TKD K­E; KGT]
+def:	[TKD K-E; KGT]
 
 klin:	{Qop} (2)
 sve:	vara «död» (om mat) (v) (slang)
@@ -9216,7 +9232,7 @@ def:	[KGT]
 klin:	{QopmoH}
 sve:	«slita ut» (v)
 eng:	«wear out» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{QoQ}
 sve:	«musik» (s)
@@ -9235,7 +9251,7 @@ klin:	{Qor}
 sve:	«slåss», «strida» (väldigt litet slagsmål) (v)
 eng:	<fight>, <battle> (very minor fight) (v)
 def:	[KGT]
-com:	Entries differ somewhat in source. The K­E version is used here.
+com:	Entries differ somewhat in source. The K-E version is used here.
 
 klin:	{Qorgh}
 sve:	«ta hand om», «bry sig om» (v)
@@ -9265,7 +9281,7 @@ eng:	«Krotmag» (name)
 def:	[KGT p.17]
 
 klin:	{Qotmagh Sep}
-sve:	«Krotmag­regionen» (s)
+sve:	«Krotmag-regionen» (s)
 eng:	«Krotmag region» (n)
 def:	[KGT p.17]
 data:	phrase
@@ -9288,7 +9304,7 @@ ref:	[TKW pp.31, 195]
 com:	TKW p.31: "The verb {Qoy} means 'hear,' not just 'listen.'
 	One must actually percieve and understand that which is being
 	said."
-	TKW p.195: used with sentence­as­object construction.
+	TKW p.195: used with sentence-as-object construction.
 
 klin:	{Qo'}
 sve:	«nej», det tänker jag inte, jag «vägra»r, jag håller inte med (interj)
@@ -9380,7 +9396,7 @@ def:	[TKD]
 klin:	{Qun}
 sve:	«gud», «övernaturlig varelse» (s)
 eng:	«god», «supernatural being» (n)
-def:	[News 1999­07­19]
+def:	[News 1999-07-19]
 
 klin:	{Qup}
 sve:	vara «ung» (v)
@@ -9434,12 +9450,12 @@ com:	CK: "This is something you might hear someone say in moments
 klin:	{rach}
 sve:	«stärka», «styrka», «liva» (upp), «stimulera» (v)
 eng:	«invigorate», «fortify», «strengthen» (v)
-def:	[News 1998­10­20]
+def:	[News 1998-10-20]
 
 klin:	{rachwI'}
 sve:	«sjuksköterska», «sjukskötare» (s)
 eng:	«nurse» (n)
-def:	[News 1998­10­20]
+def:	[News 1998-10-20]
 
 klin:	{raD}
 sve:	«tvinga», «nödga», «driva» (v)
@@ -9523,12 +9539,12 @@ def:	[TKD]
 klin:	{rav'eq}
 sve:	inner«tak» (i ett rum med ett rum till ovanför) (s)
 eng:	«ceiling» (of a room that has a room above it) (n)
-def:	[News 1998­12­07; HQ8:3 p.2]
+def:	[News 1998-12-07; HQ8:3 p.2]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
 see:	{pa' beb}
 
 klin:	{ray'}
-sve:	«mål»(­tavlor) (plural) (s)
+sve:	«mål»(-tavlor) (plural) (s)
 eng:	<targets> (n)
 def:	[TKD]
 see:	{DoS} (singular form)
@@ -9558,7 +9574,7 @@ def:	[TKD]
 klin:	{reD}
 sve:	ytter«vägg» (s)
 eng:	exterior «wall» (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 
 klin:	{regh}
 sve:	«blöda» (v)
@@ -9596,7 +9612,7 @@ ref:	[TKW pp.34, 49, 77, 79, 103, 123, 133, 141, 159, 170, 179, 200]
 klin:	{rejmorgh}
 sve:	¿?«ängsling» (ängslig person) (s)
 eng:	«worrywart» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{rep}
 sve:	«timme» (s)
@@ -9647,7 +9663,7 @@ eng:	<energizer> (n)
 def:	[TKD]
 
 klin:	{rIl} (1)
-sve:	«spela» (ett horn­ eller lurinstrument) (v)
+sve:	«spela» (ett horn- eller lurinstrument) (v)
 eng:	«play» (a horn instrument) (v)
 def:	[HQ10:2 p.9]
 com:	This is a brass technique, not a flute technique. Most typically
@@ -9679,7 +9695,7 @@ com:	Entries differ and have been combined here.
 klin:	{rIp}
 sve:	«råd», «rådsförsamling», «representantförsamling» (s)
 eng:	«council», «assembly» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{rIQ}
 sve:	vara «skadad» (v)
@@ -9816,7 +9832,7 @@ klin:	{ropchoH}
 sve:	bli «sjuk», bli «illamående» (v)
 eng:	get «sick», get «ill» (v)
 def:	[TKW p.40]
-com:	¿?Should this word be here? - {rop} is already present.
+com:	¿?Should this word be here? -- {rop} is already present.
 
 klin:	{ropyaH}
 sve:	«sjukhus», «sjukavdelning» (s)
@@ -9898,7 +9914,7 @@ eng:	<fine>, <tax> (v)
 def:	[TKD]
 
 klin:	{ruq'e'vet}
-sve:	«Ruk'evet» (stad i Gevchok­regionen) (s)
+sve:	«Ruk'evet» (stad i Gevchok-regionen) (s)
 eng:	«Ruk'evet» (city in the Gevchok region) (n)
 def:	[KGT pp.17, 30]
 
@@ -9939,7 +9955,7 @@ ref:	[TKW p.184]
 klin:	{rutlh}
 sve:	«hjul» (s)
 eng:	«wheel» (n)
-def:	[News 1999­11­05]
+def:	[News 1999-11-05]
 
 klin:	{ruv}
 sve:	«rättvisa» (s)
@@ -9969,10 +9985,10 @@ ref:	[TKW p.11]
 
 klin:	{SaD}
 sve:	«tusen» (nummerbildande element) (räkn)
-eng:	<thousand> (number­forming element) (num)
+eng:	<thousand> (number-forming element) (num)
 def:	[TKD]
 ref:	[TKW p.127]
-com:	Number­forming element, see also TKD 5.2.
+com:	Number-forming element, see also TKD 5.2.
 cat:	math
 
 klin:	{Sagh}
@@ -10014,9 +10030,9 @@ def:	[TKD]
 
 klin:	{SanID}
 sve:	«tusen» (nummerbildande element) (räkn)
-eng:	<thousand> (number­forming element) (num)
+eng:	<thousand> (number-forming element) (num)
 def:	[TKD]
-com:	Number­forming element, see also TKD 5.2.
+com:	Number-forming element, see also TKD 5.2.
 cat:	math
 
 klin:	{Sang}
@@ -10079,7 +10095,7 @@ eng:	be <shallow>, be <superficial>, be <uncritical> (v) (slang)
 def:	[KGT]
 
 klin:	{SaS} (3)
-sve:	vara «oturlig», vara «icke­bra» (v) (slang)
+sve:	vara «oturlig», vara «icke-bra» (v) (slang)
 eng:	be <unfortunate>, be <not good> (v) (slang)
 def:	[KGT]
 
@@ -10122,7 +10138,7 @@ eng:	<general> (rank) (n)
 def:	[TKD]
 
 klin:	{Sa'Qej Sep}
-sve:	«Sakrej­regionen» (s)
+sve:	«Sakrej-regionen» (s)
 eng:	«Sakrej region» (n)
 def:	[KGT pp.17, 24]
 data:	phrase; {Sa'Qej} (n)
@@ -10341,7 +10357,7 @@ def:	[TKD]
 klin:	{SIv}
 sve:	«undra», «fråga sig», «fundera» (v)
 eng:	«wonder» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{Soch}
 sve:	sjunde «tonen» på den nonatoniska skalan (s)
@@ -10546,7 +10562,7 @@ sve:	vara «modig», vara «heroisk», vara «djärv», vara «dristig», vara
 eng:	be <brave>, be <heroic>, be <bold>, be <valiant>, be <intrepid> (v)
 	(slang) 
 def:	[KGT]
-com:	Entries differ in source. The K­E entry is used here.
+com:	Entries differ in source. The K-E entry is used here.
 
 klin:	{Sub}
 sve:	«hjälte» (s)
@@ -10761,7 +10777,7 @@ cat:	body part
 klin:	{tagha'}
 sve:	«slutligen», till «sist» (adv)
 eng:	«finally», at «last» (adv)
-def:	[News 1999­11­05]
+def:	[News 1999-11-05]
 
 klin:	{taH} (1)
 sve:	vara i «negativ vinkel» (v)
@@ -10847,7 +10863,7 @@ def:	[KGT p.22]
 klin:	{taQ}
 sve:	vara «konstig», vara «knäpp» (v)
 eng:	be «weird» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{taQbang}
 sve:	«avgaser», «utsläpp» (s)
@@ -10886,7 +10902,7 @@ def:	[TKD]
 klin:	{tatlh}
 sve:	«placera» tillbaka, «återbörda», «återlämna» (v)
 eng:	<return> (a thing to its origin or source) (v)
-def:	[News 1999­07­19]
+def:	[News 1999-07-19]
 
 klin:	{tay}
 sve:	vara «civiliserad» (v)
@@ -10955,7 +10971,7 @@ def:	[TKD]
 
 klin:	{tebwI'}
 sve:	«servitris»/«servitör» i en «~Dok'e~» (snabbmatsservering) (s)
-eng:	<food <server>> in a «~Dok'e~» (fast­food restaurant) (n)
+eng:	<food <server>> in a «~Dok'e~» (fast-food restaurant) (n)
 def:	[KGT]
 
 klin:	{teghbat}
@@ -10976,7 +10992,7 @@ def:	[TKD]
 klin:	{tel}
 sve:	«vinge» (s)
 eng:	«wing» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{telun Hovtay'}
 sve:	«Tellunska solsystemet» (s)
@@ -11166,7 +11182,7 @@ def:	[TKD]
 klin:	{tIng}
 sve:	område sydvästerut, område i «sydväst» (s)
 eng:	area southwestward, area towards the «southwest» (n)
-def:	[News 1999­11­21]
+def:	[News 1999-11-21]
 com:	"approx 220 degrees on terran compass" according to the KLI
 	new words list.
 cat:	locative
@@ -11197,7 +11213,7 @@ eng:	type of <animal>, «~tknag~» (n)
 def:	[KGT]
 
 klin:	{tIqnagh lemDu'}
-sve:	en slags «mat», «~tknag~­hovar», (refereras alltid till i
+sve:	en slags «mat», «~tknag~-hovar», (refereras alltid till i
 	plural) (s)
 eng:	type of «food», «~tknag~ hooves», (always referred to in
 	plural) (n)
@@ -11342,7 +11358,7 @@ data:	phrase; {toqvIr} (n)
 klin:	{toQ}
 sve:	en slags «fågel» («rovfågel») (s)
 eng:	type of «bird» (bird of prey) (n)
-def:	[KLI's mailing list 1997­04­04]
+def:	[KLI's mailing list 1997-04-04]
 ref:	[HQ10:4 p.5]
 
 klin:	{toQDuj}
@@ -11448,7 +11464,7 @@ def:	[TKD]
 
 klin:	{tuj muvwI'}
 sve:	«termosutur» (s)
-eng:	«thermo­suture» (n)
+eng:	«thermo-suture» (n)
 def:	[HQ1:3 p.9]
 com:	Article in HQ is called "Additional Vocabulary" and contains
 	the {veS QonoS} list of words.
@@ -11559,7 +11575,7 @@ com:	Entries differ and have been combined here.
 
 klin:	{tu'lum}
 sve:	«tékopp» (s) (äldre ord eller överklassord)
-eng:	<teacup> (n) (older or upper­class word)
+eng:	<teacup> (n) (older or upper-class word)
 def:	[KGT]
 
 klin:	{tu'lu'}
@@ -11671,8 +11687,9 @@ klin:	{tlhej}
 sve:	«sällskapa» med, «vara med» (v)
 eng:	<accompany>, «be with» (v)
 def:	[TKD; TKW pp.161, 173]
-com:	This is labeled as a noun in TKD E­K, but MO corrected
+com:	This is labeled as a noun in TKD E-K, but MO corrected
 	himself in HQ2:4 p.18 (Okrand's notes)
+data:	basic
 
 klin:	{tlher}
 sve:	vara «klimpig», vara full av «klumpar», vara «ojämn» (v)
@@ -11688,7 +11705,7 @@ klin:	{tlhevjaQ}
 sve:	«spjut» kastat dem hjälp av ett särskilt verktyg (s)
 eng:	<spear> thrown with aid of a special tool (n)
 def:	[KGT]
-com:	Entries differ in source. The E­K entry is used here.
+com:	Entries differ in source. The E-K entry is used here.
 
 klin:	{tlhe'}
 sve:	«vända», «svänga», «vrida» (v)
@@ -11773,7 +11790,7 @@ def:	[KGT p.36]
 data:	phrase
 
 klin:	{tlhIng yoS}
-sve:	«Kling­distriktet» (s)
+sve:	«Kling-distriktet» (s)
 eng:	«Kling district» (n)
 def:	[BoP]
 data:	phrase; {tlhIng} (n)
@@ -11859,17 +11876,17 @@ klin:	{tlhoS}
 sve:	«nästan», så gott som, «inte helt» (adv)
 eng:	<almost>, <nearly>, <virtually>, <not quite> (adv)
 def:	[KGT]
-com:	Incorrectly given as verb in E­K, "not quite", adverb everywhere else.
+com:	Incorrectly given as verb in E-K, "not quite", adverb everywhere else.
 
 klin:	{tlhov}
 sve:	«väsa», «rossla» (v)
 eng:	«wheeze» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{tlhoy}
 sve:	alltför mycket, i «överdriven» grad, «för mycket» (adv)
 eng:	«overly», to an «excessive» degree, «too much» (adv)
-def:	[HQ8:3 pp.2-3]
+def:	[HQ8:3 pp.2--3]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
 see:	{'Iq}
 
@@ -11877,12 +11894,12 @@ klin:	{tlhoy'}
 sve:	«vägg», innervägg, insida av yttervägg, territorial«mur» (s)
 eng:	«wall», interior wall, interior face of exterior wall, territorial
 	wall (n) 
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 
 klin:	{tlhoy' SaS}
 sve:	«tak»/«golv» mellan våningar (s)
 eng:	«ceiling»/«floor» between stories (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 data:	phrase
 
 klin:	{tlho'}
@@ -11898,7 +11915,7 @@ def:	[TKDa]
 klin:	{tlho'ren}
 sve:	«volym«enhet»» (cirka en «liter») (s)
 eng:	«unit» of «measure» (about one «quart» or «liter») (n)
-def:	[News 1997­10­22]
+def:	[News 1997-10-22]
 
 klin:	{tlhuch}
 sve:	«tömma», «förbruka», «göra slut» på, «pumpa ut» (v)
@@ -11929,7 +11946,7 @@ def:	[TKD]
 klin:	{tlhup}
 sve:	«viska» (v)
 eng:	«whisper» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{tlhuQ}
 sve:	«svans» (s)
@@ -12071,9 +12088,9 @@ def:	[TKDa]
 
 klin:	{vatlh}
 sve:	«hundra» (nummerbildande element) (räkn)
-eng:	<hundred> (number­forming element) (num)
+eng:	<hundred> (number-forming element) (num)
 def:	[TKD]
-com:	Number­forming element, see also TKD 5.2.
+com:	Number-forming element, see also TKD 5.2.
 cat:	math
 
 klin:	{vatlh DIS poH}
@@ -12163,7 +12180,7 @@ def:	[TKD]
 klin:	{vengHom}
 sve:	«by» (s)
 eng:	«village» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{veng wa'DIch}
 sve:	«Första Staden» (Kronos huvudstad) (s)
@@ -12172,7 +12189,7 @@ def:	[KGT pp.10, 17]
 data:	phrase
 
 klin:	{veng wa'DIch Sep}
-sve:	«Första Stads­regionen» (s)
+sve:	«Första Stads-regionen» (s)
 eng:	«First City region» (n)
 def:	[KGT p.16]
 data:	phrase
@@ -12207,7 +12224,7 @@ def:	[TKDa]
 ref:	[TKW p.189]
 
 klin:	{verengan Ha'DIbaH}
-sve:	«ferengitölp», «ferengi­hund» (s)
+sve:	«ferengitölp», «ferengi-hund» (s)
 eng:	«Ferengi dog» (n)
 def:	[KCD]
 com:	According to KCD this is "a classic insult".
@@ -12287,7 +12304,7 @@ data:	phrase; {vIno'va'} (n)
 klin:	{vIng}
 sve:	«gnälla», «jämra» sig, «gny» (v)
 eng:	«whine» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{vIq}
 sve:	«slag», «strid» (som koncept) (s)
@@ -12405,7 +12422,7 @@ eng:	<cure> (v)
 def:	[TKD]
 
 klin:	{voSpegh Sep}
-sve:	«Vospeg­regionen» (s)
+sve:	«Vospeg-regionen» (s)
 eng:	«Vospeg region» (n)
 def:	[KGT p.16]
 data:	phrase; {voSpegh} (n)
@@ -12473,7 +12490,7 @@ def:	[TKD]
 
 klin:	{vutmeH 'un}
 sve:	flatbottnad «skål» för matberedning (s) (regionalt)
-eng:	flat­bottomed <pot> for food preparation (n) (regional)
+eng:	flat-bottomed <pot> for food preparation (n) (regional)
 def:	[KGT]
 data:	phrase
 
@@ -12484,7 +12501,7 @@ def:	[TKD]
 
 klin:	{vut'un}
 sve:	flatbottnad «skål» för matberedning (s) (regionalt)
-eng:	flat­bottomed <pot> for food preparation (n) (regional)
+eng:	flat-bottomed <pot> for food preparation (n) (regional)
 def:	[KGT]
 
 klin:	{vuv}
@@ -12506,7 +12523,7 @@ def:	[TKD]
 klin:	{wab}
 sve:	«ljud», «oljud» (s)
 eng:	«sound», «noise» (n)
-def:	[News 1999­02­02]
+def:	[News 1999-02-02]
 
 klin:	{wagh}
 sve:	vara «dyr» (v)
@@ -12678,12 +12695,12 @@ def:	[TKD 5.5 (p.57) et al.]
 klin:	{wem}
 sve:	«kränka», «bryta emot», «överträda», «störa», «skända» (v)
 eng:	«violate» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{wem}
 sve:	«kränkning», «brott», «överträdelse», «skändning» (s)
 eng:	«violation» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{wen}
 sve:	¿?för ... «månader» sedan (s)
@@ -13051,18 +13068,18 @@ def:	[TKD]
 klin:	{yeq}
 sve:	«samarbeta» (v)
 eng:	<cooperate> (v)
-def:	[TKD E­K]
+def:	[TKD E-K]
 see:	{jIj}
 
 klin:	{yer}
 sve:	«domän», «egendom», «besittning», «territorium» (s)
 eng:	«domain», «holdings», «territory» (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 
 klin:	{yergho}
 sve:	stads«mur» (s)
 eng:	«wall» of a city (n)
-def:	[News 1998­12­07]
+def:	[News 1998-12-07]
 
 klin:	{yev}
 sve:	ta en «paus», stanna upp (v)
@@ -13104,7 +13121,7 @@ def:	[KGT]
 
 klin:	{yIntagh}
 sve:	«livsuppehållande system» (s)
-eng:	<life­support system> (n)
+eng:	<life-support system> (n)
 def:	[TKD]
 
 klin:	{yIntagh}
@@ -13115,7 +13132,7 @@ def:	[TKDa 5.5 (p.178)]
 klin:	{yIQ}
 sve:	vara «våt» (v)
 eng:	be «wet» (v)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{yIrIDngan}
 sve:	«yridian» (person) (s)
@@ -13254,7 +13271,7 @@ eng:	<charge> (military term) (v)
 def:	[TKD]
 
 klin:	{yoy}
-sve:	vara «upp­och­ner» (v)
+sve:	vara «upp-och-ner» (v)
 eng:	be <upside down> (v)
 def:	[TKD]
 
@@ -13307,13 +13324,13 @@ def:	[TKD]
 klin:	{yuQjIjDIvI'}
 sve:	«Förenade «Planetfederationen»» (United Federation of Planets) (s)
 eng:	<United Federation of Planets> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 see:	{yuQjIjQa'}
 
 klin:	{yuQjIjQa'}
 sve:	«Förenade «Planetfederationen»» (United Federation of Planets) (s)
 eng:	«United Federation of Planets» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 see:	{yuQjIjDIvI'}
 
 klin:	{yur}
@@ -13321,7 +13338,7 @@ sve:	«kusinbarn», «tremänning», avlägset «syskonbarn» (syskons
 	barnbarn, syssling etc.) (s)
 eng:	distant «cousin», distant «niece», distant «nephew» (second
 	cousin, grandnephew, etc.) (n)
-def:	[HQ9:3 pp.8-9]
+def:	[HQ9:3 pp.8--9]
 com:	The singular form is never used in place of {tey'} or {lor},
 	but the plural may be used for a group including {tey'}
 	and/or {lor}, as long as there is at least one more distant
@@ -13349,7 +13366,7 @@ def:	[TKD]
 klin:	{yu'egh}
 sve:	«våg» (s)
 eng:	«wave» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{'a}
 sve:	«men», «ändå», «dock», «trots allt», «emellertid» (konj)
@@ -13359,7 +13376,7 @@ def:	[TKD]
 klin:	{'ab}
 sve:	«ha» en «längd»/«höjd» av (v)
 eng:	«have» a «length»/«height» of (v)
-def:	[S32; News 1997­10­22]
+def:	[S32; News 1997-10-22]
 com:	S32 was reprinted in HQ6:2 p.9
 
 klin:	{'ach}
@@ -13371,7 +13388,7 @@ ref:	[TKW pp.59, 186]
 klin:	{'aD}
 sve:	«ha» en «längd» av, «mäta» (v)
 eng:	<have> a <length> of, <measure> (v)
-def:	[KGT; News 1997­10­22]
+def:	[KGT; News 1997-10-22]
 
 klin:	{'aD}
 sve:	«ven», «blodåder» (s)
@@ -13422,12 +13439,12 @@ sve:	ett slags «kniv» (allmän användning) (s)
 eng:	type of <knife> (general purpose) (n)
 def:	[KGT]
 joke:	Marc Okrand really gets going in the KGT section about (kitchen)
-	knives, so this is probably a travesty of all those soap­opera
+	knives, so this is probably a travesty of all those soap-opera
 	commercials: ...And finally, *act now*, and get this small all purpose
 	knife for free...!"
 
 klin:	{'aqroS} (1)
-sve:	«överdel» (under­ eller insidan av överdelen) (s)
+sve:	«överdel» (under- eller insidan av överdelen) (s)
 eng:	«top» (inside or downturned surface) (n)
 def:	[HQ8:3 p.2]
 com:	Article in HQ is called "{matlh juppu' mu'mey}".
@@ -13471,7 +13488,7 @@ def:	[TKD]
 klin:	{'arlogh}
 sve:	«hur många gånger»? (fråg)
 eng:	«how many times»? (ques)
-def:	[News 1999­02­02]
+def:	[News 1999-02-02]
 
 klin:	{'atrom}
 sve:	«A'trom» (namn)
@@ -13526,8 +13543,8 @@ eng:	<brigadier> (n)
 def:	[TKDa]
 
 klin:	{'eDSeHcha}
-sve:	start­/landnings­«raketer» (pluralform) (s)
-eng:	take­off/landing «thrusters» (plural form) (n)
+sve:	start-/landnings-«raketer» (pluralform) (s)
+eng:	take-off/landing «thrusters» (plural form) (n)
 def:	[BoP]
 
 klin:	{'egh}
@@ -13630,7 +13647,7 @@ ref:	[TKW pp.101, 177]
 klin:	{'ev}
 sve:	område nordvästerut, område i «nordväst» (s)
 eng:	area northwestward, area towards the «northwest» (n)
-def:	[News 1999­11­21]
+def:	[News 1999-11-21]
 com:	"320 degrees on terran compass" according to the KLI new
 	words list.
 cat:	locative
@@ -13793,7 +13810,7 @@ def:	[KGT]
 com:	Entries differ and have been combined here.
 
 klin:	{'Iw 'Ip ghomey}
-sve:	«Blodseds­cirklar» (känd skulptur) (namn)
+sve:	«Blodseds-cirklar» (känd skulptur) (namn)
 eng:	«Blood Oath Circles» (famous sculpture) (name)
 def:	[KCD]
 com:	The sculpture was made by {mIStaq}.
@@ -13878,34 +13895,34 @@ def:	[KGT]
 klin:	{'orghen}
 sve:	«Organia» (s)
 eng:	«Organia» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{'orghen rojmab}
 sve:	«Organianska fredsfördraget» (s)
 eng:	«Organian Peace Treaty» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 data:	phrase
 
 klin:	{'orghenya'}
 sve:	«Organia» (s)
 eng:	<Organia> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 
 klin:	{'orghenya'ngan}
 sve:	«organian» (person) (s)
 eng:	<Organian> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 
 klin:	{'orghenya' rojmab}
 sve:	«Organianska fredsfördraget» (s)
 eng:	<Organian Peace Treaty> (n)
-def:	[TKD E­K]
+def:	[TKD E-K]
 data:	phrase
 
 klin:	{'orghengan}
 sve:	«organian» (person) (s)
 eng:	«Organian» (n)
-def:	[TKD K­E]
+def:	[TKD K-E]
 
 klin:	{'oS}
 sve:	«representera» (v)
@@ -13943,7 +13960,7 @@ ref:	[TKW p.43]
 com:	Entries differ and have been combined here.
 
 klin:	{'oy'naQ}
-sve:	¿?«smärtchocks­batong», «smärtstav», «smärtstång» (s)
+sve:	¿?«smärtchocks-batong», «smärtstav», «smärtstång» (s)
 eng:	<painstik> (n)
 def:	[TKDa; STE]
 ref:	[TKW p.205]
@@ -14053,7 +14070,7 @@ def:	[KGT]
 klin:	{'ur}
 sve:	«förråda», «begå» förräderi (v)
 eng:	<treason>, «commit» treason (v)
-def:	[TKDa E­K]
+def:	[TKDa E-K]
 
 klin:	{'urmang}
 sve:	«förräderi» (s)
@@ -14063,7 +14080,7 @@ def:	[TKD]
 klin:	{'urwI'}
 sve:	«förrädare» (s)
 eng:	<traitor> (n)
-def:	[TKDa E­K]
+def:	[TKDa E-K]
 
 klin:	{'uS}
 sve:	«ben» (som man går på) (s)
@@ -14095,9 +14112,9 @@ def:	[TKD]
 
 klin:	{'uy'}
 sve:	«miljon» (nummerbildande element) (räkn)
-eng:	<million> (number­forming element) (num)
+eng:	<million> (number-forming element) (num)
 def:	[TKD]
-com:	Number­forming element, see also TKD 5.2.
+com:	Number-forming element, see also TKD 5.2.
 cat:	math
 
 klin:	{'u'}
@@ -14135,7 +14152,7 @@ klin:	{bo'Degh}
 sve:	«fågel» (s)
 eng:	«bird» (n)
 def:	[HQ10:4 p.4]
-com:	general word for bird­like creature
+com:	general word for bird-like creature
 
 klin:	{cha'bIp}
 sve:	en slags «fågel» (berömd för sin snabbhet) (s)
@@ -14281,7 +14298,7 @@ def:	[HQ10:4 p.5]
 com:	if bird lands on land, use {Saq}, in a tree, use {ngun}
 
 klin:	{vem'eq}
-sve:	en slags «fågel» (livnär sig nästan enbart på den sorts orm­maskar
+sve:	en slags «fågel» (livnär sig nästan enbart på den sorts orm-maskar
 	som ~gagh~ görs av) (s)
 eng:	type of «bird» (feeds almost exclusively on the serpent worm from
 	which ~gagh~ is made) (n)
@@ -14340,7 +14357,7 @@ eng:	be in an «attitude», be in a «stance», be in a «pose» (v)
 def:	[HQ11:2 p.8]
 
 klin:	{lol}
-sve:	en särskild ~Mok'bara~­«position» (s)
+sve:	en särskild ~Mok'bara~-«position» (s)
 eng:	a specific ~Mok'bara~ «position» (n)
 def:	[HQ11:2 p.8]
 
@@ -14390,7 +14407,7 @@ eng:	«pitch» (about aircraft) (v)
 def:	[HQ11:2 p.9]
 com:	"And when the nose of the plane moves up or down, the plane is said
 	to {tor} <pitch>. (the word {tor} also means <kneel>, which Maltz
-	thought was apt, since if a four­legged animal is able to kneel
+	thought was apt, since if a four-legged animal is able to kneel
 	with either its hind legs or its front legs, it is able to pitch or
 	tilt up or down.)" [HQ11:2 p.9]
 
@@ -14425,216 +14442,216 @@ eng:	«angle» (n)
 see:	{taH}
 %%%
 
-=== end­of­word­list ===
-=== start­of­verb­prefix­list ===
+=== end-of-word-list ===
+=== start-of-verb-prefix-list ===
 
-klin:	{­}
-sve:	han/hon/det-ingen/honom/henne/det/dem, de-ingen/dem (vp)
-eng:	he/she/it-none/him/her/it/them, they-none/them (vp)
+klin:	{-}
+sve:	han/hon/det--ingen/honom/henne/det/dem, de--ingen/dem (vp)
+eng:	he/she/it--none/him/her/it/them, they--none/them (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{bI­}
-sve:	du-ingen (vp)
-eng:	you-none (vp)
+klin:	{bI-}
+sve:	du--ingen (vp)
+eng:	you--none (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{bo­}
-sve:	ni-honom/henne/det/dem (vp)
-eng:	you (plural)-him/her/it/them (vp)
+klin:	{bo-}
+sve:	ni--honom/henne/det/dem (vp)
+eng:	you (plural)--him/her/it/them (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{che­}
-sve:	ni-oss (vp)
-eng:	you (plural)-us (vp)
+klin:	{che-}
+sve:	ni--oss (vp)
+eng:	you (plural)--us (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{cho­}
-sve:	du-mig (vp)
-eng:	you-me (vp)
+klin:	{cho-}
+sve:	du--mig (vp)
+eng:	you--me (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{Da­}
-sve:	du-honom/henne/det/dem (vp)
-eng:	you-him/her/it/them (vp)
+klin:	{Da-}
+sve:	du--honom/henne/det/dem (vp)
+eng:	you--him/her/it/them (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{DI­}
-sve:	vi-dem (vp)
-eng:	we-them (vp)
+klin:	{DI-}
+sve:	vi--dem (vp)
+eng:	we--them (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{Du­}
-sve:	han/hon/det-dig (vp)
-eng:	he/she/it-you (vp)
+klin:	{Du-}
+sve:	han/hon/det--dig (vp)
+eng:	he/she/it--you (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{gho­}
-sve:	imperativ: du/ni-oss (vp)
-eng:	imperative: you/you (plural)-us (vp)
+klin:	{gho-}
+sve:	imperativ: du/ni--oss (vp)
+eng:	imperative: you/you (plural)--us (vp)
 def:	[TKD 4.1.2 (p.34)]
 
-klin:	{HI­}
-sve:	imperativ: du/ni-mig (vp)
-eng:	imperative: you/you (plural)-me (vp)
+klin:	{HI-}
+sve:	imperativ: du/ni--mig (vp)
+eng:	imperative: you/you (plural)--me (vp)
 def:	[TKD 4.1.2 (p.34)]
 
-klin:	{jI­}
-sve:	jag-ingen (vp)
-eng:	I-none (vp)
+klin:	{jI-}
+sve:	jag--ingen (vp)
+eng:	I--none (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{ju­}
-sve:	du-oss (vp)
-eng:	you-us (vp)
+klin:	{ju-}
+sve:	du--oss (vp)
+eng:	you--us (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{lI­}
-sve:	han/hon/det/de-er (vp)
-eng:	he/she/it/they-you (plural) (vp)
+klin:	{lI-}
+sve:	han/hon/det/de--er (vp)
+eng:	he/she/it/they--you (plural) (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{lu­}
-sve:	de-honom/henne/det (vp)
-eng:	they-him/her/it (vp)
+klin:	{lu-}
+sve:	de--honom/henne/det (vp)
+eng:	they--him/her/it (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{ma­}
-sve:	vi-ingen (vp)
-eng:	we-none (vp)
+klin:	{ma-}
+sve:	vi--ingen (vp)
+eng:	we--none (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{mu­}
-sve:	han/hon/det/de-mig (vp)
-eng:	he/she/it/they-me (vp)
+klin:	{mu-}
+sve:	han/hon/det/de--mig (vp)
+eng:	he/she/it/they--me (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{nI­}
-sve:	de-dig (vp)
-eng:	they-you (vp)
+klin:	{nI-}
+sve:	de--dig (vp)
+eng:	they--you (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{nu­}
-sve:	han/hon/det/de-oss (vp)
-eng:	he/she/it/they-us (vp)
+klin:	{nu-}
+sve:	han/hon/det/de--oss (vp)
+eng:	he/she/it/they--us (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{pe­}
-sve:	imperativ: ni-ingen (vp)
-eng:	imperative: you (plural)-none (vp)
+klin:	{pe-}
+sve:	imperativ: ni--ingen (vp)
+eng:	imperative: you (plural)--none (vp)
 def:	[TKD 4.1.2 (p.34)]
 
-klin:	{pI­}
-sve:	vi-dig (vp)
-eng:	we-you (vp)
+klin:	{pI-}
+sve:	vi--dig (vp)
+eng:	we--you (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{qa­}
-sve:	jag-dig (vp)
-eng:	I-you (vp)
+klin:	{qa-}
+sve:	jag--dig (vp)
+eng:	I--you (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{re­}
-sve:	vi-er (vp)
-eng:	we-you (plural) (vp)
+klin:	{re-}
+sve:	vi--er (vp)
+eng:	we--you (plural) (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{Sa­}
-sve:	jag-er (vp)
-eng:	I-you (plural) (vp)
+klin:	{Sa-}
+sve:	jag--er (vp)
+eng:	I--you (plural) (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{Su­}
-sve:	ni-ingen (vp)
-eng:	you (plural)-none (vp)
+klin:	{Su-}
+sve:	ni--ingen (vp)
+eng:	you (plural)--none (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{tI­}
-sve:	imperativ: du/ni-dem (vp)
-eng:	imperative: you/you (plural)-them (vp)
+klin:	{tI-}
+sve:	imperativ: du/ni--dem (vp)
+eng:	imperative: you/you (plural)--them (vp)
 def:	[TKD 4.1.2 (p.34)]
 
-klin:	{tu­}
-sve:	ni-mig (vp)
-eng:	you (plural)-me (vp)
+klin:	{tu-}
+sve:	ni--mig (vp)
+eng:	you (plural)--me (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{vI­}
-sve:	jag-honom/henne/det/dem (vp)
-eng:	I-him/her/it/them (vp)
+klin:	{vI-}
+sve:	jag--honom/henne/det/dem (vp)
+eng:	I--him/her/it/them (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{wI­}
-sve:	vi-honom/henne/det (vp)
-eng:	we-him/her/it (vp)
+klin:	{wI-}
+sve:	vi--honom/henne/det (vp)
+eng:	we--him/her/it (vp)
 def:	[TKD 4.1.1 (p.33)]
 
-klin:	{yI­}
-sve:	imperativ: du-ingen/honom/henne/det, ni-honom/henne/det (vp)
-eng:	imperative: you-none/him/her/it, you (plural)-him/her/it (vp)
+klin:	{yI-}
+sve:	imperativ: du--ingen/honom/henne/det, ni--honom/henne/det (vp)
+eng:	imperative: you--none/him/her/it, you (plural)--him/her/it (vp)
 def:	[TKD 4.1.2 (p.34)]
 
-=== end­of­verb­prefix­list ===
-=== start­of­verb­suffix­list ===
+=== end-of-verb-prefix-list ===
+=== start-of-verb-suffix-list ===
 
-klin:	{­ba'}
+klin:	{-ba'}
 sve:	uppenbarligen (vs6)
 eng:	obviously (vs6)
 def:	[TKDa 4.2.6 (p.175)]
 
-klin:	{­beH}
+klin:	{-beH}
 sve:	redo, iordningställd (om apparater) (vs2)
 eng:	ready, set up (referring to devices) (vs2)
 def:	[TKD 4.2.2 (p.36)]
 
-klin:	{­bej}
+klin:	{-bej}
 sve:	definitivt, tveklöst (vs6)
 eng:	certainly, undoubtedly (vs6)
 def:	[TKD 4.2.6 (p.40)]
 
-klin:	{­be'}
+klin:	{-be'}
 sve:	inte (vss)
 eng:	not (vsr)
 def:	[TKD 4.3 (p.46)]
 com:	Comes after the verb or verb suffix in negates.
 
-klin:	{­bogh}
-sve:	som (relativ bisats­markör) (vs9)
-eng:	which (relative­clause marker) (vs9)
+klin:	{-bogh}
+sve:	som (relativ bisats-markör) (vs9)
+eng:	which (relative-clause marker) (vs9)
 def:	[TKD 4.2.9 (p.44), 6.2.3 (p.63)]
 com:	The relative clause modifies a noun. If the relative clause
 	includes another noun, then the head noun is marked with the
-	suffix {­'e'} "topic".
+	suffix {-'e'} "topic".
 
-klin:	{­choH}
+klin:	{-choH}
 sve:	förändring i tillstånd, förändring i riktning (vs3)
 eng:	change in state, change in direction (vs3)
 def:	[TKD 4.2.3 (p.37)]
 
-klin:	{­chugh}
+klin:	{-chugh}
 sve:	om, ifall (vs9)
 eng:	if (vs9)
 def:	[TKD 4.2.9 (p.43), 6.2.2 (p.62)]
 com:	The subordinate clause can occur either before or after the
 	rest of the sentence.
 
-klin:	{­chuq}
+klin:	{-chuq}
 sve:	varandra (vs1)
 eng:	one another (vs1)
 def:	[TKD 4.2.1 (p.36)]
 
-klin:	{­chu'}
+klin:	{-chu'}
 sve:	perfekt, tydligt (vs6)
 eng:	clearly, perfectly (vs6)
 def:	[TKD 4.2.6 (p.40)]
 
-klin:	{­DI'}
+klin:	{-DI'}
 sve:	när, så snart som (vs9)
 eng:	as soon as, when (vs9)
 def:	[TKD 4.2.9 (p.43), 6.2.2 (p.62)]
 com:	The subordinate clause can occur either before or after the
 	rest of the sentence.
 
-klin:	{­ghach}
+klin:	{-ghach}
 sve:	substantiverare (vs9)
 eng:	nominalizer (vs9)
 def:	[TKDa 4.2.9 (p.176)]
@@ -14643,297 +14660,297 @@ com:	Makes a noun out of a verb with one or more suffixes
 	it is strongly suggested that you refrain from using it if at
 	all possible.
 
-klin:	{­Ha'}
+klin:	{-Ha'}
 sve:	negera, göra ogjort (vss)
 eng:	undo (vsr)
 def:	[TKD 4.3 (p.47)]
 com:	Always occurs right after the verb.
 
-klin:	{­jaj}
+klin:	{-jaj}
 sve:	må, månde (konjunktiv) (vs9)
 eng:	may, let (vs9)
-def:	[TKDa 4.2.9 (pp.175-176)]
+def:	[TKDa 4.2.9 (pp.175--176)]
 com:	Express a desire or wish on the part of the speaker that
 	something take place in the future.
 
-klin:	{­laH}
+klin:	{-laH}
 sve:	kan (vs5)
 eng:	can, able (vs5)
 def:	[TKD 4.2.5 (p.39)]
 
-klin:	{­law'}
+klin:	{-law'}
 sve:	antagligen, nog, verkar vara (vs6)
 eng:	seemingly, apparently (vs6)
 def:	[TKD 4.2.6 (p.40)]
 
-klin:	{­lI'}
+klin:	{-lI'}
 sve:	fortskridande, framskridande (vs7)
 eng:	in progress (vs7)
 def:	[TKD 4.2.7 (p.42)]
 
-klin:	{­lu'}
+klin:	{-lu'}
 sve:	indefinit subjekt (vs5)
 eng:	indefinite subject (vs5)
 def:	[TKD 4.2.5 (p.38)]
 
-klin:	{­meH}
+klin:	{-meH}
 sve:	i syfte att, för att (vs9)
-eng:	for, for the purpose of, in order to (purpose­clause marker)
+eng:	for, for the purpose of, in order to (purpose-clause marker)
 	(vs9)
-def:	[TKD 4.2.9 (p.44), 6.2.4 (p.64-65)]
+def:	[TKD 4.2.9 (p.44), 6.2.4 (p.64--65)]
 com:	Entries differ and have been combined here.
 	The purpose clause always precedes the noun or verb whose
 	purpose it is describing.
 
-klin:	{­moH}
+klin:	{-moH}
 sve:	orsaka (vs4)
 eng:	cause (vs4)
 def:	[TKD 4.2.4 (p.38)]
 
-klin:	{­mo'}
+klin:	{-mo'}
 sve:	på grund av (vs9)
 eng:	due to, because of (vs9)
 def:	[TKDa 4.2.9 (p.175)]
-com:	This suffix is used in the same way as the noun suffix {­mo'}
+com:	This suffix is used in the same way as the noun suffix {-mo'}
 	"due to, because of" (TKD 3.5.5).
 
-klin:	{­neS}
+klin:	{-neS}
 sve:	hedrande (vs8)
 eng:	honorific (vs8)
 def:	[TKD 4.2.8 (p.43)]
 
-klin:	{­nIS}
+klin:	{-nIS}
 sve:	behöver (vs2)
 eng:	need (vs2)
 def:	[TKD 4.2.2 (p.36)]
 
-klin:	{­pa'}
+klin:	{-pa'}
 sve:	innan, före (vs9)
 eng:	before (vs9)
 def:	[TKD 4.2.9 (p.43)]
 ref:	[TKW pp.32, 93, 117]
-com:	It seems logical that a subordinate clause with {­pa'} (like
-	subordinate clauses with {­DI'}, {-chugh} and {-vIS}) should
+com:	It seems logical that a subordinate clause with {-pa'} (like
+	subordinate clauses with {-DI'}, {-chugh} and {-vIS}) should
 	be able to occur both before and after the main verb, however
 	in canon I have found no example where a subordinate clause
-	with {­pa'} comes after the main verb.
+	with {-pa'} comes after the main verb.
 
-klin:	{­pu'}
+klin:	{-pu'}
 sve:	perfektiv (vs7)
 eng:	perfective (vs7)
 def:	[TKD 4.2.7 (p.41)]
 
-klin:	{­qang}
+klin:	{-qang}
 sve:	villig (vs2)
 eng:	willing (vs2)
 def:	[TKD 4.2.2 (p.36)]
 
-klin:	{­qa'}
+klin:	{-qa'}
 sve:	återuppta, göra igen (vs3)
 eng:	resume, do again (vs3)
 def:	[TKD 4.2.3 (p.37)]
 
-klin:	{­qu'}
+klin:	{-qu'}
 sve:	emfatiskt, framhävande (vss)
 eng:	emphatic (vsr)
 def:	[TKD 4.3 (p.48)]
 com:	Comes after the verb or verb suffix it emphasizes or affirms.
 
-klin:	{­Qo'}
+klin:	{-Qo'}
 sve:	gör inte!, tänker inte (vss)
 eng:	don't!, won't (vsr)
 def:	[TKD 4.3 (p.47)]
 com:	Always occur last, unless followed by type 9 suffix.
 
-klin:	{­rup}
+klin:	{-rup}
 sve:	redo, förberedd (om varelser) (vs2)
 eng:	ready, prepared (referring to beings) (vs2)
 def:	[TKD 4.2.2 (p.36)]
 
-klin:	{­taH}
+klin:	{-taH}
 sve:	pågående (vs7)
 eng:	continuous (vs7)
 def:	[TKD 4.2.7 (p.42)]
 
-klin:	{­ta'}
+klin:	{-ta'}
 sve:	utfört, gjort (vs7)
 eng:	accomplished, done (vs7)
 def:	[TKD 4.2.7 (p.41)]
 
-klin:	{­vIp}
+klin:	{-vIp}
 sve:	rädd (vs2)
 eng:	afraid (vs2)
 def:	[TKD 4.2.2 (p.37)]
 
-klin:	{­vIS}
+klin:	{-vIS}
 sve:	medan (vs9)
 eng:	while (vs9)
 def:	[TKD 4.2.9 (p.43), 6.2.2 (p.63)]
 com:	The subordinate clause can occur either before or after the
-	rest of the sentence. The suffix {­vIS} is always used along
-	with the Type 7 suffix {­taH} (e.g. {qaStaHvIS} "while it
+	rest of the sentence. The suffix {-vIS} is always used along
+	with the Type 7 suffix {-taH} (e.g. {qaStaHvIS} "while it
 	happened").
 
-klin:	{­wI'}
+klin:	{-wI'}
 sve:	en som gör, sak som gör, en som är (vs9)
 eng:	one who is, one who does, thing which is, thing which does
 	(vs9)
 def:	[TKD 3.2.2 (p.19), 4.2.9 (p.44), pp.164, 168]
 com:	Entries differ and have been combined here.
 
-klin:	{­'a'}
+klin:	{-'a'}
 sve:	interrogativ (vs9)
 eng:	interrogative (vs9)
 def:	[TKD 4.2.9 (p.44)]
 com:	Indicates that a sentence is a yes/no question.
 
-klin:	{­'egh}
+klin:	{-'egh}
 sve:	sig själv (vs1)
 eng:	oneself (vs1)
 def:	[TKD 4.2.1 (p.35)]
 
-=== end­of­verb­suffix­list ===
-=== start­of­noun­suffix­list ===
+=== end-of-verb-suffix-list ===
+=== start-of-noun-suffix-list ===
 
-klin:	{­chaj}
+klin:	{-chaj}
 sve:	deras (ss4)
 eng:	their (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­Daj}
+klin:	{-Daj}
 sve:	hans, hennes, dess (ss4)
 eng:	his, her, its (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­Daq}
+klin:	{-Daq}
 sve:	lokativ (ss5)
 eng:	locative (ns5)
 def:	[TKD 3.3.5 (p.27)]
 
-klin:	{­Du'}
+klin:	{-Du'}
 sve:	plural (kroppsdel) (ss2)
 eng:	plural (body part) (ns2)
 def:	[TKD 3.3.2 (p.23)]
 
-klin:	{­Hey}
+klin:	{-Hey}
 sve:	synbar, skenbar (ss3)
 eng:	apparent (ns3)
 def:	[TKD 3.3.3 (p.24)]
 
-klin:	{­Hom}
+klin:	{-Hom}
 sve:	diminutiv (ss1)
 eng:	diminutive (ns1)
 def:	[TKD 3.3.1 (p.21)]
 
-klin:	{­lIj}
+klin:	{-lIj}
 sve:	din, ditt (ss4)
 eng:	your (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­lI'}
+klin:	{-lI'}
 sve:	din, ditt (substantiv förmöget till språk) (ss4)
 eng:	your (noun capable of using language) (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­maj}
+klin:	{-maj}
 sve:	vår, vårt (ss4)
 eng:	our (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­ma'}
+klin:	{-ma'}
 sve:	vår, vårt (substantiv förmöget till språk) (ss4)
 eng:	our (noun capable of using language) (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­mey}
+klin:	{-mey}
 sve:	plural (generellt) (ss2)
 eng:	plural (general) (ns2)
 def:	[TKD 3.3.2 (p.23)]
 
-klin:	{­mo'}
+klin:	{-mo'}
 sve:	på grund av, beroende på (ss5)
 eng:	due to, because of (ns5)
 def:	[TKD 3.3.5 (p.28)]
 
-klin:	{­na'}
+klin:	{-na'}
 sve:	definitiv (ss3)
 eng:	definite (ns3)
 def:	[TKD 3.3.3 (p.25)]
 
-klin:	{­oy}
+klin:	{-oy}
 sve:	affektion (ss1)
 eng:	endearment (ns1)
 def:	[TKDa 3.3.1 (p.174)]
 
-klin:	{­pu'}
+klin:	{-pu'}
 sve:	plural (varelser förmögna till språk) (ss2)
 eng:	plural (beings capable of using language) (ns2)
 def:	[TKD 3.3.2 (p.22)]
 
-klin:	{­qoq}
+klin:	{-qoq}
 sve:	så kallad (ss3)
-eng:	so­called (ns3)
+eng:	so-called (ns3)
 def:	[TKD 3.3.3 (p.24)]
 
-klin:	{­raj}
+klin:	{-raj}
 sve:	er, ert (ss4)
 eng:	your (plural) (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­ra'}
+klin:	{-ra'}
 sve:	er, ert (substantiv förmöget till språk) (ss4)
 eng:	your (plural) (noun capable of using language) (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­vaD}
+klin:	{-vaD}
 sve:	för, avsedd för (ss5)
 eng:	for, intended for (ns5)
 def:	[TKD 3.3.5 (p.28); TKDa 6.8 (p.180)]
 com:	Used to indicate indirect objects. 
 
-klin:	{­vam}
+klin:	{-vam}
 sve:	den här, de här (ss4)
 eng:	this (ns4)
 def:	[TKD 3.3.4 (p.26)]
 
-klin:	{­vetlh}
+klin:	{-vetlh}
 sve:	den där, de där (ss4)
 eng:	that (ns4)
 def:	[TKD 3.3.4 (p.26)]
 
-klin:	{­vo'}
+klin:	{-vo'}
 sve:	från (ss5)
 eng:	from (ns5)
 def:	[TKD 3.3.5 (p.28)]
 
-klin:	{­wIj}
+klin:	{-wIj}
 sve:	min, mitt (ss4)
 eng:	my (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­wI'}
+klin:	{-wI'}
 sve:	min, mitt (substantiv förmöget till språk) (ss4)
 eng:	my (noun capable of using language) (ns4)
 def:	[TKD 3.3.4 (p.25)]
 
-klin:	{­'a'}
+klin:	{-'a'}
 sve:	augmentativ (ss1)
 eng:	augmentative (ns1)
 def:	[TKD 3.3.1 (p.21)]
 
-klin:	{­'e'}
+klin:	{-'e'}
 sve:	tema, ämne (ss5)
 eng:	topic (ns5)
 def:	[TKD 3.3.5 (p.29)]
-com:	An object topicalized {­'e'} sometimes comes *before* the
+com:	An object topicalized {-'e'} sometimes comes *before* the
 	adverb in the sentence (if any) [TKDa 6.7 (p.180)]
 
-=== end­of­noun­suffix­list ===
+=== end-of-noun-suffix-list ===
 
 TO DO (IN NO PARTICULAR ORDER)
 
     o Check Swedish translation, by looking up all the English words
-      in my English­Swedish dictionary and then checking to see whether
+      in my English-Swedish dictionary and then checking to see whether
       the Swedish words exists in their lookup entries.
     o Expand translation of suffixes as much as possible from TKD.
     o Could these be fixed?
@@ -14947,16 +14964,16 @@ TO DO (IN NO PARTICULAR ORDER)
       at the end of the list) into the main body of the dictionary.
     o Break all rows longer than 75 characters (I have confirmed that
       "ZDb2Sortable" is compatible with this).
-    o Check gender of all Swedish "vara"­verbs.
-    o Machine­check Swedish part­of­speech for all words.
+    o Check gender of all Swedish "vara"-verbs.
+    o Machine-check Swedish part-of-speech for all words.
     o Check useage of Swedish reflexive pronoun "sig".
       (Should be within parentheses?)
-    o Machine­check Swedish spelling.
+    o Machine-check Swedish spelling.
       (Extract Swedish text & use some spellchecker on it.)
-    o Machine­check English spelling.
+    o Machine-check English spelling.
     o Check/correct dubious entries (marked with ¿?).
     o Make a complete list of all sources.
-    o Machine­check Klingon sort order.
+    o Machine-check Klingon sort order.
     o Extract Swedish and English indices, sort these and look for
       any conclusions that can be drawn from them.
 
@@ -14966,7 +14983,7 @@ SUGGESTIONS FOR IMPROVEMENT OF THE POCKET DICTIONARY
   o Cross references between irregular plural and singular forms.
     (E.g. {mang} refers to {negh} and vice versa.)
 
-  o A change of layout in the English-Klingon part, so that it looks
+  o A change of layout in the English--Klingon part, so that it looks
     something like this (typographic key: |sans serif| /italic/ {bold})
 
       |worthless|  /v/  {lo'laHbe'} be ~
@@ -14985,7 +15002,7 @@ SUGGESTIONS FOR IMPROVEMENT OF THE POCKET DICTIONARY
         the top story of a structure)
       |pa' beb| /n/ ceiling (of a room on the
         top story of a structure) [News
-        1998­12­07; HQ8:3 p.2]
+        1998-12-07; HQ8:3 p.2]
 
     Currently, if you look up a word like "wrong", you'll find:
     
@@ -15018,16 +15035,16 @@ SUGGESTIONS FOR IMPROVEMENT OF THE POCKET DICTIONARY
     have as much context as possible to relate the word to.
 
 
-KLINGON WORDS NOT OCCURING ALONE
+KLINGON WORDS NEVER OCCURING BY THEM SELVES
 
     The following words exist in the dictionary that are not accounted for
-    separately, but instead only occurs in different noun­noun
+    separately, but instead only occurs in different noun-noun
     constructions. Most of these are logical derivates which can be
     understood either as built up of known elements (e.g. {chevwI'} from
-    {chev} and the suffix {­wI'}) or as proper nouns. At least one ({chem}),
+    {chev} and the suffix {-wI'}) or as proper nouns. At least one ({chem}),
     however, notably deviates from this pattern, and the question remains
     whether {chem} can be considered a word in its own right. (A question
-    for Okrand, perhaps?) [2000­10­12]
+    for Okrand, perhaps?) [2000-10-12]
 
 	{chem}	    (magnetic) field
 	{chevwI'}   "one who separates"
@@ -15047,7 +15064,7 @@ KLINGON WORDS NOT OCCURING ALONE
 	{yaHnIv}    Operations (command)
 
 
-PARTS­OF­SPEECH
+PARTS-OF-SPEECH
 
     English  Swedish  Meaning
     v        v        verb
@@ -15056,13 +15073,13 @@ PARTS­OF­SPEECH
     adv      adv      adverb(ial)
     conj     konj     conjuction
     excl     interj   exclamation
-    num      räkn     number/number­forming element
+    num      räkn     number/number-forming element
     pro      pro      pronoun
     ques     fråg     question word
     vp       vp       verb prefix
     vsr      vss      verb suffix rover
-    vs#      vs#      verb suffix type # (# is 1-9)
-    ns#      ss#      noun suffix type # (# is 1-5)
+    vs#      vs#      verb suffix type # (# is 1--9)
+    ns#      ss#      noun suffix type # (# is 1--5)
 
 
 SOURCES REFERENCES AND ABBREVIATIONS
@@ -15072,7 +15089,7 @@ SOURCES REFERENCES AND ABBREVIATIONS
     KGT    Klingon for the Galactic Traveler (Book)
     CK     Conversational Klingon (Audio Cassette)
     PK     Power Klingon (Audio Cassette)
-    KCD    Star Trek: Klingon! (CD­ROM Game)
+    KCD    Star Trek: Klingon! (CD-ROM Game)
     MO     Marc Okrand (personally)
     HQ     HolQeD (Quarterly journal of KLI)
     KLI    KLI's {tlhIngan-Hol} mailing list.
@@ -15081,117 +15098,117 @@ SOURCES REFERENCES AND ABBREVIATIONS
     S#     SkyBox trading card number #.
            (S7, S8, S14, S15, S20, S25, S26, S32 and S33 occurs here.)
     Sarek  A novel by A.C. Crispin, containing some words given by MO.
-    BoP    Bird­of­Prey poster, 1998
+    BoP    Bird-of-Prey poster, 1998
     STE    Star Trek Encyclopedia (used for some English translations)
     ST#    Star Trek movie, No. #
 
 
 HISTORY (LATEST CHANGES FIRST)
 
-    [2003-11-17] - Corrected {beqquj} to {beqpuj} (thanks to Philip Newton
+    [2003-11-17] -- Corrected {beqquj} to {beqpuj} (thanks to Philip Newton
     <tlhIngan-Hol@gmx.net> for spotting the error).
 
-    [2003-11-10] - Added the word {DoHmoH} after anonymous tip from the KA
+    [2003-11-10] -- Added the word {DoHmoH} after anonymous tip from the KA
     webpage (this word was apparently the word of the day Saturday, July 19,
     2003). Also added "dragon" as a translation of {lung}, which I found when
-    looking at the source for {DoHmoH}. (Both of these occur on pages 48-19 of
+    looking at the source for {DoHmoH}. (Both of these occur on pages 48--19 of
     KGT.)
 
-    [2002­09­11] - Corrected the Klingon spelling of "Dikus plant" from
+    [2002-09-11] -- Corrected the Klingon spelling of "Dikus plant" from
     {Daypus} to {DayquS}. Thanks to d'Armond Speers [USA] for pointing out
     the error!
 
-    [2002­06­28] - Translated the words from HQ10:4 p.5 into Swedish.
+    [2002-06-28] -- Translated the words from HQ10:4 p.5 into Swedish.
 
-    [2002­03­09] - Corrected the Klingon spelling of "racht" from {taHta'}
+    [2002-03-09] -- Corrected the Klingon spelling of "racht" from {taHta'}
     to {raHta'}. Thanks to Agnieska Solska [Poland] for pointing out the
     error!
 
-    [2002­01­21] - Added the 35 new words ({po Ha'DIbaH} excepted since it
+    [2002-01-21] -- Added the 35 new words ({po Ha'DIbaH} excepted since it
     really isn't a "new word") from MO's article in HQ10:4. Most of these
     words are about birds.
 
-    [2001­08­23] - Added some 27 new words related to fingers and toes, and
+    [2001-08-23] -- Added some 27 new words related to fingers and toes, and
     everything else from the HQ10:2 article "A Friend of Maltz: {nItlhDu'
     yaDDu' je}". The following three words had to be given lemma numbers,
     since they were homonymous to other words already present in the
-    dictionary: {nanwI'}, {qan}, {rIl}. Re­sorted these history events into
+    dictionary: {nanwI'}, {qan}, {rIl}. Re-sorted these history events into
     proper order (they were in disarray).
 
-    [2001­03­20] - Added the field "data:".
+    [2001-03-20] -- Added the field "data:".
 
-    [2001­03­19] - Added the word "be" before occuring adjectivals where it
+    [2001-03-19] -- Added the word "be" before occuring adjectivals where it
     was previously missing in the translations of the words: {ghuS}, {Huv},
-    {naQ}, {nI'}, {noy}, {poS}, {tIq} and {'Itlh}. (Machine­parsed out all
+    {naQ}, {nI'}, {noy}, {poS}, {tIq} and {'Itlh}. (Machine-parsed out all
     occurances of stative verbs [=verbs whose translation contains the word
     "be"] and hand checked those on the list which had both active and
     static translations. Thus I found and corrected these "errors".)
 
-    [2001­02­12] - Added the new word {tangqa'} from HQ 9:4.
+    [2001-02-12] -- Added the new word {tangqa'} from HQ 9:4.
 
-    [2001­01­06] - Added the word {mevyap} (Why on earth haven't I found
-    this before! - Check KGT more thoroughly!)
+    [2001-01-06] -- Added the word {mevyap} (Why on earth haven't I found
+    this before! -- Check KGT more thoroughly!)
 
-    [2000­11­01] - Added Swedish translation "åker" to {yotlh}, tagged some
+    [2000-11-01] -- Added Swedish translation "åker" to {yotlh}, tagged some
     more words with "cat: landcape" and "cat: body part".
 
-    [2000­10­24] - Made sure all references to TKD & TKDa had section
+    [2000-10-24] -- Made sure all references to TKD & TKDa had section
     numbers, and not just page numbers.
 
-    [2000­10­20] - Updated all verb suffix source references to include
+    [2000-10-20] -- Updated all verb suffix source references to include
     section numbers. Also added some comments of useage for the rovers and
     type 9 verb suffixes.
 
-    [2000­10­13] - Added the "see:" field, and changed most "see also"
+    [2000-10-13] -- Added the "see:" field, and changed most "see also"
     refereces into these instead.
 
-    [2000­10­11 to 2000­10­12] - Added 24 new words from the latest issue of
+    [2000-10-11 to 2000-10-12] -- Added 24 new words from the latest issue of
     HolQeD (most of these are names of different family relations) and added
     some additional comments to {chen} from the same source. Translated the
     new words into Swedish.
 
-    [2000­10­09] - Changed italics marker to "~" instead of "+" (this makes
+    [2000-10-09] -- Changed italics marker to "~" instead of "+" (this makes
     this dictionary follow the ~Project Gutenberg~ specifications in this
     regard). Added category "locative" (for words like "inside", "area
     below" etc.) and "math" (for words like "add", "divide", the numbers
     etc.).
 
-    [2000­09­09] - Checked that all sequences of lemma numbers are complete
+    [2000-09-09] -- Checked that all sequences of lemma numbers are complete
     (i.e. begins with 1, and counts up without any skipped numbers) and that
-    all homonymns with the same part­of­speech are tagged with lemma
+    all homonymns with the same part-of-speech are tagged with lemma
     numbers. Checked that this database is sorted correctly: first after
-    Klingon word, next after part­of­speech (in order: v, n, name, pro, adv,
+    Klingon word, next after part-of-speech (in order: v, n, name, pro, adv,
     num, excl, ques, conj) and finally after lemma numbering (lemma numbers
     are given chronologically, with the lowest number to the first defined
     word).
 
-    [2000­09­08] - Introduced lemma numbering for homonyms of same word
+    [2000-09-08] -- Introduced lemma numbering for homonyms of same word
     class.
 
-    [2000­08­14] - Removed the word {Soq} from S33 (now confirmed to be
+    [2000-08-14] -- Removed the word {Soq} from S33 (now confirmed to be
     incorrect).
 
-    [2000­07­31] - Translated "skink" and "blow one's top" into Swedish.
+    [2000-07-31] -- Translated "skink" and "blow one's top" into Swedish.
 
-    [2000­07­03] - Changed italics marker from '*' to '+' to avoid
+    [2000-07-03] -- Changed italics marker from '*' to '+' to avoid
     confusions with useage of '*' as a literal letter (as three curses uses
     this).
 
-    [2000­05­09] - Corrected some Swedish spelling errors.
+    [2000-05-09] -- Corrected some Swedish spelling errors.
 
-    [2000­05­03] - Machine­checked Klingon graphotax. Machine­checked all
+    [2000-05-03] -- Machine-checked Klingon graphotax. Machine-checked all
     parenthetic structures (including ~xx~ used for italics).
-    Machine­checked for lines ending in white space(s) (none found).
-    Machine­checked for identical fields within same post (2 corrected)
+    Machine-checked for lines ending in white space(s) (none found).
+    Machine-checked for identical fields within same post (2 corrected)
     Checked that there is a matching «« or »» in the Swedish translation for
     each »», >>, «« or << occuring in the English field.
 
-    [2000­04­30 to 2000­05­02] - Sort tagged the remaining Swedish
-    translations (about 1600) using a lot of ad hoc ARexx­code.
+    [2000-04-30 to 2000-05-02] -- Sort tagged the remaining Swedish
+    translations (about 1600) using a lot of ad hoc ARexx-code.
 
-    [2000­04­03] - All references to MSN etc. corrected to ~News~ and
-    provided with correct dates. Machine­checked all parentheses.
+    [2000-04-03] -- All references to MSN etc. corrected to ~News~ and
+    provided with correct dates. Machine-checked all parentheses.
 
-    [2000­02­24] - Part of speech for Swedish translation machine­checked.
+    [2000-02-24] -- Part of speech for Swedish translation machine-checked.
 
-[eof]
+[[eof]]
