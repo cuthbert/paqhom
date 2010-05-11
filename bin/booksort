@@ -28,10 +28,10 @@
 # and then parse that array and put all the bits and
 # pieces of it in other variables, effectively making
 # the program use up twice as much memory as really
-# neccessary. =|:-( - Kinda bad if you think about
+# neccessary. =|:-( - Kinda bad if you think about
 # it...)
 #
-# /Zrajm C Akfohg, 2000­11­11 to 2000­11­12
+# /Zrajm C Akfohg, 2000-11-11 to 2000-11-12
 #
 
 # init variables

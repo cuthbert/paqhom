@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# [2001­03­03,~08.25]
+# [2001-03-03,~08.25]
 #
 #  This proggie takes a PostScript file as input and directly
 #  sorts the pages in "book order" and prints it, four pages

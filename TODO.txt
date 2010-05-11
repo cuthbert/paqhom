@@ -1,7 +1,43 @@
 Important Stuff
 ===============
 
+* LaTeX/Perl (dict2latex.plx, tlh-en.tex/en-tlh.tex): 
+
+    o Rename \lukli{} -> \tlh_en{}, and \lueng -> \en_tlh{}. Maybe turn some of
+      the often-left-empty arguments into optional arguments?
+
+    o Rename \lemma{} -> \tilde{} (or something similar, indicating that it
+      makes a tilde in text).
+
+* Perl (booksort):
+
+    o Does this script do anything meaningful with PostScript files outputted
+      by modern day LaTeX?
+
+    o Should it be fixed in some way? Or just replaced by some existing Linux
+      tool and deleted?
+
+* Perl (dict2latex.plx):
+
+    o Rename script. (To "zdb2tex" maybe?)
+
+    o "××" -> "×".
+
+    o Code cleanup "use strict", "use warnings" etc.
+
+    o Check DB syntax on reading. Are there any mandatory fields missing? Are
+      there any syntax errors (e.g. ~...~ should be matched).
+
+    o Some DB entries should result in more than one dictionary entries on the
+      Klingon--English site (based on <>«» markers).
+
+* Makefile
+
+    o Generation of tlh-en.tex/en-tlh.tex on-the-fly.
+
 * Perl: Convert all Perl scripts to be able to handle UTF8.
+
+    o DONE: bookprint, bin/dict2lateox.plx
 
 * Perl: Scripts for resorting output file into printable booklet. Incorporate
   in Makefile.
@@ -34,8 +70,10 @@ Textual Correcions/Clarifications
 * Hyphenation of Klingon phrases?
 
 
-Minor Stuff
-===========
+Cosmetic, Minor Stuff
+=====================
+
+* Prettyfy source code. Consistent identtation, removal of all TODO/FIXMEs etc.
 
 * tex/*/include/values.tex: Have "TODO ditch these values" comment.
 
@@ -44,6 +82,7 @@ Minor Stuff
 
 * Comments should always be in English, even in Swedish/Klingon version of
   dictionary.
+
 
 Someday/Maybe -- Wishlist
 =========================
