@@ -4121,7 +4121,7 @@ sv:	«väsa», «rossla», «andas» ljudligt (v)
 en:	«wheeze», «breate» nosily (v)
 def:	[HQ12:4 p.8]
 com:	Most likely MO reinvented this word without realizing it already
-	existed: {tlhov} "wheeze" -- occurs only in the Klingon--English side
+	existed: {tlhov} "wheeze"---it occurs only in the Klingon--English side
 	of TKD.
 see:	{tlhov} is a synonym
 
@@ -5691,7 +5691,7 @@ tlh:	{mIw} (1)
 sv:	«procedur», «process» (s)
 en:	<procedure>, «process» (n)
 def:	[TKDa]
-com:	¿?Is this a valid word -- shouldn't {nab} be used instead, and
+com:	¿?Is this a valid word---shouldn't {nab} be used instead, and
 	{mIw} be used for "step, stage (in a process)"?
 
 tlh:	{mIw} (2)
@@ -10095,7 +10095,7 @@ sv:	«andas ut» (v)
 en:	«exhale» (v)
 def:	[HQ12:4 p.8]
 pun:	"Maltz was quite amused whet he realized that Klingon word {rech}
-	'exhale' sounded like the English word 'retch' -- that is, 'vomit' --
+	'exhale' sounded like the English word 'retch'---that is, 'vomit'---
 	but he couldn't explain why he thought it was so funny." [HQ12:4]
 
 tlh:	{reD}
@@ -10370,7 +10370,7 @@ tlh:	{ropchoH}
 sv:	bli «sjuk», bli «illamående» (v)
 en:	get «sick», get «ill» (v)
 def:	[TKW p.40]
-com:	¿?Should this word be here? -- {rop} is already present.
+com:	¿?Should this word be here?---{rop} is already present.
 
 tlh:	{ropyaH}
 sv:	«sjukhus», «sjukavdelning» (s)
@@ -10985,8 +10985,8 @@ sv:	«mat» (s)
 en:	<food> (n)
 def:	[TKDa]
 ref:	[HQ12:3 p.9]
-com:	"Maltz said, '{tlhIngan Soj 'oH --- not bIyaj},' literally, 'It is
-	Klingon food --- you will not understand,' using {Soj} <food> in its
+com:	"Maltz said, '{tlhIngan Soj 'oH---not bIyaj},' literally, 'It is
+	Klingon food---you will not understand,' using {Soj} <food> in its
 	idiomatic sense of <matter, concern, affair>." [HQ12:3 p.9]
 data:	KLCP-1
 
@@ -12824,7 +12824,7 @@ def:	[KGT]
 tlh:	{vay'}
 sv:	«något», «någon», «någonting» (s)
 en:	<somebody>, «someone», «something»,
-	«anybody», <anyone>, «anything», (n)
+	«anybody», <anyone>, «anything» (n)
 def:	[TKD]
 ref:	[TKW pp.88, 109, 129, 149, 157, 167]
 com:	Entries differ and have been combined here.
@@ -15227,7 +15227,6 @@ com:	"And when the nose of the plane moves up or down, the plane is said
 	with either its hind legs or its front legs, it is able to pitch or
 	tilt up or down.)" [HQ11:2 p.9]
 
-
 tlh:	{jIm}
 sv:	«höja», «sänka» (om flygmaskin) (v)
 en:	«heave» (about aircraft) (v)
@@ -15255,6 +15254,7 @@ com:	"if it suddenly moves forwards or backwards" [HQ11:2 p.9]
 tlh:	{tajvaj}
 sv:	«vinkel» (s)
 en:	«angle» (n)
+def:	[HQ11:2 p.9]
 see:	{taH}
 
 
@@ -15988,7 +15988,7 @@ TODO
 
 HISTORY (LATEST CHANGES FIRST)
 
-    [??] -- TODO: Add markup for the question words, adverbs etc. given for
+    [??]---TODO: Add markup for the question words, adverbs etc. given for
     KLCP level 1. Add markup for KLCP level 2. Put all that markup in the
     »cat:« field, rather in the current »data:« field.
 
@@ -16000,107 +16000,113 @@ HISTORY (LATEST CHANGES FIRST)
       o Add words present in the KGT main text (mainly some names, e.g.
         "Kayvak", "digna", "ka'raj", "bregit", "Saurian", "raktaj" etc.).
 
-    [2006-08-28] -- Corrected "Take'ev" to "Tak'ev" in the translation of
+    [2010-05-12] Removed erraneous comma it {vay'}, occuring at the very end of
+    the English definition, added missing source reference for {tajvaj}
+
+    [2010-05-11] Corrected dashes. Now uses LaTeX conventions of "-" for
+    hyphen, "--" for en-dash and "---" for em-dash.
+
+    [2006-08-28] Corrected "Take'ev" to "Tak'ev" in the translation of
     {taq'ev}, "challange" to "challenge" in translation of {nalqaD}, and
     erroneous {qom} ("compose") to {qon) (thanks to Stevo
     <MorphemeAddict@wmconnect.com> for reporting the errors---some years ago
     actually [I'm not good at reading my mail]).
 
-    [2006-08-22, 03:51-05:43] -- Added words from HolQeD 12:3. {HoQ}, {Qaq},
+    [2006-08-22, 03:51-05:43] Added words from HolQeD 12:3. {HoQ}, {Qaq},
     {ghet}, {mIl}, {DavHam}, {nguq}, {'eDjen} (did not include {HoQmoH},
     {mIlmoH} and {QaqmoH}). Also added additional definition of {'utlh} from
     KGT, and several comments to other words mentioned by MO in HolQeD 12:3.
 
-    [2006-08-21, 15:05-17:02] -- Added the rest of the words from HolQeD 12:4.
+    [2006-08-21, 15:05-17:02] Added the rest of the words from HolQeD 12:4.
     {jev}, {wuD}, {ruq}, {Qep'It}, {'em}, {quy'Ip}, {bur}, {bor}, {chuy},
     {'IqnaH}, {tuS}, {qo'qaD}, {tlhepQe'}, {tIl}, {tuy'} and {Serrum}. Changed
     field names of language fields "klin", "eng", and "sve" (to "tlh", "en" and
     "sv", respectively). The new names are taken from the ISO639-1 and ISO639-2
     standard language abbreviation charts.
 
-    [2006-08-21, 06:01-06:21] -- Started adding the words from HolQeD 12:4:
+    [2006-08-21, 06:01-06:21] Started adding the words from HolQeD 12:4:
     {porghQeD}, {porgh mIw}, {pur} and {rech}.
 
-    [2003-11-30] -- Added markup for the 46 affixes required for the KLCP
+    [2003-11-30] Added markup for the 46 affixes required for the KLCP
     level 1. This has not been as thoroughly checked as the added words, but I
     would never the less be surprised if there were any errors of note.
 
-    [2003-11-29] -- Added markup for the 502 words given in the KLCP (Klingon
+    [2003-11-29] Added markup for the 502 words given in the KLCP (Klingon
     Language Certification Program) level I. This was very carefully done and
     double checked with scripts. 100% accurate. Some unclarities were found in
     the list list, and I email {Holtej} for explanations. The idea of marking
     words belonging to the KLCP level 1 was given to me by Philip Newton
-    (thanx Philip!). -- Also added the »cat:« category »time« for time related
+    (thanx Philip!). Also added the »cat:« category »time« for time related
     words (times of day, time related verbs etc.).
 
-    [2003-11-17] -- Corrected {beqquj} to {beqpuj} (thanks to Philip Newton
+    [2003-11-17] Corrected {beqquj} to {beqpuj} (thanks to Philip Newton
     <tlhIngan-Hol@gmx.net> for spotting the error).
 
-    [2003-11-10] -- Added the word {DoHmoH} after anonymous tip from the KA
+    [2003-11-10] Added the word {DoHmoH} after anonymous tip from the KA
     webpage (this word was apparently the word of the day Saturday, July 19,
     2003). Also added "dragon" as a translation of {lung}, which I found when
     looking at the source for {DoHmoH}. (Both of these occur on pages 48--19 of
     KGT.)
 
-    [2002-09-11] -- Corrected the Klingon spelling of "Dikus plant" from
+    [2002-09-11] Corrected the Klingon spelling of "Dikus plant" from
     {Daypus} to {DayquS}. Thanks to d'Armond Speers [USA] for pointing out the
     error!
 
-    [2002-06-28] -- Translated the words from HQ10:4 p.5 into Swedish.
+    [2002-06-28] Translated the words from HQ10:4 p.5 into Swedish.
 
-    [2002-03-09] -- Corrected the Klingon spelling of "racht" from {taHta'}
+    [2002-03-09] Corrected the Klingon spelling of "racht" from {taHta'}
     to {raHta'}. Thanks to Agnieska Solska [Poland] for pointing out the
     error!
 
-    [2002-01-21] -- Added the 35 new words ({po Ha'DIbaH} excepted since it
+    [2002-01-21] Added the 35 new words ({po Ha'DIbaH} excepted since it
     really isn't a "new word") from MO's article in HQ10:4. Most of these
     words are about birds.
 
-    [2001-08-23] -- Added some 27 new words related to fingers and toes, and
+    [2001-08-23] Added some 27 new words related to fingers and toes, and
     everything else from the HQ10:2 article "A Friend of Maltz: {nItlhDu'
     yaDDu' je}". The following three words had to be given lemma numbers,
     since they were homonymous to other words already present in the
     dictionary: {nanwI'}, {qan}, {rIl}. Re-sorted these history events into
     proper order (they were in disarray).
 
-    [2001-03-20] -- Added the field "data:".
+    [2001-03-20] Added the field "data:".
 
-    [2001-03-19] -- Added the word "be" before occuring adjectivals where it
+    [2001-03-19] Added the word "be" before occuring adjectivals where it
     was previously missing in the translations of the words: {ghuS}, {Huv},
     {naQ}, {nI'}, {noy}, {poS}, {tIq} and {'Itlh}. (Machine-parsed out all
     occurances of stative verbs [=verbs whose translation contains the word
     "be"] and hand checked those on the list which had both active and static
     translations. Thus I found and corrected these "errors".)
 
-    [2001-02-12] -- Added the new word {tangqa'} from HQ 9:4.
+    [2001-02-12] Added the new word {tangqa'} from HQ 9:4.
 
-    [2001-01-06] -- Added the word {mevyap} (Why on earth haven't I found
-    this before! -- I must check the KGT more thoroughly!)
+    [2001-01-06] Added the word {mevyap} (Why on earth haven't I found
+    this before!---I must check the KGT more thoroughly!)
 
-    [2000-11-01] -- Added Swedish translation "åker" to {yotlh}, tagged some
+    [2000-11-01] Added Swedish translation "åker" to {yotlh}, tagged some
     more words with "cat: landcape" and "cat: body part".
 
-    [2000-10-24] -- Made sure all references to TKD & TKDa had section
+    [2000-10-24] Made sure all references to TKD & TKDa had section
     numbers, and not just page numbers.
 
-    [2000-10-20] -- Updated all verb suffix source references to include
+    [2000-10-20] Updated all verb suffix source references to include
     section numbers. Also added some comments of useage for the rovers and
     type 9 verb suffixes.
 
-    [2000-10-13] -- Added the "see:" field, and changed most "see also"
+    [2000-10-13] Added the "see:" field, and changed most "see also"
     refereces into these instead.
 
-    [2000-10-11 to 2000-10-12] -- Added 24 new words from the latest issue of
+    [2000-10-11 to 2000-10-12] Added 24 new words from the latest issue of
     HolQeD (most of these are names of different family relations) and added
     some additional comments to {chen} from the same source. Translated the
     new words into Swedish.
 
-    [2000-10-09] -- Changed italics marker to "~" instead of "+" (this makes
+    [2000-10-09] Changed italics marker to "~" instead of "+" (this makes
     this dictionary follow the ~Project Gutenberg~ specifications in this
     regard). Added category "locative" (for words like "inside", "area below"
     etc.) and "math" (for words like "add", "divide", the numbers etc.).
 
-    [2000-09-09] -- Checked that all sequences of lemma numbers are complete
+    [2000-09-09] Checked that all sequences of lemma numbers are complete
     (i.e. begins with 1, and counts up without any skipped numbers) and that
     all homonymns with the same part-of-speech are tagged with lemma numbers.
     Checked that this database is sorted correctly: first after Klingon word,
@@ -16108,33 +16114,33 @@ HISTORY (LATEST CHANGES FIRST)
     conj) and finally after lemma numbering (lemma numbers are given
     chronologically, with the lowest number to the first defined word).
 
-    [2000-09-08] -- Introduced lemma numbering for homonyms of same word
+    [2000-09-08] Introduced lemma numbering for homonyms of same word
     class.
 
-    [2000-08-14] -- Removed the word {Soq} from S33 (now confirmed to be
+    [2000-08-14] Removed the word {Soq} from S33 (now confirmed to be
     incorrect).
 
-    [2000-07-31] -- Translated "skink" and "blow one's top" into Swedish.
+    [2000-07-31] Translated "skink" and "blow one's top" into Swedish.
 
-    [2000-07-03] -- Changed italics marker from '*' to '+' to avoid
+    [2000-07-03] Changed italics marker from '*' to '+' to avoid
     confusions with useage of '*' as a literal letter (as three curses uses
     this).
 
-    [2000-05-09] -- Corrected some Swedish spelling errors.
+    [2000-05-09] Corrected some Swedish spelling errors.
 
-    [2000-05-03] -- Machine-checked Klingon graphotax. Machine-checked all
+    [2000-05-03] Machine-checked Klingon graphotax. Machine-checked all
     parenthetic structures (including ~xx~ used for italics). Machine-checked
     for lines ending in white space(s) (none found). Machine-checked for
     identical fields within same post (2 corrected) Checked that there is a
     matching «« or »» in the Swedish translation for each »», >>, «« or <<
     occuring in the English field.
 
-    [2000-04-30 to 2000-05-02] -- Sort tagged the remaining Swedish
+    [2000-04-30 to 2000-05-02] Sort tagged the remaining Swedish
     translations (about 1600) using a lot of ad hoc ARexx-code.
 
-    [2000-04-03] -- All references to MSN etc. corrected to ~News~ and
+    [2000-04-03] All references to MSN etc. corrected to ~News~ and
     provided with correct dates. Machine-checked all parentheses.
 
-    [2000-02-24] -- Part of speech for Swedish translation machine-checked.
+    [2000-02-24] Part of speech for Swedish translation machine-checked.
 
 [[eof]]
