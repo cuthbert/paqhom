@@ -23,10 +23,6 @@ Important Stuff
 
     o Proper argument parsing.
 
-    o Code cleanup variable as filehandle.
-
-    o Allow input on STDIN.
-
     o Check DB syntax on reading. Are there any mandatory fields missing? Are
       there any syntax errors (e.g. ~...~ should be matched).
 

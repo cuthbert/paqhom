@@ -12,25 +12,26 @@
 # [2010-05-11] Made it work with modern-day zdb, using unicode. Very
 # rudimentary update, still up not to my current code standard
 #
-# [2010-05-13, 19:52-20:35] Made to work with "use warnings" & "use stict".
+# [2010-05-13, 19:52-20:35] Made to work with "use warnings" & "use stict";
+# fixed proper identation
 
 use strict;
 use warnings;
 use encoding 'utf8';
 
-my ($Direction, $Dict_File) = @ARGV;
-if ( $#ARGV < 1 ) {
-    print "usage: dict2latex.plx <DIR> <DICTFILE>\n";
-    print "Where <DIR> is 'ek' (English-Klingon) or 'ke' (Klingon-English).\n";
-    print "Output is sent to standard out.\n";
+if (@ARGV == 0  or grep(/^(-h|--help)$/, @ARGV)) {
+    (my $self = $0) =~ s#^.*/##;
+    print "Usage: $self DIRECTION [ZDBFILE]...\n";
+    print "Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.\n";
+    print "\n";
+    print "DIRECTION is either 'en-tlh' (English-Klingon) or 'tlh-en' (Klingon-English).\n";
+    print "Input is read from ZDBFILE(s) or STDIN, output is sent to STDOUT.\n";
     exit;
 }
-if ( $Direction !~ /^(ke|ek)$/i ) {
-    print "First argument must specify 'ke' (Klingon-English) or 'ek' (English-Klingon).\n";
-    exit;
-}
-if ( ! -r $Dict_File ) {
-    print "Second argument must be the name of a ZDb Klingon-English dictionary.\n";
+
+my $direction = shift();
+if ( $direction !~ /^(tlh-en|en-tlh)$/i ) {
+    print "First argument must specify 'tlh-en' (Klingon-English) or 'en-tlh' (English-Klingon).\n";
     exit;
 }
 
@@ -57,7 +58,7 @@ my @file = ();
 
 print "% -*- tex -*-\n";
 print "%\n";
-if ($Direction =~ /^ke$/i) {
+if ($direction =~ /^tlh-en$/i) {
     print "% Klingon-English dictionary.\n";
 } else {
     print "% English-Klingon dictionary.\n";
@@ -65,16 +66,14 @@ if ($Direction =~ /^ke$/i) {
 print "% LaTeX conversion started: ",`date +"%Y-%m-%d, %H.%m.%S"`;
 
 
-
 # open file and skip header
-open DICT, "$Dict_File";                       # open file
-while(<DICT>) {                                # skip past data file header
+while(<>) {                                # skip past data file header
     last if /^=== start-of-word-list ===$/;    #
 }                                              #
 
 # read from the dictionary
 my @buf = ();                                  #
-while(<DICT>) { chomp;                         # remove eol
+while(<>) { chomp;                         # remove eol
     last if /^=== end-of-word-list ===$/;      # done at end-of-dict
 
     # beginning of a new post
@@ -88,7 +87,6 @@ while(<DICT>) { chomp;                         # remove eol
     $buf[$#buf] .= $_, next if s/^\s+/ /;      # inital space: add to last line
     push @buf, $_;                             #   add a new line to buffer
 }
-close DICT;
 
 print "% There are ", $#file+1, " words in this file.\n\n";
 
@@ -134,7 +132,7 @@ sub buffer_to_LaTeX {
     $extra =  &LaTeX($extra);                  # LaTeXify
 
     # Klingon-English direction
-    if ($Direction =~ /^ke/i) {
+    if ($direction =~ /^tlh-en/i) {
         #  #1 = Klingon (lookup) word
         #  #2 = part-of-speech
         #  #3 = 'slang' or 'regional' etc.
