@@ -1,6 +1,18 @@
 Important Stuff
 ===============
 
+* Perl (zdb2tex):
+
+    o Break code down into more readable subroutine chunks.
+
+    o Check DB syntax on reading. Are there any mandatory fields missing? Are
+      there any syntax errors (e.g. ~...~ should be matched).
+
+    o Some DB entries should result in more than one dictionary entries on the
+      Klingon--English site (based on <>«» markers).
+
+    o Proper argument parsing.
+
 * LaTeX/Perl (zdb2tex, tlh-en.tex/en-tlh.tex): 
 
     o Rename \lukli{} -> \tlh_en{}, and \lueng -> \en_tlh{}. Maybe turn some of
@@ -16,16 +28,6 @@ Important Stuff
 
     o Should it be fixed in some way? Or just replaced by some existing Linux
       tool and deleted?
-
-* Perl (zdb2tex):
-
-    o Proper argument parsing.
-
-    o Check DB syntax on reading. Are there any mandatory fields missing? Are
-      there any syntax errors (e.g. ~...~ should be matched).
-
-    o Some DB entries should result in more than one dictionary entries on the
-      Klingon--English site (based on <>«» markers).
 
 * Makefile
 

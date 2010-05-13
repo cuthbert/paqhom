@@ -12,28 +12,15 @@
 # [2010-05-11] Made it work with modern-day zdb, using unicode. Very
 # rudimentary update, still up not to my current code standard
 #
-# [2010-05-13, 19:52-20:35] Made to work with "use warnings" & "use stict";
-# fixed proper identation; now accepts input on STDIN
+# [2010-05-13, 19:52-23:49] made to work with "use warnings" & "use stict";
+# fixed proper identation; now accepts input on STDIN; started restructuring
+# code by breaking it down into more easy-to-read subroutines; replaced old
+# lower() function call with lc() (works fine with Swedish characters under
+# modern Perl/UTF8); other minor cleanups
 
 use strict;
 use warnings;
 use encoding 'utf8';
-
-if (@ARGV == 0  or grep(/^(-h|--help)$/, @ARGV)) {
-    (my $self = $0) =~ s#^.*/##;
-    print "Usage: $self DIRECTION [<] ZDBFILE\n";
-    print "Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.\n";
-    print "\n";
-    print "DIRECTION is either 'en-tlh' (English-Klingon) or 'tlh-en' (Klingon-English).\n";
-    print "Input is read from ZDBFILE(s) or STDIN, output is sent to STDOUT.\n";
-    exit;
-}
-
-my $direction = shift();
-if ($direction !~ /^(tlh-en|en-tlh)$/i) {
-    print "First argument must specify 'tlh-en' (Klingon-English) or 'en-tlh' (English-Klingon).\n";
-    exit;
-}
 
 # define alphabet
 # string = regex that matches klingon letter
@@ -50,62 +37,56 @@ my $Fields = '^(tlh|en|def):\s*';              # fields we need
 my $En_POS = '\((v|n|name|pro|adv|num|excl|ques|conj)\)';
 #$Sv_POS = '\((v|s|namn|pro|adv|räkn|interj|fråg|konj)\)';
 
-my $az  = 'A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ';
-$az .= lower($az) . "ßÿ";
+my $az = 'A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ';
+$az .= lc($az) . "ßÿ";
 
+my $direction = "";
+my %directions = (
+    "en-tlh" => "English-Klingon",  "tlh-en" => "Klingon-English",
+    #"sv-tlh" => "Swedish-Klingon",  "tlh-sv" => "Klingon-Swedish",
+);
 
-my @file = ();
+###############################################################################
+##                                                                           ##
+##  Functions                                                                ##
+##                                                                           ##
+###############################################################################
 
-print "% -*- tex -*-\n";
-print "%\n";
-if ($direction =~ /^tlh-en$/i) {
-    print "% Klingon-English dictionary.\n";
-} else {
-    print "% English-Klingon dictionary.\n";
-}
-print "% LaTeX conversion started: ",`date +"%Y-%m-%d, %H.%m.%S"`;
-
-
-# open file and skip header
-while(<>) {                                    # skip past data file header
-    last if /^=== start-of-word-list ===$/;    #
-}                                              #
-
-# read from the dictionary
-my @buf = ();                                  #
-while(<>) { chomp;                             # remove eol
-    last if /^=== end-of-word-list ===$/;      # done at end-of-dict
-
-    # beginning of a new post
-    if (s/^(:|\s*$)//) {                       # beginning of new post?
-        push @file, &buffer_to_LaTeX(@buf);    #   output processed buffer
-        @buf = ();                             #   clear buffer
-        next if /^$/;                          #   skip to next line in file
-    }                                          #   if this one is empty now
-
-    # add read line to buffer
-    $buf[$#buf] .= $_, next if s/^\s+/ /;      # inital space: add to last line
-    push @buf, $_;                             #   add a new line to buffer
+sub latex_header {
+    my ($direction, $words) = @_;
+    return
+        "% -*- tex -*-\n",
+        "%\n",
+        "% $directions{$direction} dictionary.\n",
+        "% LaTeX conversion started: " . `date +"%Y-%m-%d, %H.%m.%S"`,
+        "% There are $words words in this file.\n\n";
 }
 
-print "% There are ", $#file+1, " words in this file.\n\n";
+sub latex_footer {
+    my ($direction, $words) = @_;
+    return
+        "% LaTeX conversion ended: " . `date +"%Y-%m-%d, %H.%m.%S"`,
+        "% [eof]\n";
+}
 
-# output main body of file
-my $oldfirst = "";
-my $first = "";
-foreach (sort @file) {
-    ($first) = /^(.)/;                         # get sortstring's 1st letter
-    print "\\newletter{}%\n"                   # new letter in alphabet
-        if $first ne $oldfirst;                #
-    s/[^ ]* //;                                # remove sortstring
-    print "  $_";                              # output
-} continue { $oldfirst = $first }              # remember 1st letter
+sub latexify {
+    my ($x) = @_;
+    foreach ($x) {
+        s/{/\\B{/g;                            # bold    {...} => \B{...}
+        s/~([^~]*)~/\\I{$1}/g;                 # italics ~...~ => \I{...}
+        s/''/'{}'/g;                           # double aphostrophe
+        s/(^| )\"/$1``/g;                      # initial quote
+        s/\"/''/g;                             # ending quote
+        s/\.\.\. /\ldots\ /g;                  # ... + <space>
+        s/\.\.\./\ldots/g;                     # ...
+        s/ /~/g;                               # non-breaking space
+        s/¿?//g;                               # remove ¿?
+        s/([%#\$])/\\$1/g;                     # escape %, #, $
+    }
+    return $x;
+}
 
-print "% LaTeX conversion ended: ",`date +"%Y-%m-%d, %H.%m.%S"`;
-print "% [eof]\n";
-
-
-sub buffer_to_LaTeX {
+sub buffer_to_latex {
     my (@buf) = @_;                            # get buffer
     return unless @buf;                        # don't process empty buffers
     my (@return) = ();                         # reset returnbuffer
@@ -118,18 +99,18 @@ sub buffer_to_LaTeX {
     }                                          #
 
     # process `tlh:'-field
-    my $tlh =  $field{tlh};                    #
+    my $tlh = $field{tlh};                     #
     $tlh =~ s/^{(.*)}.*/$1/;                   # remove all outside {...}
-    $tlh =  &LaTeX($tlh);                      # LaTeXify
+    $tlh = latexify($tlh);                     # LaTeXify
 
     # split `en:'-field into:
     #   `English', `part-of-speech' and `slang/regional'
-    my $en =  $field{en};                      #
+    my $en = $field{en};                       #
     $en =~ /(.*)$En_POS(.*)/;                  # fetch transl., pos & category
     ($en, my $pos, my $extra) = ($1, $2, $3);  #
     $en =~ s/ *$//;                            # remove trailing space
     $extra =~ s/^\s*\((.*)\)\s*/$1/;           # remove surrounding parentheses
-    $extra =  &LaTeX($extra);                  # LaTeXify
+    $extra = latexify($extra);                 # LaTeXify
 
     # Klingon-English direction
     if ($direction =~ /^tlh-en/i) {
@@ -144,11 +125,11 @@ sub buffer_to_LaTeX {
         $tlh =~ s/[<>«»]//g;                   # remove «»<> from klingon
 
         # process `def:'-field
-        my $ref =  $field{def};                #
+        my $ref = $field{def};                 #
         $ref =~ s/\[(.*)\]/$1/;                # remove brackets
         $ref =~ s/\s*\(.*\)//g;                # remove parentesis & contents
-        $ref =  "" if $ref eq "TKD";           # clear if "TKD"
-        $ref =  &LaTeX($ref);                  # LaTeXify
+        $ref = "" if $ref eq "TKD";            # clear if "TKD"
+        $ref = latexify($ref);                 # LaTeXify
         substr($ref, -6, 6) =~ s/ /~/g;        # no line break in end
 
         # process `en:'-field
@@ -162,17 +143,17 @@ sub buffer_to_LaTeX {
                 $en =~ s/, be /, /g;           # replace `, be ' with `, '
             }                                  #
         }                                      #
-        $en =  &LaTeX($en);                    # LaTeXify
+        $en = latexify($en);                   # LaTeXify
         my $off = -6 + length($ref);           # use non-breaking spaces
         substr($en, $off, 6) =~ s/ /~/g        #   at the end of english
             unless $off >= 0;                  #   definition
 
         # make sortkey
-        my $sort  =  $field{tlh};              #
-        $sort  =~ s/[<>«»{}() ]//g;            # remove <space> <>«»{} and ()
-        $sort  =~ s/($alpha)/$alpha{$1}/g;     # translate
-        $sort .=  "_$pos";                     # attach part-of-speech
-        $sort  =~ s/([0-9])_(.*)/_$2_$1/;      # swap pos and lemma number
+        my $sort = $field{tlh};
+        $sort =~ s/[<>«»{}() ]//g;             # remove <space> <>«»{} and ()
+        $sort =~ s/($alpha)/$alpha{$1}/g;      # translate
+        $sort .= "_$pos";                      # attach part-of-speech
+        $sort =~ s/([0-9])_(.*)/_$2_$1/;       # swap pos and lemma number
 
         push @return, "$sort \\lukli" .        # return value
             "{$tlh}{$pos}{$extra}{$en}{$ref}%\n";
@@ -211,26 +192,26 @@ sub buffer_to_LaTeX {
             $lookup =~ s/\s*\(.*\)//g;         # remove parentesis & contents
 
             # create sort string
-            my $sort  =  $lookup;              # sort based on lookup word
-            $sort  =~ tr/«»<>{}~\' -//d;       # remove interpunct
-            $sort  = &lower($sort);            # make lowercase
-            $sort  =~ tr/àáâãäèéêëìíîïòóôõöùúûüýÿ/aaaaaeeeeiiiiooooouuuuyy/;
-            $sort .=  "_$pos";                 # attach part-of-speech
+            my $sort = $lookup;                # sort based on lookup word
+            $sort =~ tr/«»<>{}~\' -//d;        # remove interpunct
+            $sort = lc($sort);                 # make lowercase
+            $sort =~ tr/àáâãäèéêëìíîïòóôõöùúûüýÿ/aaaaaeeeeiiiiooooouuuuyy/;
+            $sort .= "_$pos";                  # attach part-of-speech
             (my $tmp = $tlh) =~ s/($alpha)/$alpha{$1}/g;
 
             # klingon sort word (useful for many similar words, e.g. bird)
-            $sort  .= "_$tmp";
+            $sort .= "_$tmp";
 
             # lookup word
             $lookup =~ s/[<>«»]//g;            # remove «»<> from english
-            $lookup =  &LaTeX($lookup);        # LaTeXify
+            $lookup = latexify($lookup);       # LaTeXify
 
             # English definition
             # ($xng temp for this loop, $en must be perserved)
-            my $xng =  $en;
+            my $xng = $en;
             $xng =~ s/[<>«»]//g;               # remove «»<> from english
-            $xng =  &LaTeX($xng);              # LaTeXify
-            $xng =  "" if ( $xng eq $lookup ); # no def. if same as lookup
+            $xng = latexify($xng);             # LaTeXify
+            $xng = "" if ( $xng eq $lookup );  # no def. if same as lookup
 
             # tilde implosion
             $xng =~ s{                         #
@@ -247,7 +228,7 @@ sub buffer_to_LaTeX {
             {                                  #
                 # if all english definitions begin with the word 'be'
                 # and remove `be' in all but the first one if so
-                ($tmp  = $xng) =~ s/\(.*\)//g; # disregard parenthesis cont
+                ($tmp = $xng) =~ s/\(.*\)//g;  # disregard parenthesis cont
                 $tmp = grep !/^be /,split(', ',$tmp);# num of defs NOT beg with "be"
                 if ($tmp == 0) {               # all fields began with 'be'
                     $xng =~ s/, be /, /g;      # replace `, be ' with `, '
@@ -265,30 +246,71 @@ sub buffer_to_LaTeX {
 }
 
 
-sub LaTeX {
-    my ($x) = @_;
-    foreach ($x) {
-        s/{/\\B{/g;                            # bold    {...} => \B{...}
-        s/~([^~]*)~/\\I{$1}/g;                 # italics ~...~ => \I{...}
-        s/''/'{}'/g;                           # double aphostrophe
-        s/(^| )\"/$1``/g;                      # initial quote
-        s/\"/''/g;                             # ending quote
-        s/\.\.\. /\ldots\ /g;                  # ... + <space>
-        s/\.\.\./\ldots/g;                     # ...
-        s/ /~/g;                               # non-breaking space
-        s/¿?//g;                               # remove ¿?
-        s/([%#\$])/\\$1/g;                     # escape %, #, $
-    }
-    return $x;
+###############################################################################
+##                                                                           ##
+##  Initialization                                                           ##
+##                                                                           ##
+###############################################################################
+
+if (@ARGV == 0  or grep(/^(-h|--help)$/, @ARGV)) {
+    (my $self = $0) =~ s#^.*/##;
+    print "Usage: $self DIRECTION [<] ZDBFILE\n";
+    print "Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.\n";
+    print "\n";
+    print "Where DIRECTION is one of:\n";
+    print "    $_  for $directions{$_} output\n" foreach sort keys %directions;
+    print "\n";
+    print "Input is read from ZDBFILE(s) or STDIN, output is sent to STDOUT.\n";
+    exit;
 }
 
-# make string into lowercase
-sub lower {
-    my ($str) = @_;                            # get args
-    $str =~ s{                                 #
-        ([A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ])  #
-    }{chr(ord $1 | 0x20)}gexo;                 # or %0010 0000 to all chars
-    return $str;                               #   in alphabet
+$direction = shift();
+if (not $directions{$direction}) {
+    print "First argument must be one of:\n";
+    print "    $_ -- for $directions{$_} output\n" foreach sort keys %directions;
+    exit;
 }
+
+
+###############################################################################
+##                                                                           ##
+##  Main Program                                                             ##
+##                                                                           ##
+###############################################################################
+
+# open file and skip header
+while(<>) {                                    # skip past data file header
+    last if /^=== start-of-word-list ===$/;    #
+}                                              #
+
+# read from the dictionary
+my (@buf, @file) = ();
+while(<>) {
+    chomp;                                     # remove eol
+    last if /^=== end-of-word-list ===$/;      # done at end-of-dict
+
+    # beginning of a new post
+    if (s/^(:|\s*$)//) {                       # beginning of new post?
+        push @file, buffer_to_latex(@buf);     #   output processed buffer
+        @buf = ();                             #   clear buffer
+        next if /^$/;                          #   skip to next line in file
+    }                                          #   if this one is empty now
+
+    # add read line to buffer
+    $buf[$#buf] .= $_, next if s/^\s+/ /;      # inital space: add to last line
+    push @buf, $_;                             #   add a new line to buffer
+}
+
+# output main body of file
+print latex_header($direction, $#file+1);
+my ($oldfirst, $first) = ("", "");
+foreach (sort @file) {
+    ($first) = /^(.)/;                         # get sortstring's 1st letter
+    print "\\newletter{}%\n"                   # new letter in alphabet
+        if $first ne $oldfirst;                #
+    s/[^ ]* //;                                # remove sortstring
+    print "  $_";                              # output
+} continue { $oldfirst = $first }              # remember 1st letter
+print latex_footer();
 
 #[eof]
