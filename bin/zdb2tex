@@ -13,7 +13,7 @@
 # rudimentary update, still up not to my current code standard
 #
 # [2010-05-13, 19:52-20:35] Made to work with "use warnings" & "use stict";
-# fixed proper identation
+# fixed proper identation; now accepts input on STDIN
 
 use strict;
 use warnings;
@@ -21,7 +21,7 @@ use encoding 'utf8';
 
 if (@ARGV == 0  or grep(/^(-h|--help)$/, @ARGV)) {
     (my $self = $0) =~ s#^.*/##;
-    print "Usage: $self DIRECTION [ZDBFILE]...\n";
+    print "Usage: $self DIRECTION [<] ZDBFILE\n";
     print "Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.\n";
     print "\n";
     print "DIRECTION is either 'en-tlh' (English-Klingon) or 'tlh-en' (Klingon-English).\n";
@@ -30,7 +30,7 @@ if (@ARGV == 0  or grep(/^(-h|--help)$/, @ARGV)) {
 }
 
 my $direction = shift();
-if ( $direction !~ /^(tlh-en|en-tlh)$/i ) {
+if ($direction !~ /^(tlh-en|en-tlh)$/i) {
     print "First argument must specify 'tlh-en' (Klingon-English) or 'en-tlh' (English-Klingon).\n";
     exit;
 }
@@ -67,13 +67,13 @@ print "% LaTeX conversion started: ",`date +"%Y-%m-%d, %H.%m.%S"`;
 
 
 # open file and skip header
-while(<>) {                                # skip past data file header
+while(<>) {                                    # skip past data file header
     last if /^=== start-of-word-list ===$/;    #
 }                                              #
 
 # read from the dictionary
 my @buf = ();                                  #
-while(<>) { chomp;                         # remove eol
+while(<>) { chomp;                             # remove eol
     last if /^=== end-of-word-list ===$/;      # done at end-of-dict
 
     # beginning of a new post
@@ -237,11 +237,11 @@ sub buffer_to_LaTeX {
                 (?:^|(?<=[ ]))                 # space or beg-of-string
                 \Q$lookup\E                    # lookup word
                 (?=$|[, ])                     # end-of-string or
-            }{××}gx;                           # tilde ("××") replacement
+            }{×}gx;                            # tilde ("×") replacement
 
             # tilde removal (of parts w/ only tilde as transl.)
-            $xng = join ', ', grep { ! /^××$/ }# remove all part-definitions
-                split(', ', $xng);             #   containing only "××"
+            $xng = join ', ', grep { ! /^×$/ } # remove all part-definitions
+                split(', ', $xng);             #   containing only "×"
 
             # multiple `be' removal
             {                                  #
@@ -255,7 +255,7 @@ sub buffer_to_LaTeX {
             }                                  #
 
             substr($xng, -6, 6) =~ s/ /~/g;    # nbsp at end of english
-            $xng =~ s/××/\\lemma{}/g;          # special ~ comand
+            $xng =~ s/×/\\lemma{}/g;           # special ~ comand
 
             push @return, "$sort \\lueng".     # return value
                 "{$lookup}{$tlh}{$pos}{$extra}{$xng}%\n";

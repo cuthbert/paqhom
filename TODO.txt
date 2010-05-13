@@ -19,8 +19,6 @@ Important Stuff
 
 * Perl (zdb2tex):
 
-    o "××" -> "×".
-
     o Proper argument parsing.
 
     o Check DB syntax on reading. Are there any mandatory fields missing? Are
