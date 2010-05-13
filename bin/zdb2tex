@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 #
 # [2002-01-21, 17.58-21.12]
 #
@@ -10,11 +10,15 @@
 # ugly black square instead. (This occured once in the dictionary.)
 #
 # [2010-05-11] Made it work with modern-day zdb, using unicode. Very
-# rudimentary update, still up to my current code standard.
+# rudimentary update, still up not to my current code standard
+#
+# [2010-05-13, 19:52-20:35] Made to work with "use warnings" & "use stict".
 
+use strict;
+use warnings;
 use encoding 'utf8';
 
-($Direction, $Dict_File) = @ARGV;
+my ($Direction, $Dict_File) = @ARGV;
 if ( $#ARGV < 1 ) {
     print "usage: dict2latex.plx <DIR> <DICTFILE>\n";
     print "Where <DIR> is 'ek' (English-Klingon) or 'ke' (Klingon-English).\n";
@@ -34,21 +38,22 @@ if ( ! -r $Dict_File ) {
 # string = regex that matches klingon letter
 # array  = sort order
 # hash   = letter to sort-letter
-$alpha = "(tlh|ch|gh|ng|[abDeHIjlmnopqQrStuvwy' ])";
-@alpha = (" ");                                # <space>
+my $alpha = "(tlh|ch|gh|ng|[abDeHIjlmnopqQrStuvwy' ])";
+my @alpha = (" ");                             # <space>
 push @alpha, qw( a b ch D e gh H I j l m n ng o p q Q r S t tlh u v w y );
 push @alpha, "'"; my $i;                       # add glottal stop
+my %alpha = ();
 foreach (@alpha) { $alpha{$_} = chr 96+$i++ }  # produce sort order hash
 
-$Fields = '^(tlh|en|def):\s*';                 # fields we need
-$En_POS = '\((v|n|name|pro|adv|num|excl|ques|conj)\)';
+my $Fields = '^(tlh|en|def):\s*';              # fields we need
+my $En_POS = '\((v|n|name|pro|adv|num|excl|ques|conj)\)';
 #$Sv_POS = '\((v|s|namn|pro|adv|räkn|interj|fråg|konj)\)';
 
-$az  = 'A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ';
+my $az  = 'A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ';
 $az .= lower($az) . "ßÿ";
 
 
-@file   = ();
+my @file = ();
 
 print "% -*- tex -*-\n";
 print "%\n";
@@ -68,7 +73,7 @@ while(<DICT>) {                                # skip past data file header
 }                                              #
 
 # read from the dictionary
-@buf = ();                                     #
+my @buf = ();                                  #
 while(<DICT>) { chomp;                         # remove eol
     last if /^=== end-of-word-list ===$/;      # done at end-of-dict
 
@@ -88,7 +93,8 @@ close DICT;
 print "% There are ", $#file+1, " words in this file.\n\n";
 
 # output main body of file
-$oldfirst = "";
+my $oldfirst = "";
+my $first = "";
 foreach (sort @file) {
     ($first) = /^(.)/;                         # get sortstring's 1st letter
     print "\\newletter{}%\n"                   # new letter in alphabet
@@ -114,15 +120,15 @@ sub buffer_to_LaTeX {
     }                                          #
 
      # process `tlh:'-field
-    $tlh =  $field{tlh};                       #
+    my $tlh =  $field{tlh};                    #
     $tlh =~ s/^{(.*)}.*/$1/;                   # remove all outside {...}
     $tlh =  &LaTeX($tlh);                      # LaTeXify
 
     # split `en:'-field into:
     #   `English', `part-of-speech' and `slang/regional'
-    $en =  $field{en};                         #
+    my $en =  $field{en};                      #
     $en =~ /(.*)$En_POS(.*)/;                  # fetch transl., pos & category
-    ($en, $pos, $extra) = ($1, $2, $3);        #
+    ($en, my $pos, my $extra) = ($1, $2, $3);  #
     $en =~ s/ *$//;                            # remove trailing space
     $extra =~ s/^\s*\((.*)\)\s*/$1/;           # remove surrounding parentheses
     $extra =  &LaTeX($extra);                  # LaTeXify
@@ -140,7 +146,7 @@ sub buffer_to_LaTeX {
         $tlh =~ s/[<>«»]//g;                   # remove «»<> from klingon
 
         # process `def:'-field
-        $ref =  $field{def};                   #
+        my $ref =  $field{def};                #
         $ref =~ s/\[(.*)\]/$1/;                # remove brackets
 	$ref =~ s/\s*\(.*\)//g;                # remove parentesis & contents
         $ref =  "" if $ref eq "TKD";           # clear if "TKD"
@@ -152,19 +158,19 @@ sub buffer_to_LaTeX {
         {                                      #
 	    # if all english definitions begin with the word 'be'
 	    # and remove `be' in all but the first one if so
-	    ($tmp  = $en) =~ s/\(.*\)//g;      # disregard parenthesis cont
+	    (my $tmp = $en) =~ s/\(.*\)//g;    # disregard parenthesis cont
 	    $tmp = grep !/^be /,split(', ',$tmp);# num of defs NOT beg with "be"
 	    if ($tmp == 0) {                   # all fields began with 'be'
                 $en =~ s/, be /, /g;           # replace `, be ' with `, '
             }                                  #
 	}                                      #
         $en =  &LaTeX($en);                    # LaTeXify
-	$off = -6 + length($ref);              # use non-breaking spaces 
+	my $off = -6 + length($ref);           # use non-breaking spaces 
 	substr($en, $off, 6) =~ s/ /~/g        #   at the end of english
 	    unless $off >= 0;                  #   definition
 
         # make sortkey
-        $sort  =  $field{tlh};                 #
+        my $sort  =  $field{tlh};              #
 	$sort  =~ s/[<>«»{}() ]//g;            # remove <space> <>«»{} and ()
         $sort  =~ s/($alpha)/$alpha{$1}/g;     # translate
         $sort .=  "_$pos";                     # attach part-of-speech
@@ -188,10 +194,12 @@ sub buffer_to_LaTeX {
         # extract all lookup words
         $en =~ tr/<>/«»/;                      # make <> into «»
 	pos($en) = 0;                          #
-	@stack    = ();                        # init stack
+	my @stack = ();                        # init stack
+        my $beg;                               #
         while ( $en =~ /«/g ) {                # find first `«'
 	   $beg = pos($en);                    # beg of this definiton
 	   push @stack, "»";                   # stack it
+	   my $len;
 	   do {                                # until stack is empty
 	       $en =~ /([«»])/g;               #   find next `«' or `»'
 	       if ($1 eq $stack[$#stack] ) {   #   if equal to on stack
@@ -201,16 +209,16 @@ sub buffer_to_LaTeX {
 	       }                               #
 	       $len = pos($en)-$beg-1;         #   length of lookup word
 	   } while @stack;                     # 
-	   $lookup = substr($en, $beg, $len);  # lookup word
+	   my $lookup = substr($en,$beg,$len); # lookup word
 	   $lookup =~ s/\s*\(.*\)//g;          # remove parentesis & contents
 
            # create sort string
-           $sort  =  $lookup;                  # sort based on lookup word
+           my $sort  =  $lookup;               # sort based on lookup word
            $sort  =~ tr/«»<>{}~\' -//d;        # remove interpunct
            $sort  = &lower($sort);             # make lowercase
 	   $sort  =~ tr/àáâãäèéêëìíîïòóôõöùúûüýÿ/aaaaaeeeeiiiiooooouuuuyy/;
            $sort .=  "_$pos";                  # attach part-of-speech
-	   ($tmp  = $tlh) =~ s/($alpha)/$alpha{$1}/g;
+	   (my $tmp = $tlh) =~ s/($alpha)/$alpha{$1}/g;
            $sort  .= "_$tmp";                  # klingon sort word (useful for
 	                                       # many similar words, e.g. bird)
            # lookup word
@@ -219,7 +227,7 @@ sub buffer_to_LaTeX {
 	   
 	   # English definition
 	   # ($xng temp for this loop, $en must be perserved)
-	   $xng =  $en;
+	   my $xng =  $en;
            $xng =~ s/[<>«»]//g;                # remove «»<> from english
            $xng =  &LaTeX($xng);               # LaTeXify
 	   $xng =  "" if ( $xng eq $lookup );  # no def. if same as lookup
