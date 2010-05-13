@@ -21,9 +21,9 @@ Important Stuff
 
     o "××" -> "×".
 
-    o Code cleanup variable as filehandle.
+    o Proper argument parsing.
 
-    o Re-indent code (& remove all tabs).
+    o Code cleanup variable as filehandle.
 
     o Allow input on STDIN.
 
