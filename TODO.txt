@@ -23,6 +23,10 @@ Important Stuff
 
 * Perl (booksort):
 
+    o Replace with something not home-written? (pdftk? Some PS tool?)
+
+    o "use strict" and "use warnings".
+
     o Does this script do anything meaningful with PostScript files outputted
       by modern day LaTeX?
 
@@ -32,10 +36,6 @@ Important Stuff
 * Makefile
 
     o Generation of tlh-en.tex/en-tlh.tex on-the-fly.
-
-* Perl: Convert all Perl scripts to be able to handle UTF8.
-
-    o DONE: bookprint, bin/dict2lateox.plx
 
 * Perl: Scripts for resorting output file into printable booklet. Incorporate
   in Makefile.
@@ -47,8 +47,6 @@ Important Stuff
   in Makefile.
 
 * LaTeX: Clean up and remove unused code.
-
-* Perl: "use strict" and "use warnings" in all scripts.
 
 
 
