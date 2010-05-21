@@ -33,6 +33,15 @@
 #     found under both {bang bom} and {bom}.)
 #   o Make sure sortkeys aren't produced from LaTeXified strings.
 #   o Put output into hash with sortkey as key.
+#   o Non-breaking spaces at end of entry:
+#     * Klingon-English side: Maybe not needed at all in for entries that have
+#       a source reference? (seems to look good in pocket dict, regardless of
+#       how short the source reference is -- they are never shorter than five
+#       letters anyway, e.g. "[TKD]")
+#     * English-Klingon side: (Have no source reference.) Maybe non-breaking
+#       spaces should be introduced in a shorter ending substring than the
+#       current six letters? What looks good? And how much many pages shorter
+#       does the dictionary become dictionary by decreasing this number?
 #
 
 use strict;
@@ -213,9 +222,9 @@ sub non_breaking_space_at_end {
 }
 
 sub english_klingon_sortkey {
-    my ($english, $pos, $klingon) = @_;
+    my ($english, $pos, $klingon, $english_long) = @_;
     return
-      join("_", english_sortkey($english), $pos, klingon_sortkey($klingon));
+      join("_", english_sortkey($english), $pos, klingon_sortkey($klingon), english_sortkey($english_long));
 }
 
 # Usage: $SORTKEY = klingon_english_sortkey($KLINGON, $PART-OF-SPEECH);
@@ -286,7 +295,7 @@ sub english_klingon {
             $main = non_breaking_space_at_end($main, 6);
             $main =~ s/×/\\lemma{}/g;          # "~" -> "\lemma{}"
         }
-        english_klingon_sortkey($_, $pos, $tlh)
+        english_klingon_sortkey($_, $pos, $tlh, $english)
           . " \\lueng{$lookup}{$tlh}{$pos}{$extra}{$main}%\n";
     } lookup_words($en);
 } ## end sub english_klingon
