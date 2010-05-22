@@ -25,6 +25,13 @@
 
 # TODO
 #
+#   o make cmd_help(), cmd_tlh_en(), cmd_en_tlh() be automatically called
+#   o make cmd_help() use real inline docs (copy from userdb?)
+#   o source output should include SHA1 & dates of all involved sources
+#     (dictionary, this program's source code, any other relevant files) so
+#     that one, at any future date, may use the git repo to match up a specific
+#     compiled version of the dictionary with a specific version of the
+#     original database
 #   o Don't use "date" command to get current time, use Perl built-in
 #   o Don't sort using lemma number in klingon_sortkey() lemma numbers aren't
 #     shown in the dictionary anyway
@@ -47,8 +54,17 @@
 use strict;
 use warnings;
 
+my %arg = (
+    help   => "",
+    orphan => 6,
+);
+
+
 # see open(3perl), encoding(3perl)
 use encoding 'utf8';
+
+sub FALSE { '' }
+sub TRUE  { 1 }
 
 # define alphabet
 # string = regex that matches klingon letter
@@ -91,6 +107,25 @@ my %directions = (
 ##  Functions                                                                ##
 ##                                                                           ##
 ###############################################################################
+
+sub cmd_help {
+    my $out = join "", map {
+        "  $_   output $directions{$_} dictionary section\n";
+    } sort keys %directions;
+    print <<"EOF";
+Usage: $0 [OPTION] DIRECTION [<] ZDBFILE
+Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.
+
+Options:
+  -h, --help           display this help and exit
+  -o, --orphan=NUMBER  disable line breaks in last NUMBER of
+                       characters in each dictionary entry
+
+Where DIRECTION is one of:
+$out
+Input is read from ZDBFILE(s) or STDIN, output is sent to STDOUT.
+EOF
+}
 
 # @WORDS = lookup_words($STRING);
 #
@@ -146,7 +181,7 @@ sub process_ref {
         s/^TKD$//;                             # clear if "TKD"
     }
     $reference = latexify($reference);
-    $reference = non_breaking_space_at_end($reference, 6);
+    $reference = non_breaking_space_at_end($reference, $arg{orphan});
     return $reference;
 }
 
@@ -223,8 +258,11 @@ sub non_breaking_space_at_end {
 
 sub english_klingon_sortkey {
     my ($english, $pos, $klingon, $english_long) = @_;
-    return
-      join("_", english_sortkey($english), $pos, klingon_sortkey($klingon), english_sortkey($english_long));
+    return join("_",
+        english_sortkey($english),
+        $pos,
+        klingon_sortkey($klingon),
+        english_sortkey($english_long));
 }
 
 # Usage: $SORTKEY = klingon_english_sortkey($KLINGON, $PART-OF-SPEECH);
@@ -292,7 +330,7 @@ sub english_klingon {
             $main = replace_lookup_word_with_tilde($lookup, $main);
             $main = remove_tilde_only_parts($main);
             $main = remove_multiple_be($main); # remove word "be"
-            $main = non_breaking_space_at_end($main, 6);
+            $main = non_breaking_space_at_end($main, $arg{orphan});
             $main =~ s/×/\\lemma{}/g;          # "~" -> "\lemma{}"
         }
         english_klingon_sortkey($_, $pos, $tlh, $english)
@@ -322,7 +360,7 @@ sub klingon_english {
 
     # consider source reference length when adding non-breaking spaces
     # (since source reference comes after on same line)
-    $en = non_breaking_space_at_end($en, 6 - length($ref));
+    $en = non_breaking_space_at_end($en, $arg{orphan} - length($ref));
 
     # FIXME could be neater
     return map {
@@ -393,23 +431,62 @@ sub buffer_to_latex {
 ##                                                                           ##
 ###############################################################################
 
-if (@ARGV == 0 or grep(/^(-h|--help)$/, @ARGV)) {
-    (my $self = $0) =~ s#^.*/##;
-    print "Usage: $self DIRECTION [<] ZDBFILE\n";
-    print "Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.\n";
-    print "\n";
-    print "Where DIRECTION is one of:\n";
-    print "    $_  for $directions{$_} output\n" foreach sort keys %directions;
-    print "\n";
-    print "Input is read from ZDBFILE(s) or STDIN, output is sent to STDOUT.\n";
+local %SIG = (
+    __DIE__ => sub { print STDERR "$0: @_"; exit 255 },
+    __WARN__ => sub { print STDERR "$0: @_" },
+);
+
+sub is_number {
+    local ($_) = @_;
+    m/^\d+/
+}
+
+{
+    my $bad = FALSE;
+    my @arg = ();
+    while (@ARGV) {
+        my $opt = shift(@ARGV);
+        unshift(@ARGV, $1) if $opt =~ s/=(.*)$//;
+
+        use feature ":5.10";
+        given ($opt) {
+            when (m/^--$/) { last }
+            ##   -h, --help           display this help and exit
+            when (m/^(-h|--help)$/) { $arg{help} = TRUE }
+            ##   -o, --orphan=NUMBER  disable line breaks in last NUMBER of
+            ##                        characters in each dictionary entry
+            when (m/^(-o|--orphan)$/) {
+                my $arg = shift(@ARGV);
+                if (not is_number($arg)) {
+                    warn "unknown arg '$arg' for '$_', must be number\n";
+                    $bad = TRUE;
+                } else {
+                    $arg{orphan} = $arg;
+                }
+            }
+            m/^-/ and do {
+                warn "unknown option '$_'\n";
+                $bad = TRUE;
+                next;
+            };
+            default { push @arg, $_ }
+        }
+    }
+    $bad and exit 5;
+    unshift @ARGV, @arg;
+}
+
+if (@ARGV == 0 or $arg{help}) {
+    cmd_help();
     exit;
 }
 
 $direction = shift();
 if (not $directions{$direction}) {
-    print "First argument must be one of:\n";
-    print "    $_ -- for $directions{$_} output\n"
-      foreach sort keys %directions;
+    warn "unknown first argument, must be one of:\n",
+        join "", map {
+            "  $_  - $directions{$_} output\n";
+        } sort keys %directions;
     exit;
 }
 
