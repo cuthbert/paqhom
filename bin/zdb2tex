@@ -22,10 +22,12 @@
 #
 # [2010-05-19] cleaned up english-klingon conversion code by breaking it down
 # into smaller units and creating functions for them
+#
+# [2010-05-23] moved all program-specific logic into functions (made so that
+# all command line subcommands got their own cmd_* function)
 
 # TODO
 #
-#   o make cmd_help(), cmd_tlh_en(), cmd_en_tlh() be automatically called
 #   o make cmd_help() use real inline docs (copy from userdb?)
 #   o source output should include SHA1 & dates of all involved sources
 #     (dictionary, this program's source code, any other relevant files) so
@@ -54,11 +56,7 @@
 use strict;
 use warnings;
 
-my %arg = (
-    help   => "",
-    orphan => 6,
-);
-
+my %arg = (orphan => 6);
 
 # see open(3perl), encoding(3perl)
 use encoding 'utf8';
@@ -104,14 +102,14 @@ my %directions = (
 
 ###############################################################################
 ##                                                                           ##
-##  Functions                                                                ##
+##  Subcommand Functions                                                     ##
 ##                                                                           ##
 ###############################################################################
 
 sub cmd_help {
-    my $out = join "", map {
-        "  $_   output $directions{$_} dictionary section\n";
-    } sort keys %directions;
+    my $out = join "",
+      map { "  $_   output $directions{$_} dictionary section\n" }
+      sort keys %directions;
     print <<"EOF";
 Usage: $0 [OPTION] DIRECTION [<] ZDBFILE
 Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.
@@ -125,6 +123,37 @@ Where DIRECTION is one of:
 $out
 Input is read from ZDBFILE(s) or STDIN, output is sent to STDOUT.
 EOF
+}
+
+sub cmd_tlh_en {
+    process_dict("tlh-en", @_);
+}
+
+sub cmd_en_tlh {
+    process_dict("en-tlh", @_);
+}
+
+###############################################################################
+##                                                                           ##
+##  Functions                                                                ##
+##                                                                           ##
+###############################################################################
+
+# Usage: $STRING = program_name($INSTRING);
+#
+# Replace all occurances of "%s" in $INSTRING with program name (excluding
+# path).
+sub program_name {
+    my ($text) = @_;
+    my $name = $0;                             # program name
+    $name =~ s#.*/##;                          #   strip path
+    $text =~ s#%s#$name#g;
+    return $text;
+}
+
+sub is_number {
+    local ($_) = @_;
+    m/^\d+/;
 }
 
 # @WORDS = lookup_words($STRING);
@@ -157,6 +186,58 @@ sub lookup_words {
     }
     return @return;
 } ## end sub lookup_words
+
+# Usage: process_dict($DIRECTION);
+#
+# Reads input using diamond operator (<>), produces output on STDOUT.
+# $DIRECTION is either "tlh-en" or "en-tlh".
+#
+# Input should be in zdb format. Output will be LaTeX.
+sub process_dict {
+    (my $direction, @ARGV) = @_;
+
+    # open file and skip header
+    while (<>) {                               # skip past data file header
+        last if /^=== start-of-word-list ===$/;
+    }
+
+    # read from the dictionary
+    my (@buf, @file) = ();
+    while (<>) {
+        chomp;                                 # remove eol
+        last if /^=== end-of-word-list ===$/;  # done at end-of-dict
+
+        # beginning of a new post
+        if (s/^(:|\s*$)//) {                   # beginning of new post?
+            push @file, buffer_to_latex(       #   output processed buffer
+                $direction, @buf,
+            );
+            @buf = ();                         #   clear buffer
+            next if /^$/;                      #   skip to next line in file
+        }                                      #   if this one is empty now
+
+        # add read line to buffer
+        if (m/^\s+(.*)/) {                     # initial space: add to last line
+            $buf[$#buf] .= " " . $1;
+            next;
+        }
+        push @buf, $_;                         #   add new line to buffer
+    } ## end while (<>)
+
+    # output main body of file
+    print latex_header($direction, $#file + 1);
+    my ($oldfirst, $first) = ("", "");
+    foreach (sort @file) {
+        ($first) = /^(.)/;                     # get sortstring's 1st letter
+        print "\\newletter{}%\n"               # new letter in alphabet
+          if $first ne $oldfirst;
+        s/[^ ]* //;                            # remove sortstring
+        print "  $_";                          # output
+    } continue {
+        $oldfirst = $first;                    # remember 1st letter
+    }
+    print latex_footer();
+} ## end sub process_dict
 
 # Usage: $LATEX = process_tlh($KLINGON);
 #
@@ -406,7 +487,7 @@ sub latexify {
 }
 
 sub buffer_to_latex {
-    my (@buf) = @_;                            # get buffer
+    my ($direction, @buf) = @_;                # get buffer
     return () unless @buf;                     # don't process empty buffers
 
     # get fields
@@ -432,14 +513,9 @@ sub buffer_to_latex {
 ###############################################################################
 
 local %SIG = (
-    __DIE__ => sub { print STDERR "$0: @_"; exit 255 },
-    __WARN__ => sub { print STDERR "$0: @_" },
+    __DIE__ => sub { print STDERR program_name("%s: @_"); exit 255 },
+    __WARN__ => sub { print STDERR program_name("%s: @_") },
 );
-
-sub is_number {
-    local ($_) = @_;
-    m/^\d+/
-}
 
 {
     my $bad = FALSE;
@@ -452,7 +528,7 @@ sub is_number {
         given ($opt) {
             when (m/^--$/) { last }
             ##   -h, --help           display this help and exit
-            when (m/^(-h|--help)$/) { $arg{help} = TRUE }
+            when (m/^(-h|--help)$/) { unshift(@arg, "help") }
             ##   -o, --orphan=NUMBER  disable line breaks in last NUMBER of
             ##                        characters in each dictionary entry
             when (m/^(-o|--orphan)$/) {
@@ -470,24 +546,10 @@ sub is_number {
                 next;
             };
             default { push @arg, $_ }
-        }
-    }
+        } ## end given
+    } ## end while (@ARGV)
     $bad and exit 5;
     unshift @ARGV, @arg;
-}
-
-if (@ARGV == 0 or $arg{help}) {
-    cmd_help();
-    exit;
-}
-
-$direction = shift();
-if (not $directions{$direction}) {
-    warn "unknown first argument, must be one of:\n",
-        join "", map {
-            "  $_  - $directions{$_} output\n";
-        } sort keys %directions;
-    exit;
 }
 
 ###############################################################################
@@ -496,44 +558,23 @@ if (not $directions{$direction}) {
 ##                                                                           ##
 ###############################################################################
 
-# open file and skip header
-while (<>) {                                   # skip past data file header
-    last if /^=== start-of-word-list ===$/;
+if (not @ARGV) {
+    cmd_help();
+    exit 5;
 }
 
-# read from the dictionary
-my (@buf, @file) = ();
-while (<>) {
-    chomp;                                     # remove eol
-    last if /^=== end-of-word-list ===$/;      # done at end-of-dict
+# get command line args
+my ($cmd, @arg) = @ARGV;
 
-    # beginning of a new post
-    if (s/^(:|\s*$)//) {                       # beginning of new post?
-        push @file, buffer_to_latex(@buf);     #   output processed buffer
-        @buf = ();                             #   clear buffer
-        next if /^$/;                          #   skip to next line in file
-    }                                          #   if this one is empty now
-
-    # add read line to buffer
-    if (m/^\s+(.*)/) {                         # inital space: add to last line
-        $buf[$#buf] .= " " . $1;
-        next;
-    }
-    push @buf, $_;                             #   add a new line to buffer
+# name of sub to call
+(my $sub = "cmd_$cmd") =~ s/-/_/g;
+if (not defined(&$sub)) {
+    die "'$cmd' is not a %s-command. See '%s --help'.\n";
 }
 
-# output main body of file
-print latex_header($direction, $#file + 1);
-my ($oldfirst, $first) = ("", "");
-foreach (sort @file) {
-    ($first) = /^(.)/;                         # get sortstring's 1st letter
-    print "\\newletter{}%\n"                   # new letter in alphabet
-      if $first ne $oldfirst;
-    s/[^ ]* //;                                # remove sortstring
-    print "  $_";                              # output
-} continue {
-    $oldfirst = $first;
-}                                              # remember 1st letter
-print latex_footer();
+# to allow name of a sub to be used as a subroutine ref, we disable refs
+# checking here (only disabled in this scope, not in the functions called)
+no strict "refs";                              # allow sub names as refs
+&$sub(@arg);                                   #   call function
 
 #[eof]
