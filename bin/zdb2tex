@@ -1,5 +1,41 @@
 #!/usr/bin/perl
-#
+
+=head1 NAME
+
+zdb2tex - extract contents of zdbfile and output LaTeX source
+
+=head1 SYNOPSIS
+
+zdb2tex [OPTION]... [COMMAND] [ARGUMENT]... [<] ZDBFILE
+
+=head1 DESCRIPTION
+
+FIXME
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<-h>, B<--help>
+
+Prints the synopsis and a lists all zdb2tex-commands. If a zdb2tex-command is
+named this option will display the manual description for that command.
+(Internally C<zdb2tex COMMAND --help> is converted to C<zdb2tex help COMMAND>.)
+
+=item B<-o>, B<--orphan>=I<NUMBER> (default: 6)
+
+Adjusts the NUMBER of characters in which linebreaks are suppressed at the very
+end of each dictionary entry.
+
+To avoid that a very short word at the end of a dictionary entry wind up on a
+line of its own linebreaking is suppressed for the last NUMBER of characters in
+each dictionary entry. (I.e. spaces are replaced by the LaTeX non-breaking
+space symbol "~" in this part of the text.)
+
+=back
+
+=cut
+
 # [2002-01-21, 17.58-21.12]
 #
 # [2002-01-22, 07.29-14.37]
@@ -24,11 +60,11 @@
 # into smaller units and creating functions for them
 #
 # [2010-05-23] moved all program-specific logic into functions (made so that
-# all command line subcommands got their own cmd_* function)
+# all command line subcommands got their own cmd_* function); added help() from
+# my userdb script (it's not well written but gets the job done)
 
 # TODO
 #
-#   o make cmd_help() use real inline docs (copy from userdb?)
 #   o source output should include SHA1 & dates of all involved sources
 #     (dictionary, this program's source code, any other relevant files) so
 #     that one, at any future date, may use the git repo to match up a specific
@@ -106,38 +142,143 @@ my %directions = (
 ##                                                                           ##
 ###############################################################################
 
+=head1 ZDB2TEX COMMANDS
+
+=over 4
+
+=item help [COMMAND]
+
+Display help information about zdb2tex. If no COMMAND is given, displays a list
+of possible COMMANDs. If a COMMAND is specified, displays some more info about
+that particular command.
+
+FIXME help() could be cleaner, and more readable, but it'll do for now
+
+=cut
+
 sub cmd_help {
-    my $out = join "",
-      map { "  $_   output $directions{$_} dictionary section\n" }
-      sort keys %directions;
-    print <<"EOF";
-Usage: $0 [OPTION] DIRECTION [<] ZDBFILE
-Extract contents of ZDBFILE(s) and output {paqHom} LaTeX source.
+    my ($cmd) = @_;
+    if (defined($cmd)) {                       # user asked for a command
+        my @text = ();
+        use Cwd "realpath";
+	foreach (read_file(realpath($0))) {    # extract relevant "=item"
+	    if (@text or s/^ =item \s+ (?=\b $cmd \b) //x) {
+		last if m/^ =cut \b/x;
+		push @text, $_;
+	    }
+	}
+	die("'$cmd' is not a %s-command. See '%s --help'\n") unless @text;
 
-Options:
-  -h, --help           display this help and exit
-  -o, --orphan=NUMBER  disable line breaks in last NUMBER of
-                       characters in each dictionary entry
+	# strip trailing blank lines
+	while (@text and $text[$#text] =~ m/^\s*$/) { pop(@text) }
 
-Where DIRECTION is one of:
-$out
-Input is read from ZDBFILE(s) or STDIN, output is sent to STDOUT.
-EOF
+	# ident any =over/=back constructions
+	my $text = join("", @text);
+	$text =~ s{ ^=over[^\n]*\n+ (.*?) ^=back [^\n]*\n+ }{
+	    my $ind = $1;
+            $ind =~ s/^(?!$)/    /mg;
+            $ind =~ s/^ [ ]+ =item \s+ ([^\n]*)\n+/  $1\n/gmx;
+	    $ind =~ s/\n{2,}/\n\n/mg;
+            $ind;
+        }xsme;
+	$text =~ s/ B< ([^>]*) >/"$1"/xg;
+	@text = split("\n", $text);
+        print $text;
+    } else {
+        use Cwd "realpath";
+        local $_ = read_file(realpath($0));
+
+	my @desc = ();
+	m/=head1 SYNOPSIS\n+([^\n]*)\n+/             and push @desc, "Usage: $1";
+	m/=head1 NAME\n+(?:[^-\n]*-\s+)?([^\n]*)\n+/ and push @desc, "\u$1.";
+
+	# list of --options (from comments)
+	my @opt = ();
+	push @opt, $1 while m/^[\t ]*\#\#([^\n#]*)$/xgm;
+
+	# list of subcommands (from POD)
+	my @commands = ();
+	s/^=head1 LDAP[^\n]*ATTRIBUTES.*//sm;
+        my @text = ();
+	while (m/^(=item\s+ ([a-z]\S+)[^\n]* .*? \n\n+([^=][^,.\n]*))/gmsx) {
+	    my ($all, $cmd, $desc) = ($1, $2, $3);
+	    next if $all =~ m/TYPE=/;                   # spec for "search"
+	    my $warn = ($desc =~ s/^\*// ? "*" : "");
+	    push @text, sprintf "   %-13.13s %1s%s", $cmd, $warn, $desc;
+	}
+	# add other text to output
+        print map { "$_\n" }
+            @desc, "",
+	    "Subcommands:",
+	    sort(@text), "",
+	    "Options:",
+	    @opt, "",
+            program_name(
+                "See '%s help SUBCOMMAND' for more information on a specific subcommand."),
+            program_name("See '%s help attr' for more information on the LDAP attributes.");
+    }
 }
+
+=item man
+
+Display "zdb2tex" manpage. This extracts the inline POD documentation from
+zdb2text's Perl source and displays it using man(1).
+
+=cut
+
+sub cmd_man {
+    use Pod::Usage;
+    pod2usage(-verbose => 2);
+#    open(my $manpage, "| man -l -");
+#    use Cwd "realpath";   # resolves symlinks
+#    use Pod::Man;
+#    my $parser = new Pod::Man(section => 1);
+#    $parser->parse_from_file (realpath($0), $manpage);
+#    return close($manpage);
+}
+
+=item en-tlh
+
+Generate English-Klingon dictionary text.
+
+=cut
+
+sub cmd_en_tlh {
+    process_dict("en-tlh", @_);
+}
+
+=item tlh-en
+
+Generate Klingon-English dictionary text.
+
+=cut
 
 sub cmd_tlh_en {
     process_dict("tlh-en", @_);
 }
 
-sub cmd_en_tlh {
-    process_dict("en-tlh", @_);
-}
+=back
+
+=cut
 
 ###############################################################################
 ##                                                                           ##
 ##  Functions                                                                ##
 ##                                                                           ##
 ###############################################################################
+
+# Usage: { $TEXT | @TEXT } = read_file($FILE);
+#
+# Reads $FILE. In string context returns all of file as one $TEXT, in list
+# context returns all of file, separated by lines in @TEXT. die()s if $FILE
+# couldn't be read.
+sub read_file {
+    my ($file) = @_;
+    open(my $fh, "<", $file)
+      or die("failed to open file '$file' for reading: $!\n");
+    return <$fh> if wantarray();
+    return join("", <$fh>);
+}
 
 # Usage: $STRING = program_name($INSTRING);
 #
