@@ -161,63 +161,59 @@ sub cmd_help {
     if (defined($cmd)) {                       # user asked for a command
         my @text = ();
         use Cwd "realpath";
-	foreach (read_file(realpath($0))) {    # extract relevant "=item"
-	    if (@text or s/^ =item \s+ (?=\b $cmd \b) //x) {
-		last if m/^ =cut \b/x;
-		push @text, $_;
-	    }
-	}
-	die("'$cmd' is not a %s-command. See '%s --help'\n") unless @text;
+        foreach (read_file(realpath($0))) {    # extract relevant "=item"
+            if (@text or s/^ =item \s+ (?=\b $cmd \b) //x) {
+                last if m/^ =cut \b/x;
+                push @text, $_;
+            }
+        }
+        die("'$cmd' is not a %s-command. See '%s --help'\n") unless @text;
 
-	# strip trailing blank lines
-	while (@text and $text[$#text] =~ m/^\s*$/) { pop(@text) }
+        # strip trailing blank lines
+        while (@text and $text[$#text] =~ m/^\s*$/) { pop(@text) }
 
-	# ident any =over/=back constructions
-	my $text = join("", @text);
-	$text =~ s{ ^=over[^\n]*\n+ (.*?) ^=back [^\n]*\n+ }{
-	    my $ind = $1;
+        # ident any =over/=back constructions
+        my $text = join("", @text);
+        $text =~ s{ ^=over[^\n]*\n+ (.*?) ^=back [^\n]*\n+ }{
+            my $ind = $1;
             $ind =~ s/^(?!$)/    /mg;
             $ind =~ s/^ [ ]+ =item \s+ ([^\n]*)\n+/  $1\n/gmx;
-	    $ind =~ s/\n{2,}/\n\n/mg;
+            $ind =~ s/\n{2,}/\n\n/mg;
             $ind;
         }xsme;
-	$text =~ s/ B< ([^>]*) >/"$1"/xg;
-	@text = split("\n", $text);
+        $text =~ s/ B< ([^>]*) >/"$1"/xg;
+        @text = split("\n", $text);
         print $text;
     } else {
         use Cwd "realpath";
         local $_ = read_file(realpath($0));
 
-	my @desc = ();
-	m/=head1 SYNOPSIS\n+([^\n]*)\n+/             and push @desc, "Usage: $1";
-	m/=head1 NAME\n+(?:[^-\n]*-\s+)?([^\n]*)\n+/ and push @desc, "\u$1.";
+        my @desc = ();
+        m/=head1 SYNOPSIS\n+([^\n]*)\n+/ and push @desc, "Usage: $1";
+        m/=head1 NAME\n+(?:[^-\n]*-\s+)?([^\n]*)\n+/ and push @desc, "\u$1.";
 
-	# list of --options (from comments)
-	my @opt = ();
-	push @opt, $1 while m/^[\t ]*\#\#([^\n#]*)$/xgm;
+        # list of --options (from comments)
+        my @opt = ();
+        push @opt, $1 while m/^[\t ]*\#\#([^\n#]*)$/xgm;
 
-	# list of subcommands (from POD)
-	my @commands = ();
-	s/^=head1 LDAP[^\n]*ATTRIBUTES.*//sm;
+        # list of subcommands (from POD)
+        my @commands = ();
+        s/^=head1 LDAP[^\n]*ATTRIBUTES.*//sm;
         my @text = ();
-	while (m/^(=item\s+ ([a-z]\S+)[^\n]* .*? \n\n+([^=][^,.\n]*))/gmsx) {
-	    my ($all, $cmd, $desc) = ($1, $2, $3);
-	    next if $all =~ m/TYPE=/;                   # spec for "search"
-	    my $warn = ($desc =~ s/^\*// ? "*" : "");
-	    push @text, sprintf "   %-13.13s %1s%s", $cmd, $warn, $desc;
-	}
-	# add other text to output
-        print map { "$_\n" }
-            @desc, "",
-	    "Subcommands:",
-	    sort(@text), "",
-	    "Options:",
-	    @opt, "",
-            program_name(
-                "See '%s help SUBCOMMAND' for more information on a specific subcommand."),
-            program_name("See '%s help attr' for more information on the LDAP attributes.");
-    }
-}
+        while (m/^(=item\s+ ([a-z]\S+)[^\n]* .*? \n\n+([^=][^,.\n]*))/gmsx) {
+            my ($all, $cmd, $desc) = ($1, $2, $3);
+            next if $all =~ m/TYPE=/;          # spec for "search"
+            my $warn = ($desc =~ s/^\*// ? "*" : "");
+            push @text, sprintf "   %-13.13s %1s%s", $cmd, $warn, $desc;
+        }
+        # add other text to output
+        print map { "$_\n" } @desc, "",
+          "Subcommands:", sort(@text), "",
+          "Options:", @opt, "",
+          program_name("See '%s help SUBCOMMAND' for more information on a specific subcommand."),
+          program_name("See '%s help attr' for more information on the LDAP attributes.");
+    } ## end else [ if (defined($cmd)) ]
+} ## end sub cmd_help
 
 =item man
 
@@ -229,12 +225,6 @@ zdb2text's Perl source and displays it using man(1).
 sub cmd_man {
     use Pod::Usage;
     pod2usage(-verbose => 2);
-#    open(my $manpage, "| man -l -");
-#    use Cwd "realpath";   # resolves symlinks
-#    use Pod::Man;
-#    my $parser = new Pod::Man(section => 1);
-#    $parser->parse_from_file (realpath($0), $manpage);
-#    return close($manpage);
 }
 
 =item en-tlh
