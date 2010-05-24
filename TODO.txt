@@ -1,6 +1,14 @@
 Important Stuff
 ===============
 
+* markdown
+
+    o Perl: Write script to generate HTML-version of suffix guide from
+      markdown source.
+
+    o Perl: Write script to generate LaTeX-version of suffix guide from
+      markdown source.
+
 * dict.zdb
 
     o
