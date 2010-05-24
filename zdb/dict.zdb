@@ -1,4 +1,4 @@
-----------------------
+D----------------------
 [2002-06-28] There are 2565 Klingon words (not counting affixes).
 Sorted in Klingon alphabetical order (except for some new words at the end).
 ----------------------
@@ -39,6 +39,7 @@ FIELD NAMES USED IN DICTIONARY BELOW
                       part-of-speech
     def:   (required) source where definition can be found (within [])
     ref:   (optional) canon sources where it also occurs
+    gram:  (optional) very short grammatical notes (for inclusion in paqHom)
     com:   (optional) special comment concerning the entry
     pun:   (optional) comments about puns and/or word play
     see:   (optional) pointer to related word(s) (separated by semicolon)
@@ -334,7 +335,6 @@ sv:	ett slags hand«vapen», «~bat'leth~» (s)
 en:	type of hand <weapon>, «~bat'leth~» (n)
 def:	[TKDa]
 ref:	[TKW p.79]
-com:	Translation "~bat'leth~" inserted.
 
 tlh:	{betleH «bey'»}
 sv:	¿?«~bat'leth~-ställ» (s)
@@ -1692,6 +1692,7 @@ tlh:	{Dat}
 sv:	«överallt», alla platser (s)
 en:	<everywhere>, all places (n)
 def:	[TKD 3.3.5 (p.27--28) et al.]
+gram:	never takes {-Daq} [TKD 3.3.5 (p.27--28)]
 com:	Locative word, never followed by {-Daq} [TKD 3.3.5 (p.27--28)].
 cat:	locative
 
@@ -3783,7 +3784,9 @@ sv:	för många människor/saker på samma plats samtidigt (interj)
 en:	too many people/things in a place all at once (excl)
 def:	[HQ11:3 p.13]
 com:	Word play on {Qu'vatlh} which is more commonly heard in situations
-	described by {Hutvagh}.
+	described by {Hutvagh}. {Hutvagh} also reads as "nine five", and one
+	would not be surprised if the amount of "too many people" was along
+	highway 95.
 
 tlh:	{Hutlh}
 sv:	«sakna», vara «utan», «inte «ha»» (v)
@@ -4026,17 +4029,13 @@ en:	<succession ritual> (ancient) (n)
 def:	[TKDa]
 
 tlh:	{je}
-sv:	«också», «likaså» (kommer efter verb) (adv)
-en:	«also», «too» (follows verb) (adv)
+sv:	«också», «och» (kommer efter verb/förenade substantiv) (konj)
+en:	<also>, <and>, «too» (follows verb/nouns) (conj)
 def:	[TKD 5.3 (p.55)]
-com:	Described in TKD 5.3, follows the verb it modifies.
-
-tlh:	{je}
-sv:	«också», «och» (kommer förenade substantiv) (konj)
-en:	<also>, <and> (follows joined nouns) (conj)
-def:	[TKD]
 ref:	[TKW pp.34, 155, 187]
-com:	When following a verb it means "also, too".
+gram:	follows verb/nouns [TKD 5.3 (p.55)]
+com:	When following a verb it means "also, too", when following nouns it
+	means "and".
 
 tlh:	{jech}
 sv:	«förkläda», «klä ut» (v)
@@ -4366,12 +4365,15 @@ tlh:	{jorneb}
 sv:	«stridsspets» (på en torped) (s)
 en:	<warhead> (of a torpedo) (n)
 def:	[KGT p.57, E-K]
-com:	Spellings alternate: {jornub} in K-E, {jorneb} in E-K.
+com:	WARNING - Spellings alternate: {jornub} in KGT K-E, {jorneb} in KGT
+	E-K.
 
 tlh:	{jornub}
 sv:	«stridsspets» (på en torped) (s)
 en:	«warhead» (of a torpedo) (n)
 def:	[KGT K-E]
+com:	WARNING - Spellings alternate: {jornub} in KGT K-E, {jorneb} in KGT
+	E-K.
 
 tlh:	{jorwI'}
 sv:	«sprängämne» (s)
@@ -4575,8 +4577,8 @@ en:	<shrub> (n)
 def:	[KGT]
 
 tlh:	{law'}
-sv:	vara «många», vara «talrika» (v)
-en:	be <many>, be <numerous> (v)
+sv:	vara «många», vara «talrika», vara «mycket» (v)
+en:	be <many>, be <numerous>, be «much»  (v)
 def:	[TKD]
 ref:	[TKW pp.35, 53, 95, 179; S33]
 com:	Entries differ and have been combined here.
@@ -4879,7 +4881,7 @@ sv:	«rymd» (s)
 en:	<space> (n)
 def:	[TKD]
 ref:	[TKW p.33]
-com:	Refering to "outer space".
+com:	Referring to "outer space".
 
 tlh:	{loghqam}
 sv:	«längd«enhet»» (cirka 1,25 «ljusår») (s)
@@ -5584,8 +5586,8 @@ en:	be <evil> (v)
 def:	[TKD]
 
 tlh:	{mIl}
-sv:	vara «fordom» «ärad», vara «tidigare» «hedrad» (v)
-en:	be «formerly» «honored» (v)
+sv:	vara «fordom «ärad»», vara «tidigare «hedrad»» (v)
+en:	be «formerly «honored»» (v)
 def:	[HQ12:3 p.8]
 com:	"This would be applied to a leader who left office is disgrace, for
 	example, or an ousted ship's captain. It would not be used of a
@@ -5779,7 +5781,7 @@ tlh:	{mojaQ}
 sv:	«suffix» (s)
 en:	<suffix> (n)
 def:	[TKD E-K]
-com:	DON'T USE THIS WORD.
+com:	WARNING - DON'T USE THIS WORD.
 see:	{mojaQ} (probably correct form)
 
 tlh:	{mol}
@@ -6146,6 +6148,7 @@ tlh:	{naDev}
 sv:	«här», «häromkring» (s)
 en:	<here>, hereabouts (n)
 def:	[TKD 3.3.5 (p.27--28) et al.]
+gram:	never takes {-Daq} [TKD 3.3.5 (p.27--28)]
 com:	Locative word, never followed by {-Daq} [TKD 3.3.5 (p.27--28)].
 cat:	locative
 
@@ -6414,6 +6417,7 @@ sv:	«bara», «enbart», «endast» (kommer efter verb eller substantiv) (adv)
 en:	<only>, <merely>, <just>, «alone» (follows verb or noun) (adv)
 def:	[TKD]
 ref:	[TKW pp.21, 61, 81, 105, 111, 113, 115, 191]
+gram:	follows verb/noun [TKD 5.4 (p.56)]
 com:	Follows the verb or noun it modifies. When following a noun
 	it means "only, alone".
 
@@ -6421,7 +6425,7 @@ tlh:	{neHjej}
 sv:	«tistel» (s)
 en:	<thistle> (n)
 def:	[KGT]
-com:	DON'T USE THIS WORD.
+com:	WARNING - DON'T USE THIS WORD.
 see:	{naHjej} (probably correct form)
 
 tlh:	{neHmaH}
@@ -7563,6 +7567,7 @@ tlh:	{pa'} (2)
 sv:	«där», där borta, däromkring (s)
 en:	<there>, over there, thereabouts (n)
 def:	[TKD 3.3.5 (p.27--28) et al.]
+gram:	never takes {-Daq} [TKD 3.3.5 (p.27--28)]
 com:	Locative word, never followed by {-Daq} [TKD 3.3.5 (p.27--28)].
 cat:	locative
 data:	KLCP-1
@@ -7871,6 +7876,7 @@ sv:	«warpfaktor» (s)
 en:	«warp factor» (n)
 def:	[TKD K-E]
 ref:	[BoP]
+gram:	precedes number when indicating speed [BoP]
 com:	Numbers are placed after when giving speed: {pIvlob vagh} "warp
 	factor five".
 
@@ -8269,7 +8275,7 @@ tlh:	{pu'bej}
 sv:	«phaser-gevär» (s)
 en:	«phaser rifle» (n)
 def:	[KGT p.56]
-com:	Probably {pu'beH} misspelled.
+com:	WARNING - Probably {pu'beH} misspelled.
 
 tlh:	{pu'beq}
 sv:	«phaser-manskap» (s)
@@ -8593,7 +8599,7 @@ tlh:	{qelI'qam}
 sv:	«längd«enhet»», «~kellicam~» (cirka 2 «kilometer») (s)
 en:	«unit» of linear «measure», <~kellicam~> (about 2 «kilometer»s) (n)
 def:	[TKD; STE]
-com:	Incorrect spelled {quelI'qam} in TKD E-K.
+com:	Incorrectly spelled {quelI'qam} in TKD E-K.
 
 tlh:	{qem}
 sv:	«hämta», «ta med» (sig) (v)
@@ -10605,7 +10611,7 @@ pun:	You're a sap if you volunteer.
 
 tlh:	{Saq}
 sv:	«landa», «landsätta», gå i land (v)
-en:	<land> (v)
+en:	<land> (on ground) (v)
 def:	[TKD]
 com:	also used about a bird landing on ground [HQ10:4 p.5]
 see:	{tlhot} (for landing on water)
@@ -11763,8 +11769,8 @@ tlh:	{tIb}
 sv:	vara «nervös», vara «rastlös» (v)
 en:	be «nervous», be «uneasy» (v)
 def:	[KGT p.132]
-com:	DON'T USE THIS WORD. It is a typo for {bIt} (maHvatlh: confirmed as
-	unintentional by MO at {qep'a' SochDIch}).
+com:	WARNING - DON'T USE THIS WORD. It is a typo for {bIt} (maHvatlh:
+	confirmed as unintentional by MO at {qep'a' SochDIch}).
 see:	{jotHa'}; {bIt} (correct form)
 
 tlh:	{tIch}
@@ -12223,8 +12229,8 @@ en:	be <patient> (v)
 def:	[TKD]
 
 tlh:	{tuy'}
-sv:	spotta (v)
-en:	«spit» (v)
+sv:	spotta (saliv/vätska) (v)
+en:	«spit» (saliva/liquid) (v)
 def:	[HQ12:4 p.8]
 com:	Used when spitting out saliva and/or other liquids. Not used when
 	spitting out solid things. [HQ12:4 p.9]
@@ -12488,8 +12494,8 @@ en:	<stew> (n)
 def:	[KGT]
 
 tlh:	{tlhIS}
-sv:	«spotta» ut (v)
-en:	<spit> out (v)
+sv:	«spotta» ut (föremål) (v)
+en:	<spit> out (solid thing) (v)
 def:	[KGT]
 com:	Used when spitting out solid things, possibly accopanied by some
 	saliva. Not used when just spitting saliva, or when spitting out
@@ -13541,7 +13547,7 @@ tlh:	{woj}
 sv:	«sterilisera» (v)
 en:	<sterilize> (v)
 def:	[KGT]
-com:	DON'T USE THIS WORD.
+com:	WARNING - DON'T USE THIS WORD.
 	Oops! MO seem to have canonified an error occuring on KLI's
 	list of new words, originally caused by a slip of the eye
 	while reading/transcribing the {veS QonoS} list in HQ1:3 p.9.
@@ -14946,8 +14952,8 @@ tlh:	{lo' law'}
 sv:	«» (s)
 en:	«utility» (preceeds noun it modifies) (n)
 def:	[BoP]
-com:	¿?I'm sceptic. Is this a real word or only some KLI new
-	words list maintainer's wet dream?
+com:	WARNING - ¿?I'm sceptic. Is this a real word or only some KLI new words
+	list maintainer's wet dream?
 data:	phrase
 
 tlh:	{yo'SeH yaHnIv}
@@ -15063,7 +15069,7 @@ tlh:	{ngun}
 sv:	«sätta» sig, «slå» sig ner (v)
 en:	«perch» (v)
 def:	[HQ10:4 p.5]
-com:	If bird lands on land, use Saq, on water, use tlhot.
+com:	If bird lands on land, use {Saq}, on water, use {tlhot}.
 
 tlh:	{parbIng}
 sv:	en slags «fågel» (mellanstorlek, med särskilt grälla färger) (s)
