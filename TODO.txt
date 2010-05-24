@@ -1,6 +1,16 @@
 Important Stuff
 ===============
 
+* dict.zdb
+
+    o "face" - {yor}, {pIrmuS} should these words be lookupable under "face" or
+      "side"? Or should they be scattered, as they are now?
+
+    o Swedish translation. Check that all occurances of "vara" matches
+      occurance of "be" in English.
+
+    o Example of use for word {pIq} in dictionary.
+
 * Perl (zdb2tex):
 
     o Break code down into more readable subroutine chunks.

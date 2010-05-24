@@ -28,7 +28,7 @@ SUGGESTED NEW FIELDS:
 
 		Examples: {tIb}, {woj} (for "sterilize") and that word used
 		instead of {lo'} in one of the SkyBox transcript in
-		HolQeD---whichever it was. 
+		HolQeD---whichever it was.
 
 FIELD NAMES USED IN DICTIONARY BELOW
 
@@ -280,8 +280,8 @@ en:	be <displeased> (v)
 def:	[TKD]
 
 tlh:	{bem}
-sv:	«fotsula» (s)
-en:	<sole> of foot (n)
+sv:	«fot«sula»» (s)
+en:	<sole of «foot»> (n)
 def:	[KGT]
 cat:	body part
 
@@ -2335,8 +2335,8 @@ en:	<mace> (stick, club) (n)
 def:	[KGT]
 
 tlh:	{ghap}
-sv:	«eller», antingen eller (förenar substantiv) (konj)
-en:	<or>, either/or (joining nouns) (conj)
+sv:	«eller», antingen eller (kommer efter förenade substantiv) (konj)
+en:	<or>, either/or (follows joined nouns) (conj)
 def:	[TKD]
 ref:	[TKW p.119]
 
@@ -2391,8 +2391,9 @@ def:	[KGT]
 
 tlh:	{ghaytan}
 sv:	«sannolikt», «antagligen», «förmodligen» (adv)
-en:	<likely> (adv)
+en:	<likely>, «probably» (adv)
 def:	[TKDa]
+com:	"probably" is included as a lookup synonym (does not occur in sources)
 
 tlh:	{ghaytanHa'}
 sv:	«osannolikt» (adv)
@@ -3122,7 +3123,7 @@ en:	<baldric>, <sash> (n)
 def:	[KGT]
 
 tlh:	{He}
-sv:	«kurs», «rutt», «riktning» (s)
+sv:	«bana», «kurs», «rutt», «riktning» (s)
 en:	<course>, <route> (n)
 def:	[TKD]
 
@@ -4025,14 +4026,14 @@ en:	<succession ritual> (ancient) (n)
 def:	[TKDa]
 
 tlh:	{je}
-sv:	«också», «likaså» (adv)
-en:	«also», «too» (adv)
+sv:	«också», «likaså» (kommer efter verb) (adv)
+en:	«also», «too» (follows verb) (adv)
 def:	[TKD 5.3 (p.55)]
 com:	Described in TKD 5.3, follows the verb it modifies.
 
 tlh:	{je}
-sv:	«också», «och» (förenar substantiv) (konj)
-en:	<also>, <and> (joining nouns) (conj)
+sv:	«också», «och» (kommer förenade substantiv) (konj)
+en:	<also>, <and> (follows joined nouns) (conj)
 def:	[TKD]
 ref:	[TKW pp.34, 155, 187]
 com:	When following a verb it means "also, too".
@@ -4335,8 +4336,8 @@ def:	[TKD]
 com:	used about banner or sail [HQ10:4 p.5]
 
 tlh:	{joq}
-sv:	«eller», och/eller (förenar substantiv) (konj)
-en:	<or>, and/or (joining nouns) (conj)
+sv:	«eller», och/eller (kommer efter förenade substantiv) (konj)
+en:	<or>, and/or (follows joined nouns) (conj)
 def:	[TKD]
 ref:	[TKW p.119]
 
@@ -5158,7 +5159,7 @@ def:	[TKD 5.5 (p.57) et al.]
 
 tlh:	{lur}
 sv:	«pupill» (s)
-en:	<pupil> (of eye) (n)
+en:	<pupil> (of «eye») (n)
 def:	[TKD]
 cat:	body part
 
@@ -5870,7 +5871,7 @@ en:	be <unusual> (v)
 def:	[TKD]
 
 tlh:	{mov}
-sv:	«ovansida av «fot»» (s)
+sv:	«ovansida av fot», «fotrygg» (s)
 en:	<top of «foot»> (n)
 def:	[KGT]
 cat:	body part
@@ -6340,7 +6341,7 @@ data:	KLCP-1
 
 tlh:	{nav HablI'}
 sv:	«fax» (apparat) (s)
-en:	«FAX machine» (n)
+en:	«fax machine» (n)
 def:	[HQ5:2 p.20]
 data:	phrase
 
@@ -6409,8 +6410,8 @@ ref:	[TKW p.185]
 data:	KLCP-1
 
 tlh:	{neH}
-sv:	«bara», «enbart», «endast» (adv)
-en:	<only>, <merely>, <just>, «alone» (adv)
+sv:	«bara», «enbart», «endast» (kommer efter verb eller substantiv) (adv)
+en:	<only>, <merely>, <just>, «alone» (follows verb or noun) (adv)
 def:	[TKD]
 ref:	[TKW pp.21, 61, 81, 105, 111, 113, 115, 191]
 com:	Follows the verb or noun it modifies. When following a noun
@@ -7428,8 +7429,8 @@ def:	[TKD]
 cat:	math
 
 tlh:	{pagh}
-sv:	«eller», antingen eller (förenar meningar) (konj)
-en:	<or>, either/or (joining sentences) (conj)
+sv:	«eller», antingen eller (kommer mellan förenade meningar) (konj)
+en:	<or>, either/or (comes between joined sentences) (conj)
 def:	[TKD]
 
 tlh:	{paghDIch}
@@ -7673,7 +7674,7 @@ def:	[TKDa]
 data:	phrase; {chem} (n)
 
 tlh:	{per}
-sv:	«beteckna», «fastställa», «specificera», «namnge» (v)
+sv:	«beteckna», «fastställa», «specificera», «namnge», ge «namn» åt/till (v)
 en:	<label>, «ascertain», «specify» (v)
 def:	[TKD; News 1999-02-02]
 com:	¿?What does this word really mean? (Check swedish translation.)
@@ -8340,17 +8341,20 @@ ref:	[TKW pp.137, 141]
 com:	The word "~gagh~" found in definition of {ghevI'} in KGT.
 
 tlh:	{qaH}
-sv:	«herr», «sir» (s)
-en:	<sir> (n)
+sv:	«herr», «sir» (använd endast som tilltal) (s)
+en:	<sir> (used only in direct address) (n)
 def:	[TKD]
 data:	KLCP-1
+com:	"The word {qaH} is interesting because it is never heard except in
+	direct address. Thus, while one might say {yoH qor HoD} ('Captain Kor
+	is brave') or {yoH HoD} ('The captain is brave'), one would never say
+	{yoH qaH} ('Sir is brave.')" [KGT p.198]
 
 tlh:	{qajunpaQ}
 sv:	«mod», «tapperhet», «djärvhet» (s)
 en:	<courage>, <audacity> (n)
 def:	[KGT]
-com:	STE: "kajanpak't. Klingon word for courage. ('Blood Oath'
-	[DS9])"
+com:	STE: "kajanpak't. Klingon word for courage. ('Blood Oath' [DS9])"
 
 tlh:	{qal}
 sv:	vara «korrupt» (v)
@@ -8449,7 +8453,7 @@ def:	[S7]
 com:	S7 was reprinted in HQ4:3 p.4
 
 tlh:	{qaS}
-sv:	«ske», «hända» (v)
+sv:	«ske», «hända», «inträffa» (v)
 en:	<occur>, <happen> (v)
 def:	[TKD]
 ref:	[TKW pp.127, 155]
@@ -8886,8 +8890,8 @@ def:	[TKD]
 cat:	landscape
 
 tlh:	{qoj}
-sv:	«eller», och/eller (förenar meningar) (konj)
-en:	<or>, and/or (joining sentences) (conj)
+sv:	«eller», och/eller (kommer mellan förenade meningar) (konj)
+en:	<or>, and/or (comes between joined sentences) (conj)
 def:	[TKD]
 ref:	[TKW p.139]
 
@@ -9657,7 +9661,7 @@ ref:	[TKW p.37]
 data:	KLCP-1
 
 tlh:	{Qoch}
-sv:	inte «hålla med», inte «samtycka» (v)
+sv:	inte «hålla med» (varandra), inte «samtycka», vara «oense» (v)
 en:	<disagree> (v)
 def:	[TKD]
 data:	KLCP-1
@@ -10043,7 +10047,7 @@ en:	<table> (n)
 def:	[KGT]
 
 tlh:	{ratlh}
-sv:	stanna «kvar», finnas kvar, «återstå» (v)
+sv:	stanna «kvar», finnas kvar, «återstå», «ha» kvar (v)
 en:	<remain> (v)
 def:	[TKD]
 data:	KLCP-1
@@ -14333,8 +14337,8 @@ en:	<ready>! (excl)
 def:	[TKD 5.5 (p.57) et al.]
 
 tlh:	{'ej}
-sv:	«och» (förenar meningar) (konj)
-en:	<and> (joining sentences) (conj)
+sv:	«och» (kommer mellan förenade meningar) (konj)
+en:	<and> (comes between joined sentences) (conj)
 def:	[TKD]
 ref:	[TKW pp.5, 8, 13, 101, 197, 211]
 
@@ -14397,9 +14401,10 @@ cat:	landscape
 data:	KLCP-1
 
 tlh:	{'ep}
-sv:	«konsumera» soppa, konsumera gryta (v)
-en:	<consume> soup (v)
+sv:	«konsumera» «soppa», konsumera «gryta» (v)
+en:	<consume> «soup», «eat» soup (v)
 def:	[KGT]
+com:	"eat" is included as a lookup synonym (does not occur in sources)
 
 tlh:	{'eq}
 sv:	vara «tidig» (v)
