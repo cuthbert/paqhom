@@ -70,6 +70,10 @@ Textual Correcions/Clarifications
 * Suffix Guide: VS9 {-bogh} -- May the head noun be marked by any NS5 suffix,
   apart from {-'e'}?
 
+* Correct book against webpage.
+
+* Check pronunciation against Arika Okrents description.
+
 * All but dictionary text: Sync pocket dictionary text with online version in
   this copy.
 
