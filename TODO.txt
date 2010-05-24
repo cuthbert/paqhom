@@ -3,6 +3,15 @@ Important Stuff
 
 * dict.zdb
 
+    o
+        * DONE Look through all "com:" from {HuH} onwards, add "gram:" as
+          appropriate.
+        * (then modify zdb2tex, then remove (...) comments corresponding to the
+          "gram:" comments from "en:" & "sv:")
+
+    o Non-breaking spaces seem to be inconsistently applied. Check where they
+      occur and regularize.
+
     o "face" - {yor}, {pIrmuS} should these words be lookupable under "face" or
       "side"? Or should they be scattered, as they are now?
 
@@ -13,17 +22,21 @@ Important Stuff
 
 * Perl (zdb2tex):
 
-    o Break code down into more readable subroutine chunks.
-
     o Check DB syntax on reading. Are there any mandatory fields missing? Are
       there any syntax errors (e.g. ~...~ should be matched).
 
     o Some DB entries should result in more than one dictionary entries on the
-      Klingon--English site (based on <>«» markers).
+      Klingon--English site (based on <>«» markers). How should this look?
 
-    o Proper argument parsing.
+    o Insert asterisk (or similar) for all words with "data: KLCP-1"?
 
-* LaTeX/Perl (zdb2tex, tlh-en.tex/en-tlh.tex): 
+* LaTeX/Perl (zdb2tex, tlh-en.tex/en-tlh.tex):
+
+    o Exclude numerical elements from dictionary part? (Are in suffix guide,
+      anyway.)
+
+    o Extract "gram:" field and display. (How to typeset? Within parentheses?)
+      These are short grammatical instructions.
 
     o Rename \lukli{} -> \tlh_en{}, and \lueng -> \en_tlh{}. Maybe turn some of
       the often-left-empty arguments into optional arguments?
@@ -53,11 +66,7 @@ Important Stuff
 * Makefile: LaTeX -> DVI target should scan .tex files for dependencies, so
   that output file is rebuilt if *any* of the input components have changed.
 
-* Perl: Add scripts for regenerating dictionary text from database. Incorporate
-  in Makefile.
-
 * LaTeX: Clean up and remove unused code.
-
 
 
 Textual Correcions/Clarifications
