@@ -116,7 +116,7 @@ sub prepare_klingon_alphabet() {
     return ("(tlh|ch|gh|ng|[abDeHIjlmnopqQrStuvwy' ])", %alpha);
 }
 
-our %cfg = (
+our %configuration = (
     # English part-of-speech label
     en_pos => '\((v|n|name|pro|adv|num|excl|ques|conj)\)',
     # Swedish part-of-speech label
@@ -413,7 +413,7 @@ sub process_ref {
 sub split_en {
     my ($string) = @_;
     my ($english, $part_of_speech, $extra) =
-      $string =~ /(.*)$cfg{en_pos}(.*)/;       # fetch transl., pos & category
+      $string =~ /(.*)$configuration{en_pos}(.*)/;       # fetch transl., pos & category
     $english  =~ s/ *$//;                      # remove trailing space
     $extra    =~ s/^\s*\((.*)\)\s*/$1/;        # remove surrounding parentheses
     $extra = latexify($extra);                 # LaTeXify
@@ -597,6 +597,7 @@ sub klingon_english {
 sub latex_header {
     my ($origin_language, $target_language, $words) = @_;
     my $key = "$origin_language-$target_language";
+
     return
       "% -*- tex -*-\n",
       "%\n",
@@ -607,6 +608,7 @@ sub latex_header {
 
 sub latex_footer {
     my ($origin_language, $target_language, $words) = @_;
+
     return
       "% LaTeX conversion ended: " . `date +"%Y-%m-%d, %H:%m:%S"`,
       "% [eof]\n";
@@ -631,12 +633,13 @@ sub latexify {
 
 sub buffer_to_latex {
     my ($origin_language, $target_language, @buf) = @_;                # get buffer
+
     return () unless @buf;                     # don't process empty buffers
 
     # get fields
     my %field = ();                            # clear %field hash
-    foreach (grep /$cfg{zdb_fields}/o, @buf) {
-        s/$cfg{zdb_fields}//o;                 #   remove `xxx:\t'
+    foreach (grep /$configuration{zdb_fields}/o, @buf) {
+        s/$configuration{zdb_fields}//o;                 #   remove `xxx:\t'
         $field{$1} = $_;                       #   assign to %field
     }
 
