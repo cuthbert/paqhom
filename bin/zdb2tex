@@ -95,7 +95,7 @@ use warnings;
 my %arg = (orphan => 6);
 
 # see open(3perl), encoding(3perl)
-use encoding 'utf8';
+use utf8;
 
 sub FALSE { '' }
 sub TRUE  { 1 }
