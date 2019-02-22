@@ -104,7 +104,7 @@ sub TRUE  { 1 }
 # string = regex that matches klingon letter
 # array  = sort order
 # hash   = letter to sort-letter
-sub alpha() {
+sub prepare_klingon_alphabet() {
     my @alpha = (
         " ",                                   # <space>
         qw(a b ch D e gh H I j l m n ng o p q Q r S t tlh u v w y),
@@ -112,7 +112,7 @@ sub alpha() {
     );
     my $i;
     my %alpha = ();
-    foreach (@alpha) { $alpha{$_} = chr 96 + $i++ }  # produce sort order hash
+    foreach my $letter (@alpha) { $alpha{$letter} = chr 96 + $i++ }  # produce sort order hash
     return ("(tlh|ch|gh|ng|[abDeHIjlmnopqQrStuvwy' ])", %alpha);
 }
 
@@ -128,7 +128,6 @@ our %cfg = (
 my $az = 'A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ';
 $az .= lc($az) . "ßÿ";
 
-my $direction  = "";
 my %directions = (
     "en-tlh" => "English-Klingon",
     "tlh-en" => "Klingon-English",
@@ -156,18 +155,18 @@ FIXME help() could be cleaner, and more readable, but it'll do for now
 
 =cut
 
-sub cmd_help {
-    my ($cmd) = @_;
-    if (defined($cmd)) {                       # user asked for a command
+sub command_help {
+    my ($command) = @_;
+    if (defined($command)) {                       # user asked for a command
         my @text = ();
         use Cwd "realpath";
         foreach (read_file(realpath($0))) {    # extract relevant "=item"
-            if (@text or s/^ =item \s+ (?=\b $cmd \b) //x) {
+            if (@text or s/^ =item \s+ (?=\b $command \b) //x) {
                 last if m/^ =cut \b/x;
                 push @text, $_;
             }
         }
-        die("'$cmd' is not a %s-command. See '%s --help'\n") unless @text;
+        die("'$command' is not a %s-command. See '%s --help'\n") unless @text;
 
         # strip trailing blank lines
         while (@text and $text[$#text] =~ m/^\s*$/) { pop(@text) }
@@ -234,7 +233,7 @@ Generate English-Klingon dictionary text.
 =cut
 
 sub cmd_en_tlh {
-    process_dict("en-tlh", @_);
+    process_dictionary("en-tlh", @_);
 }
 
 =item tlh-en
@@ -244,8 +243,20 @@ Generate Klingon-English dictionary text.
 =cut
 
 sub cmd_tlh_en {
-    process_dict("tlh-en", @_);
+    process_dictionary("tlh-en", @_);
 }
+
+=item run
+
+Generate Language-Language dictionary text.
+
+=cut
+
+sub cmd_run {
+    my ($origin_lang, $target_lang, $input_db_path) = @_;
+    process_dictionary("$origin_lang-$target_lang", $input_db_path);
+}
+
 
 =back
 
@@ -324,7 +335,7 @@ sub lookup_words {
 # $DIRECTION is either "tlh-en" or "en-tlh".
 #
 # Input should be in zdb format. Output will be LaTeX.
-sub process_dict {
+sub process_dictionary {
     (my $direction, @ARGV) = @_;
 
     # open file and skip header
@@ -502,11 +513,11 @@ sub english_sortkey {
 
 sub klingon_sortkey {
     my ($klingon) = @_;
-    my ($alpha, %alpha) = alpha();
+    my ($klingon_alphabet_regex, %klingon_alphabet_position_map) = prepare_klingon_alphabet();
     $klingon =~ s/\((\d+)\)//;
     my $lemma_number = defined($1) ? $1 : 1;
     $klingon =~ s/[<>«»{}() ]//g;              # remove <space> <>«»{} and ()
-    $klingon =~ s/($alpha)/$alpha{$1}/g;
+    $klingon =~ s/($klingon_alphabet_regex)/$klingon_alphabet_position_map{$1}/g;
     if (wantarray()) {
         return $klingon, $lemma_number;
     }
@@ -688,24 +699,23 @@ local %SIG = (
 ##  Main Program                                                             ##
 ##                                                                           ##
 ###############################################################################
-
 if (not @ARGV) {
-    cmd_help();
+    command_help();
     exit 5;
 }
 
 # get command line args
-my ($cmd, @arg) = @ARGV;
+my ($command, @arguments) = @ARGV;
 
 # name of sub to call
-(my $sub = "cmd_$cmd") =~ s/-/_/g;
+(my $sub = "cmd_$command") =~ s/-/_/g;
 if (not defined(&$sub)) {
-    die "'$cmd' is not a %s-command. See '%s --help'.\n";
+    die "'$command' is not a %s-command. See '%s --help'.\n";
 }
 
 # to allow name of a sub to be used as a subroutine ref, we disable refs
 # checking here (only disabled in this scope, not in the functions called)
 no strict "refs";                              # allow sub names as refs
-&$sub(@arg);                                   #   call function
+&$sub(@arguments);                                   #   call function
 
 #[eof]
