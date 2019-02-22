@@ -233,7 +233,7 @@ Generate English-Klingon dictionary text.
 =cut
 
 sub cmd_en_tlh {
-    process_dictionary("en-tlh", @_);
+    process_dictionary("en", "tlh", @_);
 }
 
 =item tlh-en
@@ -243,7 +243,7 @@ Generate Klingon-English dictionary text.
 =cut
 
 sub cmd_tlh_en {
-    process_dictionary("tlh-en", @_);
+    process_dictionary("tlh", "en", @_);
 }
 
 =item run
@@ -254,7 +254,7 @@ Generate Language-Language dictionary text.
 
 sub cmd_run {
     my ($origin_lang, $target_lang, $input_db_path) = @_;
-    process_dictionary("$origin_lang-$target_lang", $input_db_path);
+    process_dictionary($origin_lang, $target_lang, $input_db_path);
 }
 
 
@@ -336,7 +336,7 @@ sub lookup_words {
 #
 # Input should be in zdb format. Output will be LaTeX.
 sub process_dictionary {
-    (my $direction, @ARGV) = @_;
+    (my $origin_language, my $target_language, @ARGV) = @_;
 
     # open file and skip header
     while (<>) {                               # skip past data file header
@@ -352,7 +352,7 @@ sub process_dictionary {
         # beginning of a new post
         if (s/^(:|\s*$)//) {                   # beginning of new post?
             push @file, buffer_to_latex(       #   output processed buffer
-                $direction, @buf,
+                $origin_language, $target_language, @buf,
             );
             @buf = ();                         #   clear buffer
             next if /^$/;                      #   skip to next line in file
@@ -367,7 +367,7 @@ sub process_dictionary {
     } ## end while (<>)
 
     # output main body of file
-    print latex_header($direction, $#file + 1);
+    print latex_header($origin_language, $target_language, $#file + 1);
     my ($oldfirst, $first) = ("", "");
     foreach (sort @file) {
         ($first) = /^(.)/;                     # get sortstring's 1st letter
@@ -595,17 +595,18 @@ sub klingon_english {
 } ## end sub klingon_english
 
 sub latex_header {
-    my ($direction, $words) = @_;
+    my ($origin_language, $target_language, $words) = @_;
+    my $key = "$origin_language-$target_language";
     return
       "% -*- tex -*-\n",
       "%\n",
-      "% $directions{$direction} dictionary.\n",
+      "% $directions{$key} dictionary.\n",
       "% LaTeX conversion started: " . `date +"%Y-%m-%d, %H:%m:%S"`,
       "% There are $words words in this file.\n\n";
 }
 
 sub latex_footer {
-    my ($direction, $words) = @_;
+    my ($origin_language, $target_language, $words) = @_;
     return
       "% LaTeX conversion ended: " . `date +"%Y-%m-%d, %H:%m:%S"`,
       "% [eof]\n";
@@ -629,7 +630,7 @@ sub latexify {
 }
 
 sub buffer_to_latex {
-    my ($direction, @buf) = @_;                # get buffer
+    my ($origin_language, $target_language, @buf) = @_;                # get buffer
     return () unless @buf;                     # don't process empty buffers
 
     # get fields
@@ -639,7 +640,7 @@ sub buffer_to_latex {
         $field{$1} = $_;                       #   assign to %field
     }
 
-    if ($direction =~ /^tlh-en/i) {
+    if ("$origin_language-$target_language" =~ /^tlh-en/i) {
         # Klingon-English direction
         return klingon_english($field{tlh}, $field{en}, $field{def});
     } else {
