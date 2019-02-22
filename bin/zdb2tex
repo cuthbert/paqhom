@@ -121,18 +121,20 @@ our %configuration = (
     en_pos => '\((v|n|name|pro|adv|num|excl|ques|conj)\)',
     # Swedish part-of-speech label
     sv_pos => '\((v|s|namn|pro|adv|räkn|interj|fråg|konj)\)',
+    # German part-of-speech label
+    de_pos => '\((V|N|Name|Pro|Adv|räkn|Ausruf|Frage|Konj)\)',
     # ZDB fields to extract from database
-    zdb_fields => '^(tlh|en|def):\s*',
+    zdb_fields => '^(tlh|en|sv|de|def):\s*',
 );
 
 my $az = 'A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ';
 $az .= lc($az) . "ßÿ";
 
-my %directions = (
-    "en-tlh" => "English-Klingon",
-    "tlh-en" => "Klingon-English",
-    #"sv-tlh" => "Swedish-Klingon",
-    #"tlh-sv" => "Klingon-Swedish",
+my %language_key_translations = (
+    "en"  => "English",
+    "tlh" => "Klingon",
+    "de"  => "German",
+    "sv"  => "Swedish"
 );
 
 ###############################################################################
@@ -277,6 +279,7 @@ sub read_file {
     my ($file) = @_;
     open(my $fh, "<", $file)
       or die("failed to open file '$file' for reading: $!\n");
+
     return <$fh> if wantarray();
     return join("", <$fh>);
 }
@@ -290,6 +293,7 @@ sub program_name {
     my $name = $0;                             # program name
     $name =~ s#.*/##;                          #   strip path
     $text =~ s#%s#$name#g;
+
     return $text;
 }
 
@@ -310,7 +314,7 @@ sub lookup_words {
     my (@return, @stack) = ();
     my $beg = pos($string) = 0;
     while ($string =~ /</g) {                  # find next `<'
-        $beg = pos($string);                   # beg of this definiton
+        $beg = pos($string);                   # beg of this definition
         push @stack, ">";                      # stack it
         my $len;
         do {                                   # until stack is empty
@@ -326,6 +330,7 @@ sub lookup_words {
     } continue {
         pos($string) = $beg;
     }
+
     return @return;
 } ## end sub lookup_words
 
@@ -390,33 +395,38 @@ sub process_dictionary {
 sub process_tlh {
     my ($klingon) = @_;
     $klingon =~ s/^{(.*)}.*/$1/;               # remove all outside {...}
+
     return latexify($klingon);
 }
 
 # Usage: $LATEX = process_ref($REFERENCE);
 #
 # Converts "def:" data to LaTeX for inclusion in the pocket dictionary.
-sub process_ref {
+sub process_reference {
     my ($reference) = @_;
     for ($reference) {
         s/\[(.*)\]/$1/;                        # remove brackets
-        s/\s*\(.*\)//g;                        # remove parentesis w/ contents
+        s/\s*\(.*\)//g;                        # remove parenthesis w/ contents
         s/^TKD$//;                             # clear if "TKD"
     }
     $reference = latexify($reference);
     $reference = non_breaking_space_at_end($reference, $arg{orphan});
+
     return $reference;
 }
 
 # split `en:'-field into:
 #   `English', `part-of-speech' and `slang/regional'
-sub split_en {
-    my ($string) = @_;
+sub split_entry {
+    my ($string, $language_key) = @_;
+
+    my $pos_key = $language_key."_pos";
     my ($english, $part_of_speech, $extra) =
-      $string =~ /(.*)$configuration{en_pos}(.*)/;       # fetch transl., pos & category
+      $string =~ /(.*)$configuration{$pos_key}(.*)/;       # fetch transl., pos & category
     $english  =~ s/ *$//;                      # remove trailing space
     $extra    =~ s/^\s*\((.*)\)\s*/$1/;        # remove surrounding parentheses
     $extra = latexify($extra);                 # LaTeXify
+
     return ($english, $part_of_speech, $extra);
 }
 
@@ -424,6 +434,7 @@ sub split_en {
 sub remove_angle_brackets {
     my ($string) = @_;
     $string =~ s/[<>«»]//g;
+
     return $string;
 }
 
@@ -435,6 +446,7 @@ sub replace_lookup_word_with_tilde {
         \Q$lookup\E                            # lookup word
         (?=$|[, ])                             # end-of-string or
     }{×}gx;                                    # tilde ("×") replacement
+
     return $english;
 }
 
@@ -533,17 +545,17 @@ sub klingon_sortkey {
 #   #5 = English explanation of the word
 #        (if Ø then the explanation equals the lookup word)
 #        (the lookup word is replaced by \lemma{}, which generates a tilde)
-sub english_klingon {
-    my ($klingon, $english) = @_;
-    my $tlh = process_tlh($klingon);
-    my ($en, $pos, $extra) = split_en($english);
+sub arbitrary_language_to_klingon {
+    my ($klingon_word, $non_klingon_word, $arbitrary_language_key) = @_;
+    my $tlh = process_tlh($klingon_word);
+    my ($en, $pos, $extra) = split_entry($non_klingon_word, $arbitrary_language_key);
 
     # process `tlh:'-field
-    $tlh = remove_angle_brackets($tlh);
+    $tlh = remove_angle_brackets($tlh); # @TODO: Is this necessary?
 
     # generate a dictionary entry for each lookup word
     return map {
-        s/\s*\(.*\)//g;                        # erase parentesis in lookupword
+        s/\s*\(.*\)//g;                        # erase parenthesis in lookupword
 
         # English definition
         my $main   = "";
@@ -556,7 +568,7 @@ sub english_klingon {
             $main = non_breaking_space_at_end($main, $arg{orphan});
             $main =~ s/×/\\lemma{}/g;          # "~" -> "\lemma{}"
         }
-        english_klingon_sortkey($_, $pos, $tlh, $english)
+        english_klingon_sortkey($_, $pos, $tlh, $non_klingon_word)
           . " \\lueng{$lookup}{$tlh}{$pos}{$extra}{$main}%\n";
     } lookup_words($en);
 } ## end sub english_klingon
@@ -568,18 +580,26 @@ sub english_klingon {
 #  #3 = 'slang' or 'regional' etc.
 #  #4 = English explanation of the word
 #  #5 = source (if Ø then source=TKD)
-sub klingon_english {
-    my ($klingon, $english, $ref) = @_;
-    my $tlh = process_tlh($klingon);
-    my ($en, $pos, $extra) = split_en($english);
+sub klingon_to_arbitrary_language {
+    my ($klingon_word, $non_klingon_word, $ref, $arbitrary_language_key) = @_;
+    my $tlh = process_tlh($klingon_word);
+    my ($en, $pos, $extra) = split_entry($non_klingon_word, $arbitrary_language_key);
 
     #    warn ">$tlh< ->\n", map { "    >$_<\n" } lookup_words($tlh);
 
-    $ref = process_ref($ref);
+    $ref = process_reference($ref);
 
-    # process `en:'-field
-    $en = latexify(remove_angle_brackets($en));
-    $en = remove_multiple_be($en);             # remove word "be"
+    if ($arbitrary_language_key =~ "en") {
+        # process `en:'-field
+        $en = remove_angle_brackets($en);
+        $en = remove_multiple_be($en);             # remove word "be"
+    } elsif ($arbitrary_language_key =~ "de") { # example
+        # remove 'sein' at the end?
+    } elsif ($arbitrary_language_key =~ "sv") {
+        $en = remove_angle_brackets($en);
+    }
+
+    $en = latexify($en);
 
     # consider source reference length when adding non-breaking spaces
     # (since source reference comes after on same line)
@@ -589,20 +609,19 @@ sub klingon_english {
     return map {
         # process `tlh:'-field
         my $lookup = remove_angle_brackets($_);
-        klingon_english_sortkey($klingon, $pos, $english)
+        klingon_english_sortkey($klingon_word, $pos, $non_klingon_word)
           . " \\lukli{$lookup}{$pos}{$extra}{$en}{$ref}%\n";
     } $tlh;                                    #lookup_words($tlh);
 } ## end sub klingon_english
 
 sub latex_header {
     my ($origin_language, $target_language, $words) = @_;
-    my $key = "$origin_language-$target_language";
 
     return
       "% -*- tex -*-\n",
       "%\n",
-      "% $directions{$key} dictionary.\n",
-      "% LaTeX conversion started: " . `date +"%Y-%m-%d, %H:%m:%S"`,
+      "% $language_key_translations{$origin_language}-$language_key_translations{$target_language} dictionary.\n",
+      "% LaTeX conversion started: " . `date +"%Y-%m-%d, %H:%M:%S"`,
       "% There are $words words in this file.\n\n";
 }
 
@@ -643,12 +662,12 @@ sub buffer_to_latex {
         $field{$1} = $_;                       #   assign to %field
     }
 
-    if ("$origin_language-$target_language" =~ /^tlh-en/i) {
-        # Klingon-English direction
-        return klingon_english($field{tlh}, $field{en}, $field{def});
+    if ($origin_language =~ "tlh") {
+        # From Klingon to selected language direction
+        return klingon_to_arbitrary_language($field{tlh}, $field{$target_language}, $field{def}, $target_language);
     } else {
-        # English-Klingon direction
-        return english_klingon($field{tlh}, $field{en});
+        # From selected language to klingon direction
+        return arbitrary_language_to_klingon($field{tlh}, $field{$origin_language}, $origin_language);
     }
 }
 
