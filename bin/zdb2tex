@@ -97,6 +97,10 @@ my %arg = (orphan => 6);
 # see open(3perl), encoding(3perl)
 use utf8;
 
+use Encode;
+
+binmode(STDOUT, ':utf8');
+
 sub FALSE { '' }
 sub TRUE  { 1 }
 
@@ -124,7 +128,7 @@ our %configuration = (
     # German part-of-speech label
     de_pos => '\((V|N|Name|Pro|Adv|räkn|Ausruf|Frage|Konj)\)',
     # ZDB fields to extract from database
-    zdb_fields => '^(tlh|en|sv|de|def):\s*',
+    zdb_fields => '^(tlh|en|sv|de|def|pos):\s*',
 );
 
 my $az = 'A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞ';
@@ -135,6 +139,22 @@ my %language_key_translations = (
     "tlh" => "Klingon",
     "de"  => "German",
     "sv"  => "Swedish"
+);
+
+my %word_type_map = (
+    "noun"          => "n",
+    "verb"          => "v",
+    "exclamation"   => "",
+    "name"          => "",
+    "adverbial"     => "",
+    "pronoun"       => "",
+    "numeral"       => "",
+    "question word" => "",
+    "conjunction"   => ""
+);
+
+my %debug = (
+    "unknown_pos" => ()
 );
 
 ###############################################################################
@@ -368,6 +388,7 @@ sub process_dictionary {
             $buf[$#buf] .= " " . $1;
             next;
         }
+
         push @buf, $_;                         #   add new line to buffer
     } ## end while (<>)
 
@@ -394,7 +415,7 @@ sub process_dictionary {
 # LaTeXification.
 sub process_tlh {
     my ($klingon) = @_;
-    $klingon =~ s/^{(.*)}.*/$1/;               # remove all outside {...}
+    $klingon =~ s/^.*{(.*)}.*/$1/;               # remove all outside {...}
 
     return latexify($klingon);
 }
@@ -418,16 +439,14 @@ sub process_reference {
 # split `en:'-field into:
 #   `English', `part-of-speech' and `slang/regional'
 sub split_entry {
-    my ($string, $language_key) = @_;
+    my ($string) = @_;
 
-    my $pos_key = $language_key."_pos";
-    my ($english, $part_of_speech, $extra) =
-      $string =~ /(.*)$configuration{$pos_key}(.*)/;       # fetch transl., pos & category
+    my ($english, $extra) =
+      $string =~ /([^\[\]]*)(?:\[(.*)\])?/;       # fetch transl. & extra
     $english  =~ s/ *$//;                      # remove trailing space
-    $extra    =~ s/^\s*\((.*)\)\s*/$1/;        # remove surrounding parentheses
     $extra = latexify($extra);                 # LaTeXify
 
-    return ($english, $part_of_speech, $extra);
+    return ($english, $extra);
 }
 
 # remove «»<> from string
@@ -526,7 +545,7 @@ sub english_sortkey {
 sub klingon_sortkey {
     my ($klingon) = @_;
     my ($klingon_alphabet_regex, %klingon_alphabet_position_map) = prepare_klingon_alphabet();
-    $klingon =~ s/\((\d+)\)//;
+    $klingon =~ s/\[(\d+)\]//;
     my $lemma_number = defined($1) ? $1 : 1;
     $klingon =~ s/[<>«»{}() ]//g;              # remove <space> <>«»{} and ()
     $klingon =~ s/($klingon_alphabet_regex)/$klingon_alphabet_position_map{$1}/g;
@@ -546,9 +565,9 @@ sub klingon_sortkey {
 #        (if Ø then the explanation equals the lookup word)
 #        (the lookup word is replaced by \lemma{}, which generates a tilde)
 sub arbitrary_language_to_klingon {
-    my ($klingon_word, $non_klingon_word, $arbitrary_language_key) = @_;
+    my ($klingon_word, $non_klingon_word, $pos, $arbitrary_language_key) = @_;
     my $tlh = process_tlh($klingon_word);
-    my ($en, $pos, $extra) = split_entry($non_klingon_word, $arbitrary_language_key);
+    my ($en, $extra) = split_entry($non_klingon_word);
 
     # process `tlh:'-field
     $tlh = remove_angle_brackets($tlh); # @TODO: Is this necessary?
@@ -568,6 +587,7 @@ sub arbitrary_language_to_klingon {
             $main = non_breaking_space_at_end($main, $arg{orphan});
             $main =~ s/×/\\lemma{}/g;          # "~" -> "\lemma{}"
         }
+
         english_klingon_sortkey($_, $pos, $tlh, $non_klingon_word)
           . " \\lueng{$lookup}{$tlh}{$pos}{$extra}{$main}%\n";
     } lookup_words($en);
@@ -581,22 +601,21 @@ sub arbitrary_language_to_klingon {
 #  #4 = English explanation of the word
 #  #5 = source (if Ø then source=TKD)
 sub klingon_to_arbitrary_language {
-    my ($klingon_word, $non_klingon_word, $ref, $arbitrary_language_key) = @_;
+    my ($klingon_word, $non_klingon_word, $ref, $pos, $arbitrary_language_key) = @_;
     my $tlh = process_tlh($klingon_word);
-    my ($en, $pos, $extra) = split_entry($non_klingon_word, $arbitrary_language_key);
+    my ($en, $extra) = split_entry($non_klingon_word);
 
     #    warn ">$tlh< ->\n", map { "    >$_<\n" } lookup_words($tlh);
 
     $ref = process_reference($ref);
+    $en = remove_angle_brackets($en);
 
     if ($arbitrary_language_key =~ "en") {
         # process `en:'-field
-        $en = remove_angle_brackets($en);
         $en = remove_multiple_be($en);             # remove word "be"
     } elsif ($arbitrary_language_key =~ "de") { # example
         # remove 'sein' at the end?
     } elsif ($arbitrary_language_key =~ "sv") {
-        $en = remove_angle_brackets($en);
     }
 
     $en = latexify($en);
@@ -629,7 +648,7 @@ sub latex_footer {
     my ($origin_language, $target_language, $words) = @_;
 
     return
-      "% LaTeX conversion ended: " . `date +"%Y-%m-%d, %H:%m:%S"`,
+      "% LaTeX conversion ended: " . `date +"%Y-%m-%d, %H:%M:%S"`,
       "% [eof]\n";
 }
 
@@ -659,15 +678,19 @@ sub buffer_to_latex {
     my %field = ();                            # clear %field hash
     foreach (grep /$configuration{zdb_fields}/o, @buf) {
         s/$configuration{zdb_fields}//o;                 #   remove `xxx:\t'
-        $field{$1} = $_;                       #   assign to %field
+        $field{$1} = Encode::decode_utf8($_);                       #   assign to %field
+    }
+
+    if (exists $word_type_map{$field{pos}}) {
+        $field{pos} = $word_type_map{$field{pos}};
     }
 
     if ($origin_language =~ "tlh") {
         # From Klingon to selected language direction
-        return klingon_to_arbitrary_language($field{tlh}, $field{$target_language}, $field{def}, $target_language);
+        return klingon_to_arbitrary_language($field{tlh}, $field{$target_language}, $field{def}, $field{pos}, $target_language);
     } else {
         # From selected language to klingon direction
-        return arbitrary_language_to_klingon($field{tlh}, $field{$origin_language}, $origin_language);
+        return arbitrary_language_to_klingon($field{tlh}, $field{$origin_language}, $field{pos}, $origin_language);
     }
 }
 
