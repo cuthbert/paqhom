@@ -1,11 +1,13 @@
 ENGLISH := en-cover en-main
 SWEDISH := sv-cover sv-main
+GERMAN := de-cover de-main
 
-.SECONDARY: $(addsuffix .dvi, $(ENGLISH) $(SWEDISH))
+.SECONDARY: $(addsuffix .dvi, $(ENGLISH) $(SWEDISH) $(GERMAN))
 
 .PHONY: clean distclean english swedish
 english: $(addsuffix .pdf,$(ENGLISH))
 swedish: $(addsuffix .pdf,$(SWEDISH))
+german: $(addsuffix .pdf,$(GERMAN))
 
 %.dvi: tex/*/%.tex        # LaTeX -> DVI
 	@export TFMFONTS="tex/fonts:";                  \
@@ -22,15 +24,15 @@ swedish: $(addsuffix .pdf,$(SWEDISH))
 
 clean:
 	@rm -vf $(sort \
-	    $(addsuffix .aux,$(ENGLISH) $(SWEDISH)) \
-	    $(addsuffix .dvi,$(ENGLISH) $(SWEDISH)) \
-	    $(addsuffix .log,$(ENGLISH) $(SWEDISH)) \
+	    $(addsuffix .aux,$(ENGLISH) $(SWEDISH) $(GERMAN)) \
+	    $(addsuffix .dvi,$(ENGLISH) $(SWEDISH) $(GERMAN)) \
+	    $(addsuffix .log,$(ENGLISH) $(SWEDISH) $(GERMAN)) \
 	)
 
 distclean: clean
 	@rm -vf $(sort \
-	    $(addsuffix .pdf,$(ENGLISH) $(SWEDISH)) \
-	    $(addsuffix  .ps,$(ENGLISH) $(SWEDISH)) \
+	    $(addsuffix .pdf,$(ENGLISH) $(SWEDISH) $(GERMAN)) \
+	    $(addsuffix  .ps,$(ENGLISH) $(SWEDISH) $(GERMAN)) \
 	)
 
 #[eof]

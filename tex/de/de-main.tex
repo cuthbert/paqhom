@@ -1,0 +1,77 @@
+% -*- tex -*-
+%
+% This file does not include the cover.
+%
+\documentclass[a4paper,twoside,draft]{article} % double sided, A4, draft
+\usepackage[utf8]{inputenc}                    % enable unicode
+\usepackage[english]{babel}                    % enable engdish typography
+\newcommand{\dictlanguage}{german}            % variable used by includes
+\input{commands}                               % include dictionary commands
+\input{values}                                 % date & no of words values
+\setmargz{3cm}{1.5cm}{2cm}{1.5cm}%             % left/upper/right/lower margin
+  {24pt}{5mm}{1pt}%                            % head & foot: height/sep/ruler
+  {5mm}{0pt}                                   % column separator
+
+
+\begin{document}
+\setcounter{page}{3}                           % first page = page 3
+\pagestyle{empty}                              % no header/footer
+
+\input{front_roman}                            % bastard title
+\input{copyrightpage}                          % copyright page
+
+
+% set footer for preface
+% (it will set its own headers since they are section dependant)
+%
+% E.g. \lhead[even/right pages]{odd/left pages} will set the leftmost
+% header of all pages. 
+\pagestyle{fancy}                              % fancy header/footer
+\cfoot{\large\textbf{Klingonska Akademien}}    %   all pages center foot
+\lfoot[\large\textbf{\thepage}]{}              %   even numbered pages
+\rfoot[]{\large\textbf{\thepage}}              %   odd numbered pages
+
+\input{preface}                                % preface
+
+
+% header/footer for dictionary
+\lhead[\large\mbox{\textbf{\rightmark\,--\,\leftmark}}]{}% header's left column
+\rhead[]{\large\mbox{\textbf{\rightmark\,--\,\leftmark}}}% header's right column
+
+% text alignment for dictionary
+\raggedright                                   % non-justified text
+\raggedbottom                                  % don't fill pages vertically
+\begin{multicols}{2}                           % two columns 
+
+% Klingon-English dictionary
+\cfoot%                                        % page footer
+  [\large\textbf{Klingonska Akademien}]%       %   ..even/right pages
+  {\large\textbf{Klingonisch-Deutsch Wörterbuch}}% %   ..odd/left pages
+\input{tlh-de}                                 % Klingon-English dictionary
+\clearpage
+
+% English-Klingon dictionary
+\cfoot%                                        % page footer
+  [\large\textbf{Klingonska Akademien}]%       %   ..even/right pages
+  {\large\textbf{Deutsch-Klingonisch Wörterbuch}}% %   ..odd/left pages
+\input{de-tlh}                                 % English-Klingon dictionary
+\clearpage
+
+\end{multicols}
+
+
+
+% Insert blank fill out-pages
+% (These make sure that the total number of pages are evenly divideble
+% with four, so that the pages can be stapled into a book).
+%\lhead[\large\textbf{Blank Page}]{}            % left header col
+%\rhead[]{\large\textbf{Blank Page}}            % right header col
+%\cfoot{\large\textbf{Klingonska Akademien}}    % footer
+%\filloutpages{3}{8}{4}                         % blank pages
+
+\clearpage
+\input{suffix}                                  % Suffix Guide
+
+
+
+\end{document}

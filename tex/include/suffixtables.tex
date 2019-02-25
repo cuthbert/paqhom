@@ -13,9 +13,13 @@
 \ifthenelse{\equal{\dictlanguage}{swedish}}{%  %
     \lhead[\large\B{Suffixtabell}]{}           % left header col
     \rhead[]{\large\B{Suffixtabell}}           % right header col
-}{%                                            %
-    \lhead[\large\B{Suffix Table}]{}           % left header col
-    \rhead[]{\large\B{Suffix Table}}           % right header col
+}{%
+\ifthenelse{\equal{\dictlanguage}{german}}{%  %
+\lhead[\large\B{Suffixtabelle}]{}           % left header col
+\rhead[]{\large\B{Suffixtabelle}}           % right header col
+}%
+{\lhead[\large\B{Suffix Table}]{}           % left header col
+    \rhead[]{\large\B{Suffix Table}}}           % right header col
 }%                                             %
 \PrepAffixLists                                % init
 \makebox[0pt][l]{%                             % 

@@ -175,6 +175,34 @@
       }%
     }%
 }{%
+    \ifthenelse{\equal{\dictlanguage}{german}}{%
+        %%%%%%%%%%%%%%%%%%
+        % for the suffix tables
+        \newcommand{\VerbSuffixListTitle}{Verbsuffixe (36 St.)}%
+        \newcommand{\NounSuffixListTitle}{Substantivsuffixe (26 St.)}%
+        \newcommand{\NumElementListTitle}{Numerische Elemente}%
+        %%%%%%%%%%%%%%%%%%
+        % for the prefix table
+        \newcommand{\VerbPrefixTableTitleSubject}{%
+            \centering\Huge%
+            \parbox[c]{1em}{%
+                \centering\B{S\\U\\B\\J\\E\\K\\T}%
+            }%
+        }%
+        \newcommand{\VerbPrefixTableTitleObject}{
+            \Huge\B{\hspace{\stretch{3}}%
+                O\hspace{\stretch{1}}%
+                B\hspace{\stretch{1}}%
+                J\hspace{\stretch{1}}%
+                E\hspace{\stretch{1}}%
+                K\hspace{\stretch{1}}%
+                T\hspace{\stretch{3}}%
+                \raisebox{\depthof{g} * \real{-2}}{%
+                    \rule{0mm}{(\depthof{g} * 4) + \heightof{O}}%
+                }%
+            }%
+        }%
+}{
     %%%%%%%%%%%%%%%%%%
     % for the suffix tables
     \newcommand{\VerbSuffixListTitle}{Verb Suffixes (36 total)}%
@@ -201,6 +229,7 @@
         }%
       }%
     }%
+ }%
 }
 
 
