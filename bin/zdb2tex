@@ -568,7 +568,7 @@ sub arbitrary_language_to_klingon {
 
     # generate a dictionary entry for each lookup word
     return map {
-        // TODO: How to handle?
+        # @TODO: How to handle?
         #s/\s*\(.*\)//g;                        # erase parenthesis in lookupword
 
         # English definition
@@ -585,7 +585,7 @@ sub arbitrary_language_to_klingon {
 
         english_klingon_sortkey($_, $pos, $tlh, $non_klingon_word)
           . " \\lueng{$lookup}{$tlh}{$pos}{$extra}{$main}%\n";
-    } $en; #lookup_words($en); //TODO: Do we need this still? It's expecting words in brackets.
+    } $en; #lookup_words($en); # @TODO: Do we need this still? It's expecting words in brackets.
 } ## end sub english_klingon
 
 # Arguments for LaTeX function \lukli{} (a Klingon-English dictionary entry)
@@ -602,7 +602,7 @@ sub klingon_to_arbitrary_language {
 
     #    warn ">$tlh< ->\n", map { "    >$_<\n" } lookup_words($tlh);
 
-    $ref = "";#process_reference($ref); //TODO: Shortening and cleaning. Filter for defined sources? See original zdb documentation.
+    $ref = "";#process_reference($ref); # TODO: Shortening and cleaning. Filter for defined sources? See original zdb documentation.
     $en = remove_angle_brackets($en);
 
     if ($arbitrary_language_key =~ "en") {
