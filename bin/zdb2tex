@@ -121,12 +121,6 @@ sub prepare_klingon_alphabet() {
 }
 
 our %configuration = (
-    # English part-of-speech label
-    en_pos => '\((v|n|name|pro|adv|num|excl|ques|conj)\)',
-    # Swedish part-of-speech label
-    sv_pos => '\((v|s|namn|pro|adv|räkn|interj|fråg|konj)\)',
-    # German part-of-speech label
-    de_pos => '\((V|N|Name|Pro|Adv|räkn|Ausruf|Frage|Konj)\)',
     # ZDB fields to extract from database
     zdb_fields => '^(tlh|en|sv|de|def|pos):\s*',
 );
@@ -574,7 +568,8 @@ sub arbitrary_language_to_klingon {
 
     # generate a dictionary entry for each lookup word
     return map {
-        s/\s*\(.*\)//g;                        # erase parenthesis in lookupword
+        // TODO: How to handle?
+        #s/\s*\(.*\)//g;                        # erase parenthesis in lookupword
 
         # English definition
         my $main   = "";
@@ -590,7 +585,7 @@ sub arbitrary_language_to_klingon {
 
         english_klingon_sortkey($_, $pos, $tlh, $non_klingon_word)
           . " \\lueng{$lookup}{$tlh}{$pos}{$extra}{$main}%\n";
-    } lookup_words($en);
+    } $en; #lookup_words($en); //TODO: Do we need this still? It's expecting words in brackets.
 } ## end sub english_klingon
 
 # Arguments for LaTeX function \lukli{} (a Klingon-English dictionary entry)
@@ -607,7 +602,7 @@ sub klingon_to_arbitrary_language {
 
     #    warn ">$tlh< ->\n", map { "    >$_<\n" } lookup_words($tlh);
 
-    $ref = process_reference($ref);
+    $ref = "";#process_reference($ref); //TODO: Shortening and cleaning. Filter for defined sources? See original zdb documentation.
     $en = remove_angle_brackets($en);
 
     if ($arbitrary_language_key =~ "en") {
