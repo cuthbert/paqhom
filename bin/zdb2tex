@@ -649,8 +649,8 @@ sub latexify {
         s/''/'{}'/g;                           # double aphostrophe
         s/(^| )\"/$1``/g;                      # initial quote
         s/\"/''/g;                             # ending quote
-        s/\.\.\. /\ldots\ /g;                  # ... + <space>
-        s/\.\.\./\ldots/g;                     # ...
+        s/\.\.\. /\\ldots\ /g;                  # ... + <space>
+        s/\.\.\./\\ldots/g;                     # ...
         s/ /~/g;                               # non-breaking space
         s/¿?//g;                               # remove ¿?
         s/([%#\$])/\\$1/g;                     # escape %, #, $
