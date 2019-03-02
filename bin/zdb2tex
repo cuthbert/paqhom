@@ -147,10 +147,6 @@ my %word_type_map = (
     "conjunction"   => ""
 );
 
-my %debug = (
-    "unknown_pos" => ()
-);
-
 ###############################################################################
 ##                                                                           ##
 ##  Subcommand Functions                                                     ##
@@ -640,8 +636,6 @@ sub latex_header {
 }
 
 sub latex_footer {
-    my ($origin_language, $target_language, $words) = @_;
-
     return
       "% LaTeX conversion ended: " . `date +"%Y-%m-%d, %H:%M:%S"`,
       "% [eof]\n";
