@@ -135,17 +135,20 @@ my %language_key_translations = (
     "sv"  => "Swedish"
 );
 
-my %word_type_map = (
-    "noun"          => "n",
-    "verb"          => "v",
-    "exclamation"   => "excl",
-    "name"          => "name",
-    "adverbial"     => "adv",
-    "pronoun"       => "pro",
-    "numeral"       => "num",
-    "question word" => "ques",
-    "conjunction"   => "conj"
+my $default_part_of_speech_key = "en";
+my %part_of_speech_map = (
+    "noun"          => {"en" => "n", "sv" => "s"},
+    "verb"          => {"en" => "v", "sv" => "v"},
+    "exclamation"   => {"en" => "excl", "sv" => "interj"},
+    "name"          => {"en" => "name", "sv" => "namn"},
+    "adverbial"     => {"en" => "adv", "sv" => "adv"},
+    "pronoun"       => {"en" => "pro", "sv" => "pro"},
+    "numeral"       => {"en" => "num", "sv" => "räkn"},
+    "question word" => {"en" => "ques", "sv" => "fråg"},
+    "conjunction"   => {"en" => "conj", "sv" => "konj"}
 );
+
+
 
 ###############################################################################
 ##                                                                           ##
@@ -598,7 +601,7 @@ sub klingon_to_arbitrary_language {
 
     #    warn ">$tlh< ->\n", map { "    >$_<\n" } lookup_words($tlh);
 
-    $ref = "";#process_reference($ref); # TODO: Shortening and cleaning. Filter for defined sources? See original zdb documentation.
+    $ref = process_reference($ref); # TODO: Shortening and cleaning. Filter for defined sources? See original zdb documentation.
     $en = remove_angle_brackets($en);
 
     if ($arbitrary_language_key =~ "en") {
@@ -653,7 +656,7 @@ sub latexify {
         s/\.\.\./\\ldots/g;                     # ...
         s/ /~/g;                               # non-breaking space
         s/¿?//g;                               # remove ¿?
-        s/([%#\$])/\\$1/g;                     # escape %, #, $
+        s/([%#\$&])/\\$1/g;              # escape %, #, $, &
     }
     return $x;
 }
@@ -670,8 +673,15 @@ sub buffer_to_latex {
         $field{$1} = Encode::decode_utf8($_);                       #   assign to %field
     }
 
-    if (exists $word_type_map{$field{pos}}) {
-        $field{pos} = $word_type_map{$field{pos}};
+    my $part_of_speech_key = $origin_language;
+    if ($origin_language =~ "tlh") {
+        $part_of_speech_key = $target_language;
+    }
+
+    if (exists $part_of_speech_map{$field{pos}}{$part_of_speech_key}) {
+        $field{pos} = $part_of_speech_map{$field{pos}}{$part_of_speech_key};
+    } else {
+        $field{pos} = $part_of_speech_map{$field{pos}}{$default_part_of_speech_key};
     }
 
     if ($origin_language =~ "tlh") {
