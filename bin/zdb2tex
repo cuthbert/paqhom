@@ -422,6 +422,8 @@ sub process_reference {
         s/\[(.*)\]/$1/;                        # remove brackets
         s/\s*\(.*\)//g;                        # remove parenthesis w/ contents
         s/^TKD$//;                             # clear if "TKD"
+        s/SkyBox (\d+)/S$1/g;
+        s/(TNG|VOY|DS9|DSC).*/$1/g;
     }
     $reference = latexify($reference);
     $reference = non_breaking_space_at_end($reference, $arg{orphan});
