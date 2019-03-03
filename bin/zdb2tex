@@ -138,13 +138,13 @@ my %language_key_translations = (
 my %word_type_map = (
     "noun"          => "n",
     "verb"          => "v",
-    "exclamation"   => "",
-    "name"          => "",
-    "adverbial"     => "",
-    "pronoun"       => "",
-    "numeral"       => "",
-    "question word" => "",
-    "conjunction"   => ""
+    "exclamation"   => "excl",
+    "name"          => "name",
+    "adverbial"     => "adv",
+    "pronoun"       => "pro",
+    "numeral"       => "num",
+    "question word" => "ques",
+    "conjunction"   => "conj"
 );
 
 ###############################################################################
