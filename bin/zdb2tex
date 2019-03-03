@@ -603,7 +603,7 @@ sub klingon_to_arbitrary_language {
 
     #    warn ">$tlh< ->\n", map { "    >$_<\n" } lookup_words($tlh);
 
-    $ref = process_reference($ref); # TODO: Shortening and cleaning. Filter for defined sources? See original zdb documentation.
+    $ref = process_reference($ref);
     $en = remove_angle_brackets($en);
 
     if ($arbitrary_language_key =~ "en") {
@@ -675,10 +675,16 @@ sub buffer_to_latex {
         $field{$1} = Encode::decode_utf8($_);                       #   assign to %field
     }
 
-    my $part_of_speech_key = $origin_language;
+    my $non_klingon_language = $origin_language;
     if ($origin_language =~ "tlh") {
-        $part_of_speech_key = $target_language;
+        $non_klingon_language = $target_language;
     }
+
+    if (!exists $field{$non_klingon_language}) {
+        return ();
+    }
+
+    my $part_of_speech_key = $non_klingon_language;
 
     if (exists $part_of_speech_map{$field{pos}}{$part_of_speech_key}) {
         $field{pos} = $part_of_speech_map{$field{pos}}{$part_of_speech_key};
@@ -688,10 +694,10 @@ sub buffer_to_latex {
 
     if ($origin_language =~ "tlh") {
         # From Klingon to selected language direction
-        return klingon_to_arbitrary_language($field{tlh}, $field{$target_language}, $field{def}, $field{pos}, $target_language);
+        return klingon_to_arbitrary_language($field{tlh}, $field{$non_klingon_language}, $field{def}, $field{pos}, $non_klingon_language);
     } else {
         # From selected language to klingon direction
-        return arbitrary_language_to_klingon($field{tlh}, $field{$origin_language}, $field{pos}, $origin_language);
+        return arbitrary_language_to_klingon($field{tlh}, $field{$non_klingon_language}, $field{pos}, $non_klingon_language);
     }
 }
 
